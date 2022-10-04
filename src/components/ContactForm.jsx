@@ -1,12 +1,10 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from './redux/Actions';
+import { useAddContactMutation } from 'services/phonebookApi';
 
 
 
 
-const ContactForm = () => {
-    const dispatch = useDispatch();
-    const state = useSelector(state => state.contacts);
+const ContactForm = ({ contacts }) => {
+    const [addContact] = useAddContactMutation();
 
     const handleSubmit = evt => {
         const form = evt.target;
@@ -15,7 +13,7 @@ const ContactForm = () => {
 
         evt.preventDefault();
 
-        for (const contact of state) {
+        for (const contact of contacts) {
             if (contact.name === name)
                 return alert(
                     `${name} is already in your contacts with the phone number ${contact.number}`
@@ -27,7 +25,7 @@ const ContactForm = () => {
                 );
         }
 
-        dispatch(addContact({ name, number }));
+        addContact({ name, number });
         form.reset();
     };
 

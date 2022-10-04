@@ -1,11 +1,29 @@
 import ContactForm from "./ContactForm";
 import ContactList from "./ContactList";
 import FilteredUsers from "./FilteredUsers";
-import { useSelector } from 'react-redux';
 import isEmpty from "../utility/isEmpty";
+import { useGetContactsQuery } from 'services/phonebookApi';
+import Loader from './Loader';
 
 const App = () => {
-  const state = useSelector(state => state.contacts);
+  const {
+    data: contacts,
+    isLoading,
+    isSuccess,
+    isError,
+    error,
+  } = useGetContactsQuery();
+
+  let content;
+  if (isLoading) {
+    content = <Loader />;
+  } else if (isSuccess && !isEmpty(contacts)) {
+    content = <ContactList contacts={contacts} />;
+  } else if (isSuccess && isEmpty(contacts)) {
+    content = <li>There is no contacts to show</li>;
+  } else if (isError) {
+    content = <div>{error.toString()}</div>;
+  }
   return (
     <div
       style={{
@@ -20,11 +38,9 @@ const App = () => {
     >
       <ContactForm />
       <FilteredUsers />
-      {isEmpty(state) ? (
-        <li>There is no contacts to show</li>
-      ) : (
-        <ContactList />
-      )}
+
+      <ContactList />
+
     </div>
   );
 };

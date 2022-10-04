@@ -1,10 +1,10 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { deleteContact } from './redux/Actions';
+import {  useSelector } from 'react-redux';
 import { useMemo } from 'react';
+import { useDeleteContactMutation } from 'services/phonebookApi';
 
 
-const ContactList = () => {
-    const contacts = useSelector(state => state.contacts);
+const ContactList = ({ contacts }) => {
+   
     const filter = useSelector(state => state.filter);
     const normalizedFilter = filter.toLowerCase().trim();
 
@@ -18,7 +18,7 @@ const ContactList = () => {
         [normalizedFilter, contacts]
     );
 
-    const dispatch = useDispatch();
+    const [deleteContact] = useDeleteContactMutation();
 
     const renderContacts = filteredContacts.map(({ id, name, number }) => (
                 
@@ -31,7 +31,7 @@ const ContactList = () => {
             }
             }>
             {name}: {number}
-            <button onClick={() => dispatch(deleteContact(id))}
+            <button onClick={deleteContact(id)}
                 style={
                     {
                         borderRadius: "15px",
