@@ -1,7 +1,11 @@
-import AddContactForm from "features/contacts/AddContactForm";
-import ContactsList from "features/contacts/ContactsList";
+import ContactForm from "./ContactForm";
+import ContactList from "./ContactList";
+import FilteredUsers from "./FilteredUsers";
+import { useSelector } from 'react-redux';
+import isEmpty from "../utility/isEmpty";
 
-export const App = () => {
+const App = () => {
+  const state = useSelector(state => state.contacts);
   return (
     <div
       style={{
@@ -14,8 +18,15 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      <AddContactForm />
-      <ContactsList />
+      <ContactForm />
+      <FilteredUsers />
+      {isEmpty(state) ? (
+        <li>There is no contacts to show</li>
+      ) : (
+        <ContactList />
+      )}
     </div>
   );
 };
+
+export default App;
