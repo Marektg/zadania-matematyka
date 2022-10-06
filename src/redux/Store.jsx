@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { filterReducer } from './Reducers';
-import { phonebookApi } from '../../services/phonebookApi';
+import { phonebookApi } from '../services/phonebookApi';
 
 export const store = configureStore({
     reducer: {
