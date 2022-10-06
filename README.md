@@ -1,6 +1,6 @@
 Project made as part of the course [FULLSTACK PROGRAMISTA OD ZERA](https://goit.global/pl/courses/fullstackonline/?utm_source=main-site) from GOIT.
 
-=> [Project page](https://marektg.github.io/goit-react-hw-07-phonebook/)
+=> [Project page](https://mk-react-hw-07-phonebook.netlify.app/)
 
 Technologies used:
 
