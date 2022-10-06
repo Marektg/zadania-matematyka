@@ -1,12 +1,15 @@
-import { useAddContactMutation } from 'services/phonebookApi';
+import { useAddContactMutation, useGetContactsQuery } from 'services/phonebookApi';
 
 
 
 
-const ContactForm = ({ contacts }) => {
+const ContactForm = () => {
+    const {
+        data: contacts = [],
+    } = useGetContactsQuery();
     const [addContact] = useAddContactMutation();
 
-    const handleSubmit = evt => {
+    const handleSubmit = async evt => {
         const form = evt.target;
         const name = form.name.value;
         const number = form.number.value;
@@ -24,8 +27,12 @@ const ContactForm = ({ contacts }) => {
                     `${number} is already in your contacts with the name ${contact.name}`
                 );
         }
-
-        addContact({ name, number });
+        try {
+            await addContact({ name, number });
+        }
+        catch (error) {
+            alert(`Failed to save contact ${name} in Phonebook!`);
+        }
         form.reset();
     };
 

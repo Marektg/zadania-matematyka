@@ -1,27 +1,30 @@
 import {  useSelector } from 'react-redux';
 import { useMemo } from 'react';
-import { useDeleteContactMutation } from 'services/phonebookApi';
+import { useDeleteContactMutation, useGetContactsQuery } from 'services/phonebookApi';
+import Loader from './Loader';
 
-
-const ContactList = ({ contacts }) => {
-   
+export const ContactList = () => {
+    const {
+        data: contacts=[],
+        isLoading,
+        isSuccess,
+        isError,
+        error,
+    } = useGetContactsQuery();
+    console.log(contacts);
     const filter = useSelector(state => state.filter);
-    const normalizedFilter = filter.toLowerCase().trim();
 
-    const filteredContacts = useMemo(
-        () =>
-            contacts
-                .filter(contact =>
-                    contact.name.toLowerCase().includes(normalizedFilter)
-                )
-                .sort((a, b) => a.name.localeCompare(b.name)),
-        [normalizedFilter, contacts]
-    );
+    let filteredContacts = useMemo(() => {
+        return contacts
+            .filter(c => c.name.toLowerCase().includes(filter))
+            .sort((a, b) => a.name.localeCompare(b.name));
+    }, [contacts, filter]);
 
+    let content = <li>No contacts in the phonebook</li>;
     const [deleteContact] = useDeleteContactMutation();
 
     const renderContacts = filteredContacts.map(({ id, name, number }) => (
-                
+
         <li key={id}
             style={{
                 display: "grid",
@@ -31,7 +34,7 @@ const ContactList = ({ contacts }) => {
             }
             }>
             {name}: {number}
-            <button onClick={deleteContact(id)}
+            <button onClick={() => deleteContact(id)}
                 style={
                     {
                         borderRadius: "15px",
@@ -42,12 +45,20 @@ const ContactList = ({ contacts }) => {
                 Delete
             </button>
         </li>))
-    return (
-        <ul>
-            {renderContacts}
-        </ul>
-    )
-}
-        
 
-export default ContactList;
+    if (isLoading) {
+        content = <Loader />;
+    } else if (isSuccess) {
+        filteredContacts.length !== 0
+            ? (content = (
+                <ul>
+                    {renderContacts}
+                </ul>
+            ))
+            : (content = <li>No contacts in the phonebook</li>);
+    } else if (isError) {
+        content = <div>{error.toString()}</div>;
+    }
+
+    return <>{content}</>;
+};
