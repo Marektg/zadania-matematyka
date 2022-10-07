@@ -1,0 +1,9 @@
+.main {
+  background-color: #ff8c00;
+  font-family: serif;
+  color: #000000;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}/*# sourceMappingURL=App.module.css.map */
