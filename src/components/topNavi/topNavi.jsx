@@ -28,35 +28,43 @@ const StyledLink = styled(NavLink)`
 const TopNavi = ({model}) => {
     const { topNavi } = styles;
     console.log(model);
-    
-        if(model === "a") { return (
-            <main className={topNavi}>
-            <StyledLink to="/">Strona główna</StyledLink>
-            <StyledLink to="/srednia">Średnia</StyledLink>
-            <StyledLink to="/matura">Matura</StyledLink>
-            <StyledLink to="/studia">Studia</StyledLink>
-        </main>)
-    } else if (model === "b") { return (
-        <main className={topNavi}>
+    switch (model) {
+        case "a" : return (
+    <main className={topNavi}>
         <StyledLink to="/">Strona główna</StyledLink>
-        <StyledLink to="/podstawowka">Podstawówka</StyledLink>
+        <StyledLink to="/srednia">Średnia</StyledLink>
         <StyledLink to="/matura">Matura</StyledLink>
         <StyledLink to="/studia">Studia</StyledLink>
-    </main>)
-    } else if (model === "c") { return (
-        <main className={topNavi}>
-            <StyledLink to="/">Strona główna</StyledLink>
-            <StyledLink to="/podstawowka">Podstawówka</StyledLink>
-            <StyledLink to="/srednia">Średnia</StyledLink>
-            <StyledLink to="/studia">Studia</StyledLink>
-        </main>)
-    } else { return (
-        <main className={topNavi}>
-            <StyledLink to="/">Strona główna</StyledLink>
-            <StyledLink to="/podstawowka">Podstawówka</StyledLink>
-            <StyledLink to="/srednia">Średnia</StyledLink>
-            <StyledLink to="/matura">Matura</StyledLink>
-        </main>)
+    </main>);
+        case "b": return (
+            <main className={topNavi}>
+                <StyledLink to="/">Strona główna</StyledLink>
+                <StyledLink to="/podstawowka">Podstawówka</StyledLink>
+                <StyledLink to="/matura">Matura</StyledLink>
+                <StyledLink to="/studia">Studia</StyledLink>
+            </main>);
+        case "c": return (
+            <main className={topNavi}>
+                <StyledLink to="/">Strona główna</StyledLink>
+                <StyledLink to="/podstawowka">Podstawówka</StyledLink>
+                <StyledLink to="/srednia">Średnia</StyledLink>
+                <StyledLink to="/studia">Studia</StyledLink>
+            </main>);
+        case "d": return (
+            <main className={topNavi}>
+                <StyledLink to="/">Strona główna</StyledLink>
+                <StyledLink to="/podstawowka">Podstawówka</StyledLink>
+                <StyledLink to="/srednia">Średnia</StyledLink>
+                <StyledLink to="/matura">Matura</StyledLink>
+            </main>);
+        default: return (
+            <main className={topNavi}>
+                <StyledLink to="/">Strona główna</StyledLink>
+                <StyledLink to="/podstawowka">Podstawówka</StyledLink>
+                <StyledLink to="/srednia">Średnia</StyledLink>
+                <StyledLink to="/matura">Matura</StyledLink>
+                <StyledLink to="/studia">Studia</StyledLink>
+            </main>);
 }
         
     
