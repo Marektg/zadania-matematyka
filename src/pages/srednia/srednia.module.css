@@ -2,7 +2,7 @@
   background-color: #ff8c00;
   font-family: serif;
   color: #000000;
-  height: 100vh;
+  height: 100%;
 }
 
 .basic {
@@ -10,4 +10,4 @@
   grid-template-columns: 250px auto;
   -moz-column-gap: 5px;
        column-gap: 5px;
-}/*# sourceMappingURL=podstawowka.module.css.map */
+}/*# sourceMappingURL=srednia.module.css.map */

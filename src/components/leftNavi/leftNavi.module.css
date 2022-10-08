@@ -8,7 +8,6 @@
   padding-right: 5px;
   /* position: sticky; */
   font-size: 20px;
-  width: 20vw;
 }
 
 .navListGroup {
@@ -16,5 +15,8 @@
   text-align: center;
   margin: 0;
   list-style: none;
-  padding: 0;
+  padding-top: 5px;
+}
+.navListGroup li {
+  border-bottom: solid 1px burlywood;
 }/*# sourceMappingURL=leftNavi.module.css.map */

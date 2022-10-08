@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components';
 import styles from './podstawowka.module.scss'
 import TopNavi from 'components/topNavi/topNavi';
 import LeftNavi from 'components/leftNavi/leftNavi';
