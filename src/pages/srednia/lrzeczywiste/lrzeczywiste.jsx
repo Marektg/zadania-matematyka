@@ -2,15 +2,16 @@ import React from 'react'
 import styles from './lrzeczywiste.module.scss';
 import TopNavi from 'components/topNavi/topNavi';
 import LeftNavi from 'components/leftNavi/leftNavi';
+import WorksList from 'components/worksList/worskList';
 
 const Lrzeczywiste = () => {
-    const { mainDiv, basic, tasks, tytul, podmenu } = styles
+    const { mainDiv, basic, tasksList, tytul, podmenu, tasks } = styles
     return (
         <div className={mainDiv}>
             <TopNavi model="b" /> {/* a - podstawówka, b- średnia, c- matura, d- studia*/}
             <div className={basic} >
                 <LeftNavi model="b" />
-                <div className={tasks}>
+                <div className={tasksList}>
                     <h2 className={tytul}>Liczby rzeczywiste </h2>
                     <ul className={podmenu}>
                         <li><button>Liczby naturalne</button></li>
@@ -28,6 +29,9 @@ const Lrzeczywiste = () => {
                         <li><button>Zadania testowe</button></li>
                         <li><button>To było na maturze</button></li>
                     </ul>
+                    <div className={tasks}>
+                       <WorksList />
+                    </div>
                 </div>
 
             </div>
