@@ -13,6 +13,20 @@ import Matura from 'pages/matura/matura';
 import Wymagania from 'pages/matura/wymagania/wymagania';
 import { MathJaxContext } from 'better-react-mathjax';
 
+const config = {
+  loader: { load: ["[tex]/html"] },
+  tex: {
+    packages: { "[+]": ["html"] },
+    inlineMath: [
+      ["$", "$"],
+      ["\\(", "\\)"]
+    ],
+    displayMath: [
+      ["$$", "$$"],
+      ["\\[", "\\]"]
+    ]
+  }
+};
 // import { store } from 'redux/Store';
 // const router = createBrowserRouter([
 //   {
@@ -47,7 +61,7 @@ import { MathJaxContext } from 'better-react-mathjax';
 // ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <MathJaxContext>
+    <MathJaxContext version={3} config={config}>
       {/*<RouterProvider router={router} />*/}
       <BrowserRouter>
         <Routes>

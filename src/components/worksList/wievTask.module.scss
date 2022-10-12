@@ -1,0 +1,42 @@
+.powt {
+  display: flex;
+  width: 98%;
+  flex-direction: column;
+   flex-wrap: wrap;
+  margin: 10px 15px;
+  font-size: 20px;
+  color: black;
+  & li:nth-child(odd) {
+  background: coral;
+}
+ & li:nth-child(even) {
+  background: khaki;
+ }
+ & li {
+  list-style: wisible;
+  list-style-position: inside;
+  list-style-type: decimal;
+}
+}
+.tresc {
+  font-size: 24px;
+  color: black;
+  & a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.odp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 20px;
+ & div {
+    margin: 15px;
+    border-left: 5px solid black;
+    padding-left: 5px;
+   
+    }
+ }

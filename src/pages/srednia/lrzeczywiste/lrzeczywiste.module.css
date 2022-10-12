@@ -63,4 +63,12 @@
 }
 .podmenu li button:hover {
   background-color: rgb(122, 238, 147);
+}
+
+.rodzajzad {
+  text-align: center;
+  border: solid 1px green;
+  font-size: 2em;
+  margin-top: 5px;
+  background-color: rgb(186, 243, 238);
 }/*# sourceMappingURL=lrzeczywiste.module.css.map */
