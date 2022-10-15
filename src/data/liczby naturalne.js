@@ -102,7 +102,7 @@ const naturalne = [
   {
     "id": "liczby1_21",
     "tresc": "Wyznacz cyfry \\(x \\) i \\(y \\), jeżeli wiadomo, że liczba \\(235x14y \\):",
-    "podpunkty": ["jest podzielna przez \\(15 \\) i nie jest podzielna przez \\(9 \\)","jest podzielna przez \\(18 \\) i nie jestpodzielna przez \\(4 \\)"]
+    "podpunkty": ["jest podzielna przez \\(15 \\) i nie jest podzielna przez \\(9 \\)", "jest podzielna przez \\(18 \\) i nie jestpodzielna przez \\(4 \\)"]
   },
   {
     "id": "liczby1_22",
@@ -127,7 +127,7 @@ const naturalne = [
   {
     "id": "liczby1_26",
     "tresc": "Dane są liczby naturalne \\(n \\) i \\(m\\) takie, że \\(n < m \\). Ile liczb parzystych i ile liczb nieparzystych jest między\\(n \\) i \\(m \\), jeśli:",
-    "podpunkty": ["\\(n \\) i \\(m \\) są parzyste","\\(n \\) i \\(m \\) są nieparzyste","jedna z liczb \\(n \\) i \\(m \\) jest parzysta, a druga nieparzysta"]
+    "podpunkty": ["\\(n \\) i \\(m \\) są parzyste", "\\(n \\) i \\(m \\) są nieparzyste", "jedna z liczb \\(n \\) i \\(m \\) jest parzysta, a druga nieparzysta"]
   },
   {
     "id": "liczby1_27",
@@ -142,7 +142,7 @@ const naturalne = [
   {
     "id": "liczby1_29",
     "tresc": "W wyniku dzielenia liczb naturalnych\\(n, k, l \\) przez \\(4 \\) otrzymujemy odpowiednio reszty \\(1, 2 \\) i \\(3 \\). Znajdź resztę z dzielenia przez \\(4 \\) liczby:",
-    "podpunkty": ["\\(2n \\)","\\(4k \\)","\\(7l \\)","\\(n+k+l \\)","\\(nkl \\)"]
+    "podpunkty": ["\\(2n \\)", "\\(4k \\)", "\\(7l \\)", "\\(n+k+l \\)", "\\(nkl \\)"]
   },
   {
     "id": "liczby1_30",
@@ -162,12 +162,12 @@ const naturalne = [
   {
     "id": "liczby1_33",
     "tresc": "Wyznacz resztę z dzielenia liczby naturalnej \\(n \\) przez \\(12 \\), wiedząc że:",
-    "podpunkty": ["reszta z dzielenia \\(n \\) przez \\(3 \\)jest równa \\(1 \\), a reszta z dzielenia \\(n \\) przez \\(4 \\) jest równa \\(2 \\)","reszta z dzielenia \\(n \\) przez \\(3 \\)jest równa \\(2 \\), a reszta z dzielenia \\(n \\) przez \\(4 \\) jest równa \\(1 \\)"]
+    "podpunkty": ["reszta z dzielenia \\(n \\) przez \\(3 \\)jest równa \\(1 \\), a reszta z dzielenia \\(n \\) przez \\(4 \\) jest równa \\(2 \\)", "reszta z dzielenia \\(n \\) przez \\(3 \\)jest równa \\(2 \\), a reszta z dzielenia \\(n \\) przez \\(4 \\) jest równa \\(1 \\)"]
   },
   {
     "id": "liczby1_34",
     "tresc": "Zapisz ogólną postać liczby naturalnej, której:",
-    "podpunkty": ["reszta z dzielenia przez \\(2 \\) wynosi \\(1\\), a reszta z dzielenia przez \\(3 \\) jest równa \\(2 \\)","reszta z dzielenia przez \\(3 \\) wynosi \\(2\\), a reszta z dzielenia przez \\(5 \\) jest równa \\(4 \\)"]
+    "podpunkty": ["reszta z dzielenia przez \\(2 \\) wynosi \\(1\\), a reszta z dzielenia przez \\(3 \\) jest równa \\(2 \\)", "reszta z dzielenia przez \\(3 \\) wynosi \\(2\\), a reszta z dzielenia przez \\(5 \\) jest równa \\(4 \\)"]
   },
   {
     "id": "liczby1_35",
@@ -182,7 +182,7 @@ const naturalne = [
   {
     "id": "liczby1_37",
     "tresc": "Niech \\(p \\) oznacza liczbę pierwszą. Wyznacz wszystkie liczby pierwsze, które mają postać:",
-    "podpunkty": ["\\(5p+1 \\)","\\(p^2+2 \\)","\\(3p^2+1 \\)"]
+    "podpunkty": ["\\(5p+1 \\)", "\\(p^2+2 \\)", "\\(3p^2+1 \\)"]
   },
 ];
 

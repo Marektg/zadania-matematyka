@@ -2,7 +2,7 @@
   "name": "zadania-matematyka",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://marektg.github.io/zadania-matematyka/",
+  "main": "src/index.js",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
     "@testing-library/jest-dom": "^5.16.3",
