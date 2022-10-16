@@ -16,11 +16,13 @@ const Lrzeczywiste = () => {
 
     const renderTask = (event) => {
         setTitle(event.target.innerText);
-        console.log(event.target.parentElement.id)
+        // console.log(event.target.parentElement.id)
         setCurrentTask(event.target.parentElement.id);
         
     }
-    console.log(currentTask);
+    // console.log(currentTask);
+    
+    
     return (
         <div className={mainDiv}>
             <TopNavi model="b" /> {/* a - podstawówka, b- średnia, c- matura, d- studia*/}

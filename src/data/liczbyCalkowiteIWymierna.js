@@ -1,147 +1,251 @@
 const calkowiteIWymierne = [
     {
         "id": "liczby2_1",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Uporządkuj od najmniejszej do\n\t\t\t\t\t\t\t\tnajwiększej liczby \\(x, y, z \\) zaznaczone na osiach liczbowych.</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div><canvas id=\"r1\" width=\"280\" height=\"100\"></canvas>\n\t\t\t\t\t\t\t\t\t<script>\n\t\t\t\t\t\t\t\t\t\tvar c = document.getElementById(\"r1\");\n\t\t\t\t\t\t\t\t\t\tvar ctx = c.getContext(\"2d\");\n\t\t\t\t\t\t\t\t\t\tvar s = r1.getAttribute(\"width\");\n\t\t\t\t\t\t\t\t\t\tctx.beginPath();\n\t\t\t\t\t\t\t\t\t\tctx.moveTo(10, 10);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(s - 20, 10);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(10, 10);\n\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t\t\tvar k = 9;/* ile kresek wpisać o 1 więcej niż ma być*/\n\t\t\t\t\t\t\t\t\t\tvar y = (s - 20) / k;\n\t\t\t\t\t\t\t\t\t\tfor (var x = y + 0.5; x < s - 40; x += y) {\n\t\t\t\t\t\t\t\t\t\t\tctx.moveTo(x, 5);\n\t\t\t\t\t\t\t\t\t\t\tctx.lineTo(x, 15);\n\t\t\t\t\t\t\t\t\t\t\tctx.lineTo(x, 5);\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t\t\tctx.moveTo(s - 20, 10);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(s - 30, 5);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(s - 30, 15);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(s - 20, 10);\n\t\t\t\t\t\t\t\t\t\tctx.fillStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.fill();\n\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tctx.fillText(\"5\", y - 4, 30);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.moveTo(y - 9, 33);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(y + 9, 33);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(y - 9, 33);\n\t\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tctx.fillText(\"12\", y - 8, 48);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tctx.fillText(\"x\", 4 * y - 4, 30);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tctx.fillText(\"5\", 7 * y - 4, 30);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.moveTo(7 * y - 5, 33);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(7 * y + 5, 33);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(7 * y - 5, 33);\n\t\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tctx.fillText(\"6\", 7 * y - 4, 48);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\n\t\t\t\t\t\t\t\t\t\tctx.beginPath();\n\t\t\t\t\t\t\t\t\t\tctx.arc(4 * y, 10, 3, 0, 10 * Math.PI);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"red\";\n\t\t\t\t\t\t\t\t\t\tctx.fillStyle = \"red\";\n\t\t\t\t\t\t\t\t\t\tctx.fill();\n\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t\t</script>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div><canvas id=\"r2\" width=\"280\" height=\"100\"></canvas>\n\t\t\t\t\t\t\t\t\t<script>\n\t\t\t\t\t\t\t\t\t\tvar c = document.getElementById(\"r2\");\n\t\t\t\t\t\t\t\t\t\tvar ctx = c.getContext(\"2d\");\n\t\t\t\t\t\t\t\t\t\tvar s = r2.getAttribute(\"width\");\n\t\t\t\t\t\t\t\t\t\tctx.beginPath();\n\t\t\t\t\t\t\t\t\t\tctx.moveTo(10, 10);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(s - 20, 10);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(10, 10);\n\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t\t\tvar k = 11;/* ile kresek wpisać o 1 więcej niż ma być*/\n\t\t\t\t\t\t\t\t\t\tvar y = (s - 20) / k;\n\t\t\t\t\t\t\t\t\t\tfor (var x = y + 0.5; x < s - 40; x += y) {\n\t\t\t\t\t\t\t\t\t\t\tctx.moveTo(x, 5);\n\t\t\t\t\t\t\t\t\t\t\tctx.lineTo(x, 15);\n\t\t\t\t\t\t\t\t\t\t\tctx.lineTo(x, 5);\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t\t\tctx.moveTo(s - 20, 10);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(s - 30, 5);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(s - 30, 15);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(s - 20, 10);\n\t\t\t\t\t\t\t\t\t\tctx.fillStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.fill();\n\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tctx.fillText(\"2\", y - 4, 30);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.moveTo(y - 5, 33);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(y + 5, 33);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(y - 5, 33);\n\t\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tctx.fillText(\"5\", y - 4, 48);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tctx.fillText(\"y\", 7 * y - 4, 30);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tctx.fillText(\"19\", 9 * y - 8, 30);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.moveTo(9 * y - 9, 33);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(9 * y + 9, 33);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(9 * y - 9, 33);\n\t\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tctx.fillText(\"30\", 9 * y - 8, 48);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\n\t\t\t\t\t\t\t\t\t\tctx.beginPath();\n\t\t\t\t\t\t\t\t\t\tctx.arc(7 * y, 10, 3, 0, 10 * Math.PI);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"red\";\n\t\t\t\t\t\t\t\t\t\tctx.fillStyle = \"red\";\n\t\t\t\t\t\t\t\t\t\tctx.fill();\n\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t\t</script>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div><canvas id=\"r3\" width=\"280\" height=\"100\"></canvas>\n\t\t\t\t\t\t\t\t\t<script>\n\t\t\t\t\t\t\t\t\t\tvar c = document.getElementById(\"r3\");\n\t\t\t\t\t\t\t\t\t\tvar ctx = c.getContext(\"2d\");\n\t\t\t\t\t\t\t\t\t\tvar s = r3.getAttribute(\"width\");\n\t\t\t\t\t\t\t\t\t\tctx.beginPath();\n\t\t\t\t\t\t\t\t\t\tctx.moveTo(10, 10);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(s - 20, 10);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(10, 10);\n\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t\t\tvar k = 9;/* ile kresek wpisać o 1 więcej niż ma być*/\n\t\t\t\t\t\t\t\t\t\tvar y = (s - 20) / k;\n\t\t\t\t\t\t\t\t\t\tfor (var x = y + 0.5; x < s - 40; x += y) {\n\t\t\t\t\t\t\t\t\t\t\tctx.moveTo(x, 5);\n\t\t\t\t\t\t\t\t\t\t\tctx.lineTo(x, 15);\n\t\t\t\t\t\t\t\t\t\t\tctx.lineTo(x, 5);\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t\t\tctx.moveTo(s - 20, 10);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(s - 30, 5);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(s - 30, 15);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(s - 20, 10);\n\t\t\t\t\t\t\t\t\t\tctx.fillStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.fill();\n\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tctx.fillText(\"9\", y - 4, 30);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.moveTo(y - 9, 33);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(y + 9, 33);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(y - 9, 33);\n\t\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tctx.fillText(\"20\", y - 8, 48);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tctx.fillText(\"z\", 3 * y - 4, 30);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tctx.fillText(\"3\", 7 * y - 4, 30);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.moveTo(7 * y - 5, 33);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(7 * y + 5, 33);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(7 * y - 5, 33);\n\t\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tctx.fillText(\"4\", 7 * y - 4, 48);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\n\t\t\t\t\t\t\t\t\t\tctx.beginPath();\n\t\t\t\t\t\t\t\t\t\tctx.arc(3 * y, 10, 3, 0, 10 * Math.PI);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"red\";\n\t\t\t\t\t\t\t\t\t\tctx.fillStyle = \"red\";\n\t\t\t\t\t\t\t\t\t\tctx.fill();\n\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t\t</script>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_1\" onclick=\"pokaz('liczby2_1')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_1\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Uporządkuj od najmniejszej do największej liczby \\(x, y, z \\) zaznaczone na osiach liczbowych.",
+        "canvas": [
+            {
+                "id": "r1",
+                "width": "280",
+                "height": "50",
+            },
+            {
+                "id": "r2",
+                "width": "280",
+                "height": "50",
+            },
+            {
+                "id": "r3",
+                "width": "280",
+                "height": "50",
+            },
+
+        ],
+        "podpunkty": []
     },
+
+
     {
         "id": "liczby2_2",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Oblicz.</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>a) \\(3\\frac{2}{5}+2\\frac{1}{3}-4\\frac{1}{2} \\)</div>\n\t\t\t\t\t\t\t\t<div>b) \\(5-4\\frac{5}{6}+2\\frac{1}{8} \\)</div>\n\t\t\t\t\t\t\t\t<div>c) \\(7\\frac{3}{4}-2,2-(3\\frac{1}{2}-1,8+5\\frac{1}{4}) \\)</div>\n\t\t\t\t\t\t\t\t<div>d) \\(1\\frac{5}{12}-(3\\frac{7}{15}-2\\frac{3}{10}) \\)</div>\n\t\t\t\t\t\t\t\t<div>e) \\(2\\frac{1}{4}-(4\\frac{1}{12}+3\\frac{2}{9}-3\\frac{1}{18}) \\)</div>\n\t\t\t\t\t\t\t\t<div>f) \\(2\\frac{3}{20}-(\\frac{17}{10}-2\\frac{1}{15})-3\\frac{5}{6} \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_2\" onclick=\"pokaz('liczby2_2')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_2\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Oblicz.",
+        "canvas": [],
+        "podpunkty": ["\\(3\\frac{2}{5}+2\\frac{1}{3}-4\\frac{1}{2} \\)", "\\(5-4\\frac{5}{6}+2\\frac{1}{8} \\)", "\\(7\\frac{3}{4}-2,2-(3\\frac{1}{2}-1,8+5\\frac{1}{4}) \\)", "\\(1\\frac{5}{12}-(3\\frac{7}{15}-2\\frac{3}{10}) \\)", "\\(2\\frac{1}{4}-(4\\frac{1}{12}+3\\frac{2}{9}-3\\frac{1}{18}) \\)", "\\(2\\frac{3}{20}-(\\frac{17}{10}-2\\frac{1}{15})-3\\frac{5}{6} \\)"],
     },
     {
         "id": "liczby2_3",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Porównaj liczby, nie korzystając z\n\t\t\t\t\t\t\t\tkalkulatora.</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>a) \\(\\frac{32}{451} \\ i \\ \\frac{34}{451} \\)\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div>b) \\(\\frac{13}{121} \\ i \\ \\frac{13}{122} \\)\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div>c) \\(\\frac{5}{6} \\ i \\ \\frac{6}{7} \\)</div>\n\t\t\t\t\t\t\t\t<div>d) \\(\\frac{5}{6} \\ i \\ \\frac{8}{9} \\)</div>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<div>e) \\(\\frac{5}{7} \\ i \\ \\frac{120}{168} \\)</div>\n\t\t\t\t\t\t\t\t<div>f) \\(0,125 \\ i \\ \\frac{1}{8} \\)</div>\n\t\t\t\t\t\t\t\t<div>g) \\(0,34 \\ i \\ \\frac{34}{99} \\)</div>\n\t\t\t\t\t\t\t\t<div>h) \\(-\\frac{5}{6} \\ i \\ -\\frac{6}{7} \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_3\" onclick=\"pokaz('liczby2_3')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_3\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Porównaj liczby, nie korzystając z kalkulatora.",
+        "canvas": [],
+        "podpunkty": ["\\(\\frac{32}{451} \\ i \\ \\frac{34}{451} \\)", "\\(\\frac{13}{121} \\ i \\ \\frac{13}{122} \\)", "\\(\\frac{5}{6} \\ i \\ \\frac{6}{7} \\)", "\\(\\frac{5}{6} \\ i \\ \\frac{8}{9} \\)", "\\(\\frac{5}{7} \\ i \\ \\frac{120}{168} \\)", "\\(0,125 \\ i \\ \\frac{1}{8} \\)", "\\(0,34 \\ i \\ \\frac{34}{99} \\)", "\\(-\\frac{5}{6} \\ i \\ -\\frac{6}{7} \\)"],
     },
     {
         "id": "liczby2_4",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Oblicz.</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>a) \\(\\frac{2}{7}+\\frac{5}{9} \\)</div>\n\t\t\t\t\t\t\t\t<div>b) \\(\\frac{1}{5}-1\\frac{1}{4} \\)</div>\n\t\t\t\t\t\t\t\t<div>c) \\(\\frac{3}{7} \\cdot 2\\frac{9}{20} \\)</div>\n\t\t\t\t\t\t\t\t<div>d) \\(2\\frac{3}{4}:\\frac{11}{10} \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_4\" onclick=\"pokaz('liczby2_4')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_4\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Oblicz.",
+        "canvas": [],
+        "podpunkty": ["\\(\\frac{2}{7}+\\frac{5}{9} \\)", "\\(\\frac{1}{5}-1\\frac{1}{4} \\)", "\\(\\frac{3}{7} \\cdot 2\\frac{9}{20} \\)", "\\(2\\frac{3}{4}:\\frac{11}{10} \\)"],
     },
     {
         "id": "liczby2_5",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Przedstaw podaną liczbę w postaci\n\t\t\t\t\t\t\t\t\\(\\frac{m}{n} \\), gdzie \\(m \\) i \\(n \\) są względnie pierwsze.</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>a) \\(-8 \\)</div>\n\t\t\t\t\t\t\t\t<div>b) \\(4\\frac{1}{7} \\)</div>\n\t\t\t\t\t\t\t\t<div>c) \\(-15,6 \\)</div>\n\t\t\t\t\t\t\t\t<div>d) \\(\\frac{140}{21} \\)</div>\n\t\t\t\t\t\t\t\t<div>e) \\(\\frac{244}{168} \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_5\" onclick=\"pokaz('liczby2_5')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_5\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Przedstaw podaną liczbę w postaci \\(\\frac{m}{n} \\), gdzie \\(m \\) i \\(n \\) są względnie pierwsze.",
+        "canvas": [],
+        "podpunkty": ["\\(-8 \\)", "\\(4\\frac{1}{7} \\)", "\\(-15,6 \\)", "\\(\\frac{140}{21} \\)", "\\(\\frac{244}{168} \\)"],
     },
     {
         "id": "liczby2_6",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Oblicz.</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t\t\\((1-\\frac{1}{10})(1-\\frac{1}{11})(1-\\frac{1}{12})(1-\\frac{1}{13})\\cdot _{\\cdots}\n\t\t\t\t\t\t\t\t\t\\cdot (1-\\frac{1}{17})(1-\\frac{1}{18}) \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_6\" onclick=\"pokaz('liczby2_6')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_6\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Oblicz.",
+        "canvas": [],
+        "podpunkty": ["\\((1-\\frac{1}{10})(1-\\frac{1}{11})(1-\\frac{1}{12})(1-\\frac{1}{13})\\cdot _{\\cdots} \\cdot (1-\\frac{1}{17})(1-\\frac{1}{18}) \\)"],
     },
     {
         "id": "liczby2_7",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Wskaż największą liczbę spośród \\(x,\n\t\t\t\t\t\t\t\ty, z \\). Nie korzystaj z kalkulatora.</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>\\(x=\\frac{48}{151}+\\frac{251}{800}+\\frac{110}{333} \\)</div>\n\t\t\t\t\t\t\t\t<div>\\(y=\\frac{301}{900}+\\frac{222}{665}+\\frac{134}{400} \\)</div>\n\t\t\t\t\t\t\t\t<div>\\(z=\\frac{81}{245}+\\frac{317}{960}+\\frac{199}{600} \\)</div><br><br>\n\t\t\t\t\t\t\t\t<div><b>Wskazówka:</b>\n\t\t\t\t\t\t\t\t\t\\(\\frac{48}{151}&lt;;\\frac{1}{3} \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_7\" onclick=\"pokaz('liczby2_7')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_7\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Wskaż największą liczbę spośród \\(x, y, z \\). Nie korzystaj z kalkulatora.",
+        "canvas": [],
+        "podpunkty": ["\\(x=\\frac{48}{151}+\\frac{251}{800}+\\frac{110}{333} \\)", "\\(y=\\frac{301}{900}+\\frac{222}{665}+\\frac{134}{400} \\)", "\\(z=\\frac{81}{245}+\\frac{317}{960}+\\frac{199}{600} \\)"],
+        "wskazowka": "\\(\\frac{48}{151}<\\frac{1}{3} \\)",
     },
     {
         "id": "liczby2_8",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Wyznacz liczbę, która na osi\n\t\t\t\t\t\t\t\tliczbowej leży w równej odległości od liczb:</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>a) \\(\\frac{1}{2}\\ i\\ \\frac{3}{4} \\)</div>\n\t\t\t\t\t\t\t\t<div>b) \\(\\frac{5}{7}\\ i\\ \\frac{7}{6} \\)</div>\n\t\t\t\t\t\t\t\t<div>c) \\(\\frac{155}{348}\\ i\\ \\frac{103}{232} \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_8\" onclick=\"pokaz('liczby2_8')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_8\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Wyznacz liczbę, która na osi liczbowej leży w równej odległości od liczb:",
+        "canvas": [],
+        "podpunkty": ["\\(\\frac{1}{2}\\ i\\ \\frac{3}{4} \\)", "\\(\\frac{5}{7}\\ i\\ \\frac{7}{6} \\)", "\\(\\frac{155}{348}\\ i\\ \\frac{103}{232} \\)"],
     },
     {
         "id": "liczby2_9",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Skróć ułamki. Wśród podanych liczb\n\t\t\t\t\t\t\t\twskaż największą liczbę całkowitą.</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>a) \\(\\frac{780}{39}, -\\frac{210}{105}, \\frac{669}{63}, \\frac{672}{64} \\)</div>\n\t\t\t\t\t\t\t\t<div>b) \\(-\\frac{540}{45}, \\frac{84}{98}, \\frac{528}{24}, -\\frac{624}{48},\n\t\t\t\t\t\t\t\t\t\\frac{588}{126} \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_9\" onclick=\"pokaz('liczby2_9')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_9\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Skróć ułamki. Wśród podanych liczb wskaż największą liczbę całkowitą.",
+        "canvas": [],
+        "podpunkty": ["\\(\\frac{780}{39}, -\\frac{210}{105}, \\frac{669}{63}, \\frac{672}{64} \\)", "\\(-\\frac{540}{45}, \\frac{84}{98}, \\frac{528}{24}, -\\frac{624}{48}, \\frac{588}{126} \\)"],
     },
     {
         "id": "liczby2_10",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Podaj trzy liczby wymierne leżące\n\t\t\t\t\t\t\t\tmiędzy liczbami:</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>a) \\(\\frac{4}{9} \\ i \\ \\frac{5}{9} \\)</div>\n\t\t\t\t\t\t\t\t<div>b) \\(2\\frac{1}{7}\\ i\\ 2\\frac{1}{6} \\)</div>\n\t\t\t\t\t\t\t\t<div>c) \\(-3\\frac{3}{10}\\ i\\ -3\\frac{3}{11} \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_10\" onclick=\"pokaz('liczby2_10')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_10\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Podaj trzy liczby wymierne leżące między liczbami:",
+        "canvas": [],
+        "podpunkty": ["\\(\\frac{4}{9} \\ i \\ \\frac{5}{9} \\)", "\\(2\\frac{1}{7}\\ i\\ 2\\frac{1}{6} \\)", "\\(-3\\frac{3}{10}\\ i\\ -3\\frac{3}{11} \\)"],
     },
+
     {
         "id": "liczby2_11",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Odczytaj wartości liczb \\(a, b, c \\)\n\t\t\t\t\t\t\t\tzaznaczonych na osi liczbowej i znajdź taką liczbę \\(x \\), żeby spełniona była proporcja\n\t\t\t\t\t\t\t\t\\(a:c=b:x \\).</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div><canvas id=\"r4\" width=\"800\" height=\"100\"></canvas>\n\t\t\t\t\t\t\t\t\t<script>\n\t\t\t\t\t\t\t\t\t\tvar c = document.getElementById(\"r4\");\n\t\t\t\t\t\t\t\t\t\tvar ctx = c.getContext(\"2d\");\n\t\t\t\t\t\t\t\t\t\tvar s = r4.getAttribute(\"width\");\n\t\t\t\t\t\t\t\t\t\tctx.beginPath();\n\t\t\t\t\t\t\t\t\t\tctx.moveTo(10, 10);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(s - 20, 10);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(10, 10);\n\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t\t\tvar k = 18;/* ile kresek wpisać o 1 więcej niż ma być*/\n\t\t\t\t\t\t\t\t\t\tvar y = (s - 20) / k;\n\t\t\t\t\t\t\t\t\t\tfor (var x = y + 0.5; x < s - 40; x += y) {\n\t\t\t\t\t\t\t\t\t\t\tctx.moveTo(x, 5);\n\t\t\t\t\t\t\t\t\t\t\tctx.lineTo(x, 15);\n\t\t\t\t\t\t\t\t\t\t\tctx.lineTo(x, 5);\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t\t\tctx.moveTo(s - 20, 10);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(s - 30, 5);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(s - 30, 15);\n\t\t\t\t\t\t\t\t\t\tctx.lineTo(s - 20, 10);\n\t\t\t\t\t\t\t\t\t\tctx.fillStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.fill();\n\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tvar lg1 = 1;\n\t\t\t\t\t\t\t\t\t\tif (lg1 = 1) {\n\t\t\t\t\t\t\t\t\t\t\tctx.fillText(\"1\", y - 4, 30);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/\n\t\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\t\tctx.moveTo(y - 5, 33);/*  -5 dla jednocyfrowych, a -9 dla dwucyfrowych */\n\t\t\t\t\t\t\t\t\t\t\tctx.lineTo(y + 5, 33);\n\t\t\t\t\t\t\t\t\t\t\tctx.lineTo(y - 5, 33);\n\t\t\t\t\t\t\t\t\t\t\tctx.fillStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\t\tctx.fill();\n\t\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\telse if (lg1 = 2) {\n\t\t\t\t\t\t\t\t\t\t\tctx.fillText(\"1\", y - 8, 30);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/\n\t\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\t\tctx.moveTo(y - 9, 33);/*  -5 dla jednocyfrowych, a -9 dla dwucyfrowych */\n\t\t\t\t\t\t\t\t\t\t\tctx.lineTo(y + 9, 33);\n\t\t\t\t\t\t\t\t\t\t\tctx.lineTo(y - 9, 33);\n\t\t\t\t\t\t\t\t\t\t\tctx.fillStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\t\tctx.fill();\n\t\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\telse {\n\t\t\t\t\t\t\t\t\t\t\tctx.fillText(\"1\", y - 12, 30);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/\n\t\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\t\tctx.moveTo(y - 13, 33);/*  -5 dla jednocyfrowych, a -9 dla dwucyfrowych */\n\t\t\t\t\t\t\t\t\t\t\tctx.lineTo(y + 13, 33);\n\t\t\t\t\t\t\t\t\t\t\tctx.lineTo(y - 13, 33);\n\t\t\t\t\t\t\t\t\t\t\tctx.fillStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\t\tctx.fill();\n\t\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tvar ld1 = 1;\n\t\t\t\t\t\t\t\t\t\tif (ld1 = 1) {\n\t\t\t\t\t\t\t\t\t\t\tctx.fillText(\"2\", y - 4, 48);\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\telse if (ld1 = 2) {\n\t\t\t\t\t\t\t\t\t\t\tctx.fillText(\"2\", y - 8, 48);\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\telse {\n\t\t\t\t\t\t\t\t\t\t\tctx.fillText(\"2\", y - 12, 48);\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tctx.fillText(\"a\", 2 * y - 4, 30);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tctx.fillText(\"b\", 10 * y - 4, 30);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tctx.fillText(\"c\", 11 * y - 4, 30);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\t\tctx.font = \"20px Tahoma\";\n\t\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\t\tctx.fillText(\"1\", 16 * y - 4, 35);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\n\n\n\t\t\t\t\t\t\t\t\t\tctx.beginPath();\n\t\t\t\t\t\t\t\t\t\tctx.arc(2 * y, 10, 3, 0, 10 * Math.PI);\n\t\t\t\t\t\t\t\t\t\tctx.moveTo(10 * y, 10);\n\t\t\t\t\t\t\t\t\t\tctx.arc(10 * y, 10, 3, 0, 10 * Math.PI);\n\t\t\t\t\t\t\t\t\t\tctx.moveTo(11 * y, 10);\n\t\t\t\t\t\t\t\t\t\tctx.arc(11 * y, 10, 3, 0, 10 * Math.PI);\n\t\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"red\";\n\t\t\t\t\t\t\t\t\t\tctx.fillStyle = \"red\";\n\t\t\t\t\t\t\t\t\t\tctx.fill();\n\t\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t\t</script>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_11\" onclick=\"pokaz('liczby2_11')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_11\"></div>\n\n\t\t\t\t\t\t"
+        "tresc": "Odczytaj wartości liczb \\(a, b, c \\) zaznaczonych na osi liczbowej i znajdź taką liczbę \\(x \\), żeby spełniona była proporcja \\(a:c=b:x \\).",
+        "canvas": [{
+            "id": "r4",
+            "width": "800",
+            "height": "100"
+        },],
+        "podpunkty": [],
     },
     {
         "id": "liczby2_12",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Oblicz.</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div class=\"col-xs-12 col-md-6 col-lg-6\">a) \\((1\\frac{1}{2}+2\\frac{1}{5})\\cdot 10 \\)\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"col-xs-12 col-md-6 col-lg-6\">b) \\((1\\frac{1}{5}+\\frac{5}{6})\\cdot\n\t\t\t\t\t\t\t\t\t1\\frac{7}{8} \\)</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div class=\"col-xs-12 col-md-6 col-lg-6\">c) \\((\\frac{14}{5}-\\frac{21}{20})\\cdot\n\t\t\t\t\t\t\t\t\t\\frac{4}{7} \\)</div>\n\t\t\t\t\t\t\t\t<div class=\"col-xs-12 col-md-6 col-lg-6\">d) \\((7\\frac{1}{4}-2\\frac{1}{6}):2\\frac{13}{24}\n\t\t\t\t\t\t\t\t\t\\)</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div class=\"col-xs-12 col-md-6 col-lg-6\">e) \\((2\\frac{4}{15}-1\\frac{1}{10})\\cdot\n\t\t\t\t\t\t\t\t\t(\\frac{2}{15}+\\frac{2}{21}) \\)</div>\n\t\t\t\t\t\t\t\t<div class=\"col-xs-12 col-md-6 col-lg-6\">f) \\((1\\frac{1}{16}-\\frac{23}{24})\\cdot\n\t\t\t\t\t\t\t\t\t(8+1\\frac{3}{5}) \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_12\" onclick=\"pokaz('liczby2_12')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_12\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Oblicz.",
+        "canvas": [],
+        "podpunkty": ["\\((1\\frac{1}{2}+2\\frac{1}{5})\\cdot 10 \\)", "\\((1\\frac{1}{5}+\\frac{5}{6})\\cdot 1\\frac{7}{8} \\)", "\\((\\frac{14}{5}-\\frac{21}{20})\\cdot \\frac{4}{7} \\)", "\\((7\\frac{1}{4}-2\\frac{1}{6}):2\\frac{13}{24} \\)", "\\((2\\frac{4}{15}-1\\frac{1}{10})\\cdot (\\frac{2}{15}+\\frac{2}{21}) \\)", "\\((1\\frac{1}{16}-\\frac{23}{24})\\cdot (8+1\\frac{3}{5}) \\)"],
     },
     {
         "id": "liczby2_13",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Oblicz.</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>a) \\(\\frac{(3\\frac{2}{5}-2\\frac{1}{4})\\cdot\n\t\t\t\t\t\t\t\t\t3\\frac{3}{7}}{(2\\frac{3}{5}-1):2\\frac{1}{3}} \\)</div>\n\t\t\t\t\t\t\t\t<div>b) \\(\\frac{\\frac{3}{4}:1\\frac{1}{2}+4}{(6\\frac{1}{2}-5\\frac{3}{5}):\\frac{9}{5}}-2\n\t\t\t\t\t\t\t\t\t\\)</div>\n\t\t\t\t\t\t\t\t<div>c) \\(1,8\\cdot \\frac{3,3-4\\frac{1}{2}:3\\frac{3}{4}}{5,6:2\\frac{1}{3}+2,5} \\)</div>\n\t\t\t\t\t\t\t\t<br><br><br>\n\t\t\t\t\t\t\t\t<div>d) \\(0,75+\\frac{(0,75\\cdot\n\t\t\t\t\t\t\t\t\t\\frac{4}{3}):1\\frac{1}{4}}{0,72-\\frac{1}{5}:1\\frac{2}{3}} \\)</div>\n\t\t\t\t\t\t\t\t<div>e) \\(\\frac{2\\frac{1}{12}+1\\frac{1}{8}}{(2\\frac{1}{3}+1\\frac{2}{5})\\cdot\n\t\t\t\t\t\t\t\t\t1,5-7}:3\\frac{3}{4} \\)</div>\n\t\t\t\t\t\t\t\t<div>f) \\(2,125-\\frac{\\frac{4}{21}:\\frac{2}{35}-3\\frac{1}{9}\\cdot\n\t\t\t\t\t\t\t\t\t\\frac{3}{7}}{\\frac{4}{9}\\cdot 0,4} \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_13\" onclick=\"pokaz('liczby2_13')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_13\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Oblicz.",
+        "canvas": [],
+        "podpunkty": ["\\(\\frac{(3\\frac{2}{5}-2\\frac{1}{4})\\cdot 3\\frac{3}{7}}{(2\\frac{3}{5}-1):2\\frac{1}{3}} \\)", "\\(\\frac{\\frac{3}{4}:1\\frac{1}{2}+4}{(6\\frac{1}{2}-5\\frac{3}{5}):\\frac{9}{5}}-2 \\)", "\\(1,8\\cdot \\frac{3,3-4\\frac{1}{2}:3\\frac{3}{4}}{5,6:2\\frac{1}{3}+2,5} \\)", "\\(0,75+\\frac{(0,75\\cdot \\frac{4}{3}):1\\frac{1}{4}}{0,72-\\frac{1}{5}:1\\frac{2}{3}} \\)", "\\(\\frac{2\\frac{1}{12}+1\\frac{1}{8}}{(2\\frac{1}{3}+1\\frac{2}{5})\\cdot 1,5-7}:3\\frac{3}{4} \\)", "\\(2,125-\\frac{\\frac{4}{21}:\\frac{2}{35}-3\\frac{1}{9}\\cdot \\frac{3}{7}}{\\frac{4}{9}\\cdot 0,4} \\)"],
     },
     {
         "id": "liczby2_14",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Zapisz liczbę odwrotną do podanej.\n\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>a) \\(\\frac{12}{35} \\cdot \\frac{7}{18} \\)</div>\n\t\t\t\t\t\t\t\t<div>b) \\(-2\\frac{3}{4} \\cdot \\frac{4}{3} \\)</div>\n\t\t\t\t\t\t\t\t<div>c) \\(\\frac{7}{15}:\\frac{14}{5} \\)</div>\n\t\t\t\t\t\t\t\t<div>d) \\((-\\frac{5}{14}:3):\\frac{10}{21} \\)</div>\n\t\t\t\t\t\t\t\t<div>e) \\(\\frac{1}{6}-\\frac{1}{2} \\)</div>\n\t\t\t\t\t\t\t\t<div>f) \\(\\frac{5}{12}+\\frac{5}{18} \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_14\" onclick=\"pokaz('liczby2_14')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_14\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Zapisz liczbę odwrotną do podanej.",
+        "canvas": [],
+        "podpunkty": ["\\(\\frac{12}{35} \\cdot \\frac{7}{18} \\)", "\\(-2\\frac{3}{4} \\cdot \\frac{4}{3} \\)", "\\(\\frac{7}{15}:\\frac{14}{5} \\)", "\\((-\\frac{5}{14}:3):\\frac{10}{21} \\)", "\\(\\frac{1}{6}-\\frac{1}{2} \\)", "\\(\\frac{5}{12}+\\frac{5}{18} \\)"]
     },
     {
         "id": "liczby2_15",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Podaj przykład liczby wymiernej \\(p\n\t\t\t\t\t\t\t\t\\), która spełnia podany warunek.</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>a) \\(\\frac{4}{7} &lt;; p &lt;; \\frac{5}{7} \\)</div>\n\t\t\t\t\t\t\t\t<div>b) \\(-\\frac{1}{3} &lt;; p &lt;; -\\frac{1}{4} \\)</div>\n\t\t\t\t\t\t\t\t<div>c) \\(-\\frac{7}{11} &lt;; p &lt;; -\\frac{6}{11} \\)</div><br><br>\n\t\t\t\t\t\t\t\t<div>d) \\(\\frac{2}{3} &lt;; p &lt;; 0,75 \\)</div>\n\t\t\t\t\t\t\t\t<div>e) \\(2,01 &lt;; p &lt;; 2,02 \\)</div>\n\t\t\t\t\t\t\t\t<div>f) \\(-3,1 &lt;; p &lt;; -2,99 \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_15\" onclick=\"pokaz('liczby2_15')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_15\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Podaj przykład liczby wymiernej \\(p \\), która spełnia podany warunek.",
+        "canvas": [],
+        "podpunkty": ["\\(\\frac{4}{7} < p < \\frac{5}{7} \\)", "\\(-\\frac{1}{3} < p < -\\frac{1}{4} \\)", "\\(-\\frac{7}{11} < p < -\\frac{6}{11} \\)", "\\(\\frac{2}{3} < p < 0,75 \\)", "\\(2,01 < p < 2,02 \\)", "\\(-3,1 < p < -2,99 \\)"]
     },
     {
         "id": "liczby2_16",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Wyznacz wszystkie ułamki o mianowniku\n\t\t\t\t\t\t\t\t\\(13 \\) większe od \\(\\frac{5}{9} \\) i mniejsze od \\(\\frac{7}{9} \\).</p>\n\t\t\t\t\t\t\t<div class=\"odp\"></div><button class=\"butt\" id=\"gliczby2_16\" onclick=\"pokaz('liczby2_16')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_16\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Wyznacz wszystkie ułamki o mianowniku \\(13 \\) większe od \\(\\frac{5}{9} \\) i mniejsze od \\(\\frac{7}{9} \\).",
+        "canvas": [],
+        "podpunkty": []
     },
     {
         "id": "liczby2_17",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Ile liczb całkowitych znajduje się na\n\t\t\t\t\t\t\t\tosi liczbowej między liczbami</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>a) \\(\\frac{22222}{411} \\ i \\ \\frac{2222}{41} \\)</div>\n\t\t\t\t\t\t\t\t<div>b) \\(\\frac{1432}{65} \\ i \\ \\frac{82912}{773} \\)</div>\n\t\t\t\t\t\t\t\t<div>c) \\(-\\frac{1353}{7} \\ i \\ \\frac{9256}{13} \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_17\" onclick=\"pokaz('liczby2_17')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_17\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Ile liczb całkowitych znajduje się na osi liczbowej między liczbami",
+        "canvas": [],
+        "podpunkty": ["\\(\\frac{22222}{411} \\ i \\ \\frac{2222}{41} \\)", "\\(\\frac{1432}{65} \\ i \\ \\frac{82912}{773} \\)", "\\(-\\frac{1353}{7} \\ i \\ \\frac{9256}{13} \\)"]
     },
     {
         "id": "liczby2_18",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Znajdź liczbę przeciwną i liczbę\n\t\t\t\t\t\t\t\todwrotną do liczby \\(a=\\frac{-\\frac{2}{3}(5-6\\cdot\n\t\t\t\t\t\t\t\t2\\frac{1}{3})}{3\\frac{2}{5}-2,2:\\frac{2}{5}} \\).</p>\n\t\t\t\t\t\t\t<div class=\"odp\"></div><button class=\"butt\" id=\"gliczby2_18\" onclick=\"pokaz('liczby2_18')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_18\"></div>\n\n\t\t\t\t\t\t"
+        "tresc": "Znajdź liczbę przeciwną i liczbę odwrotną do liczby \\(a=\\frac{-\\frac{2}{3}(5-6\\cdot 2\\frac{1}{3})}{3\\frac{2}{5}-2,2:\\frac{2}{5}} \\).",
+        "canvas": [],
+        "podpunkty": []
     },
     {
         "id": "liczby2_19",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a></p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>a) Znajdź dwie liczby, których suma jest\n\t\t\t\t\t\t\t\t\trówna \\(1530 \\), wiedząc, że pierwsza liczba stanowi \\(\\frac{13}{17} \\) drugiej\n\t\t\t\t\t\t\t\t\tliczby.</div>\n\t\t\t\t\t\t\t\t<div>b) Znajdź trzy liczby, których suma jest\n\t\t\t\t\t\t\t\t\trówna \\(134 \\), wiedząc, że pierwsza liczba stanowi \\(\\frac{15}{16} \\) drugiej, a\n\t\t\t\t\t\t\t\t\tdruga \\(\\frac{4}{9} \\) trzeciej.</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_19\" onclick=\"pokaz('liczby2_19')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_19\"></div>\n\t\t\t\t\t\t"
+        "tresc": "",
+        "canvas": [],
+        "podpunkty": ["Znajdź dwie liczby, których suma jest równa \\(1530 \\), wiedząc, że pierwsza liczba stanowi \\(\\frac{13}{17} \\) drugiej liczby.", "Znajdź trzy liczby, których suma jest równa \\(134 \\), wiedząc, że pierwsza liczba stanowi \\(\\frac{15}{16} \\) drugiej, a druga \\(\\frac{4}{9} \\) trzeciej."]
     },
     {
         "id": "liczby2_20",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>W ciągu 5 dni 40 pracowników,\n\t\t\t\t\t\t\t\tpracując 8 godzin dziennie, wykonało połowę pewnej pracy. Ile godzin dziennie musieliby\n\t\t\t\t\t\t\t\tpracować, aby dokończyć pracę w ciągu 4 dni?</p>\n\t\t\t\t\t\t\t<div class=\"odp\"></div><button class=\"butt\" id=\"gliczby2_20\" onclick=\"pokaz('liczby2_20')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_20\"></div>\n\n\t\t\t\t\t\t"
+        "tresc": "W ciągu 5 dni 40 pracowników, pracując 8 godzin dziennie, wykonało połowę pewnej pracy. Ile godzin dziennie musieliby pracować, aby dokończyć pracę w ciągu 4 dni?",
+        "canvas": [],
+        "podpunkty": []
     },
     {
         "id": "liczby2_21",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Drut o długości \\(63 \\ cm \\) pocięto\n\t\t\t\t\t\t\t\tna cztery części, których stosunek długości jest równy \\(1:3:5:9 \\). Ile jest równa suma\n\t\t\t\t\t\t\t\tdługości dwóch najkrótszych kawałków tego drutu?</p>\n\t\t\t\t\t\t\t<div class=\"odp\"></div><button class=\"butt\" id=\"gliczby2_21\" onclick=\"pokaz('liczby2_21')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_21\"></div>\n\n\t\t\t\t\t\t"
+        "tresc": "Drut o długości \\(63 \\ cm \\) pocięto na cztery części, których stosunek długości jest równy \\(1:3:5:9 \\). Ile jest równa suma długości dwóch najkrótszych kawałków tego drutu?",
+        "canvas": [],
+        "podpunkty": []
     },
     {
         "id": "liczby2_22",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)\\(ⅅ\\)</a>Udowodnij, że:</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>a) suma dwóch liczb wymiernych jest liczbą\n\t\t\t\t\t\t\t\t\twymierną</div>\n\t\t\t\t\t\t\t\t<div>b) różnica dwóch liczb wymiernych jest liczbą\n\t\t\t\t\t\t\t\t\twymierną</div>\n\t\t\t\t\t\t\t\t<div>c) iloczyn dwóch liczb wymiernych jest liczbą\n\t\t\t\t\t\t\t\t\twymierną</div>\n\t\t\t\t\t\t\t\t<div>d) iloraz liczby wymiernej przez liczbę\n\t\t\t\t\t\t\t\t\twymierną różną od zera jest liczbą wymierną</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_22\" onclick=\"pokaz('liczby2_22')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_22\"></div>\n\t\t\t\t\t\t"
+        "tresc": "\\(ⅅ\\) Udowodnij, że:",
+        "canvas": [],
+        "podpunkty": ["suma dwóch liczb wymiernych jest liczbą wymierną", "różnica dwóch liczb wymiernych jest liczbą wymierną", "iloczyn dwóch liczb wymiernych jest liczbą wymierną", "iloraz liczby wymiernej przez liczbę wymierną różną od zera jest liczbą wymierną"]
     },
     {
         "id": "liczby2_23",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Kwadrat o boku \\(1 \\) podzielono na\n\t\t\t\t\t\t\t\tprostokąty o polach równych kolejno \\(\\frac{1}{2}, \\frac{1}{4}, \\frac{1}{8} \\) idt.</p>\n\t\t\t\t\t\t\t<div> <canvas id=\"r5\" class=\"rys\" width=\"300\" height=\"300\"></canvas>\n\t\t\t\t\t\t\t\t<script>\n\t\t\t\t\t\t\t\t\tvar c = document.getElementById(\"r5\");\n\t\t\t\t\t\t\t\t\tvar ctx = c.getContext(\"2d\");\n\t\t\t\t\t\t\t\t\tvar s = r5.getAttribute(\"width\");\n\t\t\t\t\t\t\t\t\tvar h = r5.getAttribute(\"height\");\n\t\t\t\t\t\t\t\t\tctx.beginPath();\n\t\t\t\t\t\t\t\t\tctx.moveTo(10, 10);\n\t\t\t\t\t\t\t\t\tctx.lineTo(s - 10, 10);\n\t\t\t\t\t\t\t\t\tctx.lineTo(s - 10, h - 10);\n\t\t\t\t\t\t\t\t\tctx.lineTo(10, h - 10);\n\t\t\t\t\t\t\t\t\tctx.lineTo(10, 10);\n\t\t\t\t\t\t\t\t\tctx.lineTo((s - 10) / 2, 10);\n\t\t\t\t\t\t\t\t\tctx.lineTo((s - 10) / 2, h - 10);\n\t\t\t\t\t\t\t\t\tctx.lineTo((s - 10) / 2, 10);\n\t\t\t\t\t\t\t\t\tctx.lineTo((s - 10) / 2, (h - 10) / 2);\n\t\t\t\t\t\t\t\t\tctx.lineTo(s - 10, (h - 10) / 2);\n\t\t\t\t\t\t\t\t\tctx.lineTo((s - 10) / 2, (h - 10) / 2);\n\t\t\t\t\t\t\t\t\tctx.lineTo((3 * s - 30) / 4, (h - 10) / 2);\n\t\t\t\t\t\t\t\t\tctx.lineTo((3 * s - 30) / 4, h - 10);\n\t\t\t\t\t\t\t\t\tctx.lineTo((3 * s - 30) / 4, (h - 10) / 2);\n\t\t\t\t\t\t\t\t\tctx.lineTo((3 * s - 30) / 4, (3 * h - 30) / 4);\n\t\t\t\t\t\t\t\t\tctx.lineTo(s - 10, (3 * h - 30) / 4);\n\t\t\t\t\t\t\t\t\tctx.lineTo((3 * s - 30) / 4, (3 * h - 30) / 4);\n\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\tctx.fillText(\"1\", s / 4, (h / 2) - 5);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/\n\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\tctx.moveTo((s / 4) - 3, (h / 2) - 2);\n\t\t\t\t\t\t\t\t\tctx.lineTo((s / 4) + 9, (h / 2) - 2);\n\t\t\t\t\t\t\t\t\tctx.lineTo((s / 4) - 3, (h / 2) - 2);\n\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\tctx.fillText(\"2\", s / 4, (h / 2) + 12);\n\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\tctx.fillText(\"1\", 3 * s / 4, (h / 4) - 5);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/\n\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\tctx.moveTo((3 * s / 4) - 3, (h / 4) - 2);\n\t\t\t\t\t\t\t\t\tctx.lineTo((3 * s / 4) + 9, (h / 4) - 2);\n\t\t\t\t\t\t\t\t\tctx.lineTo((3 * s / 4) - 3, (h / 4) - 2);\n\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\tctx.fillText(\"4\", 3 * s / 4, (h / 4) + 12);\n\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\tctx.fillText(\"1\", 5 * s / 8, (3 * h / 4) - 5);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/\n\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\tctx.moveTo((5 * s / 8) - 3, (3 * h / 4) - 2);\n\t\t\t\t\t\t\t\t\tctx.lineTo((5 * s / 8) + 9, (3 * h / 4) - 2);\n\t\t\t\t\t\t\t\t\tctx.lineTo((5 * s / 8) - 3, (3 * h / 4) - 2);\n\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\tctx.fillText(\"8\", 5 * s / 8, (3 * h / 4) + 12);\n\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\tctx.fillText(\"1\", 7 * s / 8, (5 * h / 8) - 5);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/\n\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\tctx.moveTo((7 * s / 8) - 3, (5 * h / 8) - 2);\n\t\t\t\t\t\t\t\t\tctx.lineTo((7 * s / 8) + 9, (5 * h / 8) - 2);\n\t\t\t\t\t\t\t\t\tctx.lineTo((7 * s / 8) - 3, (5 * h / 8) - 2);\n\t\t\t\t\t\t\t\t\tctx.font = \"15px Tahoma\";\n\t\t\t\t\t\t\t\t\ttextAlign = \"center\";\n\t\t\t\t\t\t\t\t\tctx.shadowColor = \"#888\";\n\t\t\t\t\t\t\t\t\tctx.shadowBlur = \"15\";\n\t\t\t\t\t\t\t\t\tctx.fillText(\"16\", (7 * s / 8) - 5, (5 * h / 8) + 12);\n\t\t\t\t\t\t\t\t\tctx.strokeStyle = \"#000000\";\n\t\t\t\t\t\t\t\t\tctx.stroke();\n\t\t\t\t\t\t\t\t</script>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>a) O ile suma pól czterech pierwszych\n\t\t\t\t\t\t\t\t\tprostokątów otrzymanych w ten sposób różni się od pola kwadratu o boku \\(1 \\)?</div>\n\t\t\t\t\t\t\t\t<div>b) O ile liczba\n\t\t\t\t\t\t\t\t\t\\(\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}+\\frac{1}{16}+\\frac{1}{32}+\\frac{1}{64}+\\frac{1}{128}+\\frac{1}{256}+\\frac{1}{215}\n\t\t\t\t\t\t\t\t\t\\) różni się od \\(1 \\)?</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_23\" onclick=\"pokaz('liczby2_23')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_23\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Kwadrat o boku \\(1 \\) podzielono na prostokąty o polach równych kolejno \\(\\frac{1}{2}, \\frac{1}{4}, \\frac{1}{8} \\) idt.",
+        "canvas": [{
+            "id": "r5",
+            "class": "rys",
+            "width": "300",
+            "height": "300"},],
+        "podpunkty": []
     },
     {
         "id": "liczby2_24",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Uporządkuj rosnąco liczby:</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>a) \\(\\frac{a}{b}, \\frac{b}{a} \\) i \\(1 \\), jeśli \\(0 &lt;; a &lt;; b \\)</div>\n\t\t\t\t\t\t\t\t<div>b) \\(\\frac{a+b}{2} \\) i \\(b \\), jeśli \\(a &gt; b \\)</div>\n\t\t\t\t\t\t\t\t<div>c) \\(a, b \\) i \\(c \\), jeśli \\(a, b, c &gt; 0, \\frac{c}{a+b}=2, \\frac{c}{b-a}=3 \\)\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div>d) \\(a \\) i \\(b \\), jeśli \\((a+2)(b-2)&gt; ab \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_24\" onclick=\"pokaz('liczby2_24')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_24\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Uporządkuj rosnąco liczby:",
+        "canvas": [],
+        "podpunkty": ["\\(\\frac{a}{b}, \\frac{b}{a} \\) i \\(1 \\), jeśli \\(0 < a < b \\)", "\\(\\frac{a+b}{2} \\) i \\(b \\), jeśli \\(a > b \\)", "\\(a, b \\) i \\(c \\), jeśli \\(a, b, c > 0, \\frac{c}{a+b}=2, \\frac{c}{b-a}=3 \\)", "\\(a \\) i \\(b \\), jeśli \\((a+2)(b-2)> ab \\)"]
     },
     {
         "id": "liczby2_25",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Dla jakich całkowitych wartości \\(k\n\t\t\t\t\t\t\t\t\\) wartość wyrażenia jest liczbą całkowitą?</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>a) \\(\\frac{2}{k} \\)</div>\n\t\t\t\t\t\t\t\t<div>b) \\(\\frac{5}{2k} \\)</div>\n\t\t\t\t\t\t\t\t<div>c) \\(\\frac{9}{k-6} \\)</div>\n\t\t\t\t\t\t\t\t<div>d) \\(\\frac{15}{k+2} \\)</div>\n\t\t\t\t\t\t\t\t<div>e) \\(\\frac{10}{7k-3} \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_25\" onclick=\"pokaz('liczby2_25')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_25\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Dla jakich całkowitych wartości \\(k \\) wartość wyrażenia jest liczbą całkowitą?",
+        "canvas": [],
+        "podpunkty": ["\\(\\frac{2}{k} \\)", "\\(\\frac{5}{2k} \\)", "\\(\\frac{9}{k-6} \\)", "\\(\\frac{15}{k+2} \\)", "\\(\\frac{10}{7k-3} \\)"]
     },
     {
         "id": "liczby2_26",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Wyznacz liczby całkowite \\(k \\) i \\(l\n\t\t\t\t\t\t\t\t\\), które spełniają podany warunek:</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>a) \\(k \\cdot l=1 \\)</div>\n\t\t\t\t\t\t\t\t<div>b) \\((k+2)(l-1)=3 \\)</div>\n\t\t\t\t\t\t\t\t<div>c) \\(k=1+\\frac{4}{l+2} \\)</div>\n\t\t\t\t\t\t\t\t<div>d) \\(kl-k=l \\)</div>\n\t\t\t\t\t\t\t\t<div>e) \\(k+l=0 \\)</div>\n\t\t\t\t\t\t\t\t<div>f) \\(k \\cdot l =0 \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_26\" onclick=\"pokaz('liczby2_26')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_26\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Wyznacz liczby całkowite \\(k \\) i \\(l \\), które spełniają podany warunek:",
+        "canvas": [],
+        "podpunkty": ["\\(k \\cdot l=1 \\)", "\\((k+2)(l-1)=3 \\)", "\\(k=1+\\frac{4}{l+2} \\)", "\\(kl-k=l \\)", "\\(k+l=0 \\)", "\\(k \\cdot l =0 \\)"]
     },
     {
         "id": "liczby2_27",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Porówna liczby \\(\\frac{4}{5} \\) i\n\t\t\t\t\t\t\t\t\\(\\frac{4+n}{5+n} \\), gdzie \\(n \\) jest dowolną liczbą naturalną.</p>\n\t\t\t\t\t\t\t<div class=\"odp\"></div><button class=\"butt\" id=\"gliczby2_27\" onclick=\"pokaz('liczby2_27')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_27\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Porówna liczby \\(\\frac{4}{5} \\) i \\(\\frac{4+n}{5+n} \\), gdzie \\(n \\) jest dowolną liczbą naturalną.",
+        "canvas": [],
+        "podpunkty": []
     },
     {
         "id": "liczby2_28",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Wyznacz wszystkie liczby całkowite\n\t\t\t\t\t\t\t\t\\(x, y \\) spełniające podany warunek.</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>a) \\(4x+12y=7 \\)</div>\n\t\t\t\t\t\t\t\t<div>b) \\(3x+6y=12 \\)</div>\n\t\t\t\t\t\t\t\t<div>c) \\((x-3)(y+5)=1 \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_28\" onclick=\"pokaz('liczby2_28')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_28\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Wyznacz wszystkie liczby całkowite \\(x, y \\) spełniające podany warunek.",
+        "canvas": [],
+        "podpunkty": ["\\(4x+12y=7 \\)", "\\(3x+6y=12 \\)", "\\((x-3)(y+5)=1 \\)"]
     },
     {
         "id": "liczby2_29",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Wyznacz wszystkie naturalne wartości\n\t\t\t\t\t\t\t\t\\(n \\), dla których wartość wyrażenia jest liczbą naturalną.</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>a) \\(\\frac{5}{n}-1 \\)</div>\n\t\t\t\t\t\t\t\t<div>b) \\(\\frac{12}{n}-n \\)</div>\n\t\t\t\t\t\t\t\t<div>c) \\(\\frac{2n+3}{n} \\)</div>\n\t\t\t\t\t\t\t\t<div>d) \\(\\frac{5n-8}{n} \\)</div>\n\t\t\t\t\t\t\t\t<div>e) \\(\\frac{n+5}{n+1} \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_29\" onclick=\"pokaz('liczby2_29')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_29\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Wyznacz wszystkie naturalne wartości \\(n \\), dla których wartość wyrażenia jest liczbą naturalną.",
+        "canvas": [],
+        "podpunkty": ["\\(\\frac{5}{n}-1 \\)", "\\(\\frac{12}{n}-n \\)", "\\(\\frac{2n+3}{n} \\)", "\\(\\frac{5n-8}{n} \\)", "\\(\\frac{n+5}{n+1} \\)"]
     },
     {
         "id": "liczby2_30",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Przeanalizuj przykład podany w ramce\n\t\t\t\t\t\t\t\ti rozwiąż zadanie.</p>\n\t\t\t\t\t\t\t<div class=\"well\">\n\t\t\t\t\t\t\t\t\\(\\frac{2k+10}{k+2}=\\frac{2k+4+6}{k+2}=\\frac{2(k+2)+6}{k+2}=2+\\frac{6}{k+2} \\)</div>\n\t\t\t\t\t\t\t<br><br><br>\n\t\t\t\t\t\t\t<p class=\"tresc\">Dla jakich całkowitych wartości \\(k \\) wartość wyrażenia jest również\n\t\t\t\t\t\t\t\tliczbą całkowitą?</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>a) \\(\\frac{k+8}{k+5} \\)</div>\n\t\t\t\t\t\t\t\t<div>b) \\(\\frac{k+9}{k+5} \\)</div>\n\t\t\t\t\t\t\t\t<div>c) \\(\\frac{2k+10}{k+2} \\)</div>\n\t\t\t\t\t\t\t\t<div>d) \\(\\frac{2k+6}{k-1} \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_30\" onclick=\"pokaz('liczby2_30')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_30\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Przeanalizuj przykład podany w ramce i rozwiąż zadanie.",
+        "ramka": "\\(\\frac{2k+10}{k+2}=\\frac{2k+4+6}{k+2}=\\frac{2(k+2)+6}{k+2}=2+\\frac{6}{k+2} \\)",
+        "tresc2": "Dla jakich całkowitych wartości \\(k \\) wartość wyrażenia jest również liczbą całkowitą ? ",
+        "canvas": [],
+        "podpunkty": ["\\(\\frac{k+8}{k+5} \\)", "\\(\\frac{k+9}{k+5} \\)", "\\(\\frac{2k+10}{k+2} \\)", "\\(\\frac{2k+6}{k-1} \\)"]
     },
     {
         "id": "liczby2_31",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Cyfry \\(a, b, c \\) są różne i żadna\n\t\t\t\t\t\t\t\tnie jest zerem. Jaką największą wartość ma wyrażenie\n\t\t\t\t\t\t\t\t\\(\\frac{1}{a+\\frac{1}{b+\\frac{1}{c}}} \\)?</p>\n\t\t\t\t\t\t\t<div class=\"odp\"></div><button class=\"butt\" id=\"gliczby2_31\" onclick=\"pokaz('liczby2_31')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_31\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Cyfry \\(a, b, c \\) są różne i żadna nie jest zerem. Jaką największą wartość ma wyrażenie \\(\\frac{1}{a+\\frac{1}{b+\\frac{1}{c}}} \\)?",
+        "canvas": [],
+        "podpunkty": []
     },
     {
         "id": "liczby2_32",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)\\(ⅅ\\)</a>Wykaż, nie korzystając z\n\t\t\t\t\t\t\t\tkalkulatora, że \\(\\frac{777772}{777773}&gt; \\frac{999993}{999995} \\)</p>\n\t\t\t\t\t\t\t<div class=\"odp\"></div><button class=\"butt\" id=\"gliczby2_32\" onclick=\"pokaz('liczby2_32')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_32\"></div>\n\t\t\t\t\t\t"
+        "tresc": "\\(ⅅ\\) Wykaż, nie korzystając z kalkulatora, że \\(\\frac{777772}{777773}> \\frac{999993}{999995} \\)",
+        "canvas": [],
+        "podpunkty": []
     },
     {
         "id": "liczby2_33",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)\\(ⅅ\\)</a>Wykaż, że</p>\n\t\t\t\t\t\t\t<div class=\"odp\">\n\t\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t\t\\(\\frac{1}{10^2}+\\frac{1}{11^2}+\\frac{1}{12^2}+_{\\cdots}+\\frac{1}{999^2}&gt;\\frac{99}{1000}\n\t\t\t\t\t\t\t\t\t\\) </div>\n\t\t\t\t\t\t\t\t<div class=\"well\">\n\t\t\t\t\t\t\t\t\t\\(\\frac{1}{n(n+1)}=\\frac{1}{n}-\\frac{1}{n+1} \\)</div>\n\t\t\t\t\t\t\t</div><button class=\"butt\" id=\"gliczby2_33\" onclick=\"pokaz('liczby2_33')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_33\"></div>\n\n\t\t\t\t\t\t"
+        "tresc": "\\(ⅅ\\) Wykaż, że",
+        "canvas": [],
+        "podpunkty": ["\\(\\frac{1}{10^2}+\\frac{1}{11^2}+\\frac{1}{12^2}+_{\\cdots}+\\frac{1}{999^2}>\\frac{99}{1000} \\)"],
+        "ramkapo": "\\(\\frac{1}{n(n+1)}=\\frac{1}{n}-\\frac{1}{n+1} \\)",
     },
     {
         "id": "liczby2_34",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Dla jakich całkowitych wartości\n\t\t\t\t\t\t\t\t\\(k\\neq5 \\) ułamek \\(\\frac{k+5}{3k+4} \\) jest skracalny?</p>\n\t\t\t\t\t\t\t<div class=\"odp\"></div><button class=\"butt\" id=\"gliczby2_34\" onclick=\"pokaz('liczby2_34')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_34\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Dla jakich całkowitych wartości \\(k\\neq5 \\) ułamek \\(\\frac{k+5}{3k+4} \\) jest skracalny?",
+        "canvas": [],
+        "podpunkty": []
     },
     {
         "id": "liczby2_35",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)\\(ⅅ\\)</a>Udowodnij, że jeśli \\(a,\n\t\t\t\t\t\t\t\tb, c \\) są liczbami całkowitymi, to co najmniej jedna z liczb: \\(\\frac{a+b}{2},\n\t\t\t\t\t\t\t\t\\frac{b+c}{2}, \\frac{a+c}{2} \\) jest całkowita.</p>\n\t\t\t\t\t\t\t<div class=\"odp\"></div><button class=\"butt\" id=\"gliczby2_35\" onclick=\"pokaz('liczby2_35')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_35\"></div>\n\t\t\t\t\t\t"
+        "tresc": "\\(ⅅ\\) Udowodnij, że jeśli \\(a, b, c \\) są liczbami całkowitymi, to co najmniej jedna z liczb: \\(\\frac{a+b}{2}, \\frac{b+c}{2}, \\frac{a+c}{2} \\) jest całkowita.",
+        "canvas": [],
+        "podpunkty": []
     },
     {
         "id": "liczby2_36",
-        "tresc": "\n\t\t\t\t\t\t\t<p class=\"tresc\"><a href=\"#\" class=\"up\">\\(⇑\\)</a>Zapisano cztery kolejne liczby\n\t\t\t\t\t\t\t\tnaturalne. Różnica między odwrotnościami najmniejszej i największej z nich jest równa\n\t\t\t\t\t\t\t\t\\(0,075 \\). Ile jest równa różnica między odwrotnościami dwóch pozostałych liczb?</p>\n\t\t\t\t\t\t\t<div class=\"odp\"></div><button class=\"butt\" id=\"gliczby2_36\" onclick=\"pokaz('liczby2_36')\">Rozwiązanie</button>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div id=\"r-liczby2_36\"></div>\n\t\t\t\t\t\t"
+        "tresc": "Zapisano cztery kolejne liczby naturalne. Różnica między odwrotnościami najmniejszej i największej z nich jest równa \\(0,075 \\). Ile jest równa różnica między odwrotnościami dwóch pozostałych liczb?",
+        "canvas": [],
+        "podpunkty": []
     }
 ]
 export default calkowiteIWymierne;
