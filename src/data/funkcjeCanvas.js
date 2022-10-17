@@ -307,6 +307,53 @@ const Canvas = ({ id, width, height }) => {
 
             }
         ); break;
+        case "l3rys2": (
+            draw = ctx => {
+                ctx.beginPath();
+
+                ctx.moveTo(40, 220);
+                ctx.lineTo(140, 220);
+                ctx.lineTo(160, 140);
+                ctx.lineTo(60, 140);
+                ctx.lineTo(40, 220);
+                ctx.lineTo(40, 120);
+                ctx.lineTo(60, 40);
+                ctx.lineTo(160, 40);
+                ctx.lineTo(140, 120);
+                ctx.lineTo(40, 120);
+                ctx.moveTo(140, 220);
+                ctx.lineTo(140, 120);
+                ctx.moveTo(60, 140);
+                ctx.lineTo(60, 40);
+                ctx.moveTo(160, 140);
+                ctx.lineTo(160, 40);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.fillStyle = "#ffffff48";
+                ctx.moveTo(140, 220);
+                ctx.lineTo(50, 180);
+                ctx.lineTo(110, 40);
+                ctx.lineTo(140, 220);
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath()
+                ctx.fillStyle = "#000000";
+                ctx.font = "15px Tahoma";
+                ctx.textAlign = "center";
+                ctx.fillText("A", 40, 240);
+                ctx.fillText("B", 140, 240);
+                ctx.fillText("C", 170, 145);
+                ctx.fillText("D", 50, 145);
+                ctx.fillText("E", 30, 125);
+                ctx.fillText("F", 150, 125);
+                ctx.fillText("G", 170, 45);
+                ctx.fillText("H", 50, 45);
+                ctx.fillText("Q", 60, 180);
+                ctx.fillText("P", 110, 35);
+                ctx.fill();
+                ctx.stroke();
+
+            }); break;
         default: break;
 
     }

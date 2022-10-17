@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import styles from './topNavi.module.scss';

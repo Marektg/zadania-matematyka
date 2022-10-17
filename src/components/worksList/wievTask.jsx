@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { MathJax } from 'better-react-mathjax'
 import styles from './wievTask.module.scss';
 import Canvas from 'data/funkcjeCanvas';
+import Extra from 'data/extra';
 
 const WievTask = ({ data, model }) => {
     const [tasks, settasks] = useState([]);
@@ -50,6 +51,9 @@ const WievTask = ({ data, model }) => {
                 <li key={work.id}><MathJax inline>{
                     <p className={tresc}><a href='#top'>⇑</a>{work.tresc}</p>}</MathJax>
                     {work.ramka ? (<div className={well}><MathJax inline>{work.ramka}</MathJax></div>) : (<div></div>)}
+                    {work.extra ? (<MathJax inline><Extra id={work.extra} /></MathJax>) : (<div></div>)}
+                    {work.extraRamka ? (<div className={well}><MathJax inline><Extra id={work.extraRamka} /></MathJax></div>):(<div></div>)}
+
                     {work.tresc2 !== 0 ? (<MathJax inline><p className={tresc}>{work.tresc2}</p></MathJax>) : (<div></div>)}
                     <div className={odp}>
                         {work.podpunkty.length !== 0 ? (work.podpunkty.map(podpunkt => (
