@@ -17,6 +17,7 @@
   list-style: wisible;
   list-style-position: inside;
   list-style-type: decimal;
+  padding-bottom: 10px;
 }
 
 .tresc {
@@ -83,4 +84,12 @@
   flex-wrap: wrap;
   font-size: 20px;
   padding-bottom: 10px;
+}
+
+.tab1 {
+  width: 90%;
+  margin-left: 5%;
+  border: 1px solid black;
+  background-color: rgb(247, 177, 127);
+  text-align: center;
 }/*# sourceMappingURL=wievTask.module.css.map */

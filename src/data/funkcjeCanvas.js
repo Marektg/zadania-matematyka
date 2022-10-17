@@ -30,33 +30,17 @@ const Canvas = ({ id, width, height }) => {
                 ctx.stroke();
                 ctx.font = "15px Tahoma";
                 ctx.textAlign = "center";
-
                 ctx.fillText("5", y - 4, 30);
-                ctx.strokeStyle = "#000000";
                 ctx.moveTo(y - 10, 33);
                 ctx.lineTo(y + 5, 33);
                 ctx.lineTo(y - 10, 33);
-                ctx.font = "15px Tahoma";
-                ctx.textAlign = "center";
-
                 ctx.fillText("12", y - 3, 48);
-                ctx.strokeStyle = "#000000";
-                ctx.font = "15px Tahoma";
-                ctx.textAlign = "center";
-
                 ctx.fillText("x", 4 * y - 4, 30);
-                ctx.strokeStyle = "#000000";
-                ctx.font = "15px Tahoma";
-
                 ctx.fillText("5", 7 * y - 4, 30);
-                ctx.strokeStyle = "#000000";
                 ctx.moveTo(7 * y - 10, 33);
                 ctx.lineTo(7 * y + 5, 33);
                 ctx.lineTo(7 * y - 10, 33);
-                ctx.font = "15px Tahoma";
-
                 ctx.fillText("6", 7 * y - 4, 48);
-                ctx.strokeStyle = "#000000";
                 ctx.stroke();
                 ctx.beginPath();
                 ctx.arc(4 * y, 10, 3, 0, 10 * Math.PI);
@@ -65,7 +49,7 @@ const Canvas = ({ id, width, height }) => {
                 ctx.fill();
                 ctx.stroke();
             }
-            
+
         ); break;
         case "r2": (
             draw = ctx => {
@@ -92,33 +76,17 @@ const Canvas = ({ id, width, height }) => {
                 ctx.stroke();
                 ctx.font = "15px Tahoma";
                 ctx.textAlign = "center";
-                
                 ctx.fillText("2", y, 30);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/
-                ctx.strokeStyle = "#000000";
                 ctx.moveTo(y - 5, 33);
                 ctx.lineTo(y + 5, 33);
                 ctx.lineTo(y - 5, 33);
-                ctx.font = "15px Tahoma";
-                ctx.textAlign = "center";
-                
                 ctx.fillText("5", y, 48);
-                ctx.strokeStyle = "#000000";
-                ctx.font = "15px Tahoma";
-                ctx.textAlign = "center";
-                
                 ctx.fillText("y", 7 * y, 30);
-                ctx.strokeStyle = "#000000";
-                ctx.font = "15px Tahoma";
-                
                 ctx.fillText("19", 9 * y, 30);
-                ctx.strokeStyle = "#000000";
                 ctx.moveTo(9 * y - 9, 33);
                 ctx.lineTo(9 * y + 9, 33);
                 ctx.lineTo(9 * y - 9, 33);
-                ctx.font = "15px Tahoma";
-                
                 ctx.fillText("30", 9 * y, 48);
-                ctx.strokeStyle = "#000000";
                 ctx.stroke();
                 ctx.beginPath();
                 ctx.arc(7 * y, 10, 3, 0, 10 * Math.PI);
@@ -153,27 +121,16 @@ const Canvas = ({ id, width, height }) => {
                 ctx.font = "15px Tahoma";
                 ctx.textAlign = "center";
                 ctx.fillText("9", y, 30);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/
-                ctx.strokeStyle = "#000000";
                 ctx.moveTo(y - 9, 33);
                 ctx.lineTo(y + 9, 33);
                 ctx.lineTo(y - 9, 33);
-                ctx.font = "15px Tahoma";
-                ctx.textAlign = "center";
                 ctx.fillText("20", y, 48);
-                ctx.strokeStyle = "#000000";
-                ctx.font = "15px Tahoma";
-                ctx.textAlign = "center";
                 ctx.fillText("z", 3 * y - 4, 30);
-                ctx.strokeStyle = "#000000";
-                ctx.font = "15px Tahoma";
                 ctx.fillText("3", 7 * y - 4, 30);
-                ctx.strokeStyle = "#000000";
                 ctx.moveTo(7 * y - 10, 33);
                 ctx.lineTo(7 * y + 5, 33);
                 ctx.lineTo(7 * y - 10, 33);
-                ctx.font = "15px Tahoma";
                 ctx.fillText("4", 7 * y - 4, 48);
-                ctx.strokeStyle = "#000000";
                 ctx.stroke();
                 ctx.beginPath();
                 ctx.arc(3 * y, 10, 3, 0, 10 * Math.PI);
@@ -214,7 +171,6 @@ const Canvas = ({ id, width, height }) => {
                     ctx.moveTo(y - 5, 33);/*  -5 dla jednocyfrowych, a -9 dla dwucyfrowych */
                     ctx.lineTo(y + 5, 33);
                     ctx.lineTo(y - 5, 33);
-                    ctx.fillStyle = "#000000";
                     ctx.fill();
                     ctx.stroke();
                 } else if (lg1 === 2) {
@@ -223,7 +179,6 @@ const Canvas = ({ id, width, height }) => {
                     ctx.moveTo(y - 9, 33);/*  -5 dla jednocyfrowych, a -9 dla dwucyfrowych */
                     ctx.lineTo(y + 9, 33);
                     ctx.lineTo(y - 9, 33);
-                    ctx.fillStyle = "#000000";
                     ctx.fill();
                     ctx.stroke();
                 } else {
@@ -232,12 +187,9 @@ const Canvas = ({ id, width, height }) => {
                     ctx.moveTo(y - 13, 33);/*  -5 dla jednocyfrowych, a -9 dla dwucyfrowych */
                     ctx.lineTo(y + 13, 33);
                     ctx.lineTo(y - 13, 33);
-                    ctx.fillStyle = "#000000";
                     ctx.fill();
                     ctx.stroke();
                 }
-                ctx.font = "15px Tahoma";
-                ctx.textAlign = "center";
                 let ld1 = 1;
                 if (ld1 === 1) {
                     ctx.fillText("2", y, 48);
@@ -250,19 +202,9 @@ const Canvas = ({ id, width, height }) => {
                 ctx.font = "15px Tahoma";
                 ctx.textAlign = "center";
                 ctx.fillText("a", 2 * y - 4, 30);
-                ctx.strokeStyle = "#000000";
-                ctx.font = "15px Tahoma";
-                ctx.textAlign = "center";
                 ctx.fillText("b", 10 * y - 4, 30);
-                ctx.strokeStyle = "#000000";
-                ctx.font = "15px Tahoma";
-                ctx.textAlign = "center";
                 ctx.fillText("c", 11 * y - 4, 30);
-                ctx.strokeStyle = "#000000";
-                ctx.font = "20px Tahoma";
-                ctx.textAlign = "center";
                 ctx.fillText("1", 16 * y - 4, 35);
-                ctx.strokeStyle = "#000000";
                 ctx.beginPath();
                 ctx.arc(2 * y, 10, 3, 0, 10 * Math.PI);
                 ctx.moveTo(10 * y, 10);
@@ -300,47 +242,88 @@ const Canvas = ({ id, width, height }) => {
                 ctx.stroke();
                 ctx.font = "15px Tahoma";
                 ctx.textAlign = "center";
-                ctx.fillText("1", s / 4+3, (h / 2) - 5);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/
+                ctx.fillText("1", s / 4 + 3, (h / 2) - 5);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/
                 ctx.strokeStyle = "#000000";
                 ctx.moveTo((s / 4) - 3, (h / 2) - 2);
                 ctx.lineTo((s / 4) + 9, (h / 2) - 2);
                 ctx.lineTo((s / 4) - 3, (h / 2) - 2);
-                ctx.fillText("2", s / 4+3, (h / 2) + 12);
-                ctx.fillText("1", 3 * s / 4+3, (h / 4) - 5);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/
+                ctx.fillText("2", s / 4 + 3, (h / 2) + 12);
+                ctx.fillText("1", 3 * s / 4 + 3, (h / 4) - 5);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/
                 ctx.moveTo((3 * s / 4) - 3, (h / 4) - 2);
                 ctx.lineTo((3 * s / 4) + 9, (h / 4) - 2);
                 ctx.lineTo((3 * s / 4) - 3, (h / 4) - 2);
-                ctx.fillText("4", 3 * s / 4+3, (h / 4) + 12);
-                ctx.fillText("1", 5 * s / 8+3, (3 * h / 4) - 5);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/
+                ctx.fillText("4", 3 * s / 4 + 3, (h / 4) + 12);
+                ctx.fillText("1", 5 * s / 8 + 3, (3 * h / 4) - 5);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/
                 ctx.moveTo((5 * s / 8) - 3, (3 * h / 4) - 2);
                 ctx.lineTo((5 * s / 8) + 9, (3 * h / 4) - 2);
                 ctx.lineTo((5 * s / 8) - 3, (3 * h / 4) - 2);
-                ctx.fillText("8", 5 * s / 8+3, (3 * h / 4) + 12);
+                ctx.fillText("8", 5 * s / 8 + 3, (3 * h / 4) + 12);
                 ctx.fillText("1", 7 * s / 8, (5 * h / 8) - 5);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/
                 ctx.moveTo((7 * s / 8) - 6, (5 * h / 8) - 2);
                 ctx.lineTo((7 * s / 8) + 9, (5 * h / 8) - 2);
                 ctx.lineTo((7 * s / 8) - 6, (5 * h / 8) - 2);
                 ctx.fillText("16", (7 * s / 8), (5 * h / 8) + 12);
-                 ctx.stroke();
+                ctx.stroke();
+            }
+        ); break;
+        case "l3rys1": (
+            draw = ctx => {
+                ctx.beginPath();
+                ctx.fillStyle = "white";
+                ctx.moveTo(20, 180);
+                ctx.lineTo(180, 180);
+                ctx.lineTo(100, 41);
+                ctx.lineTo(20, 180);
+                ctx.moveTo(100, 41);
+                ctx.lineTo(100, 180);
+                ctx.moveTo(20, 180);
+                ctx.lineTo(140, 111);
+                ctx.moveTo(180, 180);
+                ctx.lineTo(60, 110);
+                ctx.moveTo(100, 180);
+                ctx.arc(100, 180, 10, - Math.PI * 0.5, 0)
+                ctx.moveTo(60, 110);
+                ctx.arc(60, 110, 10, - Math.PI / 3, Math.PI / 6);
+                ctx.moveTo(140, 111);
+                ctx.arc(140, 111, 10, (-Math.PI * 7) / 6, (-Math.PI * 2) / 3)
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath()
+                ctx.fillStyle = "#000000";
+                ctx.font = "15px Tahoma";
+                ctx.textAlign = "center";
+                ctx.fillText("A", 20, 195);
+                ctx.fillText("B", 180, 195);
+                ctx.fillText("C", 100, 35);
+                ctx.fillText("D", 148, 111);
+                ctx.fillText("E", 52, 111);
+                ctx.fillText("F", 100, 195);
+                ctx.font = "10px Tahoma";
+                ctx.fillText("G", 108, 150);
+
+
+                ctx.fill();
+                ctx.stroke();
+
             }
         ); break;
         default: break;
-        
+
     }
-            useEffect(() => {
+    useEffect(() => {
 
-                const canvas = canvasRef.current;
-                const context = canvas.getContext('2d');
-                canvas.height = height;
+        const canvas = canvasRef.current;
+        const context = canvas.getContext('2d');
+        canvas.height = height;
 
-                //Our draw come here
-                draw(context)
-            }, [draw])
+        //Our draw come here
+        draw(context)
+    }, [draw, height])
 
-            return <canvas ref={canvasRef} {...{ id, width }} />
-    }
+    return <canvas ref={canvasRef} {...{ id, width, height }} />
+}
 
-    export default Canvas
+export default Canvas
 
 
 

@@ -6,7 +6,7 @@ import Canvas from 'data/funkcjeCanvas';
 const WievTask = ({ data, model }) => {
     const [tasks, settasks] = useState([]);
 
-    const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo } = styles;
+    const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, tab1 } = styles;
     console.log(data.length);
     console.log(model);
     let numberOfPage = Math.ceil(data.length / 25);
@@ -17,16 +17,16 @@ const WievTask = ({ data, model }) => {
         pages.push({ id: `${i}`, val: `${i * 25}` });
     };
 
-    
+
     useEffect(() => { settasks([]); }, [model]);
-   
+
 
     const changePage = (e) => {
         let range = Number(e.target.attributes[0].nodeValue);
         let newTask = [];
         for (let i = range - 25; i < data.length && i < range; i++) {
             newTask.push(data[i])
-            
+
         };
         console.log(newTask);
         settasks(newTask);
@@ -38,10 +38,10 @@ const WievTask = ({ data, model }) => {
             }
         }
     }
-    
-    
+
+
     // console.log(tasks[0].canvas);
-    
+
     return (<>
         {pages.map(page => (<button onClick={changePage} data-val={page.val}>{page.id}</button>))}
 
@@ -50,7 +50,7 @@ const WievTask = ({ data, model }) => {
                 <li key={work.id}><MathJax inline>{
                     <p className={tresc}><a href='#top'>⇑</a>{work.tresc}</p>}</MathJax>
                     {work.ramka ? (<div className={well}><MathJax inline>{work.ramka}</MathJax></div>) : (<div></div>)}
-                    {work.tresc2 !== 0 ? (<MathJax inline><p className={tresc}>{work.tresc2}</p></MathJax>):(<div></div>)}
+                    {work.tresc2 !== 0 ? (<MathJax inline><p className={tresc}>{work.tresc2}</p></MathJax>) : (<div></div>)}
                     <div className={odp}>
                         {work.podpunkty.length !== 0 ? (work.podpunkty.map(podpunkt => (
 
@@ -61,25 +61,47 @@ const WievTask = ({ data, model }) => {
                         ) : (
                             <div></div>
                         )}
-                        
-                        
+
+
                     </div>
                     <div className={canvasWrapper}>
-                    {work.canvas.length !== 0 ? (
-                        work.canvas.map(canva => (
-                            <Canvas id={canva.id} width={canva.width} height={canva.height} inline/>
-                        ))
+                        {work.canvas.length !== 0 ? (
+                            work.canvas.map(canva => (
+                                <Canvas id={canva.id} width={canva.width} height={canva.height} inline />
+                            ))
                         ) : (<div></div>)}
                     </div>
-                 
-        
+
+
                     {work.ramkapo ? (<div className={wellpo} ><MathJax inline>{work.ramkapo}</MathJax></div>) : (<div></div>)}
-            {work.wskazowka ? (<div className={podpowiedz}>Wskazówka: <MathJax inline>{work.wskazowka}</MathJax></div>) : (<div></div>)}
-                    {work.tresc3 !== 0 ? (<MathJax inline><p className={trescpo}>{work.tresc3}</p></MathJax>):(<div></div>)}
+                    {work.wskazowka ? (<div className={podpowiedz}>Wskazówka: <MathJax inline>{work.wskazowka}</MathJax></div>) : (<div></div>)}
+                    {work.tresc3 !== 0 ? (<MathJax inline><p className={trescpo}>{work.tresc3}</p></MathJax>) : (<div></div>)}
+                    {work.tabela ? (
+                       <MathJax> <table className={tab1}>
+                            {work.tabela.map(line => (
+                                <tr>
+                                    <th>{line.tytul}</th>
+                                    <td>{line.dzialanie1} </td>
+                                    <td>{line.dzialanie2} </td>
+                                    <td>{line.dzialanie3} </td>
+                                    <td>{line.dzialanie4} </td>
+                                    <td>{line.dzialanie5} </td>
+                                    <td>{line.dzialanie6} </td>
+                                    <td>{line.dzialanie7} </td>
+                                    <td>{line.dzialanie8} </td>
+                                    <td>{line.dzialanie9} </td>
+                                </tr>
+                            )
+                            )
+                            }
+                        </table></MathJax>
+                    ) : (
+                        <div></div>
+                    )}
                 </li>
             ))}
         </ol>
-        {tasks.length !==0 ? (pages.map(page => (<button onClick={changePage} data-val={page.val}>{page.id}</button>))): (<div></div>)}
+        {tasks.length !== 0 ? (pages.map(page => (<button onClick={changePage} data-val={page.val}>{page.id}</button>))) : (<div></div>)}
     </>
     )
 
