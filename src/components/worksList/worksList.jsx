@@ -3,8 +3,8 @@ import React from 'react'
 import naturalne from "../../data/liczby naturalne";
 import calkowiteIWymierne from '../../data/liczbyCalkowiteIWymierna';
 import rozDzies from '../../data/rozwiniecieDziesietne';
-import pierwKwad from '../../data/pierwKwad';
-import pierwSzesc from '../../data/pierwSzesc';
+import pierwiastki from '../../data/pierwiastki';
+import potegi from '../../data/potegi'
 import WievTask from './wievTask';
 
 const WorksList = ({ model }) => {
@@ -24,12 +24,12 @@ const WorksList = ({ model }) => {
             data = rozDzies;
             return (<WievTask data={data} model={model} />);
         case "5":
-            data = pierwKwad;
+            data = pierwiastki;
             return (<WievTask data={data} model={model} />);
         case "6":
-            data = pierwSzesc;
+            data = potegi;
             return (<WievTask data={data} model={model} />);
-
+        
         default: return (<div></div>);
         
     };
