@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/zadania-matematyka/static/css/main.a2d66e40.css",
-    "main.js": "/zadania-matematyka/static/js/main.ea82f672.js",
-    "index.html": "/zadania-matematyka/index.html",
-    "main.a2d66e40.css.map": "/zadania-matematyka/static/css/main.a2d66e40.css.map",
-    "main.ea82f672.js.map": "/zadania-matematyka/static/js/main.ea82f672.js.map"
+    "main.css": "/static/css/main.a2d66e40.css",
+    "main.js": "/static/js/main.a9338707.js",
+    "index.html": "/index.html",
+    "main.a2d66e40.css.map": "/static/css/main.a2d66e40.css.map",
+    "main.a9338707.js.map": "/static/js/main.a9338707.js.map"
   },
   "entrypoints": [
     "static/css/main.a2d66e40.css",
-    "static/js/main.ea82f672.js"
+    "static/js/main.a9338707.js"
   ]
 }
