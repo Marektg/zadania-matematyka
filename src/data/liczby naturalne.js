@@ -164,7 +164,7 @@ const naturalne = [
   },
   {
     "id": `${nanoid()}`,
-    "tresc": "Znajdź wszystkie pary liczb \\(a \\) i\\(b \\), które spełniają warunki: \\(NWD(a,=14 \\) i \\(NWW(a,=462 \\).",
+    "tresc": "Znajdź wszystkie pary liczb \\(a \\) i \\(b \\), które spełniają warunki: \\(NWD(a,=14 \\) i \\(NWW(a,=462 \\).",
     "canvas": [],
     "podpunkty": [],
     "wskazowka": null,
@@ -174,7 +174,7 @@ const naturalne = [
   },
   {
     "id": `${nanoid()}`,
-    "tresc": "\\(ⅅ\\) Oblicz \\(NWD(x,y) \\) i\\(NWW(x,y) \\). Udowodnij, że \\(NWD(x,y)|NWW(x,y) \\). Sprawdź, czy \\(xy=NWD(x,y)\\cdot NWW(x,y) \\).",
+    "tresc": "\\(ⅅ\\) Oblicz \\(NWD(x,y) \\) i \\(NWW(x,y) \\). Udowodnij, że \\(NWD(x,y)|NWW(x,y) \\). Sprawdź, czy \\(xy=NWD(x,y)\\cdot NWW(x,y) \\).",
     "canvas": [],
     "podpunkty": ["\\(x=24, y=66 \\)","\\(x=140, y=150 \\)","\\(x=132, y=198 \\)"],
     "wskazowka": null,

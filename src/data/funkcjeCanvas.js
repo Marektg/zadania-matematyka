@@ -354,6 +354,150 @@ const Canvas = ({ id, width, height }) => {
                 ctx.stroke();
 
             }); break;
+        case "l5rys1": (
+            draw = ctx => {
+                ctx.beginPath();
+                ctx.moveTo(50, 50);
+                ctx.lineTo(250, 50);
+                ctx.lineTo(250, 250);
+                ctx.lineTo(50, 250);
+                ctx.lineTo(150, 50);
+                ctx.lineTo(250, 150);
+                ctx.lineTo(150, 250);
+                ctx.lineTo(50, 150);
+                ctx.lineTo(150, 50);
+                ctx.moveTo(50, 50);
+                ctx.lineTo(50, 250);
+                ctx.stroke();
+                ctx.beginPath()
+                ctx.fillStyle = "#000000";
+                ctx.font = "15px Tahoma";
+                ctx.textAlign = "center";
+                ctx.fillText("A", 50, 265);
+                ctx.fillText("B", 250, 265);
+                ctx.fillText("C", 250, 45);
+                ctx.fillText("D", 50, 45);
+                ctx.fillText("E", 150, 265);
+                ctx.fillText("F", 260, 150);
+                ctx.fillText("G", 150, 45);
+                ctx.fillText("H", 40, 150);
+               ctx.fill();
+                ctx.stroke();
+            }); break;
+        case "ps16a": (
+            draw = ctx => {
+                ctx.beginPath();
+                ctx.moveTo(40, 160);
+                ctx.lineTo(180, 160);
+                ctx.lineTo(40, 60);
+                ctx.lineTo(40, 160);
+                ctx.moveTo(3, 110);
+                ctx.lineTo(6, 105);
+                ctx.lineTo(9, 120);
+                ctx.lineTo(11, 95);
+                ctx.lineTo(38, 95);
+                ctx.moveTo(20, 108);
+                ctx.lineTo(35, 108);
+                ctx.moveTo(113, 93);
+                ctx.lineTo(116, 88);
+                ctx.lineTo(120, 113);
+                ctx.lineTo(122, 78);
+                ctx.lineTo(200, 78);
+                ctx.moveTo(188, 99);
+                ctx.lineTo(197, 99);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(163, 98, 1, 0, 2 * Math.PI);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.fillStyle = "#000000";
+                ctx.font = "20px Tahoma";
+                ctx.textAlign = "center";
+                ctx.fillText("x", 100, 175);
+                ctx.font = "8px Tahoma";
+                ctx.fillText("3", 6, 102);
+                ctx.fillText("3", 36, 102);
+                ctx.fillText("3", 115, 85);
+                ctx.font = "20px Tahoma";
+                ctx.fillText("(", 13, 115);
+                ctx.fillText(")", 32, 115);
+                ctx.fillText("125", 142, 105);
+                ctx.fillText("15", 176, 105);
+                ctx.font = "10px Tahoma";
+                ctx.fillText("15", 22, 105);
+                ctx.fillText("2", 22, 118);
+                ctx.fillText("5", 192, 97);
+                ctx.fillText("8", 192, 107);
+            }
+        ); break;
+        case "ps16b": (
+            draw = ctx => {
+                ctx.beginPath();
+                ctx.moveTo(40, 160);
+                ctx.lineTo(180, 160);
+                ctx.lineTo(40, 60);
+                ctx.lineTo(40, 160);
+                ctx.moveTo(85, 182);
+                ctx.lineTo(88, 180);
+                ctx.lineTo(91, 195);
+                ctx.lineTo(94, 170);
+                ctx.lineTo(110, 170);
+                ctx.moveTo(112, 92);
+                ctx.lineTo(115, 90);
+                ctx.lineTo(118, 105);
+                ctx.lineTo(121, 80);
+                ctx.lineTo(180, 80);
+
+                ctx.stroke();
+                ctx.fillStyle = "#000000";
+                ctx.font = "20px Tahoma";
+                ctx.textAlign = "center";
+                ctx.fillText("y", 30, 110);
+                ctx.fillText("8", 100, 190);
+                ctx.fillText("10000", 150, 100);
+                ctx.font = "8px Tahoma";
+                ctx.fillText("4", 88, 180);
+                ctx.fillText("4", 108, 180);
+                ctx.fillText("4", 115, 85);
+                ctx.font = "10px Tahoma";
+            }
+        ); break;
+        case "ps16c": (
+            draw = ctx => {
+                ctx.beginPath();
+                ctx.moveTo(40, 160);
+                ctx.lineTo(180, 160);
+                ctx.lineTo(40, 60);
+                ctx.lineTo(40, 160);
+                ctx.moveTo(0, 119);
+                ctx.lineTo(3, 114);
+                ctx.lineTo(6, 127);
+                ctx.lineTo(9, 105);
+                ctx.lineTo(36, 105);
+                ctx.moveTo(24, 117);
+                ctx.lineTo(34, 117);
+                ctx.moveTo(85, 180);
+                ctx.lineTo(88, 178);
+                ctx.lineTo(91, 188);
+                ctx.lineTo(94, 165);
+                ctx.lineTo(120, 165);
+
+                ctx.stroke();
+                ctx.fillStyle = "#000000";
+                ctx.font = "20px Tahoma";
+                ctx.textAlign = "center";
+                ctx.fillText("z", 115, 105);
+                ctx.fillText("32", 105, 185);
+                ctx.fillText("7", 15, 125);
+
+                ctx.font = "8px Tahoma";
+                ctx.fillText("5", 88, 175);
+                ctx.fillText("5", 2, 112);
+                ctx.font = "10px Tahoma";
+                ctx.fillText("19", 28, 115);
+                ctx.fillText("32", 28, 126);
+            
+            }); break;
         default: break;
 
     }

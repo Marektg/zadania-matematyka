@@ -69,6 +69,22 @@ export const Extra = ({ id }) => {
                 </div>
             </div>
         ); break;
+        case "liczNW2": (
+            content = <div className={wrapFlex}>
+                <MathJax inline>
+                    <div>Liczba {"\\(\\sqrt{2}+\\sqrt{3} \\)"} jest niewymierna.</div>
+                    <div>Dowód:</div>
+                    <div>Przypuśćmy przeciwnie, liczba {"\\(a=\\sqrt{2}+\\sqrt{3} \\)"} jest wymierna.</div>
+                    <div>Wtedy {"\\(z-\\sqrt{3}=\\sqrt{2} \\)"},</div>
+                    <div>a stąd otrzymujemy kolejno:</div>
+                    <div>{"\\((z-\\sqrt{3})^2=(\\sqrt{2})^2\\)"}</div>
+                    <div>{"\\(z^2-2z\\sqrt{3}+3=2 \\)"}</div>
+                    <div> {"\\(2z\\sqrt{3}=z^2+1 \\)"}</div>
+                    <div>{"\\(\\sqrt{3}=\\frac{z^2+1}{2z}\\)"}.</div>
+                    <div>Przy założeniu, że {"\\(z \\)"} jest liczbą wymierną, prawa strona równości jest także liczbą wymierną, z czego wynika, że {"\\(\\sqrt{3} \\)"} jest liczbą wymierną.</div>
+                    <div>Otrzymaliśmy sprzeczność, więc {"\\(\\sqrt{2}+\\sqrt{3} \\)"} jest liczbą niewymierną.</div>
+                </MathJax></div>
+        ); break;
         default: break;
 
     }

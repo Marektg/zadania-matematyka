@@ -166,7 +166,8 @@ const calkowiteIWymierne = [
             "class": "rys",
             "width": "300",
             "height": "300"},],
-        "podpunkty": []
+        "podpunkty": ["O ile suma pól czterech pierwszych prostokątów otrzymanych w ten sposób różni się od pola kwadratu o boku \\(1 \\)?", "O ile liczba \\(\\frac{ 1 } { 2 } +\\frac{ 1 } { 4 } +\\frac{ 1 } { 8 } +\\frac{ 1 } { 16 } +\\frac{ 1 } { 32 } +\\frac{ 1 } { 64 } +\\frac{ 1 } { 128 } +\\frac{ 1 } { 256 } +\\frac{ 1 } { 215 }\\) różni się od \\(1 \\)?"],
+        "koniec" : "1",
     },
     {
         "id": `${nanoid()}`,

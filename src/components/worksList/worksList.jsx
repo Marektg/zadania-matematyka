@@ -3,6 +3,8 @@ import React from 'react'
 import naturalne from "../../data/liczby naturalne";
 import calkowiteIWymierne from '../../data/liczbyCalkowiteIWymierna';
 import rozDzies from '../../data/rozwiniecieDziesietne';
+import pierwKwad from '../../data/pierwKwad';
+import pierwSzesc from '../../data/pierwSzesc';
 import WievTask from './wievTask';
 
 const WorksList = ({ model }) => {
@@ -20,6 +22,12 @@ const WorksList = ({ model }) => {
             return (<WievTask data={data} model={model} />);
         case "4":
             data = rozDzies;
+            return (<WievTask data={data} model={model} />);
+        case "5":
+            data = pierwKwad;
+            return (<WievTask data={data} model={model} />);
+        case "6":
+            data = pierwSzesc;
             return (<WievTask data={data} model={model} />);
 
         default: return (<div></div>);

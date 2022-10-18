@@ -56,7 +56,7 @@ const WievTask = ({ data, model }) => {
 
                     {work.tresc2 !== 0 ? (<MathJax inline><p className={tresc}>{work.tresc2}</p></MathJax>) : (<div></div>)}
                     <div className={odp}>
-                        {work.podpunkty.length !== 0 ? (work.podpunkty.map(podpunkt => (
+                        {work.podpunkty.length !== 0 && !work.koniec ? (work.podpunkty.map(podpunkt => (
 
                             <div><MathJax inline>{podpunkt}</MathJax></div>
 
@@ -74,6 +74,19 @@ const WievTask = ({ data, model }) => {
                                 <Canvas id={canva.id} width={canva.width} height={canva.height} inline />
                             ))
                         ) : (<div></div>)}
+                    </div>
+                    <div className={odp}>
+                        {work.koniec ? (work.podpunkty.map(podpunkt => (
+
+                            <div><MathJax inline>{podpunkt}</MathJax></div>
+
+                        ))
+
+                        ) : (
+                            <div></div>
+                        )}
+
+
                     </div>
 
 
