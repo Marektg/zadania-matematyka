@@ -724,7 +724,7 @@ const liczby = [
   {
     "id": `${nanoid()}`,
     "tresc": "Dane są liczby: wymierna \\(p \\) oraz niewymierne \\(x \\) i \\(y \\). Wpisz znak \\(✕\\) w odpowiednich wierszach tabeli,wskazując, jaką liczbą może być wynik danego działania.",
-    "tabela": [{ "tytul": "Wynik działania", "dzialanie1": "\\(p+x \\)", "dzialanie2": "\\(\\begin{matrix}px,\\\\p\\neq 0\\end{matrix} \\)", "dzialanie3": "\\(\\begin{matrix}\\frac{x}{p},\\\\p\\neq 0\\end{matrix} \\)", "dzialanie4": "\\(x^2 \\)", "dzialanie5": "\\(x+y \\)", "dzialanie6": "\\(xy \\)", "dzialanie7": "\\(\\frac{x}{y} \\)", "dzialanie8": "\\(\\begin{matrix} \\sqrt{x},\\\\x> 0\\end{matrix} \\)", "dzialanie9": "\\(\\begin{matrix}\\sqrt{x+p},\\\\x+p> 0\\end{matrix} \\)" }, { "tytul": "Wymierny", "dzialanie1": "?", "dzialanie2": "?", "dzialanie3": "?", "dzialanie4": "?", "dzialanie5": "?", "dzialanie6": "?", "dzialanie7": "?", "dzialanie8": "?", "dzialanie9": "?" }, { "tytul": "Niewymierny", "dzialanie1": "?", "dzialanie2": "?", "dzialanie3": "?", "dzialanie4": "?", "dzialanie5": "?", "dzialanie6": "?", "dzialanie7": "?", "dzialanie8": "?", "dzialanie9": "?" }],
+    "extraRamka": "lwym1",
     "canvas": [],
     "podpunkty": [],
     "wskazowka": null,

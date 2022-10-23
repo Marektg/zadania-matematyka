@@ -6,7 +6,7 @@ import WorksList from 'components/worksList/worksList';
 import { MathJax } from 'better-react-mathjax';
 // import { current } from '@reduxjs/toolkit';
 
-const Lrzeczywiste = () => {
+const Jezyk = () => {
     const [title, setTitle] = useState(null);
     const [currentTask, setCurrentTask] = useState(null);
 
@@ -19,21 +19,21 @@ const Lrzeczywiste = () => {
         setTitle(event.target.innerText);
         // console.log(event.target.parentElement.id)
         setCurrentTask(event.target.parentElement.id);
-        
+
     }
     // console.log(currentTask);
-    
-    
+
+
     return (
         <div className={mainDiv}>
             <TopNavi model="b" /> {/* a - podstawówka, b- średnia, c- matura, d- studia*/}
             <div className={basic} >
                 <LeftNavi model="b" />
                 <div className={tasksList}>
-                    <h2 className={tytul}>Liczby rzeczywiste </h2>
+                    <h2 className={tytul}>Język matematyki </h2>
                     <ul className={podmenu}>
-                        <li id="1" key="1"><button onClick={renderTask}>Liczby</button></li>
-                        <li id="2" key="2"><button onClick={renderTask}>Pierwiasteki</button></li>
+                        <li id="1" key="1"><button onClick={renderTask}>Zbiory</button></li>
+                        <li id="2" key="2"><button onClick={renderTask}>Przedziały</button></li>
                         <li id="3" key="3"><button onClick={renderTask}>Potęgi</button></li>
                         <li id="4" key="4"><button onClick={renderTask}><MathJax inline>{"\\(\\star\\)"}</MathJax> Notacja wykładnicza</button></li>
                         <li id="5" key="5"><button onClick={renderTask}>Logarytm i jego własności</button></li>
@@ -54,4 +54,4 @@ const Lrzeczywiste = () => {
     )
 }
 
-export default Lrzeczywiste
+export default Jezyk

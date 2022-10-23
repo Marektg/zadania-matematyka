@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from 'react'
-
 const Canvas = ({ id, width, height }) => {
 
     const canvasRef = useRef(null)
@@ -463,6 +462,7 @@ const Canvas = ({ id, width, height }) => {
             }
         ); break;
         case "ps16c": (
+            
             draw = ctx => {
                 ctx.beginPath();
                 ctx.moveTo(40, 160);

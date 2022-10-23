@@ -7,7 +7,7 @@ import Extra from 'data/extra';
 const WievTask = ({ data, model }) => {
     const [tasks, settasks] = useState([]);
 
-    const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, tab1 } = styles;
+    const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo } = styles;
     console.log(data.length);
     console.log(model);
     let numberOfPage = Math.ceil(data.length / 25);
@@ -93,28 +93,7 @@ const WievTask = ({ data, model }) => {
                     {work.ramkapo ? (<div className={wellpo} ><MathJax inline>{work.ramkapo}</MathJax></div>) : (<div></div>)}
                     {work.wskazowka ? (<div className={podpowiedz}>Wskazówka: <MathJax inline>{work.wskazowka}</MathJax></div>) : (<div></div>)}
                     {work.tresc3 !== 0 ? (<MathJax inline><p className={trescpo}>{work.tresc3}</p></MathJax>) : (<div></div>)}
-                    {work.tabela ? (
-                       <MathJax> <table className={tab1}>
-                            {work.tabela.map(line => (
-                                <tr>
-                                    <th>{line.tytul}</th>
-                                    <td>{line.dzialanie1} </td>
-                                    <td>{line.dzialanie2} </td>
-                                    <td>{line.dzialanie3} </td>
-                                    <td>{line.dzialanie4} </td>
-                                    <td>{line.dzialanie5} </td>
-                                    <td>{line.dzialanie6} </td>
-                                    <td>{line.dzialanie7} </td>
-                                    <td>{line.dzialanie8} </td>
-                                    <td>{line.dzialanie9} </td>
-                                </tr>
-                            )
-                            )
-                            }
-                        </table></MathJax>
-                    ) : (
-                        <div></div>
-                    )}
+                   
                 </li>
             ))}
         </ol>

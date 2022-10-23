@@ -4,7 +4,7 @@ import styles from './extra.module.scss';
 
 export const Extra = ({ id }) => {
     let content;
-    const { mainFrame, firstRow, mainPart, lastRow, wrapFlex } = styles;
+    const { mainFrame, firstRow, mainPart, lastRow, wrapFlex, tab1 } = styles;
     switch (id) {
         case "rozdzie1": (
 
@@ -85,6 +85,49 @@ export const Extra = ({ id }) => {
                     <div>Otrzymaliśmy sprzeczność, więc {"\\(\\sqrt{2}+\\sqrt{3} \\)"} jest liczbą niewymierną.</div>
                 </MathJax></div>
         ); break;
+        case "lwym1": (
+            content = <div className={wrapFlex}>
+                <MathJax> <table className={tab1}> <tr>
+                    <th>Wynik działania</th>
+                    <td>{"\\(p+x \\)"} </td>
+                    <td>{"\\(\\begin{matrix}px,\\\\p\\neq 0\\end{matrix} \\)"} </td>
+                    <td>{"\\(\\begin{matrix}\\frac{x}{p},\\\\p\\neq 0\\end{matrix} \\)"} </td>
+                    <td>{"\\(x^2 \\)"} </td>
+                    <td>{"\\(x+y \\)"} </td>
+                    <td>{"\\(xy \\)"} </td>
+                    <td>{"\\(\\frac{x}{y} \\)"} </td>
+                    <td>{"\\(\\begin{matrix} \\sqrt{x},\\\\x> 0\\end{matrix} \\)"}</td>
+                    <td>{"\\(\\begin{matrix}\\sqrt{x + p},\\\\x+p> 0\\end{matrix} \\)"} </td>
+                </tr>
+                    <tr>
+                        <th>Wymierny</th>
+                        <td>? </td>
+                        <td>? </td>
+                        <td>? </td>
+                        <td>? </td>
+                        <td>? </td>
+                        <td>? </td>
+                        <td>? </td>
+                        <td>? </td>
+                        <td>? </td>
+                    </tr>
+                    <tr>
+                        <th>Niewymierny</th>
+                        <td>? </td>
+                        <td>? </td>
+                        <td>? </td>
+                        <td>? </td>
+                        <td>? </td>
+                        <td>? </td>
+                        <td>? </td>
+                        <td>? </td>
+                        <td>? </td>
+                    </tr>
+                  
+                </table></MathJax>
+            </div>
+        ); break;
+
         default: break;
 
     }

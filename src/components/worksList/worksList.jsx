@@ -1,7 +1,9 @@
 import React from 'react'
 import liczby from "../../data/liczby";
 import pierwiastki from '../../data/pierwiastki';
-import potegi from '../../data/potegi'
+import potegi from '../../data/potegi';
+import notacja from 'data/notacjaWykładnicza';
+import logarytmy from '../../data/logarytm'
 import WievTask from './wievTask';
 
 const WorksList = ({ model }) => {
@@ -16,6 +18,12 @@ const WorksList = ({ model }) => {
             return (<WievTask data={data} model={model} />);
         case "3":
             data = potegi;
+            return (<WievTask data={data} model={model} />);
+        case "4":
+            data = notacja;
+            return (<WievTask data={data} model={model} />);
+        case "5":
+            data = logarytmy;
             return (<WievTask data={data} model={model} />);
         
         
