@@ -20,4 +20,8 @@
 }
 .navListGroup li {
   border-bottom: solid 1px burlywood;
+}
+
+.active {
+  background-color: green;
 }/*# sourceMappingURL=leftNavi.module.css.map */

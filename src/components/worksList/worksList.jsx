@@ -5,10 +5,13 @@ import potegi from '../../data/potegi';
 import notacja from 'data/notacjaWykładnicza';
 import logarytmy from '../../data/logarytm'
 import WievTask from './wievTask';
+import zbiory from 'data/zbiory';
 
-const WorksList = ({ model }) => {
+const WorksList = ({ model, dzial }) => {
     console.log(model);
     let data;
+    switch (dzial) {
+        case "1": 
     switch (model) {
         case "1":
             data = liczby;
@@ -29,6 +32,32 @@ const WorksList = ({ model }) => {
         
         default: return (<div></div>);
         
-    };
+            };
+        case "2":
+            switch (model) {
+                case "1":
+                    data = zbiory;
+                    return (<WievTask data={data} model={model} />);
+                // case "2":
+                //     data = pierwiastki;
+                //     return (<WievTask data={data} model={model} />);
+                // case "3":
+                //     data = potegi;
+                //     return (<WievTask data={data} model={model} />);
+                // case "4":
+                //     data = notacja;
+                //     return (<WievTask data={data} model={model} />);
+                // case "5":
+                //     data = logarytmy;
+                //     return (<WievTask data={data} model={model} />);
+
+
+                default: return (<div></div>);
+
+            };
+    
+            ;
+
+        default: return (<div></div>);   }
 }
     export default WorksList;

@@ -380,7 +380,7 @@ const Canvas = ({ id, width, height }) => {
                 ctx.fillText("F", 260, 150);
                 ctx.fillText("G", 150, 45);
                 ctx.fillText("H", 40, 150);
-               ctx.fill();
+                ctx.fill();
                 ctx.stroke();
             }); break;
         case "ps16a": (
@@ -462,7 +462,7 @@ const Canvas = ({ id, width, height }) => {
             }
         ); break;
         case "ps16c": (
-            
+
             draw = ctx => {
                 ctx.beginPath();
                 ctx.moveTo(40, 160);
@@ -496,8 +496,619 @@ const Canvas = ({ id, width, height }) => {
                 ctx.font = "10px Tahoma";
                 ctx.fillText("19", 28, 115);
                 ctx.fillText("32", 28, 126);
-            
+
             }); break;
+        case "zil1_5a": (
+            draw = ctx => {
+                ctx.beginPath();
+                ctx.strokeStyle = "black";
+                ctx.moveTo(50, 30);
+                ctx.lineTo(150, 30);
+                ctx.lineTo(150, 130);
+                ctx.lineTo(50, 130);
+                ctx.closePath();
+                ctx.fillStyle = "#b3b3b3";
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(100, 88);
+                ctx.lineTo(192, 165);
+                ctx.lineTo(8, 165);
+                ctx.lineTo(100, 88);
+                ctx.fillStyle = "#2cf3a0c5";
+                ctx.stroke();
+                ctx.fill();
+                ctx.beginPath();
+                ctx.font = "15px Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+                ctx.fillText("A", 130, 50);
+                ctx.fillText("A", 130, 50);
+                ctx.fillText("B", 130, 160);
+                ctx.fillText("B", 130, 160);
+                ctx.stroke();
+                ctx.fill();
+            }
+        ); break;
+        case "zil1_5b": (
+            draw = ctx => {
+                ctx.beginPath();
+                ctx.strokeStyle = "black";
+                ctx.arc(100, 105, 45, 0, 2 * Math.PI);
+                ctx.fillStyle = "#fc50df";
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(100, 26);
+                ctx.lineTo(192, 105);
+                ctx.lineTo(8, 105);
+                ctx.lineTo(100, 26);
+                ctx.fillStyle = "#2cf3a0c9";
+                ctx.stroke();
+                ctx.fill();
+                ctx.beginPath();
+                ctx.strokeStyle = "black";
+                ctx.arc(100, 105, 45, 0, 2 * Math.PI);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.font = "15px Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+                ctx.fillText("C", 100, 130);
+                ctx.fillText("C", 100, 130);
+                ctx.fillText("B", 150, 90);
+                ctx.fillText("B", 150, 90);
+                ctx.stroke();
+                ctx.fill();
+            }
+        ); break;
+        case "zil1_5c": (
+            draw = ctx => {
+                ctx.beginPath();
+                ctx.strokeStyle = "black";
+                ctx.moveTo(30, 100);
+                ctx.lineTo(120, 100);
+                ctx.lineTo(120, 190);
+                ctx.lineTo(30, 190);
+                ctx.closePath();
+                ctx.fillStyle = "#b3b3b3";
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(10, 83);
+                ctx.lineTo(100, 83);
+                ctx.lineTo(10, 173);
+                ctx.lineTo(10, 83);
+                ctx.fillStyle = "#2cf3a0c9";
+                ctx.stroke();
+                ctx.fill();
+                ctx.beginPath();
+                ctx.strokeStyle = "black";
+                ctx.arc(120, 82, 75, 0, 2 * Math.PI);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.font = "15px Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+                ctx.fillText("A", 40, 180);
+                ctx.fillText("A", 40, 180);
+                ctx.fillText("B", 15, 110);
+                ctx.fillText("B", 15, 110);
+                ctx.fillText("D", 150, 40);
+                ctx.fillText("D", 150, 40);
+                ctx.stroke();
+                ctx.fill();
+            }
+        ); break;
+
+        case "zil1_14_0": (
+            draw = ctx => {
+                ctx.beginPath();
+                ctx.rect(0, 10, 200, 160);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(60, 90, 50, 0, 2 * Math.PI);
+                ctx.stroke(); ctx.beginPath();
+                ctx.arc(120, 80, 50, 0, 2 * Math.PI);
+                ctx.stroke(); ctx.beginPath();
+                ctx.font = "15px Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+                ctx.fillText("A", 40, 40);
+                ctx.fillText("A", 40, 40);
+                ctx.fillText("B", 130, 30);
+                ctx.fillText("B", 130, 30);
+                ctx.fillText("U", 180, 30);
+                ctx.fillText("U", 180, 30);
+                ctx.stroke();
+                ctx.fill();
+            }
+        ); break;
+        case "zil1_zr12_1": (
+            draw = ctx => {
+                ctx.beginPath();
+                ctx.arc(100, 100, 60, 0, 10 * Math.PI);
+                ctx.strokeStyle = 'black';
+                ctx.fillStyle = "#b3b3b3b3";
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(10, 20);
+                ctx.lineTo(190, 160);
+                ctx.lineTo(10, 20);
+                ctx.strokeStyle = 'blue';
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.font = "15px Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+                ctx.fillText("A", 60, 130);
+                ctx.fillText("A", 60, 130);
+                ctx.fillText("C", 160, 130);
+                ctx.fillText("C", 160, 130);
+                ctx.stroke();
+                ctx.fill();
+            }
+        ); break;
+        case "zil1_zr12_2": (
+            draw = ctx => {
+                ctx.beginPath();
+                ctx.arc(100, 100, 60, 0, 10 * Math.PI);
+                ctx.strokeStyle = 'blue';
+                ctx.fillStyle = "#b3b3b3b3";
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(10, 160);
+                ctx.lineTo(190, 20);
+                ctx.lineTo(10, 160);
+                ctx.strokeStyle = 'blue';
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.font = "15px Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+                ctx.fillText("B", 160, 130);
+                ctx.fillText("B", 160, 130);
+                ctx.fillText("C", 160, 30);
+                ctx.fillText("C", 160, 30);
+                ctx.stroke();
+                ctx.fill();
+            }
+        ); break;
+        case "zil1_zr12_3": (
+            draw = ctx => {
+                ctx.beginPath();
+                ctx.arc(80, 120, 60, 0, 10 * Math.PI);
+                ctx.strokeStyle = 'black';
+                ctx.fillStyle = "#b3b3b3b3";
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(120, 80, 60, 0, 10 * Math.PI);
+                ctx.strokeStyle = 'blue';
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.font = "15px Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+                ctx.fillText("A", 40, 160);
+                ctx.fillText("A", 40, 160);
+                ctx.fillText("B", 170, 130);
+                ctx.fillText("B", 170, 130);
+                ctx.stroke();
+                ctx.fill();
+            }
+        ); break;
+        case "zil1_zr12_4": (
+            draw = ctx => {
+                ctx.beginPath();
+                ctx.arc(100, 100, 60, 0, 10 * Math.PI);
+                ctx.strokeStyle = 'black';
+                ctx.fillStyle = "#b3b3b3b3";
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(60, 100);
+                ctx.lineTo(180, 140);
+                ctx.lineTo(200, 20);
+                ctx.lineTo(60, 100);
+                ctx.fillStyle = "#bcd3ff";
+                ctx.strokeStyle = 'blue';
+                ctx.stroke();
+                ctx.fill();
+                ctx.beginPath();
+                ctx.arc(100, 100, 60, 0, 10 * Math.PI);
+                ctx.strokeStyle = 'black';
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.font = "15px Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+                ctx.fillText("A", 60, 130);
+                ctx.fillText("A", 60, 130);
+                ctx.fillText("D", 160, 30);
+                ctx.fillText("D", 160, 30);
+                ctx.stroke();
+                ctx.fill();
+            }
+        ); break;
+        case "zil1_zr13_1": (
+            draw = ctx => {
+                // 3 * empty circle
+                ctx.beginPath();
+                ctx.arc(60, 60, 50, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(120, 60, 50, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(90, 120, 50, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.stroke();
+                //   obszar zaznaczenia 
+                ctx.beginPath();
+                ctx.arc(60, 60, 50, 53 / 180 * Math.PI, 111 / 180 * Math.PI);
+                ctx.arc(90, 120, 50, 196 / 180 * Math.PI, 249 / 180 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "#bcd3ff";
+                ctx.fill();
+                ctx.stroke();
+                // przerywana linia  
+                ctx.beginPath();
+                ctx.setLineDash([3, 3]);
+                ctx.arc(120, 60, 50, 127 / 180 * Math.PI, 164 / 180 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "#f0e68c";
+                ctx.fill();
+                ctx.stroke();
+                // puste kółka  
+                ctx.beginPath();
+                ctx.setLineDash([0, 0]);
+                ctx.arc(71, 73, 3, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "white";
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.setLineDash([0, 0]);
+                ctx.arc(90, 100, 3, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "white";
+                ctx.fill();
+                ctx.stroke();
+                // Literki 
+                ctx.beginPath();
+                ctx.font = "15 Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+                ctx.fillText("A", 40, 30);
+                ctx.fillText("A", 40, 30);
+                ctx.fillText("B", 130, 30);
+                ctx.fillText("B", 130, 30);
+                ctx.fillText("C", 80, 160);
+                ctx.fillText("C", 80, 160);
+                ctx.stroke();
+                ctx.fill();
+            }
+        ); break;
+        case "zil1_zr13_2": (
+            draw = ctx => {
+                // 3 * empty circle 
+                ctx.beginPath();
+                ctx.arc(60, 60, 50, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(120, 60, 50, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(90, 120, 50, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.stroke();
+                //   obszar zaznaczenia  
+                ctx.beginPath();
+                ctx.arc(60, 60, 50, 16 / 180 * Math.PI, 53 / 180 * Math.PI);
+                ctx.arc(120, 60, 50, 127 / 180 * Math.PI, 164 / 180 * Math.PI);
+                ctx.arc(90, 120, 50, 249 / 180 * Math.PI, 291 / 180 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "#bcd3ff";
+                ctx.fill();
+                ctx.stroke();
+                // Literki   
+                ctx.beginPath();
+                ctx.font = "15 Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+                ctx.fillText("A", 40, 30);
+                ctx.fillText("A", 40, 30);
+                ctx.fillText("B", 130, 30);
+                ctx.fillText("B", 130, 30);
+                ctx.fillText("C", 80, 160);
+                ctx.fillText("C", 80, 160);
+                ctx.stroke();
+                ctx.fill();
+            }
+        ); break;
+        case "zil1_zr13_3": (
+            draw = ctx => {
+                // 3 * empty circle
+                ctx.beginPath();
+                ctx.arc(60, 60, 50, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "#bcd3ff";
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(120, 60, 50, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(90, 120, 50, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.stroke();
+                //   obszar zaznaczenia    
+                ctx.beginPath();
+                ctx.arc(90, 120, 50, 291 / 180 * Math.PI, 344 / 180 * Math.PI);
+                ctx.arc(120, 60, 50, 69 / 180 * Math.PI, 127 / 180 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "#bcd3ff";
+                ctx.fill();
+                ctx.stroke();
+                // przeywana linia  
+                ctx.beginPath();
+                ctx.arc(60, 60, 50, 16 / 180 * Math.PI, 53 / 180 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "#bcd3ff";
+                ctx.fill();
+                ctx.stroke();
+                // Literki   
+                ctx.beginPath();
+                ctx.font = "15 Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+                ctx.fillText("A", 40, 30);
+                ctx.fillText("A", 40, 30);
+                ctx.fillText("B", 130, 30);
+                ctx.fillText("B", 130, 30);
+                ctx.fillText("C", 80, 160);
+                ctx.fillText("C", 80, 160);
+                ctx.stroke();
+                ctx.fill();
+            }
+        ); break;
+        case "zil1_zr13_4": (
+            draw = ctx => {
+                // 3 * empty circle 
+                ctx.beginPath();
+                ctx.arc(60, 60, 50, 0, 2 * Math.PI);
+                ctx.fillStyle = "#bcd3ff";
+                ctx.fill();
+                ctx.beginPath();
+                ctx.arc(120, 60, 50, 0, 2 * Math.PI);
+                ctx.fillStyle = "#bcd3ff";
+                ctx.fill();
+                ctx.beginPath();
+                ctx.arc(90, 120, 50, 0, 2 * Math.PI);
+                ctx.fillStyle = "#f0e68c";
+                ctx.fill();
+
+
+
+                // przeywana linia 
+                ctx.beginPath();
+                ctx.setLineDash([3, 3]);
+                ctx.arc(90, 120, 50, 196 / 180 * Math.PI, 344 / 180 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "#f0e68c";
+                ctx.fill();
+                ctx.stroke();
+                ctx.setLineDash([0, 0]);
+                ctx.beginPath();
+                ctx.arc(60, 60, 50, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(120, 60, 50, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(90, 120, 50, 344 / 180 * Math.PI, 196 / 180 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.stroke();
+                // puste kółka 
+                ctx.beginPath();
+                ctx.setLineDash([0, 0]);
+                ctx.arc(43, 107, 3, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "white";
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.setLineDash([0, 0]);
+                ctx.arc(138, 106, 3, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "white";
+                ctx.fill();
+                ctx.stroke();
+                // Literki   
+                ctx.beginPath();
+                ctx.font = "15 Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+                ctx.fillText("A", 40, 30);
+                ctx.fillText("A", 40, 30);
+                ctx.fillText("B", 130, 30);
+                ctx.fillText("B", 130, 30);
+                ctx.fillText("C", 80, 160);
+                ctx.fillText("C", 80, 160);
+                ctx.stroke();
+                ctx.fill();
+            }
+        ); break;
+        case "zil1_zr13_5": (
+            draw = ctx => {
+                // 3 * empty circle
+                ctx.beginPath();
+                ctx.arc(60, 60, 50, 0, 2 * Math.PI);
+                ctx.fillStyle = "#bcd3ff";
+                ctx.fill();
+                ctx.beginPath();
+                ctx.arc(120, 60, 50, 0, 2 * Math.PI);
+                ctx.fillStyle = "#bcd3ff";
+                ctx.fill();
+                // przeywana linia 
+                ctx.beginPath();
+                ctx.setLineDash([3, 3]);
+                ctx.arc(60, 60, 50, 307 / 180 * Math.PI, 53 / 180 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "#f0e68c";
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(120, 60, 50, 127 / 180 * Math.PI, 233 / 180 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "#f0e68c";
+                ctx.fill();
+                ctx.stroke();
+                ctx.setLineDash([0, 0]);
+                ctx.beginPath();
+                ctx.arc(60, 60, 50, 53 / 180 * Math.PI, 307 / 180 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(120, 60, 50, 233 / 180 * Math.PI, 127 / 180 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(90, 120, 50, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.stroke();
+                // puste kółka  
+                ctx.beginPath();
+                ctx.setLineDash([0, 0]);
+                ctx.arc(90, 100, 3, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "white";
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.setLineDash([0, 0]);
+                ctx.arc(90, 20, 3, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "white";
+                ctx.fill();
+                ctx.stroke();
+                // Literki  
+                ctx.beginPath();
+                ctx.font = "15 Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+                ctx.fillText("A", 40, 30);
+                ctx.fillText("A", 40, 30);
+                ctx.fillText("B", 130, 30);
+                ctx.fillText("B", 130, 30);
+                ctx.fillText("C", 80, 160);
+                ctx.fillText("C", 80, 160);
+                ctx.stroke();
+                ctx.fill();
+            }
+        ); break;
+        case "zil1_zr13_6": (
+            draw = ctx => {
+                // błekitny 
+                ctx.beginPath();
+                ctx.arc(120, 60, 50, 164 / 180 * Math.PI, 233 / 180 * Math.PI);
+                ctx.arc(60, 60, 50, 307 / 180 * Math.PI, 16 / 180 * Math.PI);
+                ctx.fillStyle = "#bcd3ff";
+                ctx.fill();
+                ctx.beginPath();
+                ctx.arc(60, 60, 50, 53 / 180 * Math.PI, 111 / 180 * Math.PI);
+                ctx.arc(90, 120, 50, 194 / 180 * Math.PI, 249 / 180 * Math.PI);
+                ctx.fillStyle = "#bcd3ff";
+                ctx.fill();
+                ctx.beginPath();
+                ctx.arc(90, 120, 50, 294 / 180 * Math.PI, 344 / 180 * Math.PI);
+                ctx.arc(120, 60, 50, 69 / 180 * Math.PI, 127 / 180 * Math.PI);
+                ctx.arc(60, 60, 50, 16 / 180 * Math.PI, 53 / 180 * Math.PI);
+                ctx.fillStyle = "#bcd3ff";
+                ctx.fill();
+                // przeywana linia 
+                ctx.setLineDash([3, 3]);
+                ctx.beginPath();
+                ctx.arc(60, 60, 50, 16 / 180 * Math.PI, 53 / 180 * Math.PI);
+                ctx.arc(120, 60, 50, 127 / 180 * Math.PI, 164 / 180 * Math.PI);
+                ctx.arc(90, 120, 50, 249 / 180 * Math.PI, 291 / 180 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "#f0e68c";
+                ctx.fill();
+                ctx.stroke();
+                ctx.setLineDash([0, 0]);
+                ctx.beginPath();
+                ctx.arc(60, 60, 50, 53 / 180 * Math.PI, 16 / 180 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(120, 60, 50, 164 / 180 * Math.PI, 127 / 180 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(90, 120, 50, 294 / 180 * Math.PI, 249 / 180 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.stroke();
+                // puste kółka   
+                ctx.beginPath();
+                ctx.setLineDash([0, 0]);
+                ctx.arc(90, 100, 3, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "white";
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.setLineDash([0, 0]);
+                ctx.arc(70, 74, 3, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "white";
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.setLineDash([0, 0]);
+                ctx.arc(108, 74, 3, 0, 2 * Math.PI);
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "white";
+                ctx.fill();
+                ctx.stroke();
+                // Literki    
+                ctx.beginPath();
+                ctx.font = "15 Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+                ctx.fillText("A", 40, 30);
+                ctx.fillText("A", 40, 30);
+                ctx.fillText("B", 130, 30);
+                ctx.fillText("B", 130, 30);
+                ctx.fillText("C", 80, 160);
+                ctx.fillText("C", 80, 160);
+                ctx.stroke();
+                ctx.fill(); 
+            }
+        ); break;
         default: break;
 
     }

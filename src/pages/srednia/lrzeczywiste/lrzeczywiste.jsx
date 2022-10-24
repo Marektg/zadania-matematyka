@@ -28,7 +28,7 @@ const Lrzeczywiste = () => {
         <div className={mainDiv}>
             <TopNavi model="b" /> {/* a - podstawówka, b- średnia, c- matura, d- studia*/}
             <div className={basic} >
-                <LeftNavi model="b" />
+                <LeftNavi model="b"/>
                 <div className={tasksList}>
                     <h2 className={tytul}>Liczby rzeczywiste </h2>
                     <ul className={podmenu}>
@@ -44,7 +44,7 @@ const Lrzeczywiste = () => {
                     </ul>
                     <div className={tasks}>
                         <h3 className={rodzajzad}>{title}</h3>
-                        <WorksList model={currentTask} />
+                        <WorksList model={currentTask} dzial="1" />
                     </div>
                 </div>
 

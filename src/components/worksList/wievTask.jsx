@@ -23,18 +23,20 @@ const WievTask = ({ data, model }) => {
 
 
     const changePage = (e) => {
+        // console.log(e.target)
+        // e.target.style.backgroundColor = "green";
         let range = Number(e.target.attributes[0].nodeValue);
         let newTask = [];
         for (let i = range - 25; i < data.length && i < range; i++) {
             newTask.push(data[i])
 
         };
-        console.log(newTask);
+        // console.log(newTask);
         settasks(newTask);
-        console.log(newTask[0].canvas);
+        // console.log(newTask[0].canvas);
         for (let i = 0; i < newTask.length; i++) {
             if (newTask[i].canvas.length !== 0) {
-                console.log(newTask[i].canvas.length)
+                // console.log(newTask[i].canvas.length)
 
             }
         }
@@ -75,6 +77,7 @@ const WievTask = ({ data, model }) => {
                             ))
                         ) : (<div></div>)}
                     </div>
+                    {work.trescpocanvie !== 0 ? (<MathJax inline><p className={tresc}>{work.trescpocanvie}</p></MathJax>) : (<div></div>)}
                     <div className={odp}>
                         {work.koniec ? (work.podpunkty.map(podpunkt => (
 
