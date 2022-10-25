@@ -7,15 +7,16 @@ import Extra from 'data/extra';
 const WievTask = ({ data, model }) => {
     const [tasks, settasks] = useState([]);
 
-    const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo } = styles;
+    const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, buttonWrapper } = styles;
+    const numberOfTask = 25;
     console.log(data.length);
     console.log(model);
-    let numberOfPage = Math.ceil(data.length / 25);
+    let numberOfPage = Math.ceil(data.length / numberOfTask);
     // console.log(numberOfPage);
     let pages = [];
 
     for (let i = 1; i <= numberOfPage; i++) {
-        pages.push({ id: `${i}`, val: `${i * 25}` });
+        pages.push({ id: `${i}`, val: `${i * numberOfTask}` });
     };
 
 
@@ -23,11 +24,29 @@ const WievTask = ({ data, model }) => {
 
 
     const changePage = (e) => {
-        // console.log(e.target)
-        // e.target.style.backgroundColor = "green";
+        const wraper1 = document.querySelector('[data-buttons]');
         let range = Number(e.target.attributes[0].nodeValue);
+        if (e === null) {
+            for (let i = 0; i < wraper1.childNodes.length; i++) {
+                wraper1.childNodes[i].style.backgroundColor = "rgb(210, 240, 241)";
+                wraper1.childNodes[i].style.color = "black";
+            }  
+        };
+       
+        for (let i = 0; i < wraper1.childNodes.length; i++) {
+            if (Number(range / numberOfTask) === Number(wraper1.childNodes[i].textContent)) {
+                wraper1.childNodes[i].style.backgroundColor = "green";
+                wraper1.childNodes[i].style.color = "orange";
+            } else {
+                wraper1.childNodes[i].style.backgroundColor = "rgb(210, 240, 241)";
+                wraper1.childNodes[i].style.color = "black";
+                 }  
+        }
+       
+        // e.target.style.backgroundColor = "green";
         let newTask = [];
-        for (let i = range - 25; i < data.length && i < range; i++) {
+
+        for (let i = range - numberOfTask; i < data.length && i < range; i++) {
             newTask.push(data[i])
 
         };
@@ -46,8 +65,9 @@ const WievTask = ({ data, model }) => {
     // console.log(tasks[0].canvas);
 
     return (<>
+        <div className={buttonWrapper} data-buttons>
         {pages.map(page => (<button onClick={changePage} data-val={page.val}>{page.id}</button>))}
-
+        </div>
         <ol className={powt}>
             {tasks.map(work => (
                 <li key={work.id}><MathJax inline>{
@@ -100,7 +120,7 @@ const WievTask = ({ data, model }) => {
                 </li>
             ))}
         </ol>
-        {tasks.length !== 0 ? (pages.map(page => (<button onClick={changePage} data-val={page.val}>{page.id}</button>))) : (<div></div>)}
+       
     </>
     )
 

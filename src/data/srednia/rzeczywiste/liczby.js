@@ -4,63 +4,107 @@ import { nanoid } from "@reduxjs/toolkit";
 const liczby = [
   {
     "id": `${nanoid()}`,
+    "tresc": "Ile dzielników naturalnych ma każda z podanych liczb?",
+    "canvas": [],
+    "podpunkty": ["\\(25, 125, 625\\)", "\\(9,18,36\\)", "\\(6,12,24\\)"],
+    "wskazowka": null,
+    "ramka": null,
+    "extraRamka": null,
+    "tresc2": null,
+    "ramkapo": null,
+  },
+  {
+    "id": `${nanoid()}`,
+    "tresc": "Wyznacz wspólne wielokrotności liczb \\(x\\) i \\(y\\) mniejsze od \\(200\\)",
+    "canvas": [],
+    "podpunkty": ["\\(x=6, y=8\\)", "\\(x=12, y=20\\)", "x=18, y+24\\)"],
+    "wskazowka": null,
+    "ramka": null,
+    "extraRamka": null,
+    "tresc2": null,
+    "ramkapo": null,
+  },
+  {
+    "id": `${nanoid()}`,
+    "tresc": "Oblicz sumę wszystkich dzielników pierwszych liczby \\(390\\)",
+    "canvas": [],
+    "podpunkty": [],
+    "wskazowka": null,
+    "ramka": null,
+    "extraRamka": null,
+    "tresc2": null,
+    "ramkapo": null,
+  },
+  {
+    "id": `${nanoid()}`,
     "tresc": "Wypisz wszystkie liczby:",
     "canvas": [],
     "podpunkty": ["naturalne, których kwadrat jest mniejszyod \\(10 \\)", "naturalne, których kwadrat jest niewiększy od \\(30 \\)", "pierwsze mniejsze od \\(15 \\)", "jednocyfrowe złożone"],
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
-    "tresc": "Podaj ogólną postać liczbynaturalnej:",
+    "tresc": "Podaj ogólną postać liczby naturalnej:",
     "canvas": [],
-    "podpunkty": ["podzielnej przez \\(3 \\)", "podzielnej przez \\(k \\), gdzie \\(k \\) jestliczbą naturalną dodatnią", "podzielnej przez \\(3 \\) i \\(7 \\)", "której reszta z dzielenia przez \\(3 \\)wynosi \\(2 \\)"],
+    "podpunkty": ["podzielnej przez \\(3 \\)", "podzielnej przez \\(k \\), gdzie \\(k \\) jestl iczbą naturalną dodatnią", "podzielnej przez \\(3 \\) i \\(7 \\)", "której reszta z dzielenia przez \\(3 \\)wynosi \\(2 \\)"],
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
-    "tresc": "Podaj ogólną postać liczbynaturalnej, która jest:",
+    "tresc": "Przedstaw liczbę \\(55\\) w postaci sumy:",
     "canvas": [],
-    "podpunkty": ["iloczynem trzech kolejnych liczbnaturalnych", "iloczynem dwóch kolejnych liczbnaturalnych nieparzystych", "kwadratem liczby naturalnej", "sumą kwadratów dwóch kolejnych liczb naturalnych"],
+    "podpunkty": ["dwóch","trzech", "czterech", "pięciu"],
     "wskazowka": null,
     "ramka": null,
+    "extraRamka": null,
+    "tresc3": "różnych liczb pierwszych",
     "ramkapo": null,
-    
   },
   {
     "id": `${nanoid()}`,
-    "tresc": "Zapisz trzy kolejne liczby naturalnenieparzyste, z których:",
+    "tresc": "Podaj ogólną postać liczby naturalnej, która jest:",
     "canvas": [],
-    "podpunkty": ["pierwsza ma postać \\(2n-3 \\), gdzie \\(n \\)jest liczbą naturalną większą od \\(1 \\)","druga ma postać \\(2n+5 \\), gdzie \\(n \\)jest liczbą naturalną","ostatnia ma postać \\(2n+7 \\), gdzie \\(n \\)jest liczbą naturalną"],
+    "podpunkty": ["iloczynem trzech kolejnych liczb naturalnych", "iloczynem dwóch kolejnych liczb naturalnych nieparzystych", "kwadratem liczby naturalnej", "sumą kwadratów dwóch kolejnych liczb naturalnych"],
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
+  },
+  {
+    "id": `${nanoid()}`,
+    "tresc": "Zapisz trzy kolejne liczby naturalne nieparzyste, z których:",
+    "canvas": [],
+    "podpunkty": ["pierwsza ma postać \\(2n-3 \\), gdzie \\(n \\)jest liczbą naturalną większą od \\(1 \\)", "druga ma postać \\(2n+5 \\), gdzie \\(n \\)jest liczbą naturalną", "ostatnia ma postać \\(2n+7 \\), gdzie \\(n \\)jest liczbą naturalną"],
+    "wskazowka": null,
+    "ramka": null,
+    "ramkapo": null,
+
   },
   {
     "id": `${nanoid()}`,
     "tresc": "Ustal, ile jest liczb naturalnych:",
     "canvas": [],
-    "podpunkty": [" dwucyfrowych", "trzycyfrowych","pięciocyfrowych", "\\(n \\)-cyfrowych"],
+    "podpunkty": [" dwucyfrowych", "trzycyfrowych", "pięciocyfrowych", "\\(n \\)-cyfrowych"],
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
-    "tresc": "Ustal, ile jest liczb naturalnychdwucyfrowych:",
+    "tresc": "Ustal, ile jest liczb naturalnych dwucyfrowych:",
     "canvas": [],
-    "podpunkty": ["podzielnych przez \\(7 \\)","podzielnych przez \\(7 \\) i \\(5 \\)","podzielnych przez \\(7 \\) lub \\(5 \\)","podzielnych przez \\(7 \\) i niepodzielnychprzez \\(5 \\)"],
+    "podpunkty": ["podzielnych przez \\(7 \\)", "podzielnych przez \\(7 \\) i \\(5 \\)", "podzielnych przez \\(7 \\) lub \\(5 \\)", "podzielnych przez \\(7 \\) i niepodzielnychprzez \\(5 \\)"],
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -70,27 +114,27 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
     "tresc": "Rozłóż podaną liczbę na czynniki pierwsze.",
     "canvas": [],
-    "podpunkty": ["\\(69 \\)","\\(120 \\)","\\(18900 \\)","\\(24642 \\)","\\(216000 \\)"],
+    "podpunkty": ["\\(69 \\)", "\\(120 \\)", "\\(18900 \\)", "\\(24642 \\)", "\\(216000 \\)"],
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
     "tresc": "Oblicz \\(NWD(a, \\) i \\(NWW(a, \\).",
     "canvas": [],
-    "podpunkty": ["\\(a=12,\\ b=144 \\)","\\(a=126,\\ b=36 \\)","\\(a=155,\\ b=410 \\)","\\(a=840,\\ b=10780 \\)"],
+    "podpunkty": ["\\(a=12,\\ b=144 \\)", "\\(a=126,\\ b=36 \\)", "\\(a=155,\\ b=410 \\)", "\\(a=840,\\ b=10780 \\)"],
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -100,7 +144,7 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -110,7 +154,7 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -120,47 +164,124 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
     "tresc": "Jaką cyfrą można zastąpić \\(x \\), aby liczba siedmiocyfrowa \\(x63097x \\) (zapis dziesiętny) była podzielna przez podaną liczbę?",
     "canvas": [],
-    "podpunkty": ["\\(3 \\)","\\(4 \\)","\\(5 \\)","\\(9 \\)"],
+    "podpunkty": ["\\(3 \\)", "\\(4 \\)", "\\(5 \\)", "\\(9 \\)"],
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
+  },
+  {
+    "id": `${nanoid()}`,
+    "tresc": "Wyznacz dwie liczby naturalne, których suma wynosi \\(144\\), a największy wspólny dzielnik jest równy \\(18\\). Podaj wszystkie rozwiązania.",
+    "canvas": [],
+    "podpunkty": [],
+    "wskazowka": null,
+    "ramka": null,
+    "extraRamka": null,
+    "tresc2": null,
+    "ramkapo": null,
+  },
+  {
+    "id": `${nanoid()}`,
+    "tresc": "Podaj najmniejszą liczbę naturalną, która ma \\(n\\) dzielników.",
+    "canvas": [],
+    "podpunkty": ["\\(n=8\\)", "\\(n=9\\)", "\\(n=10\\)", "\\(n=7\\)"],
+    "wskazowka": null,
+    "ramka": null,
+    "extraRamka": null,
+    "tresc2": null,
+    "ramkapo": null,
+  },
+  {
+    "id": `${nanoid()}`,
+    "tresc": "Sformułuj cechy podzielności przez \\(12, 15, 20, 24, 36\\). Sprawdź, przez które z tych liczb jest podzielna liczba:",
+    "canvas": [],
+    "podpunkty": ["\\(4829370\\)", "\\(3425220\\)", "\\(1420692\\)"],
+    "wskazowka": null,
+    "ramka": null,
+    "extraRamka": null,
+    "tresc2": null,
+    "ramkapo": null,
+  },
+  {
+    "id": `${nanoid()}`,
+    "tresc": "",
+    "canvas": [],
+    "podpunkty": ["SUma cyfr pewnej liczby naturalnej jest równa \\(45\\), a suma cyfr liczby większej od niej o \\(1\\) jest równa \\(1\\). Podaj te liczby.", "SUma cyfr pewnej liczby naturalnej jest równa \\(45\\), a suma cyfr liczby większej od niej o \\(2\\) jest równa \\(2\\). Podaj te liczby."],
+    "wskazowka": null,
+    "ramka": null,
+    "extraRamka": null,
+    "tresc2": null,
+    "ramkapo": null,
+  },
+  {
+    "id": `${nanoid()}`,
+    "tresc": "Zapisz ogólną postać liczby naturalnej, której reszta z dzielenia przez \\(7\\):",
+    "canvas": [],
+    "podpunkty": ["wynosi \\(4\\)", "jest największa z możliwych", "jest najmniejsza z możliwych"],
+    "wskazowka": null,
+    "ramka": null,
+    "extraRamka": null,
+    "tresc2": null,
+    "ramkapo": null,
+  },
+  {
+    "id": `${nanoid()}`,
+    "tresc": "\\(D\\) Udowodnij, że suma czterech kolejnych liczb naturalnych nie może być liczbą pierwszą",
+    "canvas": [],
+    "podpunkty": [],
+    "wskazowka": null,
+    "ramka": null,
+    "extraRamka": null,
+    "tresc2": null,
+    "ramkapo": null,
+  },
+  {
+    "id": `${nanoid()}`,
+    "tresc": "\\(D\\) Liczba naturalna \\(n\\) jest podzielna przez \\(9\\), ale nie jest podzielna przez \\(6\\). Udowodnij, że liczba \\(n\\) jest nieparzysta.",
+    "canvas": [],
+    "podpunkty": [],
+    "wskazowka": null,
+    "ramka": null,
+    "extraRamka": null,
+    "tresc2": null,
+    "ramkapo": null,
   },
   {
     "id": `${nanoid()}`,
     "tresc": "Dana jest pięciocyfrowa liczba\\(4375x \\) (zapis dziesiętny). Jaką cyfrą można zastąpić \\(x \\), aby reszta z dzielenia przez:",
     "canvas": [],
-    "podpunkty": ["\\(9 \\) była równa \\(2 \\)","\\(25 \\) była równa \\(7 \\)"],
+    "podpunkty": ["\\(9 \\) była równa \\(2 \\)", "\\(25 \\) była równa \\(7 \\)"],
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
     "tresc": "Oblicz \\(NWD(a,b \\) i \\(NWW(a,b \\).",
     "canvas": [],
-    "podpunkty": ["\\(a=10^7, b=10^5 \\)","\\(a=2^3\\cdot3^2\\cdot5^4,b=2^3\\cdot3^3\\cdot5\\cdot7 \\)"],
+    "podpunkty": ["\\(a=10^7, b=10^5 \\)", "\\(a=2^3\\cdot3^2\\cdot5^4,b=2^3\\cdot3^3\\cdot5\\cdot7 \\)"],
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
     "tresc": "Sformułuj algorytm wyznaczani anajwiększego wspólnego dzielnika trzech liczb naturalnych. Oblicz \\(NWD(x,y,z) \\).",
     "canvas": [],
-    "podpunkty": ["\\(x=2^2\\cdot3\\cdot5, y=2\\cdot3^2\\cdot5^2,z=2^3\\cdot3^4 \\)","\\(x=2^3\\cdot3^2\\cdot5\\cdot7^4,y=2^2\\cdot3^3\\cdot5^4\\cdot7^2, z=2\\cdot3^5\\cdot5^2\\cdot7 \\)"],
+    "podpunkty": ["\\(x=2^2\\cdot3\\cdot5, y=2\\cdot3^2\\cdot5^2,z=2^3\\cdot3^4 \\)", "\\(x=2^3\\cdot3^2\\cdot5\\cdot7^4,y=2^2\\cdot3^3\\cdot5^4\\cdot7^2, z=2\\cdot3^5\\cdot5^2\\cdot7 \\)"],
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -170,37 +291,37 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
     "tresc": "\\(ⅅ\\) Oblicz \\(NWD(x,y) \\) i \\(NWW(x,y) \\). Udowodnij, że \\(NWD(x,y)|NWW(x,y) \\). Sprawdź, czy \\(xy=NWD(x,y)\\cdot NWW(x,y) \\).",
     "canvas": [],
-    "podpunkty": ["\\(x=24, y=66 \\)","\\(x=140, y=150 \\)","\\(x=132, y=198 \\)"],
+    "podpunkty": ["\\(x=24, y=66 \\)", "\\(x=140, y=150 \\)", "\\(x=132, y=198 \\)"],
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
     "tresc": "\\(ⅅ\\) Wykaż, że:",
     "canvas": [],
-    "podpunkty": ["suma dwóch kolejnych nieparzystych liczbnaturalnych jest podzielna przez \\(4 \\)","suma trzech kolejnych parzystych liczbnaturalnych jest podzielna przaz \\(6 \\)","suma trzech kolejnych liczb naturalnychpodzielnych przez \\(3 \\) jest podzielna przez \\(9 \\)","iloczyn dwóch liczb naturalnych, spośród których co najmniej jedna jest parzysta, jest parzysty"],
+    "podpunkty": ["suma dwóch kolejnych nieparzystych liczbnaturalnych jest podzielna przez \\(4 \\)", "suma trzech kolejnych parzystych liczbnaturalnych jest podzielna przaz \\(6 \\)", "suma trzech kolejnych liczb naturalnychpodzielnych przez \\(3 \\) jest podzielna przez \\(9 \\)", "iloczyn dwóch liczb naturalnych, spośród których co najmniej jedna jest parzysta, jest parzysty"],
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
     "tresc": "Liczbą doskonałą nazywamy liczbęnaturalną \\(n \\) równą sumie wszystkich swoich dzielników naturalnych mniejszych od \\(n\\). Ustal, czy podana liczba jest liczbą doskonałą.",
     "canvas": [],
-    "podpunkty": ["\\(28 \\)","\\(30 \\)","\\(120 \\)","\\(496 \\)"],
+    "podpunkty": ["\\(28 \\)", "\\(30 \\)", "\\(120 \\)", "\\(496 \\)"],
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -210,7 +331,7 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -220,7 +341,7 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -230,7 +351,7 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -240,7 +361,7 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -250,7 +371,7 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -260,7 +381,7 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -270,7 +391,7 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -280,7 +401,7 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -290,7 +411,7 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -300,7 +421,7 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -310,7 +431,7 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -320,7 +441,7 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -330,7 +451,7 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -340,7 +461,7 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -350,7 +471,7 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -360,7 +481,7 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
@@ -370,7 +491,7 @@ const liczby = [
     "wskazowka": null,
     "ramka": null,
     "ramkapo": null,
-    
+
   },
   {
     "id": `${nanoid()}`,
