@@ -1,11 +1,11 @@
 import React from 'react'
-import liczby from "../../data/liczby";
-import pierwiastki from '../../data/pierwiastki';
-import potegi from '../../data/potegi';
-import notacja from 'data/notacjaWykładnicza';
-import logarytmy from '../../data/logarytm'
+import liczby from "../../data/srednia/liczby";
+import pierwiastki from '../../data/srednia/pierwiastki';
+import potegi from '../../data/srednia/potegi';
+import notacja from '../../data/srednia/notacjaWykładnicza';
+import logarytmy from '../../data/srednia/logarytm'
 import WievTask from './wievTask';
-import zbiory from 'data/zbiory';
+import zbiory from '../../data/srednia/zbiory';
 
 const WorksList = ({ model, dzial }) => {
     console.log(model);

@@ -1109,6 +1109,32 @@ const Canvas = ({ id, width, height }) => {
                 ctx.fill(); 
             }
         ); break;
+        case "zil1_zr15_0": (
+            draw = ctx => {
+                ctx.beginPath();
+                ctx.rect(0, 10, 200, 160);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.arc(60, 90, 50, 0, 2 * Math.PI);
+                ctx.stroke()
+                ctx.beginPath();
+                ctx.arc(120, 80, 50, 0, 2 * Math.PI);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.font = "15px Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+                ctx.fillText("A", 40, 40);
+                ctx.fillText("A", 40, 40);
+                ctx.fillText("B", 130, 30);
+                ctx.fillText("B", 130, 30);
+                ctx.fillText("U", 180, 30);
+                ctx.fillText("U", 180, 30);
+                ctx.stroke();
+                ctx.fill();
+            }
+        ); break;
         default: break;
 
     }
