@@ -1135,6 +1135,95 @@ const Canvas = ({ id, width, height }) => {
                 ctx.fill();
             }
         ); break;
+        case "zil2_zp10a": (
+            draw = ctx => {
+                const s = width;
+                ctx.beginPath();
+                ctx.moveTo(10, 10);
+                ctx.lineTo(s - 20, 10);
+                ctx.lineTo(10, 10);
+                ctx.stroke();
+                let k = 23;/* ile kresek wpisać o 1 więcej niż ma być*/
+                let y = (s - 20) / k;
+                for (let x = y + 0.5; x < s - 40; x += y) {
+                    ctx.moveTo(x, 5);
+                    ctx.lineTo(x, 15);
+                    ctx.lineTo(x, 5);}
+                    ctx.stroke();
+                    ctx.moveTo(s - 20, 10);
+                    ctx.lineTo(s - 30, 5);
+                    ctx.lineTo(s - 30, 15);
+                    ctx.lineTo(s - 20, 10);
+                    ctx.fillStyle = "#000000";
+                    ctx.fill();
+                    ctx.stroke();
+                    ctx.font = "15px Tahoma";
+                    ctx.textAlign = "center";
+                    ctx.fillText("0", 10 * y - 4, 30);
+                    ctx.font = "13px Tahoma";
+                    ctx.fillText("2", 14 * y , 30);
+                    ctx.moveTo(14 * y - 12,23);
+                    ctx.lineTo(14 * y -7, 30); 
+                    ctx.lineTo(14* y-5, 18);
+                    ctx.lineTo(14 * y + 5, 18); 
+                    ctx.font = "15px Tahoma";
+                    ctx.fillText("x", 23 * y - 8, 30);
+                    ctx.stroke(); 
+            }
+        ); break;
+        case "zil2_zp10b": (
+            draw = ctx => {
+                const s = width;
+                ctx.beginPath();
+                ctx.moveTo(10, 10);
+                ctx.lineTo(s - 20, 10);
+                ctx.lineTo(10, 10);
+                ctx.stroke();
+                let k = 27;/* ile kresek wpisać o 1 więcej niż ma być*/ 
+                let y = (s - 20) / k;
+                for (let x = y + 0.5; x < s - 40; x += y) {
+                ctx.moveTo(x, 5);
+                ctx.lineTo(x, 15);
+                ctx.lineTo(x, 5);        } 
+                ctx.stroke();
+                ctx.moveTo(s - 20, 10);
+                ctx.lineTo(s - 30, 5); 
+                ctx.lineTo(s - 30, 15);
+                ctx.lineTo(s - 20, 10);
+                ctx.fillStyle = "#000000"; 
+                ctx.fill();
+                ctx.stroke(); 
+                ctx.font = "15px Tahoma"; 
+                ctx.textAlign = "center";
+                ctx.fillText("0", 13 * y - 4, 30); 
+                ctx.fillText("-2", y - 10, 30);
+                //początek PI  
+                ctx.moveTo(y + 5, 18);
+                ctx.lineTo(y + 20, 18);
+                ctx.lineTo(y + 15, 18);
+                ctx.lineTo(y + 15, 30);
+                ctx.lineTo(y + 15, 18);
+                ctx.lineTo(y + 10, 18); 
+                ctx.lineTo(y + 10, 30); 
+                ctx.lineTo(y + 10, 18);
+                ctx.lineTo(y + 5, 18);
+                //koniec PI 
+                //początek PI 
+                ctx.moveTo(19 * y - 5, 18); 
+                ctx.lineTo(19 * y + 10, 18);  
+                ctx.lineTo(19 * y + 5, 18) 
+                ctx.lineTo(19 * y + 5, 30);
+                ctx.lineTo(19 * y + 5, 18);
+                ctx.lineTo(19 * y, 18);
+                ctx.lineTo(19 * y, 30); 
+                ctx.lineTo(19 * y, 18);
+                ctx.lineTo(19 * y - 5, 18);
+                //koniec PI 
+                ctx.font = "15px Tahoma"; 
+                ctx.fillText("x", 27 * y - 8, 30);
+                ctx.stroke();
+            }
+        ); break;
         default: break;
 
     }

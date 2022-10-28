@@ -31,7 +31,7 @@ const Jezyk = () => {
                 <LeftNavi model="b"  />
                 <div className={tasksList}>
                     <h2 className={tytul}>Język matematyki </h2>
-                    <ul className={podmenu}>
+                    <ul className={podmenu} data-poddzialy>
                         <li id="1" key="1"><button onClick={renderTask}>Zbiory</button></li>
                         <li id="2" key="2"><button onClick={renderTask}>Przedziały</button></li>
                         <li id="3" key="3"><button onClick={renderTask}>Potęgi</button></li>

@@ -19,7 +19,7 @@ const WievTask = ({ data, model }) => {
         pages.push({ id: `${i}`, val: `${i * numberOfTask}` });
     };
     const podmenu = document.querySelector('[data-poddzialy]')
-    console.log(podmenu.childNodes[0].id);
+    // console.log(podmenu.childNodes[0].id);
     for (let i = 0; i < podmenu.childNodes.length; i++) {
         if (Number(model) === Number(podmenu.childNodes[i].id)) {
             podmenu.childNodes[i].style.backgroundColor = "green";

@@ -87,12 +87,18 @@ const RightSide = ({ model }) => {
             </div>
         );
         case "c": return (
-            <div>
+            <div className={mainGuz}>
                 <Link to="/matura/wymagania">Wymagania 2023</Link>
                 <Link to="/matura/powtorka">Powtórka</Link>
                 <Link to="/matura/zestawy">Zestawy</Link>
             </div>
         );
+        case "cz": return (
+            <div className={mainGuz}>
+                <Link to="/matura/zestawy/podstawa">Poziom podstawowy</Link>
+                <Link to="/matura/zestawy/rozszerzenie">Poziom rozszerzony</Link>
+            </div>
+        )
         case "d": return (
             <div>tresde</div>
         );

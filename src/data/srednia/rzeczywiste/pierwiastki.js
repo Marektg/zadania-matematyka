@@ -3,7 +3,7 @@ import { nanoid } from "@reduxjs/toolkit"
 
 // {
 //     "id": `${nanoid()}`,
-//     "tresc":,,
+//     "tresc":"",
 // "canvas": [],
 // "podpunkty":[],
 // "wskazowka": null,

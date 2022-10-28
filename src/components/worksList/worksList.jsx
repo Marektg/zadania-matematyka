@@ -28,6 +28,7 @@ const WorksList = ({ model, dzial }) => {
         case "5":
             data = logarytmy;
             return (<WievTask data={data} model={model} />);
+            
         
         
         default: return (<div></div>);

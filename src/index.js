@@ -13,6 +13,8 @@ import Matura from 'pages/matura/matura';
 import Wymagania from 'pages/matura/wymagania/wymagania';
 import { MathJaxContext } from 'better-react-mathjax';
 import Jezyk from 'pages/srednia/jezyk/jezyk';
+import Zestawy from 'pages/matura/zestawy/zestawy';
+import PoziomPodstawowy from 'pages/matura/zestawy/poziomPodstawowy';
 
 const config = {
   loader: { load: ["[tex]/html"] },
@@ -42,7 +44,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
          
           <Route path='matura' element={<Matura />} />
             <Route path='matura/wymagania' element={<Wymagania />} />
-   
+          <Route path='matura/zestawy' element={<Zestawy />} />
+            <Route path='matura/zestawy/podstawa' element={<PoziomPodstawowy />} />
+         
           {/*<Route path='studia' element={<Studia />} />*/}
 
         </Routes>
