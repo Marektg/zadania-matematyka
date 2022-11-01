@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/zadania-matematyka/static/css/main.3e5b7915.css",
-    "main.js": "/zadania-matematyka/static/js/main.25f10bdf.js",
-    "index.html": "/zadania-matematyka/index.html",
-    "main.3e5b7915.css.map": "/zadania-matematyka/static/css/main.3e5b7915.css.map",
-    "main.25f10bdf.js.map": "/zadania-matematyka/static/js/main.25f10bdf.js.map"
+    "main.css": "/zadania-matematyka.netlify.app/static/css/main.3e5b7915.css",
+    "main.js": "/zadania-matematyka.netlify.app/static/js/main.7548da1c.js",
+    "index.html": "/zadania-matematyka.netlify.app/index.html",
+    "main.3e5b7915.css.map": "/zadania-matematyka.netlify.app/static/css/main.3e5b7915.css.map",
+    "main.7548da1c.js.map": "/zadania-matematyka.netlify.app/static/js/main.7548da1c.js.map"
   },
   "entrypoints": [
     "static/css/main.3e5b7915.css",
-    "static/js/main.25f10bdf.js"
+    "static/js/main.7548da1c.js"
   ]
 }
