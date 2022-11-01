@@ -104,4 +104,11 @@
   background-color: rgb(210, 240, 241);
   cursor: pointer;
   font-weight: 700;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=wievTask.module.css.map */

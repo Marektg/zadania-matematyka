@@ -3,8 +3,6 @@ import styles from '../matura.module.scss';
 import TopNavi from 'components/topNavi/topNavi';
 import LeftNavi from 'components/leftNavi/leftNavi';
 import WorksList from 'components/worksList/worksList';
-import { MathJax } from 'better-react-mathjax';
-// import { current } from '@reduxjs/toolkit';
 
 const PoziomPodstawowy = () => {
     const [title, setTitle] = useState(null);
@@ -30,7 +28,7 @@ const PoziomPodstawowy = () => {
             <div className={basic} >
                 <LeftNavi model="c" />
                 <div className={tasksList}>
-                    <h2 className={tytul}>Liczby rzeczywiste </h2>
+                    <h2 className={tytul}>Zestawy maturalne - poziom podstawowy </h2>
                     <ul className={podmenu} data-poddzialy>
                         <li id="1" key="1"><button onClick={renderTask}>2022</button></li>
                         <li id="2" key="2"><button onClick={renderTask}>2021</button></li>

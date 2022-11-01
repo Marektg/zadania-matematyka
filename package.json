@@ -1,7 +1,7 @@
 {
   "name": "zadania-matematyka",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.0", 
+  "homepage": "https://marektg.github.io/zadania-matematyka/",
   "main": "index.js",
  "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
@@ -28,6 +28,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint:js": "eslint src/**/*.{js,jsx}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Marektg/zadania-matematyka"
   },
   "eslintConfig": {
     "extends": [

@@ -1224,6 +1224,74 @@ const Canvas = ({ id, width, height }) => {
                 ctx.stroke();
             }
         ); break;
+        case "z120227": (
+            draw = ctx => {
+                let w = width;
+                let h = height;
+                let range = w/18;
+             
+                let rangex = w / range;
+                let rangey = h / range;
+                let color = "green";
+                function grid() {
+                    ctx.strokeStyle = "black";
+                    for (let i = 1; i <= Math.floor(rangex * 2); i++) {
+                        ctx.lineWidth = 1 / 6;
+                        ctx.beginPath();
+                        ctx.moveTo((range / 2) * i, 0);
+                        ctx.lineTo((range / 2) * i, h);
+                        ctx.closePath();
+                        ctx.stroke();
+                    }
+                    for (let i = 1; i <= Math.floor(rangey * 2); i++) {
+                        ctx.lineWidth = 1 / 6;
+                        ctx.beginPath();
+                        ctx.moveTo(0, (range / 2) * i);
+                        ctx.lineTo(w, (range / 2) * i);
+                        ctx.closePath();
+                        ctx.stroke();
+                    }
+                    ctx.lineWidth = 1;
+                    ctx.beginPath();
+                    ctx.moveTo(0, h / 2);
+                    ctx.lineTo(w, h / 2);
+                    ctx.closePath();
+                    ctx.stroke();
+
+                    ctx.beginPath();
+                    ctx.moveTo(w / 2, 0);
+                    ctx.lineTo(w / 2, h);
+                    ctx.closePath();
+                    ctx.stroke();
+                    for (let i = -(rangex / 2); i <= (rangex / 2); i++) {
+                        ctx.fillText(i, ((i + (rangex / 2)) * range)-5, (h / 2) + 15);
+                        ctx.moveTo(i * range, (h/2)-5);
+                        ctx.lineTo(i * range, (h / 2) + 5);
+                        ctx.moveTo(i * range*(-1), (h / 2) - 5);
+                        ctx.lineTo(i * range*(-1), (h / 2) + 5);
+                    }
+                    ctx.save();
+                }
+                grid();
+                ctx.closePath();
+                ctx.stroke();
+                function start_settings() {
+                    ctx.translate(w / 2, h / 2);
+                    // ctx.scale(range, range);
+                }
+                start_settings();
+                ctx.beginPath();
+                ctx.lineWidth = 2/range;
+                ctx.strokeStyle = color;
+                ctx.moveTo(-6,-3);
+                ctx.lineTo(-4, -3);
+                ctx.lineTo(-1, 0);
+                ctx.lineTo(2, -3);
+                ctx.moveTo(2, -1);
+                ctx.lineTo(5, -1);
+                ctx.stroke();
+            }
+        ); break;
         default: break;
 
     }
