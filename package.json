@@ -1,7 +1,7 @@
 {
   "name": "zadania-matematyka",
   "version": "0.1.0", 
-  "homepage": "https://marektg.github.io/zadania-matematyka/",
+  "homepage": "zadania-matematyka.netlify.app",
   "main": "index.js",
  "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
