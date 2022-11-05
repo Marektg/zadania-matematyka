@@ -89,7 +89,7 @@ const RightSide = ({ model }) => {
         case "c": return (
             <div className={mainGuz}>
                 <Link to="/matura/wymagania">Wymagania 2023</Link>
-                <Link to="/matura/powtorka">Powtórka</Link>
+                <Link to="/matura/powtorzenie">Powtórzenie</Link>
                 <Link to="/matura/zestawy">Zestawy</Link>
             </div>
         );
@@ -98,7 +98,24 @@ const RightSide = ({ model }) => {
                 <Link to="/matura/zestawy/podstawa">Poziom podstawowy</Link>
                 <Link to="/matura/zestawy/rozszerzenie">Poziom rozszerzony</Link>
             </div>
-        )
+        );
+        case "cp": return (
+            <div className={mainGuz}>
+                <Link to="/matura/powtorzenie/liczby">Liczby, zbiory i wartość bezwzględna</Link>
+                <Link to="/matura/powtorzenie/funkcjeIFunkcjaLiniowa">Funkcje. Funkcja liniowa</Link>
+                <Link to="/matura/powtorzenie/funkcjaKwadratowa">Funkcja kwadratowa</Link>
+                <Link to="/matura/powtorzenie/wielomiany">Wielomiany</Link>
+                <Link to="/matura/powtorzenie/funkcjeWymierne">Funkcje wymierne</Link>
+                <Link to="/matura/powtorzenie/trygonometria">Trygonometria</Link>
+                <Link to="/matura/powtorzenie/funkcjeWykladniczeLogarytmiczne">Funkcje wykładnicze i logarytmiczne</Link>
+                <Link to="/matura/powtorzenie/ciagi">Ciągi</Link>
+                <Link to="/matura/powtorzenie/planimetria">Planimetria</Link>
+                <Link to="/matura/powtorzenie/geometriaAnalityczna">Geometria analityczna</Link>
+                <Link to="/matura/powtorzenie/stereometria">Stereometria</Link>
+                <Link to="/matura/powtorzenie/rachunekRozniczkowy"><MathJax>{"\\(\\star\\)"}</MathJax>  Rachunek różniczkowy</Link>
+                <Link to="/matura/powtorzenie/prawdopodobienstwoStatystyka">Rachunek prawdopodobieństwa i statystyka</Link>
+            </div>
+        );
         case "d": return (
             <div>tresde</div>
         );

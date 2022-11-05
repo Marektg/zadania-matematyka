@@ -1,6 +1,10 @@
 import React, { useRef, useEffect } from 'react'
-const Canvas = ({ id, width, height }) => {
 
+
+
+
+const Canvas = ({ id, width, height }) => {
+ 
     const canvasRef = useRef(null)
     let draw;
     switch (id) {
@@ -1228,71 +1232,288 @@ const Canvas = ({ id, width, height }) => {
             draw = ctx => {
                 let w = width;
                 let h = height;
-                let range = w/18;
-             
-                let rangex = w / range;
-                let rangey = h / range;
-                let color = "green";
-                function grid() {
-                    ctx.strokeStyle = "black";
-                    for (let i = 1; i <= Math.floor(rangex * 2); i++) {
-                        ctx.lineWidth = 1 / 6;
-                        ctx.beginPath();
-                        ctx.moveTo((range / 2) * i, 0);
-                        ctx.lineTo((range / 2) * i, h);
-                        ctx.closePath();
-                        ctx.stroke();
-                    }
-                    for (let i = 1; i <= Math.floor(rangey * 2); i++) {
-                        ctx.lineWidth = 1 / 6;
-                        ctx.beginPath();
-                        ctx.moveTo(0, (range / 2) * i);
-                        ctx.lineTo(w, (range / 2) * i);
-                        ctx.closePath();
-                        ctx.stroke();
-                    }
+                let hp = h / 2 - 10;
+                let wp = w / 2 ;
+                let k =17;
+                let y = (w - 20) / k
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.moveTo(10, hp + 1.5);
+                ctx.lineTo(w - 20, hp + 1.5);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(wp + 0.5, 5);
+                ctx.lineTo(wp + 0.5, h - 5);
+                ctx.stroke();
+
+                for (let x = y + 0.5; x < w - 40; x += y) {
+
                     ctx.lineWidth = 1;
                     ctx.beginPath();
-                    ctx.moveTo(0, h / 2);
-                    ctx.lineTo(w, h / 2);
+                    ctx.moveTo(x, hp - 4);
+                    ctx.lineTo(x, hp + 6);
+                    ctx.closePath();
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.moveTo(wp - 4.5, x - 0.5);
+                    ctx.lineTo(wp + 5.5, x - 0.5);
+                    ctx.closePath();
+                    ctx.stroke();
+                    ctx.lineWidth = 1 / 10;
+                    ctx.beginPath();
+                    ctx.moveTo(x, 10);
+                    ctx.lineTo(x, h - 10)
+                    ctx.closePath();
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.moveTo(10, x);
+                    ctx.lineTo(w - 40, x);
                     ctx.closePath();
                     ctx.stroke();
 
-                    ctx.beginPath();
-                    ctx.moveTo(w / 2, 0);
-                    ctx.lineTo(w / 2, h);
-                    ctx.closePath();
+                }
+                for (let i = -8, n = 1; i < 8; i++, n++) {
+                    ctx.lineWidth = 1;
+                    ctx.fillStyle = "#000000";
+                    ctx.textAlign = "center";
+                    ctx.font = "10px Tahoma";
+                    ctx.fillText(`${i}`, n * y - 2, hp + 16);
                     ctx.stroke();
-                    for (let i = -(rangex / 2); i <= (rangex / 2); i++) {
-                        ctx.fillText(i, ((i + (rangex / 2)) * range)-5, (h / 2) + 15);
-                        ctx.moveTo(i * range, (h/2)-5);
-                        ctx.lineTo(i * range, (h / 2) + 5);
-                        ctx.moveTo(i * range*(-1), (h / 2) - 5);
-                        ctx.lineTo(i * range*(-1), (h / 2) + 5);
+                };
+                for (let i = -5, n = 1; i < 5 ; i++, n++) {
+                    ctx.lineWidth = 1;
+                    ctx.fillStyle = "#000000";
+                    ctx.textAlign = "center";
+                    ctx.font = "10px Tahoma";
+                    if (i !== 0) {
+                        ctx.fillText(`${i}`, wp - 10, h - (n * y) + 10);
                     }
-                    ctx.save();
+                    ctx.stroke();
                 }
-                grid();
-                ctx.closePath();
                 ctx.stroke();
-                function start_settings() {
-                    ctx.translate(w / 2, h / 2);
-                    // ctx.scale(range, range);
-                }
-                start_settings();
+                ctx.lineWidth = 1;
                 ctx.beginPath();
-                ctx.lineWidth = 2/range;
-                ctx.strokeStyle = color;
-                ctx.moveTo(-6,-3);
-                ctx.lineTo(-4, -3);
-                ctx.lineTo(-1, 0);
-                ctx.lineTo(2, -3);
-                ctx.moveTo(2, -1);
-                ctx.lineTo(5, -1);
+                ctx.moveTo(w - 20, hp + 1.5);
+                ctx.lineTo(w - 30, hp - 3.5);
+                ctx.lineTo(w - 30, hp + 6.5);
+                ctx.fillStyle = "#000000";
+                ctx.moveTo(wp + 0.5, 5);
+                ctx.lineTo(wp + 5.5, 15);
+                ctx.lineTo(wp - 4.5, 15);
+                ctx.fillStyle = "#000000";
+                ctx.fill();
                 ctx.stroke();
+                ctx.closePath();
+                ctx.translate(wp, hp+0.5);
+                ctx.beginPath();
+                ctx.strokeStyle = "blue";
+                ctx.fillStyle = "blue";
+                ctx.moveTo(-6*y, -3*y);
+                ctx.lineTo(-4 * y, -3 * y);
+                ctx.lineTo(-1 * y, 0);
+                ctx.lineTo(2 * y, -3 * y);
+                ctx.moveTo(2 * y, -y);
+                ctx.lineTo(5 * y, -y);
+                ctx.stroke();
+                ctx.closePath();
+                ctx.beginPath();
+                ctx.moveTo(-6 * y, -3 * y);
+                ctx.arc(-6 * y, -3 * y, 3, 0, 2 * Math.PI);
+                ctx.moveTo(2 * y, -3 * y);
+                ctx.arc(2 * y, -3 * y, 3, 0, 2 * Math.PI);
+                ctx.moveTo(5 * y, -y);
+                ctx.arc(5 * y, -y, 3, 0, 2 * Math.PI);
+                ctx.fill()
+                ctx.moveTo(2 * y, -y);
+                ctx.arc(2 * y, -y, 3, 0, 2 * Math.PI);
+                ctx.stroke(); 
+             
+                
             }
         ); break;
+        
+        case "z1202218": (
+            draw = ctx => {
+                ctx.beginPath();
+                ctx.fillStyle="white";
+                ctx.moveTo(250, 150);
+                ctx.arc(250, 150, 100, 0, 2 * Math.PI);
+                ctx.stroke();
+                ctx.fill();
+                ctx.beginPath();
+                ctx.moveTo(250, 250);
+                ctx.arc(250,250,30,-Math.PI,-13/18*Math.PI)
+                ctx.stroke();
+                ctx.fill();
+                ctx.beginPath();
+                ctx.strokeStyle = "#000000";
+                ctx.moveTo(0, 250);
+                ctx.lineTo(400, 250);
+               
+                ctx.moveTo(250,250);
+                ctx.lineTo(152, 132);
+                ctx.lineTo(348, 168);
+                ctx.stroke();
+                ctx.fillStyle = "#000000";
+                ctx.font = "15px Tahoma"; 
+                ctx.fillText("A", 250, 270);
+                ctx.fillText("B", 135, 135);
+                ctx.fillText("C", 355, 175);
+                ctx.font = "10px Tahoma"; 
+                ctx.fillText("50", 225, 245);
+                ctx.font = "6px Tahoma";
+                ctx.fillText("o", 235, 238);
+             }
+        ); break;
+        case "z1202219": (
+            draw = ctx => {
+                // ctx.beginPath();
+                // ctx.moveTo(0, 0);
+                // ctx.lineTo(0, height);
+                // ctx.lineTo(width, height);
+                // ctx.lineTo(width, 0);
+                // ctx.closePath();
+                // ctx.fillStyle = "blue";
+                // ctx.fill();
+                // ctx.stroke();
+                ctx.beginPath();
+                ctx.fillStyle = "white";
+                ctx.moveTo(350, 250);
+                ctx.arc(350, 250, 100, 0, 2 * Math.PI);
+                ctx.stroke();
+                ctx.fill();
+                ctx.beginPath();
+                ctx.moveTo(442, 211);
+                ctx.arc(442, 211, 30, -1.3 * Math.PI, -83 / 90 * Math.PI)
+                ctx.stroke();
+                ctx.fill();
+                ctx.beginPath();
+                ctx.strokeStyle = "#000000";
+                ctx.moveTo(76, 350);
+                ctx.lineTo(500, 350);
+                ctx.lineTo(390, 85);
+                ctx.lineTo(76, 350);
+                ctx.moveTo(350, 350);
+                ctx.lineTo(442, 211);
+                ctx.lineTo(285, 173);
+                ctx.stroke();
+                ctx.fillStyle = "#000000";
+                ctx.font = "15px Tahoma";
+                ctx.fillText("A", 65, 355);
+                ctx.fillText("B", 505, 355);
+                ctx.fillText("C", 390, 80);
+                ctx.fillText("D", 444, 210);
+                ctx.fillText("E", 275, 170);
+                ctx.fillText("F", 350, 370);
+                ctx.font = "10px Tahoma";
+                ctx.fillText("70", 420, 225);
+                ctx.font = "6px Tahoma";
+                ctx.fillText("o", 431, 220);
+             }
+        ); break; case "z1202233": (
+            draw = ctx => {
+                // ctx.beginPath();
+                // ctx.moveTo(0, 0);
+                // ctx.lineTo(0, height);
+                // ctx.lineTo(width, height);
+                // ctx.lineTo(width, 0);
+                // ctx.closePath();
+                // ctx.fillStyle = "blue";
+                // ctx.fill();
+                // ctx.stroke();
+                ctx.beginPath();
+                ctx.strokeStyle = "#000000";
+                ctx.moveTo(150, 350);
+                ctx.lineTo(450, 350);
+                ctx.lineTo(350, 50);
+                ctx.lineTo(150, 350);
+                ctx.lineTo(425, 275);
+                ctx.lineTo(200, 275);
+                ctx.lineTo(450, 350);
+                ctx.stroke();
+                ctx.fillStyle = "#000000";
+                ctx.font = "15px Tahoma";
+                ctx.fillText("A", 145, 365);
+                ctx.fillText("B", 445, 365);
+                ctx.fillText("C", 345, 45);
+                ctx.fillText("D", 430, 275);
+                ctx.fillText("E", 190, 275);
+                ctx.fillText("S", 300, 325);
+            }
+        ); break;
+        case "pliczbyrys1": (
+            draw = ctx => {
+                ctx.beginPath();
+                ctx.fillStyle = "#4472c4";
+                ctx.strokeStyle = "#000000";
+                ctx.moveTo(150, 150);
+                ctx.arc(150, 150, 150, -Math.PI / 2, 0.26 * Math.PI);
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(150, 150);
+                ctx.fillStyle = "#ed7d31";
+                ctx.strokeStyle = "#000000";
+                ctx.arc(150, 150, 150, 0.26 * Math.PI, 0.54*Math.PI);
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(150, 150);
+                ctx.fillStyle = "#a5a5a5";
+                ctx.strokeStyle = "#000000";
+                ctx.arc(150, 150, 150, 0.54 * Math.PI, 0.98*Math.PI);
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(150, 150);
+                ctx.fillStyle = "#ffc000";
+                ctx.strokeStyle = "#000000";
+                ctx.arc(150, 150, 150, 0.98*Math.PI, 1.22*Math.PI);
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(150, 150);
+                ctx.fillStyle = "#5b9bd5";
+                ctx.strokeStyle = "#000000";
+                ctx.arc(150, 150, 150,  1.22*Math.PI, 1.38*Math.PI);
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(150, 150);
+                ctx.fillStyle = "#70ad47";
+                ctx.strokeStyle = "#000000";
+                ctx.arc(150, 150, 150, 1.38*Math.PI, 1.5*Math.PI);
+                ctx.fill();
+                ctx.stroke();
+                ctx.save();
+                ctx.beginPath();
+                ctx.strokeStyle = "#000000";
+                ctx.fillStyle = "#000000";
+                ctx.font = "12px Tahoma";
+                ctx.translate(150, 150);
+                ctx.rotate(0.5);
+                ctx.fillText("przygodowe", 30, -50);
+                ctx.fillText("33%", 50, -30);
+                ctx.rotate(0.5);
+                ctx.fillText("fantastyczne", 35, 10);
+                ctx.fillText("14%", 50, 25);
+                ctx.rotate(-1.5);
+                ctx.fillText("kryminały", -80, 10);
+                ctx.fillText("22%", -70, 25);
+                ctx.rotate(0.5);
+                ctx.fillText("historyczne", -100, -20);
+                ctx.fillText("12%", -80, -5);
+                ctx.rotate(0.7);
+                ctx.fillText("biografie", -100, -20);
+                ctx.fillText("8%", -80, -5);
+                ctx.rotate(0.3);
+                ctx.fillText("dramaty", -100, -30);
+                
+            }); break;
+
+
         default: break;
+
 
     }
     useEffect(() => {

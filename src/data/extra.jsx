@@ -127,6 +127,30 @@ export const Extra = ({ id }) => {
                 </table></MathJax>
             </div>
         ); break;
+        case "z1202226": (
+            content = <div className={wrapFlex}>
+                <MathJax> <table className={tab1}> <tr>
+                    <th>Liczba uczniów</th>
+                    <td>{"\\(5\\)"} </td>
+                    <td>{"\\(3\\)"} </td>
+                    <td>{"\\(5\\)"} </td>
+                    <td>{"\\(7\\)"} </td>
+                    <td>{"\\(3\\)"} </td>
+                    <td>{"\\(1\\)"} </td>
+                </tr>
+                    <tr>
+                        <th>Ocena</th>
+                        <td>{"\\(1\\)"}</td>
+                        <td>{"\\(2\\)"}</td>
+                        <td>{"\\(3\\)"}</td>
+                        <td>{"\\(4\\)"}</td>
+                        <td>{"\\(5\\)"}</td>
+                        <td>{"\\(6\\)"}</td>
+                    </tr>
+
+                </table></MathJax>
+            </div>
+        ); break;
 
         default: break;
 

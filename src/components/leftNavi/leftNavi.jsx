@@ -89,7 +89,7 @@ const LeftNavi = ({ model}) => {
         <h3>Matura</h3>
         <ul className={navListGroup}>
           <li id='l1'><StyledLink to="/matura/wymagania">Wymagania 2023</StyledLink></li>
-          <li id='l2'><StyledLink to="/matura/powtorki">Powtórzenie</StyledLink></li>
+          <li id='l2'><StyledLink to="/matura/powtorzenie">Powtórzenie</StyledLink></li>
           <li id='l3'><StyledLink to="/matura/zestawy">Zestawy</StyledLink></li>
         </ul>
       </nav>

@@ -4,7 +4,7 @@ import TopNavi from 'components/topNavi/topNavi';
 import LeftNavi from 'components/leftNavi/leftNavi';
 import WorksList from 'components/worksList/worksList';
 
-const PoziomPodstawowy = () => {
+const PoziomRozszerzony = () => {
     const [title, setTitle] = useState(null);
     const [currentTask, setCurrentTask] = useState(null);
 
@@ -28,7 +28,7 @@ const PoziomPodstawowy = () => {
             <div className={basic} >
                 <LeftNavi model="c" />
                 <div className={tasksList}>
-                    <h2 className={tytul}>Zestawy maturalne - poziom podstawowy </h2>
+                    <h2 className={tytul}>Zestawy maturalne - poziom rozszerzony </h2>
                     <ul className={podmenu} data-poddzialy>
                         <li id="1" key="1"><button onClick={renderTask}>2022</button></li>
                         <li id="2" key="2"><button onClick={renderTask}>2021</button></li>
@@ -36,11 +36,11 @@ const PoziomPodstawowy = () => {
                         <li id="4" key="4"><button onClick={renderTask}>2019</button></li>
                         <li id="5" key="5"><button onClick={renderTask}>2018</button></li>
                         <li id="6" key="6"><button onClick={renderTask}>Starsze</button></li>
-                       
+
                     </ul>
                     <div className={tasks}>
                         <h3 className={rodzajzad}>{title}</h3>
-                        <WorksList model={currentTask} dzial="czp" />
+                        <WorksList model={currentTask} dzial="czr" />
                     </div>
                 </div>
 
@@ -50,4 +50,4 @@ const PoziomPodstawowy = () => {
     )
 }
 
-export default PoziomPodstawowy
+export default PoziomRozszerzony

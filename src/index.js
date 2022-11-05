@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 // import Layout from 'components/layout/layout';
 import HomePage from 'pages/homePage/homePage';
-import Podstawowka from 'pages/podstawowka/podstawowka';
+// import Podstawowka from 'pages/podstawowka/podstawowka';
 import Srednia from 'pages/srednia/srednia';
 import Lrzeczywiste from 'pages/srednia/lrzeczywiste/lrzeczywiste';
 import Matura from 'pages/matura/matura';
@@ -15,6 +15,9 @@ import { MathJaxContext } from 'better-react-mathjax';
 import Jezyk from 'pages/srednia/jezyk/jezyk';
 import Zestawy from 'pages/matura/zestawy/zestawy';
 import PoziomPodstawowy from 'pages/matura/zestawy/poziomPodstawowy';
+import PoziomRozszerzony from 'pages/matura/zestawy/poziomRozszerzony';
+import Powtorzenie from 'pages/matura/powtorzenie/powtorzenie';
+import PLiczby from 'pages/matura/powtorzenie/pliczby';
 
 const config = {
   loader: { load: ["[tex]/html"] },
@@ -37,7 +40,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<HomePage />} />
-          <Route path='podstawowka' element={<Podstawowka />} />
+         {/* <Route path='podstawowka' element={<Podstawowka />} />*/}
           <Route path='srednia' element={<Srednia />} />
           <Route path='srednia/lrzeczywiste' element={<Lrzeczywiste />} />
           <Route path='srednia/jezyk' element={<Jezyk />} />
@@ -45,7 +48,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='matura' element={<Matura />} />
             <Route path='matura/wymagania' element={<Wymagania />} />
           <Route path='matura/zestawy' element={<Zestawy />} />
-            <Route path='matura/zestawy/podstawa' element={<PoziomPodstawowy />} />
+          <Route path='matura/zestawy/podstawa' element={<PoziomPodstawowy />} />
+          <Route path='matura/zestawy/rozszerzenie' element={<PoziomRozszerzony />} />
+          <Route path='matura/powtorzenie' element={<Powtorzenie />} />
+          <Route path='matura/powtorzenie/liczby' element={<PLiczby />} />
          
           {/*<Route path='studia' element={<Studia />} />*/}
 
