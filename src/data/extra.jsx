@@ -15,23 +15,23 @@ export const Extra = ({ id }) => {
                 <div className={firstRow}>Jak znaleźć rozwinięcie dziesiętne liczby <MathJax inline>{"\\(\\frac{6}{19}\\)"}</MathJax></div>
 
                 <div className={mainPart}>
-                    
-                        <div>6 : 19 = 0,31578947</div>
-                        <div>Dzielimy na kalkulatorze 6 przez 19</div>
-                   
-                        <div><span>0,3157894</span></div>
-                        <div>Zapisujemy wynik, pomijając ostatnią cyfrę. Jeżeli bezpośrednio przed pomijaną cyfrą są zera, je również pomijamy</div>
-                   
-                        <div>0,3157894 x 19 = 5,9999986</div>
-                        <div>Zapisaną liczbę mnożymy przez 19</div>
-                   
-                        <div>6-5,9999986=0,0000014<br></br>
-                            14 : 19= 0,73684211
-                        </div>
-                        <div>Obliczamy ile brakuje do 6, pomijamy zera
-                            i otrzymaną liczbę naturalną (czyli 14)
-                            dzielimy przez 19</div>
-                    
+
+                    <div>6 : 19 = 0,31578947</div>
+                    <div>Dzielimy na kalkulatorze 6 przez 19</div>
+
+                    <div><span>0,3157894</span></div>
+                    <div>Zapisujemy wynik, pomijając ostatnią cyfrę. Jeżeli bezpośrednio przed pomijaną cyfrą są zera, je również pomijamy</div>
+
+                    <div>0,3157894 x 19 = 5,9999986</div>
+                    <div>Zapisaną liczbę mnożymy przez 19</div>
+
+                    <div>6-5,9999986=0,0000014<br></br>
+                        14 : 19= 0,73684211
+                    </div>
+                    <div>Obliczamy ile brakuje do 6, pomijamy zera
+                        i otrzymaną liczbę naturalną (czyli 14)
+                        dzielimy przez 19</div>
+
                     <div>0,3157894<span>7368421</span> </div>
                     <div>Cyfry po przecinku ( z pominięciem ostatniej)
                         dopisujemy na końcu wcześniej otrzymanego
@@ -62,9 +62,9 @@ export const Extra = ({ id }) => {
         case "rozdziere1": (
             content = <div className={wrapFlex}>
                 <div><p>Sposób na przedstawienie ułamka okresowego w postaci ułamka zwykłego</p>
-                <MathJax inline>{"\\(0,23(5)=\\frac{p}{q}=\\frac{235 - 23}{900}=\\frac{212}{900}=\\frac{53}{225}\\)"}</MathJax></div>
+                    <MathJax inline>{"\\(0,23(5)=\\frac{p}{q}=\\frac{235 - 23}{900}=\\frac{212}{900}=\\frac{53}{225}\\)"}</MathJax></div>
                 <div>
-                <MathJax inline>{"\\(\\bullet\\)"}</MathJax> Aby obliczyć <MathJax inline>{"\\(p \\)"}</MathJax>, od liczby utworzonej z cyfr po przecinku odejmujemy liczbę utworzoną z cyfr stojących między przecinkiem a okresem</div>
+                    <MathJax inline>{"\\(\\bullet\\)"}</MathJax> Aby obliczyć <MathJax inline>{"\\(p \\)"}</MathJax>, od liczby utworzonej z cyfr po przecinku odejmujemy liczbę utworzoną z cyfr stojących między przecinkiem a okresem</div>
                 <div> <MathJax inline>{"\\(\\bullet\\)"}</MathJax> Aby otrzymać <MathJax inline>{"\\(q \\)"}</MathJax>, zapisujemy tyle dziewiątek, ile jest cyfr w okresie, i tyle zer, ile jest cyfr między przecinkiem a okresem.
                 </div>
             </div>
@@ -123,7 +123,7 @@ export const Extra = ({ id }) => {
                         <td>? </td>
                         <td>? </td>
                     </tr>
-                  
+
                 </table></MathJax>
             </div>
         ); break;
@@ -149,6 +149,54 @@ export const Extra = ({ id }) => {
                     </tr>
 
                 </table></MathJax>
+            </div>
+        ); break;
+        case "pliczby1": (
+            content = <div className={wrapFlex}>
+                <MathJax> <table className={tab1}>
+                    <tr>
+                    <th>Wartość transakcji</th>
+                    <th>Wysokość prowizji</th>
+                    </tr>
+                    <tr>
+                        <td>od {"\\(500 \\)"} zł</td>
+                        <td>{"\\(15 \\)"} zł</td>
+                    </tr>
+                    <tr>
+                        <td>od {"\\(500,01 \\)"} zł do  {"\\(3000 \\)"} zł</td>
+                        <td>{"\\(2 \\% \\)"} wartości transakcji {"\\(+\\ 5 \\)"} zł</td>
+                    </tr>
+                    <tr>
+                        <td>od {"\\(3000,01 \\)"} zł do {"\\(8000 \\)"} zł</td>
+                        <td> {"\\(1,5 \\% \\)"} wartości transakcji {"\\(+\\ 20 \\)"} zł</td>
+                    </tr>
+                    <tr>
+                        <td>od {"\\(8000,01 \\)"} zł do {"\\(15000 \\)"} zł</td>
+                        <td>{"\\(1 \\% \\)"} wartości transakcji {"\\(+ \\ 60 \\)"} zł</td>
+                    </tr>
+                    <tr>
+                        <td>powyżej {"\\(15000 \\)"} zł</td>
+                        <td>{"\\(0,7 \\% \\)"} wartości transakcji {"\\(+\\ 105 \\)"} zł</td>
+                    </tr>
+
+            </table></MathJax>
+            </div>
+        ); break;
+        case "pliczby2": (
+            content = <div className={wrapFlex}>
+            <MathJax>
+            <p>{"\\(a \\circ b=\\)"}  liczba nie mniejsza spośród liczb  {"\\(a\\)"}  i  {"\\(b\\)"}</p>
+            <p>{"\\(a\\ast b=\\)"}  liczba nie większa sopśród liczb  {"\\(a\\)"}  i  {"\\(b\\)"}</p>
+            </MathJax>
+            </div>
+            ); break;
+            case "pliczby3": (
+            content = <div className={wrapFlex}>
+                <MathJax>
+                    <p>Sumę  {"\\(S\\)"}  zapisujemy w postaci {"\\(S=\\frac{4 - 1}{1\\cdot 4}+\\frac{7 - 4}{4\\cdot 7}+\\frac{10 - 7}{7\\cdot 10}+_{\\cdots}+\\frac{304 - 301}{301\\cdot 304}+\\frac{307 - 304}{304\\cdot 307}\\)"}</p>
+                    <p>Każdy składnik tej sumy przedstawiamy jako różnicę ułamków  {"\\(S=(\\frac{4}{4\\cdot 1}-\\frac{1}{4\\cdot 1})+(\\frac{7}{7\\cdot 4}-\\frac{4}{7\\cdot 4})+(\\frac{10}{10\\cdot 7}-\\frac{7}{10\\cdot 7})+_{\\cdots}+\\\\ +(\\frac{304}{304\\cdot 301}-\\frac{301}{304\\cdot 301})+(\\frac{307}{307\\cdot 304}-\\frac{304}{307\\cdot 304})\\)"} stąd {"\\(S=(1-\\frac{1}{4})+(\\frac{1}{4}-\\frac{1}{7})+(\\frac{1}{7}-\\frac{1}{10})+_{\\cdots}+(\\frac{1}{301}-\\frac{1}{304})+(\\frac{1}{304}-\\frac{1}{307})\\)"}  więc {"\\(S=1-\\frac{1}{4}+\\frac{1}{4}-\\frac{1}{7}+\\frac{1}{7}-\\frac{1}{10}+_{\\cdots}+\\frac{1}{301}-\\frac{1}{304}+\\frac{1}{304}-\\frac{1}{307}\\)"}</p>
+                    <p>Obliczamy sumę, redukując parami wyrazy sąsiednie, poza pierwszym i ostatnim  {"\\(S=1-\\frac{1}{307}=\\frac{306}{307}\\)"}</p>
+                </MathJax>    
             </div>
         ); break;
 

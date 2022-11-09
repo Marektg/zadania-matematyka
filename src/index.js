@@ -18,6 +18,8 @@ import PoziomPodstawowy from 'pages/matura/zestawy/poziomPodstawowy';
 import PoziomRozszerzony from 'pages/matura/zestawy/poziomRozszerzony';
 import Powtorzenie from 'pages/matura/powtorzenie/powtorzenie';
 import PLiczby from 'pages/matura/powtorzenie/pliczby';
+import PCiagi from 'pages/matura/powtorzenie/pciagi';
+import PFunkcjeIFunkcjaLiniowa from 'pages/matura/powtorzenie/pfunkcjeIFunkcjaLiniowa';
 
 const config = {
   loader: { load: ["[tex]/html"] },
@@ -52,6 +54,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='matura/zestawy/rozszerzenie' element={<PoziomRozszerzony />} />
           <Route path='matura/powtorzenie' element={<Powtorzenie />} />
           <Route path='matura/powtorzenie/liczby' element={<PLiczby />} />
+          <Route path='matura/powtorzenie/ciagi' element={<PCiagi />} />
+          <Route path='matura/powtorzenie/funkcjeIFunkcjaLiniowa' element={<PFunkcjeIFunkcjaLiniowa />} />
          
           {/*<Route path='studia' element={<Studia />} />*/}
 

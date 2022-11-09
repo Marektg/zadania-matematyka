@@ -1367,15 +1367,7 @@ const Canvas = ({ id, width, height }) => {
         ); break;
         case "z1202219": (
             draw = ctx => {
-                // ctx.beginPath();
-                // ctx.moveTo(0, 0);
-                // ctx.lineTo(0, height);
-                // ctx.lineTo(width, height);
-                // ctx.lineTo(width, 0);
-                // ctx.closePath();
-                // ctx.fillStyle = "blue";
-                // ctx.fill();
-                // ctx.stroke();
+               
                 ctx.beginPath();
                 ctx.fillStyle = "white";
                 ctx.moveTo(350, 250);
@@ -1412,15 +1404,7 @@ const Canvas = ({ id, width, height }) => {
              }
         ); break; case "z1202233": (
             draw = ctx => {
-                // ctx.beginPath();
-                // ctx.moveTo(0, 0);
-                // ctx.lineTo(0, height);
-                // ctx.lineTo(width, height);
-                // ctx.lineTo(width, 0);
-                // ctx.closePath();
-                // ctx.fillStyle = "blue";
-                // ctx.fill();
-                // ctx.stroke();
+              
                 ctx.beginPath();
                 ctx.strokeStyle = "#000000";
                 ctx.moveTo(150, 350);
@@ -1510,6 +1494,204 @@ const Canvas = ({ id, width, height }) => {
                 ctx.fillText("dramaty", -100, -30);
                 
             }); break;
+        case "funkcjerys1":  (
+            draw = ctx => {
+                let w = width;
+                let h = height;
+                let hp = h / 2 - 10;
+                let wp = w / 2;
+                let k = 17;
+                let y = (w - 20) / k
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.moveTo(10, hp + 1.5);
+                ctx.lineTo(w - 20, hp + 1.5);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(wp + 0.5, 5);
+                ctx.lineTo(wp + 0.5, h - 5);
+                ctx.stroke();
+
+                for (let x = y + 0.5; x < w - 40; x += y) {
+
+                    ctx.lineWidth = 1;
+                    ctx.beginPath();
+                    ctx.moveTo(x, hp - 4);
+                    ctx.lineTo(x, hp + 6);
+                    ctx.closePath();
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.moveTo(wp - 4.5, x - 0.5);
+                    ctx.lineTo(wp + 5.5, x - 0.5);
+                    ctx.closePath();
+                    ctx.stroke();
+                    ctx.lineWidth = 1 / 10;
+                    ctx.beginPath();
+                    ctx.moveTo(x, 10);
+                    ctx.lineTo(x, h - 10)
+                    ctx.closePath();
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.moveTo(10, x);
+                    ctx.lineTo(w - 40, x);
+                    ctx.closePath();
+                    ctx.stroke();
+
+                }
+                for (let i = -8, n = 1; i < 8; i++, n++) {
+                    ctx.lineWidth = 1;
+                    ctx.fillStyle = "#000000";
+                    ctx.textAlign = "center";
+                    ctx.font = "10px Tahoma";
+                    ctx.fillText(`${i}`, n * y - 2, hp + 16);
+                    ctx.stroke();
+                };
+                for (let i = -5, n = 1; i < 5; i++, n++) {
+                    ctx.lineWidth = 1;
+                    ctx.fillStyle = "#000000";
+                    ctx.textAlign = "center";
+                    ctx.font = "10px Tahoma";
+                    if (i !== 0) {
+                        ctx.fillText(`${i}`, wp - 10, h - (n * y) + 10);
+                    }
+                    ctx.stroke();
+                }
+                ctx.stroke();
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.moveTo(w - 20, hp + 1.5);
+                ctx.lineTo(w - 30, hp - 3.5);
+                ctx.lineTo(w - 30, hp + 6.5);
+                ctx.fillStyle = "#000000";
+                ctx.moveTo(wp + 0.5, 5);
+                ctx.lineTo(wp + 5.5, 15);
+                ctx.lineTo(wp - 4.5, 15);
+                ctx.fillStyle = "#000000";
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+                ctx.translate(wp, hp + 0.5);
+                ctx.beginPath();
+                ctx.strokeStyle = "blue";
+                ctx.fillStyle = "blue";
+                ctx.moveTo(-3 * y, -y);
+                ctx.lineTo(-y, y);
+                ctx.lineTo(y, -4*y);
+                ctx.lineTo(2 * y, -y);
+                
+                ctx.lineTo(3 * y, -y);
+                ctx.stroke();
+                ctx.closePath();
+                ctx.beginPath();
+                ctx.moveTo(-3 * y, -y);
+                ctx.arc(-3 * y, -y, 3, 0, 2 * Math.PI);
+                ctx.moveTo(3 * y, -y);
+                ctx.arc(3 * y, -y, 3, 0, 2 * Math.PI);
+                ctx.moveTo(5 * y, -y);
+                ctx.stroke();
+
+
+    }
+); break;
+        case "funkcjerys2": (
+            draw = ctx => {
+                let w = width;
+                let h = height;
+                let hp = h / 2 - 10;
+                let wp = w / 2;
+                let k = 17;
+                let y = (w - 20) / k
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.moveTo(10, hp + 1.5);
+                ctx.lineTo(w - 20, hp + 1.5);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(wp + 0.5, 5);
+                ctx.lineTo(wp + 0.5, h - 5);
+                ctx.stroke();
+
+                for (let x = y + 0.5; x < w - 40; x += y) {
+
+                    ctx.lineWidth = 1;
+                    ctx.beginPath();
+                    ctx.moveTo(x, hp - 4);
+                    ctx.lineTo(x, hp + 6);
+                    ctx.closePath();
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.moveTo(wp - 4.5, x - 0.5);
+                    ctx.lineTo(wp + 5.5, x - 0.5);
+                    ctx.closePath();
+                    ctx.stroke();
+                    ctx.lineWidth = 1 / 10;
+                    ctx.beginPath();
+                    ctx.moveTo(x, 10);
+                    ctx.lineTo(x, h - 10)
+                    ctx.closePath();
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.moveTo(10, x);
+                    ctx.lineTo(w - 40, x);
+                    ctx.closePath();
+                    ctx.stroke();
+
+                }
+                for (let i = -8, n = 1; i < 8; i++, n++) {
+                    ctx.lineWidth = 1;
+                    ctx.fillStyle = "#000000";
+                    ctx.textAlign = "center";
+                    ctx.font = "10px Tahoma";
+                    ctx.fillText(`${i}`, n * y - 2, hp + 16);
+                    ctx.stroke();
+                };
+                for (let i = -5, n = 1; i < 5; i++, n++) {
+                    ctx.lineWidth = 1;
+                    ctx.fillStyle = "#000000";
+                    ctx.textAlign = "center";
+                    ctx.font = "10px Tahoma";
+                    if (i !== 0) {
+                        ctx.fillText(`${i}`, wp - 10, h - (n * y) + 10);
+                    }
+                    ctx.stroke();
+                }
+                ctx.stroke();
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.moveTo(w - 20, hp + 1.5);
+                ctx.lineTo(w - 30, hp - 3.5);
+                ctx.lineTo(w - 30, hp + 6.5);
+                ctx.fillStyle = "#000000";
+                ctx.moveTo(wp + 0.5, 5);
+                ctx.lineTo(wp + 5.5, 15);
+                ctx.lineTo(wp - 4.5, 15);
+                ctx.fillStyle = "#000000";
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+                ctx.translate(wp, hp + 0.5);
+                ctx.beginPath();
+                ctx.strokeStyle = "blue";
+                ctx.fillStyle = "blue";
+                ctx.moveTo(-3 * y, -y);
+                ctx.lineTo(-y, y);
+                ctx.lineTo(y, -4 * y);
+                ctx.lineTo(2 * y, -y);
+
+                ctx.lineTo(3 * y, -y);
+                ctx.stroke();
+                ctx.closePath();
+                ctx.beginPath();
+                ctx.moveTo(-3 * y, -y);
+                ctx.arc(-3 * y, -y, 3, 0, 2 * Math.PI);
+                ctx.moveTo(3 * y, -y);
+                ctx.arc(3 * y, -y, 3, 0, 2 * Math.PI);
+                ctx.moveTo(5 * y, -y);
+                ctx.stroke();
+
+
+            }
+        ); break;
 
 
         default: break;

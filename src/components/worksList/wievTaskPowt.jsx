@@ -89,6 +89,7 @@ const WievTaskPowt = ({ data, model }) => {
                     {work.extraRamka ? (<div className={well}><MathJax inline><Extra id={work.extraRamka} /></MathJax></div>) : (<div></div>)}
 
                     {work.tresc2 !== 0 ? (<MathJax inline><p className={tresc}>{work.tresc2}</p></MathJax>) : (<div></div>)}
+                    {work.tresc4 !== 0 ? (<MathJax inline><p className={tresc}>{work.tresc4}</p></MathJax>) : (<div></div>)}
                     <div className={odp}>
                         {work.podpunkty.length !== 0 && !work.koniec ? (work.podpunkty.map(podpunkt => (
 

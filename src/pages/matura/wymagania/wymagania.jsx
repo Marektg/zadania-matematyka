@@ -84,7 +84,7 @@ const Wymagania = () => {
                   </ul>
                   <h4>poziom rozszerzony</h4>
                   <ul className={contentList}>
-                      <li>rozwiązuje nierówności wielomianowe typu: <MathJax inline>{"\\(W(x)>0,\\ W(x)\\geq0.\\ W(x)\\&lt0,\\ W(x)\\leq0\\)"}</MathJax></li>
+                      <li>rozwiązuje nierówności wielomianowe typu: <MathJax inline>{"\\(W(x)>0,\\ W(x)\\geq0.\\ W(x)<0,\\ W(x)\\leq0\\)"}</MathJax></li>
                       <li>rozwiązuje równania i nierówności wymierne nie trudniejsze niż <MathJax inline>{"\\(\\frac{x + 1}{x(x - 1)}+\\frac{1}{x + 1}\\geq\\frac{2x}{(x - 1)(x + 1)}\\)"}</MathJax></li>
                       <li>stosuje wzory Viète’a dla równań kwadratowych</li>
                       <li>rozwiązuje równania i nierówności z wartością bezwzględną</li>

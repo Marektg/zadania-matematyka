@@ -4,7 +4,7 @@ import TopNavi from 'components/topNavi/topNavi';
 import LeftNavi from 'components/leftNavi/leftNavi';
 import WorksList from 'components/worksList/worksList';
 
-const PLiczby = () => {
+const PCiagi = () => {
     const [title, setTitle] = useState(null);
     const [currentTask, setCurrentTask] = useState(null);
     const { mainDiv, basic, tasksList, tytul, podmenu, tasks, rodzajzad } = styles;
@@ -28,7 +28,7 @@ const PLiczby = () => {
             <div className={basic} >
                 <LeftNavi model="c" />
                 <div className={tasksList}>
-                    <h2 className={tytul}>Powtórki maturalne - Liczby, zbiory i wartość bezwzględna</h2>
+                    <h2 className={tytul}>Powtórki maturalne - Ciągi</h2>
                     <ul className={podmenu} data-poddzialy>
                         <li id="1" key="1"><button onClick={renderTask}>Zadania powtórzeniowe</button></li>
                         <li id="2" key="2"><button onClick={renderTask}>Zadania zamknięte</button></li>
@@ -37,7 +37,7 @@ const PLiczby = () => {
                     </ul>
                     <div className={tasks}>
                         <h3 className={rodzajzad}>{title}</h3>
-                        <WorksList model={currentTask} dzial="cp1" />
+                        <WorksList model={currentTask} dzial="cp8" />
                     </div>
 
                 </div>
@@ -48,4 +48,4 @@ const PLiczby = () => {
     )
 }
 
-export default PLiczby
+export default PCiagi

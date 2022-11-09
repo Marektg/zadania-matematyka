@@ -10,6 +10,8 @@ import zestawy from 'data/matura/zestawy';
 import WievArkusz from './wievArkusz';
 import pliczby from 'data/matura/powtorki/liczby';
 import WievTaskPowt from './wievTaskPowt';
+import pciagi from 'data/matura/powtorki/ciagi';
+import pfunkcjeILiniowa from 'data/matura/powtorki/funkcjeILiniowa';
 
 const WorksList = ({ model, dzial }) => {
     // console.log(model);
@@ -100,7 +102,7 @@ const WorksList = ({ model, dzial }) => {
                 default: return (<div></div>);
 
             };
-        case "cp":
+        case "cp1":
             switch (model) {
                 case "1":
                     let d = pliczby.length;
@@ -148,10 +150,107 @@ const WorksList = ({ model, dzial }) => {
                     return (<WievTaskPowt data={data} model={model} />);
                 default: return (<div></div>);
                 
+                
 
 
 
 
+            };
+        case "cp8":
+            switch (model) {
+                case "1":
+                    let d = pciagi.length;
+                    let zadania = [];
+                    for (let i = 0; i < d; i++) {
+                        if (pciagi[i].typ.includes("powtorka")) {
+                            zadania.push(pciagi[i])
+                        }
+                    }
+
+                    data = zadania;
+                    return (<WievTaskPowt data={data} model={model} />);
+                case "2":
+                    let d2 = pciagi.length;
+                    let zadania2 = [];
+                    for (let i = 0; i < d2; i++) {
+                        if (pciagi[i].typ.includes("zamkniete")) {
+                            zadania2.push(pciagi[i])
+                        }
+                    }
+
+                    data = zadania2;
+                    return (<WievTaskPowt data={data} model={model} />);
+                case "3":
+                    let d3 = pciagi.length;
+                    let zadania3 = [];
+                    for (let i = 0; i < d3; i++) {
+                        if (pciagi[i].typ.includes("krotkie")) {
+                            zadania3.push(pciagi[i])
+                        }
+                    }
+
+                    data = zadania3;
+                    return (<WievTaskPowt data={data} model={model} />);
+                case "4":
+                    let d4 = pciagi.length;
+                    let zadania4 = [];
+                    for (let i = 0; i < d4; i++) {
+                        if (pciagi[i].typ.includes("dlugie")) {
+                            zadania4.push(pciagi[i])
+                        }
+                    }
+
+                    data = zadania4;
+                    return (<WievTaskPowt data={data} model={model} />);
+                default: return (<div></div>);
+            };
+        case "cp2":
+            switch (model) {
+                case "1":
+                    let d = pfunkcjeILiniowa.length;
+                    let zadania = [];
+                    for (let i = 0; i < d; i++) {
+                        if (pfunkcjeILiniowa[i].typ.includes("powtorka")) {
+                            zadania.push(pfunkcjeILiniowa[i])
+                        }
+                    }
+
+                    data = zadania;
+                    return (<WievTaskPowt data={data} model={model} />);
+                case "2":
+                    let d2 = pfunkcjeILiniowa.length;
+                    let zadania2 = [];
+                    for (let i = 0; i < d2; i++) {
+                        if (pfunkcjeILiniowa[i].typ.includes("zamkniete")) {
+                            zadania2.push(pfunkcjeILiniowa[i])
+                        }
+                    }
+
+                    data = zadania2;
+                    return (<WievTaskPowt data={data} model={model} />);
+                case "3":
+                    let d3 = pfunkcjeILiniowa.length;
+                    let zadania3 = [];
+                    for (let i = 0; i < d3; i++) {
+                        if (pfunkcjeILiniowa[i].typ.includes("krotkie")) {
+                            zadania3.push(pfunkcjeILiniowa[i])
+                        }
+                    }
+
+                    data = zadania3;
+                    return (<WievTaskPowt data={data} model={model} />);
+                case "4":
+                    let d4 = pfunkcjeILiniowa.length;
+                    let zadania4 = [];
+                    for (let i = 0; i < d4; i++) {
+                        if (pciagi[i].typ.includes("dlugie")) {
+                            zadania4.push(pfunkcjeILiniowa[i])
+                        }
+                    }
+
+                    data = zadania4;
+                    return (<WievTaskPowt data={data} model={model} />);
+                default: return (<div></div>);
             };
 
         default: return (<div></div>);   }
