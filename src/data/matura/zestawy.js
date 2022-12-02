@@ -514,7 +514,7 @@ const zestawy = [
 
                 "id": `${nanoid()}`,
                 "canvas": [],
-                "podpunkty": [],
+                "podpunkty": ["\\(\\sqrt{2}-\\sqrt{6}\\)", "\\(2\\)", "\\(\\sqrt{3}+2\\sqrt{6}\\)", "\\(\\sqrt[3]{2}\\)"],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
@@ -522,13 +522,13 @@ const zestawy = [
                 "ramkapo": null,
                 "numer": "Zadanie 1 (1 pkt)",
 
-                "tresc": "Wartość wyrażenia jest równa <br class=\"newline\"> A)  -- -- √ 2 − √ 6 </span>  B) 2 </span>  C) √ -- √ -- 3 + 2 6 </span>  D) √3-- 2 </span> "
+                "tresc": "Wartość wyrażenia \\((\\sqrt{2}-\\sqrt[3]{3})\\cdot (\\sqrt{8}-\\sqrt{6})-(\\sqrt{6}+\\sqrt{2}+\\sqrt[3]{3})\\cdot (\\sqrt{6}-2\\sqrt{2})\\) jest równa"
             },
             {
 
                 "id": `${nanoid()}`,
                 "canvas": [],
-                "podpunkty": [],
+                "podpunkty": ["\\(x=log_2\\sqrt{3}\\)", "\\(x=log_34\\)", "\\(x=log_32\\)", "\\(x=2log_23\\)"],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
@@ -536,13 +536,13 @@ const zestawy = [
                 "ramkapo": null,
                 "numer": "Zadanie 2 (1 pkt)",
 
-                "tresc": "Funkcja wykładnicza określona wzorem  √ -- x f(x) = ( 2 ) przyjmuje wartość 3 dla argumentu <br class=\"newline\"> A)  √ -- x = log 2 3 </span>  B) x = lo g34 </span>  C) x = log 32 </span>  D) x = 2 log 23 </span> </p><p class=\"indent\"> "
+                "tresc": "Funkcja wykładnicza określona wzorem \\(f(x)=(\\sqrt{2})^x\\) przyjmuje wartość \\(3\\) dla argumentu"
             },
             {
 
                 "id": `${nanoid()}`,
                 "canvas": [],
-                "podpunkty": [],
+                "podpunkty": ["\\(125\\%\\) liczby \\(x\\)", "\\(75\\%\\) liczby \\(x\\)", "\\(25\\%\\) liczby \\(x\\)", "\\(80\\%\\) liczby \\(x\\)"],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
@@ -550,13 +550,13 @@ const zestawy = [
                 "ramkapo": null,
                 "numer": "Zadanie 3 (1 pkt)",
 
-                "tresc": "Liczba x stanowi 125% liczby dodatniej y. Wynika stąd, że liczba y to <br class=\"newline\"> A) 125% liczby x </span>  B) 75% liczby x </span>  C) 25% liczby x </span>  D) 80% liczby x </span> "
+                "tresc": "Liczba \\(x\\) stanowi \\(125\\%\\) liczby dodatniej \\(y\\). Wynika stąd, że liczba \\(y\\) to "
             },
             {
 
                 "id": `${nanoid()}`,
                 "canvas": [],
-                "podpunkty": [],
+                "podpunkty": ["\\(6\\)", "\\(3\\)", "\\(4\\)", "\\(5\\)"],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
@@ -564,13 +564,13 @@ const zestawy = [
                 "ramkapo": null,
                 "numer": "Zadanie 4 (1 pkt)",
 
-                "tresc": "Suma  √3---- 2 3 log 100 + log 100 jest równa <br class=\"newline\"> A) 6 </span>  B) 3 </span>  C) 4 </span>  D) 5 </span> "
+                "tresc": "Suma \\(3log\\sqrt[3]{100}+ log100^2\\) jest równa"
             },
             {
 
                 "id": `${nanoid()}`,
                 "canvas": [],
-                "podpunkty": [],
+                "podpunkty": ["\\(4^{\\frac{1}{2}}\\cdot 3^{-2}\\cdot 7\\)", "\\(3^{\\frac{1}{2}}\\cdot 4^{\\frac{1}{2}}\\cdot 7\\)", "\\(2^{\\frac{1}{2}}\\cdot 8^{\\frac{1}{2}}\\cdot 7^2\\)", "\\(9^{\\frac{1}{2}}\\cdot 4^{-\\frac{1}{2}}\\cdot 7^2\\)"],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
@@ -578,12 +578,12 @@ const zestawy = [
                 "ramkapo": null,
                 "numer": "Zadanie 5 (1 pkt)",
 
-                "tresc": "Liczbą niewymierną jest liczba<br class=\"newline\"> A)  1 − 2 4 2 ⋅3 ⋅7 </span>  B)  1 1 32 ⋅ 42 ⋅ 7 </span>  C)  1 1 22 ⋅82 ⋅72 </span>  D)  1 1 9 2 ⋅4 −2 ⋅72 </span> "
+                "tresc": "Liczbą niewymierną jest liczba:"
             },
             {
 
                 "id": `${nanoid()}`,
-                "canvas": [],
+                "canvas": [{ "id": "z220226a", "width": "600", "height": "60" }, { "id": "z220226b", "width": "600", "height": "60" }, { "id": "z220226c", "width": "600", "height": "60" }, { "id": "z220226d", "width": "600", "height": "60" }],
                 "podpunkty": [],
                 "wskazowka": null,
                 "ramka": null,
@@ -592,13 +592,13 @@ const zestawy = [
                 "ramkapo": null,
                 "numer": "Zadanie 6 (1 pkt)",
 
-                "tresc": "Wskaż rysunek, na którym przedstawiony jest zbiór wszystkich liczb rzeczywistych spełniających jednocześnie nierówności 0 < 7 + 3x oraz 7− 3x ≤ 5x − 3. </p><hr class=\"figure\"><div class=\"figure\"> <p class=\"noindent\">PIC\" class=\"graphics\" width=\"452\" height=\"183\"> </p> </div><hr class=\"endfigure\"> <p class=\"indent\"> "
+                "tresc": "Wskaż rysunek, na którym przedstawiony jest zbiór wszystkich liczb rzeczywistych spełniających jednocześnie nierówności \\(0<7+3x\\) oraz \\(7−3x\\leq 5x−3\\)."
             },
             {
 
                 "id": `${nanoid()}`,
                 "canvas": [],
-                "podpunkty": [],
+                "podpunkty": ["\\(f(x ) = 2x − 6\\)", "\\(f (x) = 2x\\)", "\\(f(x ) = 2x + 3\\)","\\(f(x) = 2x + 2\\)"],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
@@ -606,21 +606,22 @@ const zestawy = [
                 "ramkapo": null,
                 "numer": "Zadanie 7 (1 pkt)",
 
-                "tresc": "Gdy przesuniemy wykres funkcji y = f(x ) o 2 jednostki w lewo i o 3 jednostki w dół, to otrzymamy wykres funkcji y = 2x + 1. Zatem <br class=\"newline\"> A) f(x ) = 2x − 6 </span>  B) f (x) = 2x </span>  C) f(x ) = 2x + 3 </span>  D) f(x) = 2x + 2 </span> "
+                "tresc": "Gdy przesuniemy wykres funkcji \\(y = f(x )\\) o \\(2\\) jednostki w lewo i o \\(3\\) jednostki w dół, to otrzymamy wykres funkcji \\(y = 2x + 1\\). Zatem"
             },
             {
 
                 "id": `${nanoid()}`,
-                "canvas": [],
-                "podpunkty": [],
+                "canvas": [{ "id": "z220228", "width": "400", "height": "400" }],
+                "podpunkty": ["\\(x = \\frac{1}{2}\\)", "\\(x =\\frac{4}{7}\\)", "\\(x =\\frac{2}{3}\\)","\\(x =\\frac{5}{8}\\)"],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
                 "tresc2": null,
                 "ramkapo": null,
                 "numer": "Zadanie 8 (1 pkt)",
-
-                "tresc": "Na rysunku przedstawiono fragmenty dwóch prostych na płaszczyźnie oraz zaznaczono kilka punktów o współrzędnych całkowitych, przez które przechodzą te proste. </p><hr class=\"figure\"><div class=\"figure\"> <p class=\"noindent\">PIC\" class=\"graphics\" width=\"217\" height=\"175\"> </p> </div><hr class=\"endfigure\"> <p class=\"noindent\">Jeżeli P = (x,y) jest punktem wspólnym prostych, których fragmenty przedstawiono na rysunku, to <br class=\"newline\"> A) x = 1 2 </span>  B) x = 4 7 </span>  C)  2 x = 3 </span>  D)  5 x = 8 </span> "
+                "trescpocanvie": "Jeżeli \\(P = (x,y)\\) jest punktem wspólnym prostych, których fragmenty przedstawiono na rysunku, to ",
+                "koniec": [],
+                "tresc": "Na rysunku przedstawiono fragmenty dwóch prostych na płaszczyźnie oraz zaznaczono kilka punktów o współrzędnych całkowitych, przez które przechodzą te proste."
             },
             {
 

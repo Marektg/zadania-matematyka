@@ -7,7 +7,7 @@ import Extra from 'data/extra';
 const WievArkusz = ({ data, model }) => {
     const [tasks, settasks] = useState([]);
     const [atytul, setTytul] = useState(null);
-    const { title, powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, buttonWrapper } = styles;
+    const { title, powto, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, buttonWrapper, numerZad } = styles;
     const numberOfTask = 1;
     console.log(data.length);
     console.log(model);
@@ -91,10 +91,10 @@ zadaniaMaturalne.forEach(zad => {newTask.push(zad)
             {pages.map(page => (<button onClick={changePage} data-val={page.val}>{page.id}</button>))}
         </div>
         <h2 className={title}>{atytul}</h2>
-        <ol className={powt}>
+        <ol className={powto}>
             {tasks.map(work => (
-                <li key={work.id}><MathJax inline>{
-                    <p className={tresc}><a href='#top'>⇑</a>{work.tresc}</p>}</MathJax>
+                <li key={work.id}><MathJax inline>{<><p className={numerZad}>{work.numer}</p>
+                    <p className={tresc}><a href='#top'>⇑</a>{work.tresc}</p></>}</MathJax>
                     {work.ramka ? (<div className={well}><MathJax inline>{work.ramka}</MathJax></div>) : (<div></div>)}
                     {work.extra ? (<MathJax inline><Extra id={work.extra} /></MathJax>) : (<div></div>)}
                     {work.extraRamka ? (<div className={well}><MathJax inline><Extra id={work.extraRamka} /></MathJax></div>) : (<div></div>)}
@@ -114,11 +114,16 @@ zadaniaMaturalne.forEach(zad => {newTask.push(zad)
 
                     </div>
                     <div className={canvasWrapper}>
-                        {work.canvas.length !== 0 ? (
-                            work.canvas.map(canva => (
+                        {work.canvas.length === 0 ? (<div></div>) : (
+                            work.canvas.length === 4 ? (<div className={odp}>
+                             { work.canvas.map(canva => (
                                 <Canvas id={canva.id} width={canva.width} height={canva.height} inline />
-                            ))
-                        ) : (<div></div>)}
+                            )) } 
+                            </div>):
+                            (work.canvas.map(canva => (
+                                <Canvas id={canva.id} width={canva.width} height={canva.height} inline />
+                            )))
+                        )}
                     </div>
                     {work.trescpocanvie !== 0 ? (<MathJax inline><p className={tresc}>{work.trescpocanvie}</p></MathJax>) : (<div></div>)}
                     <div className={odp}>

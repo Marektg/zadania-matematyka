@@ -1692,8 +1692,324 @@ const Canvas = ({ id, width, height }) => {
 
             }
         ); break;
+        case "z220226a": (
+            draw = ctx => {
+                const s = width;
+                ctx.beginPath();
+                ctx.moveTo(10, 15);
+                ctx.lineTo(s - 20, 15);
+                ctx.lineTo(10, 15);
+                ctx.stroke();
+                ctx.stroke();
+                ctx.moveTo(s - 20, 15);
+                ctx.lineTo(s - 30, 10);
+                ctx.lineTo(s - 30, 20);
+                ctx.lineTo(s - 20, 15);
+                ctx.fillStyle = "#000000";
+                ctx.fill();
+                ctx.stroke();
+                ctx.strokeStyle = "#c43a3c"
+                ctx.moveTo(150, 15);
+                ctx.lineTo(150, 2);
+                ctx.lineTo(10, 2);
+                ctx.moveTo(400, 15);
+                ctx.lineTo(400, 2);
+                ctx.lineTo(s - 20, 2);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.strokeStyle = "#c43a3c";
+                ctx.fillStyle = "white";
+                ctx.moveTo(150, 15);
+                ctx.arc(150, 15, 3, 0, 2 * Math.PI);
+                ctx.stroke();
+                ctx.fill();
+                ctx.closePath();
+                ctx.beginPath();
+                ctx.strokeStyle = "#c43a3c";
+                ctx.fillStyle = "#c43a3c";
+                ctx.moveTo(400, 15);
+                ctx.arc(400, 15, 3, 0, 2 * Math.PI);
+                ctx.stroke();
+                ctx.fill();
+                ctx.font = "15px Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+                ctx.fillText("7", 150, 35);
+                ctx.moveTo(143, 40);
+                ctx.lineTo(155, 40);
+                ctx.lineTo(143, 40);
+                ctx.fillText("3", 150, 55);
+                ctx.font = "25px Tahoma";
+                ctx.fillText("-", 135, 48);
+                ctx.font = "15px Tahoma";
+                ctx.fillText("5", 400, 35);
+                ctx.moveTo(397, 40);
+                ctx.lineTo(405, 40);
+                ctx.lineTo(397, 40);
+                ctx.fillText("4", 400, 55);
+                ctx.stroke();
 
 
+            }
+        ); break;
+        case "z220226b": (
+            draw = ctx => {
+                const s = width;
+                ctx.beginPath();
+                ctx.moveTo(10, 15);
+                ctx.lineTo(s - 20, 15);
+                ctx.lineTo(10, 15);
+                ctx.stroke();
+                ctx.stroke();
+                ctx.moveTo(s - 20, 15);
+                ctx.lineTo(s - 30, 10);
+                ctx.lineTo(s - 30, 20);
+                ctx.lineTo(s - 20, 15);
+                ctx.fillStyle = "#000000";
+                ctx.fill();
+                ctx.stroke();
+                ctx.strokeStyle = "#c43a3c"
+                ctx.moveTo(150, 15);
+                ctx.lineTo(150, 2);
+                ctx.lineTo(400, 2);
+                ctx.lineTo(400, 15);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.strokeStyle = "#c43a3c";
+                ctx.fillStyle = "white";
+                ctx.moveTo(150, 15);
+                ctx.arc(150, 15, 3, 0, 2 * Math.PI);
+                ctx.stroke();
+                ctx.fill();
+                ctx.closePath();
+                ctx.beginPath();
+                ctx.strokeStyle = "#c43a3c";
+                ctx.fillStyle = "#c43a3c";
+                ctx.moveTo(400, 15);
+                ctx.arc(400, 15, 3, 0, 2 * Math.PI);
+                ctx.stroke();
+                ctx.fill();
+                ctx.font = "15px Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+                ctx.fillText("7", 150, 35);
+                ctx.moveTo(143, 40);
+                ctx.lineTo(155, 40);
+                ctx.lineTo(143, 40);
+                ctx.fillText("3", 150, 55);
+                ctx.font = "25px Tahoma";
+                ctx.fillText("-", 135, 48);
+                ctx.font = "15px Tahoma";
+                ctx.fillText("5", 400, 35);
+                ctx.moveTo(397, 40);
+                ctx.lineTo(405, 40);
+                ctx.lineTo(397, 40);
+                ctx.fillText("4", 400, 55);
+                ctx.stroke();
+
+
+            }
+        ); break;
+        case "z220226c": (
+            draw = ctx => {
+                const s = width;
+                ctx.beginPath();
+                ctx.moveTo(10, 15);
+                ctx.lineTo(s - 20, 15);
+                ctx.lineTo(10, 15);
+                ctx.stroke();
+                ctx.stroke();
+                ctx.moveTo(s - 20, 15);
+                ctx.lineTo(s - 30, 10);
+                ctx.lineTo(s - 30, 20);
+                ctx.lineTo(s - 20, 15);
+                ctx.fillStyle = "#000000";
+                ctx.fill();
+                ctx.stroke();
+                ctx.strokeStyle = "#c43a3c"
+              
+                ctx.moveTo(400, 15);
+                ctx.lineTo(400, 2);
+                ctx.lineTo(s - 20, 2);
+                ctx.stroke();
+               
+                ctx.beginPath();
+                ctx.strokeStyle = "#c43a3c";
+                ctx.fillStyle = "#c43a3c";
+                ctx.moveTo(400, 15);
+                ctx.arc(400, 15, 3, 0, 2 * Math.PI);
+                ctx.stroke();
+                ctx.fill();
+                ctx.font = "15px Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+               
+                ctx.font = "15px Tahoma";
+                ctx.fillText("5", 400, 35);
+                ctx.moveTo(397, 40);
+                ctx.lineTo(405, 40);
+                ctx.lineTo(397, 40);
+                ctx.fillText("4", 400, 55);
+                ctx.stroke();
+
+
+            }
+        ); break;
+        case "z220226d": (
+            draw = ctx => {
+                const s = width;
+                ctx.beginPath();
+                ctx.moveTo(10, 15);
+                ctx.lineTo(s - 20, 15);
+                ctx.lineTo(10, 15);
+                ctx.stroke();
+                ctx.stroke();
+                ctx.moveTo(s - 20, 15);
+                ctx.lineTo(s - 30, 10);
+                ctx.lineTo(s - 30, 20);
+                ctx.lineTo(s - 20, 15);
+                ctx.fillStyle = "#000000";
+                ctx.fill();
+                ctx.stroke();
+                ctx.strokeStyle = "#c43a3c"
+                ctx.moveTo(150, 15);
+                ctx.lineTo(150, 2);
+                ctx.lineTo(s - 20, 2);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.strokeStyle = "#c43a3c";
+                ctx.fillStyle = "white";
+                ctx.moveTo(150, 15);
+                ctx.arc(150, 15, 3, 0, 2 * Math.PI);
+                ctx.stroke();
+                ctx.fill();
+                ctx.closePath();
+                ctx.font = "15px Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+                ctx.fillText("7", 150, 35);
+                ctx.moveTo(143, 40);
+                ctx.lineTo(155, 40);
+                ctx.lineTo(143, 40);
+                ctx.fillText("3", 150, 55);
+                ctx.font = "25px Tahoma";
+                ctx.fillText("-", 135, 48);
+                
+                ctx.stroke();
+
+
+            }
+        ); break;
+        case "z220228": (
+            draw = ctx => {
+                let w = width;
+                let h = height;
+                ctx.beginPath();
+                ctx.strokeStyle = "black";
+                ctx.lineWidth = 2;
+                ctx.moveTo(10, 250);
+                ctx.lineTo(w - 10, 250);
+                ctx.lineTo(w - 20, 250 - 5);
+                ctx.lineTo(w - 20, 250 + 5);
+                ctx.lineTo(w - 10, 250);
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+                ctx.beginPath();
+                
+               
+                    // ctx.strokeStyle = "#abadab";
+                    ctx.lineWidth = 1 / 2;
+                    ctx.moveTo(10, 50);
+                ctx.lineTo(w - 20, 50);
+                ctx.moveTo(10, 150);
+                ctx.lineTo(w - 20, 150);
+                ctx.moveTo(10, 250);
+                ctx.lineTo(w - 20, 250);
+                ctx.moveTo(10, 350);
+                ctx.lineTo(w - 20, 350);
+                ctx.moveTo(10, 100);
+                ctx.lineTo(w - 20, 100);
+                ctx.moveTo(10, 200);
+                ctx.lineTo(w - 20, 200);
+                ctx.moveTo(10, 300);
+                ctx.lineTo(w - 20, 300);
+                    ctx.stroke();
+                    ctx.fill();
+                
+                ctx.closePath();
+                ctx.beginPath();
+                ctx.strokeStyle = "black";
+                ctx.lineWidth = 2;
+                ctx.moveTo(200, h-10);
+                ctx.lineTo(200, 5);
+                ctx.lineTo(200-5, 15);
+                ctx.lineTo(200+5, 15);
+                ctx.lineTo(200, 5);
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+                ctx.beginPath();
+                
+                    // ctx.strokeStyle = "#abadab";
+                    ctx.lineWidth = 1/2;
+                    ctx.moveTo(50,10);
+                ctx.lineTo(50, h - 10);
+                ctx.moveTo(150, 10);
+                ctx.lineTo(150, h - 10);
+                ctx.moveTo(250, 10);
+                ctx.lineTo(250, h - 10);
+                ctx.moveTo(350, 10);
+                ctx.lineTo(350, h - 10);
+                ctx.moveTo(100, 10);
+                ctx.lineTo(100, h - 10);
+                ctx.moveTo(300, 10);
+                ctx.lineTo(300, h - 10);
+                    ctx.stroke();
+                    ctx.fill();
+                
+                ctx.closePath();
+                ctx.beginPath();
+                ctx.lineWidth = 1.5;
+                ctx.strokeStyle = "red";
+                ctx.moveTo(10, 10);
+                ctx.lineTo(210, 210);
+                ctx.moveTo(275, 275);
+                ctx.lineTo(375, 375);
+                ctx.moveTo(210, 275);
+                ctx.lineTo(100,550);
+                ctx.moveTo(290, 75);
+                ctx.lineTo(310, 25);
+                ctx.stroke();
+                ctx.fill();
+
+                ctx.closePath();
+                ctx.beginPath();
+                ctx.strokeStyle = "black";
+                ctx.moveTo(50, 50);
+                ctx.arc(50, 50, 3, 0, 2 * Math.PI);
+                ctx.moveTo(300, 50);
+                ctx.arc(300, 50, 3, 0, 2 * Math.PI);
+                ctx.moveTo(200, 200);
+                ctx.arc(200, 200, 3, 0, 2 * Math.PI);
+                ctx.moveTo(200, 300);
+                ctx.arc(200, 300, 3, 0, 2 * Math.PI);
+                ctx.moveTo(300, 300);
+                ctx.arc(300, 300, 3, 0, 2 * Math.PI);
+
+
+
+
+                ctx.stroke();
+                ctx.fill();
+
+            }
+                
+        ); break;
         default: break;
 
 
