@@ -626,22 +626,24 @@ const zestawy = [
             {
 
                 "id": `${nanoid()}`,
-                "canvas": [],
-                "podpunkty": [],
+                "canvas": [{ "id": "z220229", "width": "800", "height": "400" }],
+                "podpunkty": ["Zbiorem wartości funkcji \\(f\\) jest przedział \\(⟨− 3,3)\\).", "Funkcje \\(y = f(x)\\) i \\(y = f(x) + 1\\) mają tyle samo miejsc zerowych.", "Funkcja \\(f\\) osiąga wartość równą \\(2\\) w trzech punktach.","Wartość funkcji \\(f\\) dla argumentu \\(x = − 1\\) jest liczbą dodatnią."],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
                 "tresc2": null,
                 "ramkapo": null,
                 "numer": "Zadanie 9 (1 pkt)",
+                "trescpocanvie": "Wskaż zdanie prawdziwe.",
+                "koniec":[],
 
-                "tresc": "Na rysunku przedstawiono wykres funkcji f określonej w zbiorze − 3,9). </p><hr class=\"figure\"><div class=\"figure\"> <p class=\"noindent\">PIC\" class=\"graphics\" width=\"320\" height=\"167\"> </p> </div><hr class=\"endfigure\"> <p class=\"noindent\">Wskaż zdanie prawdziwe. <br class=\"newline\"> A) Zbiorem wartości funkcji f jest przedział ⟨− 3,3) </span><br class=\"newline\"> B) Funkcje y = f(x) i y = f(x) + 1 mają tyle samo miejsc zerowych </span><br class=\"newline\"> C) Funkcja f osiąga wartość równą 2 w trzech punktach. </span><br class=\"newline\"> D) Wartość funkcji f dla argumentu x = − 1 jest liczbą dodatnią. </span> "
+                "tresc": "Na rysunku przedstawiono wykres funkcji \\(f\\) określonej w zbiorze\\(( − 3,9)\\)."
             },
             {
 
                 "id": `${nanoid()}`,
                 "canvas": [],
-                "podpunkty": [],
+                "podpunkty": ["\\([(n + 3) − (n + 2)]^2 \\geq 5\\)", "\\((2n+3)^2-(2n+1)^2\\geq5\\)", "\\((2n+3)^2-(2n+1)^2>5\\)", "\\([(2n + 3) − (2n + 1)]^2 \\geq 5\\)"],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
@@ -649,13 +651,13 @@ const zestawy = [
                 "ramkapo": null,
                 "numer": "Zadanie 10 (1 pkt)",
 
-                "tresc": "Zdanie „kwadrat różnicy dwóch kolejnych liczb naturalnych nieparzystych jest niemniejszy niż 5” można zapisać w postaci nierówności: <br class=\"newline\"> A)  2 [(n + 3) − (n + 2)] ≥ 5 </span>  B)  2 2 (2n + 3 ) − (2n + 1) ≥ 5 </span><br>  C) 2n + 3)2 − (2n + 1 )2 > 5 </span>  D) 2n + 3) − (2n + 1 )]2 ≥ 5 </span> "
+                "tresc": "Zdanie „kwadrat różnicy dwóch kolejnych liczb naturalnych nieparzystych jest niemniejszy niż \\(5\\)” można zapisać w postaci nierówności:"
             },
             {
 
                 "id": `${nanoid()}`,
                 "canvas": [],
-                "podpunkty": [],
+                "podpunkty": ["\\( (−\\infty,− 2⟩\\)", "\\(⟨2,\\infty)\\)", "\\(⟨− 4,\\infty)\\)","\\((−\\infty,4⟩\\)"],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
@@ -663,13 +665,13 @@ const zestawy = [
                 "ramkapo": null,
                 "numer": "Zadanie 11 (1 pkt)",
 
-                "tresc": "Funkcja f jest określona wzorem f(x ) = −x 2 + 4x dla każdej liczby rzeczywistej x. Zbiorem wartości funkcji f jest przedział <br class=\"newline\"> A) − ∞ ,− 2⟩ </span>  B) ⟨2,+ ∞ ) </span>  C) ⟨− 4,+ ∞ ) </span>  D) − ∞ ,4⟩ </span> "
+                "tresc": "Funkcja \\(f\\) jest określona wzorem \\(f(x ) = −x^2 + 4x\\) dla każdej liczby rzeczywistej \\(x\\). Zbiorem wartości funkcji \\(f\\) jest przedział"
             },
             {
 
                 "id": `${nanoid()}`,
                 "canvas": [],
-                "podpunkty": [],
+                "podpunkty": ["\\(⟨− 1,\\infty)\\)", "\\((-\\infty,− 1⟩\\)", "\\((-\\infty,− 2⟩\\)","\\(⟨− 2,\\infty)\\)"],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
@@ -677,13 +679,13 @@ const zestawy = [
                 "ramkapo": null,
                 "numer": "Zadanie 12 (1 pkt)",
 
-                "tresc": "Funkcja kwadratowa f określona wzorem  1 f(x) = 2(x− 1)(x + 3) jest rosnąca w przedziale <br class=\"newline\"> A) ⟨− 1,+ ∞ ) </span>  B) − ∞ ,− 1⟩ </span>  C) − ∞ ,− 2⟩ </span>  D) ⟨− 2,+ ∞ ) </span> "
+                "tresc": "Funkcja kwadratowa \\(f\\) określona wzorem  \\(f(x) = \\frac{1}{2}(x− 1)(x + 3)\\) jest rosnąca w przedziale"
             },
             {
 
                 "id": `${nanoid()}`,
                 "canvas": [],
-                "podpunkty": [],
+                "podpunkty": ["\\(0\\)", "\\(1\\)", "\\(2\\)","\\(3\\)"],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
@@ -691,13 +693,13 @@ const zestawy = [
                 "ramkapo": null,
                 "numer": "Zadanie 13 (1 pkt)",
 
-                "tresc": "Liczba rozwiązań równania x2+-3x+2- x+2 = 0 jest równa <br class=\"newline\"> A) 0 </span>  B) 1 </span>  C) 2 </span>  D) 3 </span> "
+                "tresc": "Liczba rozwiązań równania \\(\\frac{x^2+3x+2}{x+2}=0\\) jest równa"
             },
             {
 
                 "id": `${nanoid()}`,
                 "canvas": [],
-                "podpunkty": [],
+                "podpunkty": ["\\(\\frac{100+1000}{2}\\cdot 449\\)", "\\(\\frac{200+998}{2}\\cdot 450\\)", "\\(\\frac{100+998}{2}\\cdot 449\\)","\\(\\frac{100+998}{2}\\cdot 450\\)"],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
@@ -705,13 +707,13 @@ const zestawy = [
                 "ramkapo": null,
                 "numer": "Zadanie 14 (1 pkt)",
 
-                "tresc": "Suma wszystkich trzycyfrowych liczb parzystych jest równa <br class=\"newline\"> A) 100+12000⋅ 449 </span>  B) 200+2998 ⋅450 </span>  C) 100+998⋅ 449 2 </span>  D) 100+-998-⋅450 2 </span> "
+                "tresc": "Suma wszystkich trzycyfrowych liczb parzystych jest równa"
             },
             {
 
                 "id": `${nanoid()}`,
                 "canvas": [],
-                "podpunkty": [],
+                "podpunkty": ["\\(a_1 =\\frac{1}{q}\\)", "\\(a_1 = q\\)", "\\(a_1 = q^2\\)","\\( a_1 = q^3\\)"],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
@@ -719,13 +721,13 @@ const zestawy = [
                 "ramkapo": null,
                 "numer": "Zadanie 15 (1 pkt)",
 
-                "tresc": "Ciąg geometryczny an), określony dla każdej liczby naturalnej n ≥ 1, jest rosnący i wszystkie jego wyrazy są dodatnie. Ponadto spełniony jest warunek a5 = a1 ⋅a2 . Niech q oznacza iloraz ciągu an ). Wtedy <br class=\"newline\"> A) a1 = 1q </span>  B) a1 = q </span>  C)  2 a1 = q </span>  D)  3 a1 = q </span> "
+                "tresc": "Ciąg geometryczny \\((a_n)\\), określony dla każdej liczby naturalnej \\(n\\geq 1\\), jest rosnący i wszystkie jego wyrazy są dodatnie. Ponadto spełniony jest warunek \\(a_5=a_1\\cdot a_2\\). Niech \\(q\\) oznacza iloraz ciągu \\((a_n)\\). Wtedy"
             },
             {
 
                 "id": `${nanoid()}`,
                 "canvas": [],
-                "podpunkty": [],
+                "podpunkty": ["\\(sin^22\\alpha\\)", "\\(1− tg^22\\alpha\\)", "\\(\\frac{1}{cos^2 2\\alpha}\\)","\\(cos^22\\alpha − sin^2 2\\alpha\\)"],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
@@ -733,13 +735,13 @@ const zestawy = [
                 "ramkapo": null,
                 "numer": "Zadanie 16 (1 pkt)",
 
-                "tresc": "Wyrażenie cos2α−sin2α sin2α+-cos2α- 1− sin2α ⋅ sin2α+1, gdzie α jest kątem ostrym, jest równe<br class=\"newline\"> A) sin 22α </span>  B) 1− tg 22α </span>  C) 12-- cos 2α </span>  D) cos22α − sin2 2α </span> "
+                "tresc": "Wyrażenie \\(\\frac{cos2\\alpha-sin2\\alpha}{1-sin2\\alpha}\\cdot \\frac{sin2\\alpha+cos2\\alpha}{sin2\\alpha+1}\\), gdzie \\(\\alpha\\) jest kątem ostrym, jest równe"
             },
             {
 
                 "id": `${nanoid()}`,
                 "canvas": [],
-                "podpunkty": [],
+                "podpunkty": ["\\(a_n=6\\cdot (-\\frac{3}{4})^n\\)", "\\(a_n=6\\cdot (\\frac{3}{4})^{n-1}\\)", "\\(a_n=-8\\cdot (-\\frac{3}{4})^n\\)", "\\(a_n=8\\cdot (\\frac{3}{4})^n\\)"],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
@@ -747,13 +749,13 @@ const zestawy = [
                 "ramkapo": null,
                 "numer": "Zadanie 17 (1 pkt)",
 
-                "tresc": "Dany jest ciąg geometryczny an) o wszystkich wyrazach niezerowych i pierwszym wyrazie a = 6 1. Jeżeli 3a + 4a = 0 3 4, to wzorem ogólnym ciągu a ) n jest <br class=\"newline\"> A)  ( 3)n an = 6⋅ − 4 </span>  B)  (3 )n−1 an = 6 ⋅ 4 </span>  C)  ( ) an = − 8 ⋅ − 3 n 4 </span>  D)  ( 3)n an = 8⋅ 4 </span> "
+                "tresc": "Dany jest ciąg geometryczny \\(a_n)\\) o wszystkich wyrazach niezerowych i pierwszym wyrazie \\(a_1=6\\). Jeżeli \\(3a_3+4a_4=0\\), to wzorem ogólnym ciągu \\(a_n)\\) jest"
             },
             {
 
                 "id": `${nanoid()}`,
                 "canvas": [],
-                "podpunkty": [],
+                "podpunkty": ["\\(14\\) i \\(2\\)", "\\(10\\) i \\(10\\)", "\\(8\\sqrt{2}\\) i \\(6\\sqrt{2}\\)", "\\(6\\sqrt{2}\\) i \\(4\\sqrt{2}\\)"],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
@@ -761,35 +763,39 @@ const zestawy = [
                 "ramkapo": null,
                 "numer": "Zadanie 18 (1 pkt)",
 
-                "tresc": "Bok rombu ma długość równą  √ -- 5 2. Przekątne tego rombu nie mogą mieć długości <br class=\"newline\"> A) 14 i 2 </span>  B) 10 i 10 </span>  C) 8√ 2- i 6√ 2- </span>  D) 6 √ 2- i 4√ 2- </span> </p><p class=\"indent\"> "
+                "tresc": "Bok rombu ma długość równą \\(5\\sqrt{2}\\). Przekątne tego rombu nie mogą mieć długości"
             },
             {
 
                 "id": `${nanoid()}`,
-                "canvas": [],
-                "podpunkty": [],
+                "canvas": [{ "id": "z2202219", "width": "400", "height": "400" }],
+                "podpunkty": ["\\(58^\\circ\\)", "\\(87^\\circ\\)", "\\(32^\\circ\\)","\\(85^\\circ\\)"],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
                 "tresc2": null,
                 "ramkapo": null,
                 "numer": "Zadanie 19 (1 pkt)",
+                "trescpocanvie": "Miara kąta \\(DAC\\) jest równa",
+                "koniec": [],
 
-                "tresc": "Punkty A,B ,C i D leżą na okręgu o środku w punkcie O. Cięciwy DB i AC przecinają się w punkcie E,  ∘ |∡ACB | = 58 oraz  ∘ |∡AEB | = 14 5 (zobacz rysunek). </p><hr class=\"figure\"><div class=\"figure\"> <p class=\"noindent\">PIC\" class=\"graphics\" width=\"211\" height=\"187\"> </p> </div><hr class=\"endfigure\"> <p class=\"noindent\">Miara kąta DAC jest równa <br class=\"newline\"> A) 58∘ </span>  B) 8 7∘ </span>  C) 32∘ </span>  D) 85∘ </span> "
+                "tresc": "Punkty \\(A,B ,C\\) i \\(D\\) leżą na okręgu o środku w punkcie \\(O\\). Cięciwy \\(DB\\) i \\(AC\\) przecinają się w punkcie \\(E, |∡ACB | = 58^\\circ\\) oraz \\(|∡AEB | = 145^\\circ\\) (zobacz rysunek)."
             },
             {
 
                 "id": `${nanoid()}`,
-                "canvas": [],
-                "podpunkty": [],
+                "canvas": [{ "id": "z2202220", "width": "400", "height": "250" }],
+                "podpunkty": ["\\(\\sqrt{10}\\)", "\\(4\\sqrt{45}\\)", "\\(8\\sqrt{10}\\)", "\\(16\\sqrt{2}\\)"],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
                 "tresc2": null,
                 "ramkapo": null,
                 "numer": "Zadanie 20 (1 pkt)",
+                "trescpocanvie": ">Długość boku BC jest równa",
+                "koniec": [],
 
-                "tresc": "W trójkącie ABC bok AC ma długość 10, a wysokość CD tego trójkąta dzieli bok AB na odcinki o długościach AD | = 6 i BD | = 24 (zobacz rysunek obok). </p><hr class=\"figure\"><div class=\"figure\"> <p class=\"noindent\">PIC\" class=\"graphics\" width=\"217\" height=\"94\"> </p> </div><hr class=\"endfigure\"> <p class=\"noindent\">Długość boku BC jest równa <br class=\"newline\"> A) √ --- 10 </span>  B)  √ --- 4 35 </span>  C) 8√ 1-0 </span>  D) 16 √ 2- </span> </p><p class=\"indent\"> "
+                "tresc": "W trójkącie \\(ABC\\) bok \\(AC\\) ma długość \\(10\\), a wysokość \\(CD\\) tego trójkąta dzieli bok \\(AB\\) na odcinki o długościach \\(|AD| = 6\\) i \\(|BD| = 24\\) (zobacz rysunek)."
             },
             {
 
@@ -985,7 +991,7 @@ const zestawy = [
                 "ramkapo": null,
                 "numer": "Zadanie 34 (2 pkt)",
 
-                "tresc": "Punkty A = (2,− 4), B = (2,4) i C = (− 5,− 4) są wierzchołkami trójkąta ABC. Napisz równanie prostej zawierającej tą średnicę okręgu opisanego na trójkącie ABC, której końcem jest punkt A. </p><p class=\"indent\"> "
+                "tresc": "Punkty \\(A = (2,− 4), B = (2,4) i C = (− 5,− 4)\\) są wierzchołkami trójkąta\\( ABC\\). Napisz równanie prostej zawierającej tą średnicę okręgu opisanego na trójkącie \\(ABC\\), której końcem jest punkt \\(A\\)."
             },
             {
 
@@ -999,7 +1005,7 @@ const zestawy = [
                 "ramkapo": null,
                 "numer": "Zadanie 35 (5 pkt)",
 
-                "tresc": "Dany jest ciąg an ) określony wzorem an = 66−-8n 9 dla każdej liczby naturalnej n ≥ 1. Trójwyrazowy ciąg  2 (a15,1− x ,a9), gdzie x jest dodatnią liczbą rzeczywistą, jest geometryczny. Oblicz x oraz iloraz tego ciągu geometrycznego. "
+                "tresc": "Dany jest ciąg \\((a_n )\\) określony wzorem \\(a_n =\\frac{ 66−-8n}{ 9}\\) dla każdej liczby naturalnej \\(n\\geq 1\\). Trójwyrazowy ciąg  \\((a_{15},1− x^2 ,a_9)\\), gdzie \\(x\\) jest dodatnią liczbą rzeczywistą, jest geometryczny. Oblicz \\(x\\) oraz iloraz tego ciągu geometrycznego. "
             }
         ]
     },
