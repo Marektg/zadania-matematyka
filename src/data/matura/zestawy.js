@@ -2218,7 +2218,7 @@ const zestawy = [
                 "tresc2": null,
                 "ramkapo": null,
                 "numer": "Zadanie 17 (7 pkt)",
-
+                
                 "tresc": "Rozpatrujemy wszystkie graniastosłupy prawidłowe czworokątne o polu powierzchni całkowitej <img src=\"https://img.zadania.info/zes/0067695/HzesT59x.gif\" alt=\"P. Wyznacz wysokość i długość krawędzi podstawy tego graniastosłupa, którego objętość jest największa. Oblicz tę największą objętość. "
             }
         ]
