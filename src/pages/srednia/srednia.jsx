@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './srednia.module.scss';
-import TopNavi from 'components/topNavi/topNavi';
-import LeftNavi from 'components/leftNavi/leftNavi';
-import RightSide from 'components/rightSide/rightSide';
+import TopNavi from '../../components/topNavi/topNavi';
+import LeftNavi from '../../components/leftNavi/leftNavi';
+import RightSide from '../../components/rightSide/rightSide';
 
 const Srednia = () => {
     const { mainDiv, basic } = styles

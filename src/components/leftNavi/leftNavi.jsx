@@ -94,6 +94,17 @@ const LeftNavi = ({ model}) => {
         </ul>
       </nav>
     );
+    case "cp": return (
+      <nav className={leftNavi}>
+        <h3>Matura</h3>
+        <ul className={navListGroup}>
+          <li id='l1'><StyledLink to="/matura/wymagania">Wymagania 2023</StyledLink></li>
+          <li id='l2'><StyledLink to="/matura/powtorzenie">Powtórzenie</StyledLink></li>
+          <li id='l3'><StyledLink to="/matura/zestawy">Zestawy</StyledLink></li>
+          <li id='l4'><StyledLink to="/matura/ksiazkowe">Ksiązkowe</StyledLink></li>
+        </ul>
+      </nav>
+    );
     case "d": return (
       <nav className={leftNavi}>
         <h3>Studia</h3>

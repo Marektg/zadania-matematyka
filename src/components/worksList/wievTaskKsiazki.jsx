@@ -4,10 +4,11 @@ import styles from './wievTask.module.scss';
 import Canvas from '../../data/funkcjeCanvas';
 import Extra from '../../data/extra';
 
-const WievTaskPowt = ({ data, model }) => {
+
+const WievTaskKsiazki = ({ data, model }) => {
     const [tasks, settasks] = useState([]);
 
-    const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, buttonWrapper } = styles;
+    const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, buttonWrapper, hidden, } = styles;
     const numberOfTask = 25;
     console.log(data.length);
     console.log(model);
@@ -72,7 +73,24 @@ const WievTaskPowt = ({ data, model }) => {
             }
         }
     }
-
+    const showAnswer = (e) => {
+        console.log(e.target);
+        let showDiv = e.target.previousElementSibling;
+        console.log(showDiv);
+        showDiv.style.display = "block";
+        e.target.style.display = "none";
+        e.target.nextSibling.style.display = "block";
+        console.log(e.target);
+    }
+    const hideAnswer = (e) => {
+        console.log(e.target);
+        let showDiv = e.target.previousElementSibling.previousElementSibling;
+        console.log(showDiv);
+        showDiv.style.display = "none";
+        e.target.previousElementSibling.style.display = "block";
+        e.target.style.display = "none";
+        console.log(e.target);
+    }
 
     // console.log(tasks[0].canvas);
 
@@ -129,7 +147,10 @@ const WievTaskPowt = ({ data, model }) => {
                     {work.ramkapo ? (<div className={wellpo} ><MathJax inline>{work.ramkapo}</MathJax></div>) : (<div></div>)}
                     {work.wskazowka ? (<div className={podpowiedz}>Wskazówka: <MathJax inline>{work.wskazowka}</MathJax></div>) : (<div></div>)}
                     {work.tresc3 !== 0 ? (<MathJax inline><p className={trescpo}>{work.tresc3}</p></MathJax>) : (<div></div>)}
-
+                    <div className={hidden}>
+                        {work.answer.length > 0 ? (work.answer.map(punkty => (<p><MathJax inline>{punkty}</MathJax></p>))) : (<p>Rozwiązanie w przygotowaniu</p>)}
+                    </div>
+                    <button onClick={showAnswer}>Odpowiedź</button><button className={hidden} onClick={hideAnswer}>Ukryj rozwiązanie</button>
                 </li>
             ))}
         </ol>
@@ -140,4 +161,4 @@ const WievTaskPowt = ({ data, model }) => {
 };
 
 
-export default WievTaskPowt
+export default WievTaskKsiazki

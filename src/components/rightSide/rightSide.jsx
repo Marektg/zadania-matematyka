@@ -116,6 +116,29 @@ const RightSide = ({ model }) => {
                 <Link to="/matura/powtorzenie/prawdopodobienstwoStatystyka">Rachunek prawdopodobieństwa i statystyka</Link>
             </div>
         );
+        case "ck": return (
+            <div className={mainGuz}>
+                <Link to="/matura/ksiazkowe/kielbasa/algebra">Wyrażenia algebraiczne. Równania i nierówności algebraiczne.</Link>
+                <Link to="/matura/ksiazkowe/kielbasa/liczbyIZbiory">Liczby rzeczywiste. Zbiory</Link>
+                <Link to="/matura/ksiazkowe/kielbasa/funkcje">Funkcje</Link>
+                <Link to="/matura/ksiazkowe/kielbasa/funkcjaLiniowa">Funkcja liniowa</Link>
+                <Link to="/matura/ksiazkowe/kielbasa/funkcjaKwadratowa">Funkcja kwadratowa</Link>
+                <Link to="/matura/ksiazkowe/kielbasa/wielomiany">Wielomiany</Link>
+                <Link to="/matura/ksiazkowe/kielbasa/funkcjeWymierne">Funkcje wymierne</Link>
+                <Link to="/matura/ksiazkowe/kielbasa/funkcjaWykladnicza">Funkcja wykładnicza</Link>
+                <Link to="/matura/ksiazkowe/kielbasa/funkcjaLogarytmiczna">Funkcja logarytmiczna</Link>
+                <Link to="/matura/ksiazkowe/kielbasa/trygonometria">Trygonometria</Link>
+                <Link to="/matura/ksiazkowe/kielbasa/ciagi">Ciągi</Link>
+                <Link to="/matura/ksiazkowe/kielbasa/planimetria">Planimetria</Link>
+                <Link to="/matura/ksiazkowe/kielbasa/geometriaAnalityczna">Geometria analityczna</Link>
+                <Link to="/matura/ksiazkowe/kielbasa/stereometria">Stereometria</Link>
+                <Link to="/matura/ksiazkowe/kielbasa/pochodna"><MathJax>{"\\(\\star\\)"}</MathJax> Pochodna <MathJax>{"\\(\\star\\)"}</MathJax></Link>
+                <Link to="/matura/ksiazkowe/kielbasa/zadaniaOptymalizacyjne">Zadania optymalizacyjne</Link>
+                <Link to="/matura/ksiazkowe/kielbasa/rachunekPrawdopodobienstwa">Rachunek prawdopodobieństwa</Link>
+                <Link to="/matura/ksiazkowe/kielbasa/statystyka">Statystyka</Link>
+                <Link to="/matura/ksiazkowe/kielbasa/zadaniaZamkniete">Zadania zamknięte</Link>
+            </div>
+        );
         case "d": return (
             <div>tresde</div>
         );

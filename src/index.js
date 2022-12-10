@@ -5,21 +5,23 @@ import './index.scss';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 // import Layout from 'components/layout/layout';
-import HomePage from 'pages/homePage/homePage';
-// import Podstawowka from 'pages/podstawowka/podstawowka';
-import Srednia from 'pages/srednia/srednia';
-import Lrzeczywiste from 'pages/srednia/lrzeczywiste/lrzeczywiste';
-import Matura from 'pages/matura/matura';
-import Wymagania from 'pages/matura/wymagania/wymagania';
+import HomePage from './pages/homePage/homePage';
+// import Podstawowka from './pages/podstawowka/podstawowka';
+import Srednia from './pages/srednia/srednia';
+import Lrzeczywiste from './pages/srednia/lrzeczywiste/lrzeczywiste';
+import Matura from './pages/matura/matura';
+import Wymagania from './pages/matura/wymagania/wymagania';
 import { MathJaxContext } from 'better-react-mathjax';
-import Jezyk from 'pages/srednia/jezyk/jezyk';
-import Zestawy from 'pages/matura/zestawy/zestawy';
-import PoziomPodstawowy from 'pages/matura/zestawy/poziomPodstawowy';
-import PoziomRozszerzony from 'pages/matura/zestawy/poziomRozszerzony';
-import Powtorzenie from 'pages/matura/powtorzenie/powtorzenie';
-import PLiczby from 'pages/matura/powtorzenie/pliczby';
-import PCiagi from 'pages/matura/powtorzenie/pciagi';
-import PFunkcjeIFunkcjaLiniowa from 'pages/matura/powtorzenie/pfunkcjeIFunkcjaLiniowa';
+import Jezyk from './pages/srednia/jezyk/jezyk';
+import Zestawy from './pages/matura/zestawy/zestawy';
+import PoziomPodstawowy from './pages/matura/zestawy/poziomPodstawowy';
+import PoziomRozszerzony from './pages/matura/zestawy/poziomRozszerzony';
+import Powtorzenie from './pages/matura/powtorzenie/powtorzenie';
+import PLiczby from './pages/matura/powtorzenie/pliczby';
+import PCiagi from './pages/matura/powtorzenie/pciagi';
+import PFunkcjeIFunkcjaLiniowa from './pages/matura/powtorzenie/pfunkcjeIFunkcjaLiniowa';
+import Ksiazkowe from './pages/matura/ksiazkowe/ksiazkowe';
+import Algebra from './pages/matura/ksiazkowe/kielbasa/algebra';
 
 const config = {
   loader: { load: ["[tex]/html"] },
@@ -56,6 +58,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='matura/powtorzenie/liczby' element={<PLiczby />} />
           <Route path='matura/powtorzenie/ciagi' element={<PCiagi />} />
           <Route path='matura/powtorzenie/funkcjeIFunkcjaLiniowa' element={<PFunkcjeIFunkcjaLiniowa />} />
+          <Route path='matura/ksiazkowe' element={<Ksiazkowe />} />
+          <Route path='matura/ksiazkowe/kielbasa/algebra' element={<Algebra />} />
+
          
           {/*<Route path='studia' element={<Studia />} />*/}
 

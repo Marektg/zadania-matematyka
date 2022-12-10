@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import styles from '../srednia.module.scss';
-import TopNavi from 'components/topNavi/topNavi';
-import LeftNavi from 'components/leftNavi/leftNavi';
-import WorksList from 'components/worksList/worksList';
+import TopNavi from '../../../components/topNavi/topNavi';
+import LeftNavi from '../../../components/leftNavi/leftNavi';
+import WorksList from '../../../components/worksList/worksList';
 import { MathJax } from 'better-react-mathjax';
 // import { current } from '@reduxjs/toolkit';
 

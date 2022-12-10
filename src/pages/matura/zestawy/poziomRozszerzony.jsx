@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import styles from '../matura.module.scss';
-import TopNavi from 'components/topNavi/topNavi';
-import LeftNavi from 'components/leftNavi/leftNavi';
-import WorksList from 'components/worksList/worksList';
+import TopNavi from '../../../components/topNavi/topNavi';
+import LeftNavi from '../../../components/leftNavi/leftNavi';
+import WorksList from '../../../components/worksList/worksList';
 
 const PoziomRozszerzony = () => {
     const [title, setTitle] = useState(null);

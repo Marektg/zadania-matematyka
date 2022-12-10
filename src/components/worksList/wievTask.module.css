@@ -19,6 +19,15 @@
   list-style-type: decimal;
   padding-bottom: 10px;
 }
+.powt li button {
+  width: 150px;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(210, 240, 241);
+  cursor: pointer;
+  font-weight: 700;
+}
 
 .powto {
   display: flex;
@@ -137,4 +146,18 @@
   font-size: 1.5em;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.answer {
+  border: solid 1px blue;
+  padding: 10px;
+  background-color: aquamarine;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
 }/*# sourceMappingURL=wievTask.module.css.map */

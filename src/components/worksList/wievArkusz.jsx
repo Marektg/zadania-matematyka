@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { MathJax } from 'better-react-mathjax'
 import styles from './wievTask.module.scss';
-import Canvas from 'data/funkcjeCanvas';
-import Extra from 'data/extra';
+import Canvas from '../../data/funkcjeCanvas';
+import Extra from '../../data/extra';
 
 const WievArkusz = ({ data, model }) => {
     const [tasks, settasks] = useState([]);

@@ -6,12 +6,15 @@ import notacja from '../../data/srednia/rzeczywiste/notacjaWykładnicza';
 import logarytmy from '../../data/srednia/rzeczywiste/logarytm'
 import WievTask from './wievTask';
 import zbiory from '../../data/srednia/jezyk/zbiory';
-import zestawy from 'data/matura/zestawy';
+import zestawy from '../../data/matura/zestawy';
 import WievArkusz from './wievArkusz';
-import pliczby from 'data/matura/powtorki/liczby';
+import pliczby from '../../data/matura/powtorki/liczby';
 import WievTaskPowt from './wievTaskPowt';
-import pciagi from 'data/matura/powtorki/ciagi';
-import pfunkcjeILiniowa from 'data/matura/powtorki/funkcjeILiniowa';
+
+import pciagi from '../../data/matura/powtorki/ciagi';
+import pfunkcjeILiniowa from '../../data/matura/powtorki/funkcjeILiniowa';
+import kielbasa from '../../data/matura/powtorki/kielbasa';
+import WievTaskKsiazki from './wievTaskKsiazki';
 
 const WorksList = ({ model, dzial }) => {
     // console.log(model);
@@ -252,7 +255,21 @@ const WorksList = ({ model, dzial }) => {
                     return (<WievTaskPowt data={data} model={model} />);
                 default: return (<div></div>);
             };
+        case "cpkk1": {
+            let d = kielbasa.length;
+            let zadania = [];
+            for (let i = 0; i < d; i++) {
+               
+                zadania.push(kielbasa[i])
+            };
+            
 
-        default: return (<div></div>);   }
-}
+            data = zadania;
+            return (<WievTaskKsiazki data={data} model={model} />);
+        }
+             default: return (<div></div>);
+        }
+
+       }
+
     export default WorksList;
