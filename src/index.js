@@ -22,6 +22,19 @@ import PCiagi from './pages/matura/powtorzenie/pciagi';
 import PFunkcjeIFunkcjaLiniowa from './pages/matura/powtorzenie/pfunkcjeIFunkcjaLiniowa';
 import Ksiazkowe from './pages/matura/ksiazkowe/ksiazkowe';
 import Algebra from './pages/matura/ksiazkowe/kielbasa/algebra';
+import LiczbyRzeczywiste from './pages/matura/ksiazkowe/kielbasa/liczbyRzeczywiste';
+import Funkcje from './pages/matura/ksiazkowe/kielbasa/funkcje';
+import FunkcjaLiniowa from './pages/matura/ksiazkowe/kielbasa/funkcjaLiniowa';
+import FunkcjaKwadratowa from './pages/matura/ksiazkowe/kielbasa/funkcjaKwadratowa';
+import Wielomiany from './pages/matura/ksiazkowe/kielbasa/wielomiany';
+import FunkcjeWymierne from './pages/matura/ksiazkowe/kielbasa/funkcjeWymierne';
+import FunkcjaWykladnicza from './pages/matura/ksiazkowe/kielbasa/funkcjaWykladnicza';
+import FunkcjaLogarytmiczna from './pages/matura/ksiazkowe/kielbasa/funkcjaLogarytmiczna';
+import Trygonometria from './pages/matura/ksiazkowe/kielbasa/trygonometria';
+import Ciagi from './pages/matura/ksiazkowe/kielbasa/ciagi';
+import Planimetria from './pages/matura/ksiazkowe/kielbasa/planimetria';
+import GeometriaAnalityczna from './pages/matura/ksiazkowe/kielbasa/geometriaAnalityczna';
+
 
 const config = {
   loader: { load: ["[tex]/html"] },
@@ -60,6 +73,18 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='matura/powtorzenie/funkcjeIFunkcjaLiniowa' element={<PFunkcjeIFunkcjaLiniowa />} />
           <Route path='matura/ksiazkowe' element={<Ksiazkowe />} />
           <Route path='matura/ksiazkowe/kielbasa/algebra' element={<Algebra />} />
+          <Route path='matura/ksiazkowe/kielbasa/liczbyRzeczywiste' element={<LiczbyRzeczywiste />} />
+          <Route path='matura/ksiazkowe/kielbasa/funkcje' element={<Funkcje />} />
+          <Route path='matura/ksiazkowe/kielbasa/funkcjaLiniowa' element={<FunkcjaLiniowa />} />
+          <Route path='matura/ksiazkowe/kielbasa/funkcjaKwadratowa' element={<FunkcjaKwadratowa />} />
+          <Route path='matura/ksiazkowe/kielbasa/wielomiany' element={<Wielomiany />} />
+          <Route path='matura/ksiazkowe/kielbasa/funkcjeWymierne' element={<FunkcjeWymierne />} />
+          <Route path='matura/ksiazkowe/kielbasa/funkcjaWykladnicza' element={<FunkcjaWykladnicza />} />
+          <Route path='matura/ksiazkowe/kielbasa/funkcjaLogarytmiczna' element={<FunkcjaLogarytmiczna />} />
+          <Route path='matura/ksiazkowe/kielbasa/trygonometria' element={<Trygonometria />} />
+          <Route path='matura/ksiazkowe/kielbasa/ciagi' element={<Ciagi />} />
+          <Route path='matura/ksiazkowe/kielbasa/planimetria' element={<Planimetria />} />
+          <Route path='matura/ksiazkowe/kielbasa/geometriaAnalityczna' element={<GeometriaAnalityczna />} />
 
          
           {/*<Route path='studia' element={<Studia />} />*/}

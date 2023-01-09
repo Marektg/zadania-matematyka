@@ -16,32 +16,32 @@ import pfunkcjeILiniowa from '../../data/matura/powtorki/funkcjeILiniowa';
 import kielbasa from '../../data/matura/powtorki/kielbasa';
 import WievTaskKsiazki from './wievTaskKsiazki';
 
-const WorksList = ({ model, dzial }) => {
+const WorksList = ({ model, dzial, typ }) => {
     // console.log(model);
     let data;
     switch (dzial) {
-        case "1": 
-            switch (model) {
         case "1":
-            data = liczby;
-            return (<WievTask data={data} model={model } />);
-        case "2":
-            data = pierwiastki;
-            return (<WievTask data={data} model={model} />);
-        case "3":
-            data = potegi;
-            return (<WievTask data={data} model={model} />);
-        case "4":
-            data = notacja;
-            return (<WievTask data={data} model={model} />);
-        case "5":
-            data = logarytmy;
-            return (<WievTask data={data} model={model} />);
-            
-        
-        
-        default: return (<div></div>);
-        
+            switch (model) {
+                case "1":
+                    data = liczby;
+                    return (<WievTask data={data} model={model} />);
+                case "2":
+                    data = pierwiastki;
+                    return (<WievTask data={data} model={model} />);
+                case "3":
+                    data = potegi;
+                    return (<WievTask data={data} model={model} />);
+                case "4":
+                    data = notacja;
+                    return (<WievTask data={data} model={model} />);
+                case "5":
+                    data = logarytmy;
+                    return (<WievTask data={data} model={model} />);
+
+
+
+                default: return (<div></div>);
+
             };
         case "2":
             switch (model) {
@@ -78,8 +78,8 @@ const WorksList = ({ model, dzial }) => {
                         }
                     }
                     data = arkusze;
-                        return (<WievArkusz data={data} model={model} />);
-            
+                    return (<WievArkusz data={data} model={model} />);
+
 
 
                 default: return (<div></div>);
@@ -152,8 +152,8 @@ const WorksList = ({ model, dzial }) => {
                     data = zadania4;
                     return (<WievTaskPowt data={data} model={model} />);
                 default: return (<div></div>);
-                
-                
+
+
 
 
 
@@ -255,21 +255,209 @@ const WorksList = ({ model, dzial }) => {
                     return (<WievTaskPowt data={data} model={model} />);
                 default: return (<div></div>);
             };
-        case "cpkk1": {
-            let d = kielbasa.length;
-            let zadania = [];
-            for (let i = 0; i < d; i++) {
-               
-                zadania.push(kielbasa[i])
-            };
-            
+        case "cpkk1":
+            switch (typ) {
+                case "1": {
+                    let d = kielbasa.length;
+                    let zadania = [];
+                    for (let i = 0; i < d; i++) {
+                        if (kielbasa[i].dzial.includes("Wyrażenia algebraiczne."))
+                            zadania.push(kielbasa[i])
+                    };
 
-            data = zadania;
-            return (<WievTaskKsiazki data={data} model={model} />);
-        }
-             default: return (<div></div>);
-        }
 
-       }
+                    data = zadania;
+                    return (<WievTaskKsiazki data={data} model={model} />);
+        
+                };
+                case "2": {
+                    let d = kielbasa.length;
+                    let zadania = [];
+                    for (let i = 0; i < d; i++) {
+                        if (kielbasa[i].dzial.includes("Liczby"))
+                            zadania.push(kielbasa[i])
+                    };
 
+
+                    data = zadania;
+                    return (<WievTaskKsiazki data={data} model={model} />);
+        
+                };
+                case "3": {
+                    let d = kielbasa.length;
+                    let zadania = [];
+                    for (let i = 0; i < d; i++) {
+                        if (kielbasa[i].dzial.includes("Funkcje."))
+                            zadania.push(kielbasa[i])
+                    };
+
+
+                    data = zadania;
+                    return (<WievTaskKsiazki data={data} model={model} />);
+        
+                };
+                case "4": {
+                    let d = kielbasa.length;
+                    let zadania = [];
+                    for (let i = 0; i < d; i++) {
+                        if (kielbasa[i].dzial.includes("Funkcja liniowa"))
+                            zadania.push(kielbasa[i])
+                    };
+
+
+                    data = zadania;
+                    return (<WievTaskKsiazki data={data} model={model} />);
+        
+                };
+                case "5": {
+                    let d = kielbasa.length;
+                    let zadania = [];
+                    for (let i = 0; i < d; i++) {
+                        if (kielbasa[i].dzial.includes("Funkcja kwadratowa"))
+                            zadania.push(kielbasa[i])
+                    };
+
+
+                    data = zadania;
+                    return (<WievTaskKsiazki data={data} model={model} />);
+        
+                };
+                case "6": {
+                    let d = kielbasa.length;
+                    let zadania = [];
+                    for (let i = 0; i < d; i++) {
+                        if (kielbasa[i].dzial.includes("Wielomiany"))
+                            zadania.push(kielbasa[i])
+                    };
+
+
+                    data = zadania;
+                    return (<WievTaskKsiazki data={data} model={model} />);
+        
+                };
+                case "7": {
+                    let d = kielbasa.length;
+                    let zadania = [];
+                    for (let i = 0; i < d; i++) {
+                        if (kielbasa[i].dzial.includes("Funkcje wymierne"))
+                            zadania.push(kielbasa[i])
+                    };
+
+
+                    data = zadania;
+                    return (<WievTaskKsiazki data={data} model={model} />);
+        
+                };
+                case "8": {
+                    let d = kielbasa.length;
+                    let zadania = [];
+                    for (let i = 0; i < d; i++) {
+                        if (kielbasa[i].dzial.includes("Funkcja wykładnicza"))
+                            zadania.push(kielbasa[i])
+                    };
+
+
+                    data = zadania;
+                    return (<WievTaskKsiazki data={data} model={model} />);
+        
+                };
+                case "9": {
+                    let d = kielbasa.length;
+                    let zadania = [];
+                    for (let i = 0; i < d; i++) {
+                        if (kielbasa[i].dzial.includes("Funkcja logarytmiczna"))
+                            zadania.push(kielbasa[i])
+                    };
+
+
+                    data = zadania;
+                    return (<WievTaskKsiazki data={data} model={model} />);
+        
+                };
+                case "10": {
+                    let d = kielbasa.length;
+                    let zadania = [];
+                    for (let i = 0; i < d; i++) {
+                        if (kielbasa[i].dzial.includes("Trygonometria"))
+                            zadania.push(kielbasa[i])
+                    };
+
+
+                    data = zadania;
+                    return (<WievTaskKsiazki data={data} model={model} />);
+        
+                };
+                case "11": {
+                    let d = kielbasa.length;
+                    let zadania = [];
+                    for (let i = 0; i < d; i++) {
+                        if (kielbasa[i].dzial.includes("Ciągi"))
+                            zadania.push(kielbasa[i])
+                    };
+
+
+                    data = zadania;
+                    return (<WievTaskKsiazki data={data} model={model} />);
+        
+                };
+                case "12": {
+                    let d = kielbasa.length;
+                    let zadania = [];
+                    for (let i = 0; i < d; i++) {
+                        if (kielbasa[i].dzial.includes("Planimetria"))
+                            zadania.push(kielbasa[i])
+                    };
+
+
+                    data = zadania;
+                    return (<WievTaskKsiazki data={data} model={model} />);
+        
+                };
+                case "13": {
+                    let d = kielbasa.length;
+                    let zadania = [];
+                    for (let i = 0; i < d; i++) {
+                        if (kielbasa[i].dzial.includes("Geometria"))
+                            zadania.push(kielbasa[i])
+                    };
+
+
+                    data = zadania;
+                    return (<WievTaskKsiazki data={data} model={model} />);
+        
+                };
+                case "14": {
+                    let d = kielbasa.length;
+                    let zadania = [];
+                    for (let i = 0; i < d; i++) {
+                        if (kielbasa[i].dzial.includes("Stereometria"))
+                            zadania.push(kielbasa[i])
+                    };
+
+
+                    data = zadania;
+                    return (<WievTaskKsiazki data={data} model={model} />);
+        
+                };
+                case "15": {
+                    let d = kielbasa.length;
+                    let zadania = [];
+                    for (let i = 0; i < d; i++) {
+                        if (kielbasa[i].dzial.includes("Pochodna"))
+                            zadania.push(kielbasa[i])
+                    };
+
+
+                    data = zadania;
+                    return (<WievTaskKsiazki data={data} model={model} />);
+        
+                };
+                    
+                    
+                default: return (<div></div>);
+            }
+
+
+    }
+}
     export default WorksList;

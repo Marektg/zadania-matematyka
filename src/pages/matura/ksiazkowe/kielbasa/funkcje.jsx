@@ -4,22 +4,30 @@ import TopNavi from '../../../../components/topNavi/topNavi';
 import LeftNavi from '../../../../components/leftNavi/leftNavi';
 import WorksList from '../../../../components/worksList/worksList';
 
-const Algebra = () => {
+const Funkcje = () => {
     const [title, setTitle] = useState(null);
     const [currentTask, setCurrentTask] = useState(null);
-    const { mainDiv, basic, tasksList, tytul,  tasks, rodzajzad } = styles;
+    const { mainDiv, basic, tasksList, tytul, tasks, rodzajzad } = styles;
 
-       return (
+ 
+
+
+
+
+
+
+
+    return (
         <div className={mainDiv}>
             <TopNavi model="c" /> {/* a - podstawówka, b- średnia, c- matura, d- studia*/}
             <div className={basic} >
                 <LeftNavi model="cp" />
                 <div className={tasksList}>
-                    <h2 className={tytul}>Powtórki maturalne - Wyrażenia algebraiczne. Równania i nierówności algebraiczne.</h2>
-                    
+                    <h2 className={tytul}>Powtórki maturalne - Funkcje.</h2>
+
                     <div className={tasks}>
                         <h3 className={rodzajzad}>{title}</h3>
-                        <WorksList model={currentTask} dzial="cpkk1" typ="1"/>
+                        <WorksList model={currentTask} dzial="cpkk1" typ="3" />
                     </div>
 
                 </div>
@@ -30,4 +38,4 @@ const Algebra = () => {
     )
 }
 
-export default Algebra
+export default Funkcje
