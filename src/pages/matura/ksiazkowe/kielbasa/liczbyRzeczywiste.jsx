@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from '../../matura.module.scss';
 import TopNavi from '../../../../components/topNavi/topNavi';
 import LeftNavi from '../../../../components/leftNavi/leftNavi';
@@ -6,7 +6,7 @@ import WorksList from '../../../../components/worksList/worksList';
 
 const LiczbyRzeczywiste = () => {
    
-    const { mainDiv, basic, tasksList, tytul, tasks, rodzajzad } = styles;
+    const { mainDiv, basic, tasksList, tytul, tasks } = styles;
 
  
 
@@ -25,8 +25,8 @@ const LiczbyRzeczywiste = () => {
                     <h2 className={tytul}>Powtórki maturalne - Liczby rzeczywiste.</h2>
                     
                     <div className={tasks}>
-                        <h3 className={rodzajzad}>{title}</h3>
-                        <WorksList model={currentTask} dzial="cpkk1" typ="2" />
+                      
+                        <WorksList  dzial="cpkk1" typ="2" />
                     </div>
 
                 </div>
