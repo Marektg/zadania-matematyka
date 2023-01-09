@@ -456,7 +456,7 @@ const WorksList = ({ model, dzial, typ }) => {
                     
                 default: return (<div></div>);
             }
-
+        default: return (<div></div>);
 
     }
 }

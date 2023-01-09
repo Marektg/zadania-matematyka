@@ -5,8 +5,7 @@ import LeftNavi from '../../../../components/leftNavi/leftNavi';
 import WorksList from '../../../../components/worksList/worksList';
 
 const Algebra = () => {
-    const [title, setTitle] = useState(null);
-    const [currentTask, setCurrentTask] = useState(null);
+   
     const { mainDiv, basic, tasksList, tytul,  tasks, rodzajzad } = styles;
 
        return (
