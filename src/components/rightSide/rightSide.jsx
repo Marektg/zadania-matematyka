@@ -118,8 +118,8 @@ const RightSide = ({ model }) => {
         );
         case "ck": return (
             <div className={mainGuz}>
-                <Link to="/matura/ksiazkowe/kielbasa/algebra">Wyrażenia algebraiczne. Równania i nierówności algebraiczne..</Link>
-                <Link to="/matura/ksiazkowe/kielbasa/liczbyRzeczywiste">Liczby rzeczywiste</Link>
+                <Link to="/matura/ksiazkowe/kielbasa/algebra">Wyrażenia algebraiczne. Równania i nierówności algebraiczne.</Link>
+                <Link to="/matura/ksiazkowe/kielbasa/liczbyRzeczywiste">Liczby rzeczywiste.</Link>
                 <Link to="/matura/ksiazkowe/kielbasa/funkcje">Funkcje.</Link>
                 <Link to="/matura/ksiazkowe/kielbasa/funkcjaLiniowa">Funkcja liniowa.</Link>
                 <Link to="/matura/ksiazkowe/kielbasa/funkcjaKwadratowa">Funkcja kwadratowa.</Link>
