@@ -4,7 +4,7 @@ import styles from './extra.module.scss';
 
 export const Extra = ({ id }) => {
     let content;
-    const { mainFrame, firstRow, mainPart, lastRow, wrapFlex, tab1, twoImageInRow } = styles;
+    const { mainFrame, firstRow, mainPart, lastRow, wrapFlex, tab1} = styles;
     switch (id) {
         case "rozdzie1": (
 
