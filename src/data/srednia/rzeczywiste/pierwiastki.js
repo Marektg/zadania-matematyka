@@ -204,7 +204,7 @@ const pierwiastki = [
     },
     {
         "id": `${nanoid()}`,
-        "tresc": "Wśród liczb: \\(\\sqrt{3}-2,\\2+\\sqrt{3},\\2-\\sqrt{3},\\ -\\sqrt{3}-2 \\) wskaż:",
+        "tresc": "Wśród liczb: \\(\\sqrt{3}-2,\\ 2+\\sqrt{3},\\ 2-\\sqrt{3},\\  -\\sqrt{3}-2 \\) wskaż:",
         "canvas": [],
         "podpunkty": ["pary liczb przeciwnych","pary liczb odwrotnych",],
         "wskazowka": null,

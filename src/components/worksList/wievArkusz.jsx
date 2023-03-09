@@ -95,20 +95,18 @@ zadaniaMaturalne.forEach(zad => {newTask.push(zad)
             {tasks.map(work => (
                 <li key={work.id}><MathJax inline>{<><p className={numerZad}>{work.numer}</p>
                     <p className={tresc}><a href='#top'>⇑</a>{work.tresc}</p></>}</MathJax>
-                    {work.ramka ? (<div className={well}><MathJax inline>{work.ramka}</MathJax></div>) : (<div></div>)}
-                    {work.extra ? (<MathJax inline><Extra id={work.extra} /></MathJax>) : (<div></div>)}
-                    {work.extraRamka ? (<div className={well}><MathJax inline><Extra id={work.extraRamka} /></MathJax></div>) : (<div></div>)}
+                    {work.ramka && (<div className={well}><MathJax inline>{work.ramka}</MathJax></div>)}
+                    {work.extra && (<MathJax inline><Extra id={work.extra} /></MathJax>)}
+                    {work.extraRamka && (<div className={well}><MathJax inline><Extra id={work.extraRamka} /></MathJax></div>)}
 
-                    {work.tresc2 !== 0 ? (<MathJax inline><p className={tresc}>{work.tresc2}</p></MathJax>) : (<div></div>)}
+                    {work.tresc2 !== 0 && (<MathJax inline><p className={tresc}>{work.tresc2}</p></MathJax>)}
                     <div className={odp}>
-                        {work.podpunkty.length !== 0 && !work.koniec ? (work.podpunkty.map(podpunkt => (
+                        {work.podpunkty.length !== 0 && !work.koniec && (work.podpunkty.map(podpunkt => (
 
                             <div><MathJax inline>{podpunkt}</MathJax></div>
 
                         ))
 
-                        ) : (
-                            <div></div>
                         )}
 
 
@@ -125,25 +123,23 @@ zadaniaMaturalne.forEach(zad => {newTask.push(zad)
                             )))
                         )}
                     </div>
-                    {work.trescpocanvie !== 0 ? (<MathJax inline><p className={tresc}>{work.trescpocanvie}</p></MathJax>) : (<div></div>)}
+                    {work.trescpocanvie !== 0 && (<MathJax inline><p className={tresc}>{work.trescpocanvie}</p></MathJax>)}
                     <div className={odp}>
-                        {work.koniec ? (work.podpunkty.map(podpunkt => (
+                        {work.koniec && (work.podpunkty.map(podpunkt => (
 
                             <div><MathJax inline>{podpunkt}</MathJax></div>
 
                         ))
 
-                        ) : (
-                            <div></div>
                         )}
 
 
                     </div>
 
 
-                    {work.ramkapo ? (<div className={wellpo} ><MathJax inline>{work.ramkapo}</MathJax></div>) : (<div></div>)}
-                    {work.wskazowka ? (<div className={podpowiedz}>Wskazówka: <MathJax inline>{work.wskazowka}</MathJax></div>) : (<div></div>)}
-                    {work.tresc3 !== 0 ? (<MathJax inline><p className={trescpo}>{work.tresc3}</p></MathJax>) : (<div></div>)}
+                    {work.ramkapo && (<div className={wellpo} ><MathJax inline>{work.ramkapo}</MathJax></div>)}
+                    {work.wskazowka && (<div className={podpowiedz}>Wskazówka: <MathJax inline>{work.wskazowka}</MathJax></div>)}
+                    {work.tresc3 !== 0 && (<MathJax inline><p className={trescpo}>{work.tresc3}</p></MathJax>)}
 
                 </li>
             ))}

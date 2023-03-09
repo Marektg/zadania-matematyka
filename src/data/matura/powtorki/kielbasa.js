@@ -640,10 +640,10 @@ const kielbasa = [
     {
         "id": `${nanoid()}`,
         "dzial": "Liczby rzeczywiste.",
-        "numer": "",
-        "tresc": "",
+        "numer": "2.9",
+        "tresc": "Zapisz daną liczbę w taki sposób, by w mianowniku nie było znaku pierwiastka",
         "extra": null,
-        "podpunkty": [],
+        "podpunkty": ["\\(\\frac{1}{\\sqrt{2}}\\)", "\\(\\frac{\\sqrt{2}}{\\sqrt{3}}\\)", "\\(\\frac{2}{\\sqrt{7}+1}+\\frac{2}{\\sqrt{7}-1}\\)", "\\(\\frac{1}{\\sqrt{5}-\\sqrt{2}}-\\frac{1}{\\sqrt{5}+\\sqrt{2}}\\)"],
         "canvas": [],
         "trescpocanvie": null,
         "tresc2": null,
