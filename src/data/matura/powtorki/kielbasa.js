@@ -653,8 +653,8 @@ const kielbasa = [
     {
         "id": `${nanoid()}`,
         "dzial": "Liczby rzeczywiste.",
-        "numer": "",
-        "tresc": "",
+        "numer": "2.10",
+        "tresc": "Test to jest nowy wpis",
         "podpunkty": [],
         "canvas": [],
         "trescpocanvie": null,
