@@ -1,0 +1,22 @@
+.guz {
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    &:hover {
+        color: bisque;
+    }
+}
+.mainGuz {
+    display: flex;
+    flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+//   height: 50vh;
+//   padding-top: 10px;
+margin-left: 20px;
+margin-top: 15px;
+
+
+}

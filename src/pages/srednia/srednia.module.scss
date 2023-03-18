@@ -1,0 +1,78 @@
+.mainDiv {
+  background-color: #ff8c00;
+  font-family: serif;
+  color: #000000;
+  height: 100%;
+}
+.basic {
+  display: grid;
+  grid-template-columns: 250px auto;
+    column-gap: 5px;
+}
+
+
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 95%;
+}
+
+.tytul {
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.podmenu {
+  display: block;
+  text-decoration: none;
+  color: black;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  background-color: lightskyblue;
+  font-size: 1.5em;
+  margin-left: 10px;
+  margin-right: 10px;
+  & li {
+    display: block;
+    text-decoration: none;
+    color: black;
+    border: none;
+    text-align: center;
+    
+ 
+    &:nth-child(odd) {
+      background: lightsalmon;
+    }
+    &:nth-child(even) {
+      background: khaki;
+    }
+    & button {
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        font-weight: bold;
+        padding: 10px;
+        &:hover {
+      background-color: rgb(122, 238, 147);
+    }
+    }
+  }
+  
+}
+
+
+.rodzajzad {
+  text-align: center;
+  border: solid 1px green;
+  font-size: 2em;
+  margin-top: 5px;
+  background-color: rgb(186, 243, 238);
+}

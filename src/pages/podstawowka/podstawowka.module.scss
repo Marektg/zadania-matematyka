@@ -1,0 +1,11 @@
+.mainDiv {
+  background-color: #ff8c00;
+  font-family: serif;
+  color: #000000;
+  height: 100vh;
+}
+.basic {
+ display: grid;
+  grid-template-columns: 250px auto;
+  column-gap: 5px;
+}

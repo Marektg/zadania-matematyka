@@ -1,0 +1,29 @@
+.leftNavi {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 5px;
+  margin-top: 10px;
+  background-color: burlywood;
+  padding-left: 5px;
+  padding-right: 5px;
+  /* position: sticky; */
+  font-size: 20px;
+  // width: 250px;
+  
+}
+
+.navListGroup {
+  background-color: white;
+  text-align: center;
+  margin: 0;
+  list-style: none;
+  padding-top: 5px;
+  & li {
+    border-bottom: solid 1px burlywood;
+  }
+}
+
+.active {
+  background-color: green;
+}
