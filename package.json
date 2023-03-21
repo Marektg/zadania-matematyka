@@ -1,13 +1,14 @@
 {
   "name": "zadania-matematyka",
   "version": "0.1.0",
-   "dependencies": {
+  "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "better-react-mathjax": "^2.0.2",
     "mathjax-full": "^3.2.2",
+    "modern-normalize": "^1.1.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-loader-spinner": "^5.3.4",
@@ -18,6 +19,7 @@
     "redux": "^4.2.0",
     "redux-persist": "^6.0.0",
     "sass": "^1.55.0",
+    "styled-components": "^5.3.6",
     "web-vitals": "^2.1.3"
   },
   "scripts": {

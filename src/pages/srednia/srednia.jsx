@@ -1,19 +1,18 @@
 import React from 'react'
-import styles from './srednia.module.scss';
 import TopNavi from '../../components/topNavi/topNavi';
 import LeftNavi from '../../components/leftNavi/leftNavi';
 import RightSide from '../../components/rightSide/rightSide';
+import {MainDiv, Basic} from './srednia.styled';
 
 const Srednia = () => {
-    const { mainDiv, basic } = styles
     return (
-        <div className={mainDiv}>
+        <MainDiv>
             <TopNavi model="b" /> {/* a - podstawówka, b- średnia, c- matura, d- studia*/}
-            <div className={basic} >
+            <Basic>
                 <LeftNavi model="b" />
                 <RightSide model= "b" />
-            </div>
-        </div>
+            </Basic>
+        </MainDiv>
     )
 }
 

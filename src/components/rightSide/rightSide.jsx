@@ -1,40 +1,16 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
-import styled from 'styled-components';
-import styles from './rightSide.module.scss';
 import { MathJax } from 'better-react-mathjax';
+import { Link,MainGuz } from './rightSide.styled';
 
 
-
-const Link = styled(NavLink)`
-    height: 60px;
-    cursor: pointer;
-    font-size: 1.2em;
-    padding: 10px 20px 10px 20px;
-    border-radius: 30px;
-    border: none;
-    margin-left: 20px;
-    margin-top:20px;
-    text-align: center;
-    color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #e6e6fa;
-    text-decoration: none;
-    &:hover {
-        color: blue;
-        box-shadow: 0px 10px 8px 0px rgba(80, 80, 80, 0.75);
-        background-color: burlywood;
-  }`;
 
 
 
 const RightSide = ({ model }) => {
-    const { mainGuz } = styles;
+
     switch (model) {
         case "a": return (
-            <div className={mainGuz}>
+            <MainGuz>
                 <Link to="/podstawowka/lnaturalne">Liczby naturalne</Link>
                 <Link to="/podstawowka/lcalkowite">Liczby całkowite</Link>
                 <Link to="/podstawowka/ulamki">Ułamki zwykłe i dziesiętne</Link>
@@ -52,10 +28,10 @@ const RightSide = ({ model }) => {
                 <Link to="/podstawowka/bryly">Bryły</Link>
                 <Link to="/podstawowka/kombinatoryka">Kombinatoryka i rachunek prawdopodobieństwa</Link>
                 <Link to="/podstawowka/statystyka">Statystyka opisowa</Link>
-            </div>
+            </MainGuz>
         );
         case "b": return (
-            <div className={mainGuz}>
+            <MainGuz>
                 <Link to="/srednia/lrzeczywiste">Liczby rzeczywiste</Link>
                 <Link to="/srednia/jezyk">Język matematyki</Link>
                 <Link to="/srednia/wyrazeniaAlgebraiczne">Wyrażenia algebraiczne</Link>
@@ -84,23 +60,23 @@ const RightSide = ({ model }) => {
                 <Link to="/srednia/statystyka">Statystyka</Link>
                 <Link to="/srednia/stereometria">Stereometria</Link>
                 <Link to="/srednia/rachrozniczkowy"><MathJax>{"\\(\\star\\)"}</MathJax> Rachunek różniczkowy</Link>
-            </div>
+            </MainGuz>
         );
         case "c": return (
-            <div className={mainGuz}>
+            <MainGuz>
                 <Link to="/matura/wymagania">Wymagania 2023</Link>
                 <Link to="/matura/powtorzenie">Powtórzenie</Link>
                 <Link to="/matura/zestawy">Zestawy</Link>
-            </div>
+            </MainGuz>
         );
         case "cz": return (
-            <div className={mainGuz}>
+            <MainGuz>
                 <Link to="/matura/zestawy/podstawa">Poziom podstawowy</Link>
                 <Link to="/matura/zestawy/rozszerzenie">Poziom rozszerzony</Link>
-            </div>
+            </MainGuz>
         );
         case "cp": return (
-            <div className={mainGuz}>
+            <MainGuz>
                 <Link to="/matura/powtorzenie/liczby">Liczby, zbiory i wartość bezwzględna</Link>
                 <Link to="/matura/powtorzenie/funkcjeIFunkcjaLiniowa">Funkcje. Funkcja liniowa</Link>
                 <Link to="/matura/powtorzenie/funkcjaKwadratowa">Funkcja kwadratowa</Link>
@@ -114,10 +90,10 @@ const RightSide = ({ model }) => {
                 <Link to="/matura/powtorzenie/stereometria">Stereometria</Link>
                 <Link to="/matura/powtorzenie/rachunekRozniczkowy"><MathJax>{"\\(\\star\\)"}</MathJax>  Rachunek różniczkowy</Link>
                 <Link to="/matura/powtorzenie/prawdopodobienstwoStatystyka">Rachunek prawdopodobieństwa i statystyka</Link>
-            </div>
+            </MainGuz>
         );
         case "ck": return (
-            <div className={mainGuz}>
+            <MainGuz>
                 <Link to="/matura/ksiazkowe/kielbasa/algebra">Wyrażenia algebraiczne. Równania i nierówności algebraiczne.</Link>
                 <Link to="/matura/ksiazkowe/kielbasa/liczbyRzeczywiste">Liczby rzeczywiste.</Link>
                 <Link to="/matura/ksiazkowe/kielbasa/funkcje">Funkcje.</Link>
@@ -137,7 +113,7 @@ const RightSide = ({ model }) => {
                 <Link to="/matura/ksiazkowe/kielbasa/rachunekPrawdopodobienstwa">Rachunek prawdopodobieństwa.</Link>
                 <Link to="/matura/ksiazkowe/kielbasa/statystyka">Statystyka.</Link>
                 <Link to="/matura/ksiazkowe/kielbasa/zadaniaZamkniete">Zadania zamknięte.</Link>
-            </div>
+            </MainGuz>
         );
         case "d": return (
             <div>tresde</div>

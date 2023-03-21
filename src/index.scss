@@ -1,4 +1,7 @@
-@import-normalize; /* bring in normalize.css styles */
+@import "../node_modules/modern-normalize/modern-normalize.css";
+html{
+  background-color: #ff8c00;
+}
 
 body {
   margin: 0;

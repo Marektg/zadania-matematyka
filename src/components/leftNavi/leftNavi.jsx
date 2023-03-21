@@ -1,35 +1,19 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
-import styled from 'styled-components';
-import styles from './leftNavi.module.scss';
 import { MathJax } from 'better-react-mathjax';
+import { StyledLink, Left, NaviListGroup } from './leftNavi.styled';
 
-
-const StyledLink = styled(NavLink)`
-    width: 100%;
-    color: #000;
-    font-size: 0.8em;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-decoration: none;
-      &:hover {
-        color: blue;
-        box-shadow: 0px 10px 8px 0px rgba(80, 80, 80, 0.75);
-        background-color: burlywood;
-  }`;
 
 
 const LeftNavi = ({ model}) => {
-  const { leftNavi, navListGroup } = styles;
+
   switch (model) {
     case "a": return (
-      <nav className={leftNavi}>
+      <Left>
         <h3>Szkoła podstawowa</h3>
-        <ul className={navListGroup}>
+        <NaviListGroup>
           <li id='l1'><StyledLink to="/podstawowka/lnaturalne">Liczby naturalne</StyledLink></li>
           <li id='l2'><StyledLink to="/podstawowka/lcalkowite">Liczby całkowite</StyledLink></li>
-          <li id='l3'><StyledLink to="/podstawowka/ulamki">Ułamki zwykłe i dziesiętne</StyledLink></li>
+          <li id='l3'><StyledLink to="/podstawowka/NaviListGroupamki">Ułamki zwykłe i dziesiętne</StyledLink></li>
           <li id='l4'><StyledLink to="/podstawowka/lniewymierne">Liczby niewymierne</StyledLink></li>
           <li id='l5'><StyledLink to="/podstawowka/lrzeczywiste">Liczby rzeczywiste</StyledLink></li>
           <li id='l6'><StyledLink to="/podstawowka/procenty">Procenty</StyledLink></li>
@@ -44,15 +28,15 @@ const LeftNavi = ({ model}) => {
           <li id='l15'><StyledLink to="/podstawowka/bryly">Bryły</StyledLink></li>
           <li id='l16'><StyledLink to="/podstawowka/kombinatoryka">Kombinatoryka i rachunek prawdopodobieństwa</StyledLink></li>
           <li id='l17'><StyledLink to="/podstawowka/statystyka">Statystyka opisowa</StyledLink></li>
-        </ul>
-      </nav>
+        </NaviListGroup>
+      </Left>
     );
     case "b":
       
       return (
-      <nav className={leftNavi}>
+      <Left >
         <h3>Szkoła średnia</h3>
-        <ul className={navListGroup}>
+        <NaviListGroup >
           <li id='l1'><StyledLink to="/srednia/lrzeczywiste">Liczby rzeczywiste</StyledLink></li>
           <li id='l2'><StyledLink to="/srednia/jezyk">Język matematyki</StyledLink></li>
           <li id='l3'><StyledLink to="/srednia/wyrazeniaAlgebraiczne">Wyrażenia algebraiczne</StyledLink></li>
@@ -81,38 +65,38 @@ const LeftNavi = ({ model}) => {
           <li id='l26'><StyledLink to="/srednia/statystyka">Statystyka</StyledLink></li>
           <li id='l27'><StyledLink to="/srednia/stereometria">Stereometria</StyledLink></li>
           <li id='l28'><StyledLink to="/srednia/rachrozniczkowy"><MathJax>{"\\(\\star\\)"}</MathJax> Rachunek różniczkowy</StyledLink></li>
-        </ul>
-      </nav>
+        </NaviListGroup>
+      </Left>
     );
     case "c": return (
-      <nav className={leftNavi}>
+      <Left >
         <h3>Matura</h3>
-        <ul className={navListGroup}>
+        <NaviListGroup >
           <li id='l1'><StyledLink to="/matura/wymagania">Wymagania 2023</StyledLink></li>
           <li id='l2'><StyledLink to="/matura/powtorzenie">Powtórzenie</StyledLink></li>
           <li id='l3'><StyledLink to="/matura/zestawy">Zestawy</StyledLink></li>
-        </ul>
-      </nav>
+        </NaviListGroup>
+      </Left>
     );
     case "cp": return (
-      <nav className={leftNavi}>
+      <Left>
         <h3>Matura</h3>
-        <ul className={navListGroup}>
+        <NaviListGroup >
           <li id='l1'><StyledLink to="/matura/wymagania">Wymagania 2023</StyledLink></li>
           <li id='l2'><StyledLink to="/matura/powtorzenie">Powtórzenie</StyledLink></li>
           <li id='l3'><StyledLink to="/matura/zestawy">Zestawy</StyledLink></li>
           <li id='l4'><StyledLink to="/matura/ksiazkowe">Ksiązkowe</StyledLink></li>
-        </ul>
-      </nav>
+        </NaviListGroup>
+      </Left>
     );
     case "d": return (
-      <nav className={leftNavi}>
+      <Left>
         <h3>Studia</h3>
-        <ul className={navListGroup}>
+        <NaviListGroup >
           <li id='l1'><StyledLink to="/studia/analizaMatematyczna">Analiza matematyczna</StyledLink></li>
           <li id='l2'><StyledLink to="/studia/ciagiIGranice">Ciągi i ich granice</StyledLink></li>
-        </ul>
-      </nav>
+        </NaviListGroup>
+      </Left>
     );
     default: return (
       <div> Page is under construct</div>
@@ -120,6 +104,6 @@ const LeftNavi = ({ model}) => {
   }
 }
 
-  LeftNavi.propTypes = {}
+
 
   export default LeftNavi
