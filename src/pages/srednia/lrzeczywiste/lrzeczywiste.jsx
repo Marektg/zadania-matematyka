@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styles from '../srednia.module.scss';
+import { MainDiv, Basic, TaskList } from '../srednia.styled';
 import TopNavi from '../../../components/topNavi/topNavi';
 import LeftNavi from '../../../components/leftNavi/leftNavi';
 import WorksList from '../../../components/worksList/worksList';
@@ -10,7 +11,7 @@ const Lrzeczywiste = () => {
     const [title, setTitle] = useState(null);
     const [currentTask, setCurrentTask] = useState(null);
 
-    const { mainDiv, basic, tasksList, tytul, podmenu, tasks, rodzajzad } = styles;
+    const {   tytul, podmenu, tasks, rodzajzad } = styles;
 
 
 
@@ -25,11 +26,11 @@ const Lrzeczywiste = () => {
     
     
     return (
-        <div className={mainDiv}>
+        <MainDiv>
             <TopNavi model="b" /> {/* a - podstawówka, b- średnia, c- matura, d- studia*/}
-            <div className={basic} >
+            <Basic>
                 <LeftNavi model="b"/>
-                <div className={tasksList}>
+                <TaskList>
                     <h2 className={tytul}>Liczby rzeczywiste </h2>
                     <ul className={podmenu} data-poddzialy>
                         <li id="1" key="1"><button onClick={renderTask}>Liczby</button></li>
@@ -46,10 +47,10 @@ const Lrzeczywiste = () => {
                         <h3 className={rodzajzad}>{title}</h3>
                         <WorksList model={currentTask} dzial="1" />
                     </div>
-                </div>
+                </TaskList>
 
-            </div>
-        </div>
+            </Basic>
+        </MainDiv>
 
     )
 }

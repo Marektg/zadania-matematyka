@@ -26,3 +26,10 @@ export const Basic = styled.div`
    }
   `;
 
+
+export const TaskList= styled.div`
+  display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+width: 95 %;
+`

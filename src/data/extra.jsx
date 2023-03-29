@@ -4,7 +4,7 @@ import styles from './extra.module.scss';
 
 export const Extra = ({ id }) => {
     let content;
-    const { mainFrame, firstRow, mainPart, lastRow, wrapFlex, tab1} = styles;
+    const { mainFrame, firstRow, mainPart, lastRow, wrapFlex, tab1 } = styles;
     switch (id) {
         case "rozdzie1": (
 
@@ -155,8 +155,8 @@ export const Extra = ({ id }) => {
             content = <div className={wrapFlex}>
                 <MathJax> <table className={tab1}>
                     <tr>
-                    <th>Wartość transakcji</th>
-                    <th>Wysokość prowizji</th>
+                        <th>Wartość transakcji</th>
+                        <th>Wysokość prowizji</th>
                     </tr>
                     <tr>
                         <td>od {"\\(500 \\)"} zł</td>
@@ -179,24 +179,24 @@ export const Extra = ({ id }) => {
                         <td>{"\\(0,7 \\% \\)"} wartości transakcji {"\\(+\\ 105 \\)"} zł</td>
                     </tr>
 
-            </table></MathJax>
+                </table></MathJax>
             </div>
         ); break;
         case "pliczby2": (
             content = <div className={wrapFlex}>
-            <MathJax>
-            <p>{"\\(a \\circ b=\\)"}  liczba nie mniejsza spośród liczb  {"\\(a\\)"}  i  {"\\(b\\)"}</p>
-            <p>{"\\(a\\ast b=\\)"}  liczba nie większa sopśród liczb  {"\\(a\\)"}  i  {"\\(b\\)"}</p>
-            </MathJax>
+                <MathJax>
+                    <p>{"\\(a \\circ b=\\)"}  liczba nie mniejsza spośród liczb  {"\\(a\\)"}  i  {"\\(b\\)"}</p>
+                    <p>{"\\(a\\ast b=\\)"}  liczba nie większa spośród liczb  {"\\(a\\)"}  i  {"\\(b\\)"}</p>
+                </MathJax>
             </div>
-            ); break;
-            case "pliczby3": (
+        ); break;
+        case "pliczby3": (
             content = <div className={wrapFlex}>
                 <MathJax>
                     <p>Sumę  {"\\(S\\)"}  zapisujemy w postaci {"\\(S=\\frac{4 - 1}{1\\cdot 4}+\\frac{7 - 4}{4\\cdot 7}+\\frac{10 - 7}{7\\cdot 10}+_{\\cdots}+\\frac{304 - 301}{301\\cdot 304}+\\frac{307 - 304}{304\\cdot 307}\\)"}</p>
                     <p>Każdy składnik tej sumy przedstawiamy jako różnicę ułamków  {"\\(S=(\\frac{4}{4\\cdot 1}-\\frac{1}{4\\cdot 1})+(\\frac{7}{7\\cdot 4}-\\frac{4}{7\\cdot 4})+(\\frac{10}{10\\cdot 7}-\\frac{7}{10\\cdot 7})+_{\\cdots}+\\\\ +(\\frac{304}{304\\cdot 301}-\\frac{301}{304\\cdot 301})+(\\frac{307}{307\\cdot 304}-\\frac{304}{307\\cdot 304})\\)"} stąd {"\\(S=(1-\\frac{1}{4})+(\\frac{1}{4}-\\frac{1}{7})+(\\frac{1}{7}-\\frac{1}{10})+_{\\cdots}+(\\frac{1}{301}-\\frac{1}{304})+(\\frac{1}{304}-\\frac{1}{307})\\)"}  więc {"\\(S=1-\\frac{1}{4}+\\frac{1}{4}-\\frac{1}{7}+\\frac{1}{7}-\\frac{1}{10}+_{\\cdots}+\\frac{1}{301}-\\frac{1}{304}+\\frac{1}{304}-\\frac{1}{307}\\)"}</p>
                     <p>Obliczamy sumę, redukując parami wyrazy sąsiednie, poza pierwszym i ostatnim  {"\\(S=1-\\frac{1}{307}=\\frac{306}{307}\\)"}</p>
-                </MathJax>    
+                </MathJax>
             </div>
         ); break;
 
