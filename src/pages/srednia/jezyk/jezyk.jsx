@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from '../srednia.module.scss';
+import { MainDiv, Basic, TaskList, Tytul, Podmenu, Rodzajzad } from '../srednia.styled';
 import TopNavi from '../../../components/topNavi/topNavi';
 import LeftNavi from '../../../components/leftNavi/leftNavi';
 import WorksList from '../../../components/worksList/worksList';
@@ -10,7 +10,6 @@ const Jezyk = () => {
     const [title, setTitle] = useState(null);
     const [currentTask, setCurrentTask] = useState(null);
 
-    const { mainDiv, basic, tasksList, tytul, podmenu, tasks, rodzajzad } = styles;
 
 
 
@@ -25,13 +24,13 @@ const Jezyk = () => {
 
 
     return (
-        <div className={mainDiv}>
+        <MainDiv>
             <TopNavi model="b" /> {/* a - podstawówka, b- średnia, c- matura, d- studia*/}
-            <div className={basic} >
+            <Basic >
                 <LeftNavi model="b"  />
-                <div className={tasksList}>
-                    <h2 className={tytul}>Język matematyki </h2>
-                    <ul className={podmenu} data-poddzialy>
+                <TaskList>
+                    <Tytul>Język matematyki </Tytul>
+                    <Podmenu data-poddzialy>
                         <li id="1" key="1"><button onClick={renderTask}>Zbiory</button></li>
                         <li id="2" key="2"><button onClick={renderTask}>Przedziały</button></li>
                         <li id="3" key="3"><button onClick={renderTask}>Potęgi</button></li>
@@ -41,15 +40,15 @@ const Jezyk = () => {
                         <li id="7" key="7"><button onClick={renderTask}>Powtórzenie</button></li>
                         <li id="8" key="8"><button onClick={renderTask}>Zadania testowe</button></li>
                         <li id="9" key="9"><button onClick={renderTask}>To było na maturze</button></li>
-                    </ul>
-                    <div className={tasks}>
-                        <h3 className={rodzajzad}>{title}</h3>
+                    </Podmenu>
+                    <TaskList>
+                        <Rodzajzad>{title}</Rodzajzad>
                         <WorksList model={currentTask} dzial="2" />
-                    </div>
-                </div>
+                    </TaskList>
+                </TaskList>
 
-            </div>
-        </div>
+            </Basic>
+        </MainDiv>
 
     )
 }

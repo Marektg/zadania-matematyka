@@ -55,7 +55,7 @@ const LeftNavi = ({ model}) => {
           <li id='l16'><StyledLink to="/srednia/trygonometriaKatOstrego">Trygonometria kąta ostrego</StyledLink></li>
           <li id='l17'><StyledLink to="/srednia/wieloniany">Wielomiany</StyledLink></li>
           <li id='l18'><StyledLink to="/srednia/fwymierne">Funkcje wymierne</StyledLink></li>
-          <li id='l19'><StyledLink to="/srednia/ftrygonomertyczne"><MathJax>{"\\(\\star\\)"}</MathJax> Funkcje trygonometryczne</StyledLink></li>
+            <li id='l19'><StyledLink to="/srednia/ftrygonomertyczne"><MathJax>{"\\(\\star\\)"} Funkcje trygonometryczne</MathJax></StyledLink></li>
           <li id='l20'><StyledLink to="/srednia/fwykladnicza">Funkcja wykładnicza i logarytmiczne</StyledLink></li>
           <li id='l21'><StyledLink to="/srednia/flogarytmiczna">Funkcja logarytmiczna</StyledLink></li>
           <li id='l22'><StyledLink to="/srednia/ciagi">Ciągi</StyledLink></li>
@@ -64,7 +64,7 @@ const LeftNavi = ({ model}) => {
           <li id='l25'><StyledLink to="/srednia/prawdopodobienstwo">Rachunek prawdopodobieństwa</StyledLink></li>
           <li id='l26'><StyledLink to="/srednia/statystyka">Statystyka</StyledLink></li>
           <li id='l27'><StyledLink to="/srednia/stereometria">Stereometria</StyledLink></li>
-          <li id='l28'><StyledLink to="/srednia/rachrozniczkowy"><MathJax>{"\\(\\star\\)"}</MathJax> Rachunek różniczkowy</StyledLink></li>
+            <li id='l28'><StyledLink to="/srednia/rachrozniczkowy"><MathJax>{"\\(\\star\\)"} Rachunek różniczkowy</MathJax></StyledLink></li>
         </NaviListGroup>
       </Left>
     );

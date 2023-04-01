@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import styles from '../srednia.module.scss';
-import { MainDiv, Basic, TaskList } from '../srednia.styled';
+import { MainDiv, Basic, TaskList, Tytul, Podmenu, Rodzajzad } from '../srednia.styled';
 import TopNavi from '../../../components/topNavi/topNavi';
 import LeftNavi from '../../../components/leftNavi/leftNavi';
 import WorksList from '../../../components/worksList/worksList';
@@ -11,7 +10,7 @@ const Lrzeczywiste = () => {
     const [title, setTitle] = useState(null);
     const [currentTask, setCurrentTask] = useState(null);
 
-    const {   tytul, podmenu, tasks, rodzajzad } = styles;
+    
 
 
 
@@ -31,22 +30,22 @@ const Lrzeczywiste = () => {
             <Basic>
                 <LeftNavi model="b"/>
                 <TaskList>
-                    <h2 className={tytul}>Liczby rzeczywiste </h2>
-                    <ul className={podmenu} data-poddzialy>
+                    <Tytul>Liczby rzeczywiste </Tytul>
+                    <Podmenu data-poddzialy>
                         <li id="1" key="1"><button onClick={renderTask}>Liczby</button></li>
                         <li id="2" key="2"><button onClick={renderTask}>Pierwiastki</button></li>
                         <li id="3" key="3"><button onClick={renderTask}>Potęgi</button></li>
-                        <li id="4" key="4"><button onClick={renderTask}><MathJax inline>{"\\(\\star\\)"}</MathJax> Notacja wykładnicza</button></li>
+                        <li id="4" key="4"><button onClick={renderTask}><MathJax inline>{"\\(\\star\\)"} Notacja wykładnicza</MathJax></button></li>
                         <li id="5" key="5"><button onClick={renderTask}>Logarytm i jego własności</button></li>
                         <li id="6" key="6"><button onClick={renderTask}>Procenty</button></li>
                         <li id="7" key="7"><button onClick={renderTask}>Powtórzenie</button></li>
                         <li id="8" key="8"><button onClick={renderTask}>Zadania testowe</button></li>
                         <li id="9" key="9"><button onClick={renderTask}>To było na maturze</button></li>
-                    </ul>
-                    <div className={tasks}>
-                        <h3 className={rodzajzad}>{title}</h3>
+                    </Podmenu>
+                    <TaskList>
+                        <Rodzajzad>{title}</Rodzajzad>
                         <WorksList model={currentTask} dzial="1" />
-                    </div>
+                    </TaskList>
                 </TaskList>
 
             </Basic>

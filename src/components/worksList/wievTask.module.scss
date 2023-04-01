@@ -21,13 +21,14 @@
     list-style-type: decimal;
     padding-bottom: 10px;
     & button {
-      width: 150px;
-        height: 30px;
+      width: auto;
+        height: auto;
         border-radius: 15px;
         border: none;
         background-color: rgb(210, 240, 241);
         cursor: pointer;
         font-weight: 700;
+        padding: 15px;
        
     }
   }
@@ -42,6 +43,7 @@
     color: black;
     list-style: none;
     // font-weight: 700;
+    
 
     & li:nth-child(odd) {
       background: coral;
@@ -131,6 +133,15 @@
   font-size: 20px;
   padding-bottom: 10px;
 }
+.plotWrapper {
+    display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 20px;
+  padding-bottom: 10px;
+
+}
 
 .active {
   background-color: green;
@@ -172,3 +183,7 @@
 .show {
   display: block;
 }
+
+// .js-plotly-plot{
+//   width: 50%;
+// }

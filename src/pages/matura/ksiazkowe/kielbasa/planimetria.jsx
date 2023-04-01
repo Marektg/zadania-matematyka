@@ -1,31 +1,30 @@
 import React from 'react'
-import styles from '../../matura.module.scss';
+import { MainDiv, Basic, TaskList, Tytul } from '../../../srednia/srednia.styled.js';
 import TopNavi from '../../../../components/topNavi/topNavi';
 import LeftNavi from '../../../../components/leftNavi/leftNavi';
 import WorksList from '../../../../components/worksList/worksList';
 
 const Planimetria = () => {
   
-    const { mainDiv, basic, tasksList, tytul, tasks } = styles;
 
 
     return (
-        <div className={mainDiv}>
+        <MainDiv>
             <TopNavi model="c" /> {/* a - podstawówka, b- średnia, c- matura, d- studia*/}
-            <div className={basic} >
+            <Basic>
                 <LeftNavi model="cp" />
-                <div className={tasksList}>
-                    <h2 className={tytul}>Powtórki maturalne - Planimetria.</h2>
+                <TaskList>
+                    <Tytul>Powtórki maturalne - Planimetria.</Tytul>
 
-                    <div className={tasks}>
+                    <TaskList>
                         
                         <WorksList  dzial="cpkk1" typ="12" />
-                    </div>
+                    </TaskList>
 
-                </div>
+                </TaskList>
 
-            </div>
-        </div>
+            </Basic>
+        </MainDiv>
 
     )
 }

@@ -28,6 +28,7 @@ padding-right: 5px;
 font - size: 20px;
    @media screen and (min-width: 768px) {  
     margin-top:-5px;
+   
   }
 `;
 
@@ -37,8 +38,8 @@ text-align: center;
 margin: 0;
 list-style: none;
 padding-top: 5px;
-  & li {
-    border - bottom: solid 1px burlywood;
+  li {
+    border-bottom: solid 1px burlywood;
 };
 
 `
