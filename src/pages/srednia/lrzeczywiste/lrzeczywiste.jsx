@@ -35,7 +35,7 @@ const Lrzeczywiste = () => {
                         <li id="1" key="1"><button onClick={renderTask}>Liczby</button></li>
                         <li id="2" key="2"><button onClick={renderTask}>Pierwiastki</button></li>
                         <li id="3" key="3"><button onClick={renderTask}>Potęgi</button></li>
-                        <li id="4" key="4"><button onClick={renderTask}><MathJax inline>{"\\(\\star\\)"} Notacja wykładnicza</MathJax></button></li>
+                        <li id="4" key="4"><button onClick={renderTask}><MathJax inline>{"\\(\\star\\)"}</MathJax> Notacja wykładnicza</button></li>
                         <li id="5" key="5"><button onClick={renderTask}>Logarytm i jego własności</button></li>
                         <li id="6" key="6"><button onClick={renderTask}>Procenty</button></li>
                         <li id="7" key="7"><button onClick={renderTask}>Powtórzenie</button></li>
