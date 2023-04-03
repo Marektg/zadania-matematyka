@@ -3,62 +3,65 @@ import WievTask from './wievTask';
 import srednia from '../../data/srednia/srednia';
 import zestawy from '../../data/matura/zestawy';
 import WievArkusz from './wievArkusz';
-import pliczby from '../../data/matura/powtorki/liczby';
 import WievTaskPowt from './wievTaskPowt';
 
-import pciagi from '../../data/matura/powtorki/ciagi';
-import pfunkcjeILiniowa from '../../data/matura/powtorki/funkcjeILiniowa';
-import kielbasa from '../../data/matura/powtorki/kielbasa';
+// import pciagi from '../../data/matura/powtorki/ciagi';
+// import pfunkcjeILiniowa from '../../data/matura/powtorki/funkcjeILiniowa';
+import kielbasa from '../../data/matura/kielbasa';
 import WievTaskKsiazki from './wievTaskKsiazki';
+import powtorka from '../../data/matura/powtorka';
 
 const WorksList = ({ model, dzial, typ }) => {
     // console.log(model);
     let data = srednia;
     let d = data.length;
     let zadania = [];
+
+    const selectTask = (dzial, model) => {
+        for (let i = 0; i < d; i++) {
+            if (data[i].dzial === dzial && data[i].poddzial === model) {
+                zadania.push(data[i])
+            }
+        }
+        data = zadania;
+        return (<WievTask data={data} model={model} />);
+    };
+    let dp = powtorka.length
+
+    const selectTaskPowt = (dzial, model) => {
+        for (let i = 0; i < dp; i++) {
+            if (powtorka[i].typ.includes("powtorka") && powtorka[i].dzial === dzial && powtorka[i].poddzial === model) {
+                zadania.push(powtorka[i])
+            }
+        }
+        data = zadania;
+        return (<WievTaskPowt data={data} model={model} />);
+    };
+
+    let dk = kielbasa.length;
+    const selectTaskKielbasa = (typ, model) => {
+    for (let i = 0; i < dk; i++) {
+        if (kielbasa[i].dzial=== typ)
+            zadania.push(kielbasa[i])
+    };
+
+
+    data = zadania;
+    return (<WievTaskKsiazki data={data} model={model} />);
+    }
     switch (dzial) {
         case "1":
             switch (model) {
                 case "1":
-                    for (let i = 0; i < d; i++) {
-                        if (data[i].dzial === dzial && data[i].poddzial === model) {
-                            zadania.push(data[i])
-                        }
-                    }
-                    data = zadania;
-                    return (<WievTask data={data} model={model} />);
+                    return selectTask(dzial, model);
                 case "2":
-                    for (let i = 0; i < d; i++) {
-                        if (data[i].dzial === dzial && data[i].poddzial === model) {
-                            zadania.push(data[i])
-                        }
-                    }
-                    data = zadania;
-                    return (<WievTask data={data} model={model} />);
+                    return selectTask(dzial, model);
                 case "3":
-                    for (let i = 0; i < d; i++) {
-                        if (data[i].dzial === dzial && data[i].poddzial === model) {
-                            zadania.push(data[i])
-                        }
-                    }
-                    data = zadania;
-                    return (<WievTask data={data} model={model} />);
+                    return selectTask(dzial, model);
                 case "4":
-                    for (let i = 0; i < d; i++) {
-                        if (data[i].dzial === dzial && data[i].poddzial === model) {
-                            zadania.push(data[i])
-                        }
-                    }
-                    data = zadania;
-                    return (<WievTask data={data} model={model} />);
+                    return selectTask(dzial, model);
                 case "5":
-                    for (let i = 0; i < d; i++) {
-                        if (data[i].dzial === dzial && data[i].poddzial === model) {
-                            zadania.push(data[i])
-                        }
-                    }
-                    data = zadania;
-                    return (<WievTask data={data} model={model} />);
+                    return selectTask(dzial, model);
 
 
 
@@ -68,14 +71,7 @@ const WorksList = ({ model, dzial, typ }) => {
         case "2":
             switch (model) {
                 case "1":
-                    for (let i = 0; i < d; i++) {
-                        if (data[i].dzial === dzial && data[i].poddzial === model) {
-                            zadania.push(data[i])
-                        }
-                    }
-                    data = zadania;
-                    return (<WievTask data={data} model={model} />);
-               
+                    return selectTask(dzial, model);
 
 
                 default: return (<div></div>);
@@ -84,14 +80,39 @@ const WorksList = ({ model, dzial, typ }) => {
         case "10":
             switch (model) {
                 case "1":
-                   for (let i = 0; i < d; i++) {
-                        if (data[i].dzial === dzial && data[i].poddzial === model) {
-                            zadania.push(data[i])
-                        }
-                    }
-                    data = zadania;
-                    return (<WievTask data={data} model={model} />);
-               
+                    return selectTask(dzial, model);
+                case "2":
+                    return selectTask(dzial, model);
+                case "3":
+                    return selectTask(dzial, model);
+                case "4":
+                    return selectTask(dzial, model);
+                case "5":
+                    return selectTask(dzial, model);
+                case "6":
+                    return selectTask(dzial, model);
+                case "7":
+                    return selectTask(dzial, model);
+                case "8":
+                    return selectTask(dzial, model);
+                case "9":
+                    return selectTask(dzial, model);
+                case "10":
+                    return selectTask(dzial, model);
+                case "11":
+                    return selectTask(dzial, model);
+                case "12":
+                    return selectTask(dzial, model);
+                case "13":
+                    return selectTask(dzial, model);
+                case "14":
+                    return selectTask(dzial, model);
+                case "15":
+                    return selectTask(dzial, model);
+                case "16":
+                    return selectTask(dzial, model);
+                case "17":
+                    return selectTask(dzial, model);
 
 
                 default: return (<div></div>);
@@ -111,6 +132,7 @@ const WorksList = ({ model, dzial, typ }) => {
                     }
                     data = arkusze;
                     return (<WievArkusz data={data} model={model} />);
+                
 
 
 
@@ -138,51 +160,19 @@ const WorksList = ({ model, dzial, typ }) => {
 
             };
         case "cp1":
+        
             switch (model) {
                 case "1":
-                    let d = pliczby.length;
-                    let zadania = [];
-                    for (let i = 0; i < d; i++) {
-                        if (pliczby[i].typ.includes("powtorka")) {
-                            zadania.push(pliczby[i])
-                        }
-                    }
-
-                    data = zadania;
-                    return (<WievTaskPowt data={data} model={model} />);
+                   return selectTaskPowt(dzial, model);
                 case "2":
-                    let d2 = pliczby.length;
-                    let zadania2 = [];
-                    for (let i = 0; i < d2; i++) {
-                        if (pliczby[i].typ.includes("zamkniete")) {
-                            zadania2.push(pliczby[i])
-                        }
-                    }
+                    return selectTaskPowt(dzial, model);
 
-                    data = zadania2;
-                    return (<WievTaskPowt data={data} model={model} />);
                 case "3":
-                    let d3 = pliczby.length;
-                    let zadania3 = [];
-                    for (let i = 0; i < d3; i++) {
-                        if (pliczby[i].typ.includes("krotkie")) {
-                            zadania3.push(pliczby[i])
-                        }
-                    }
+                    return selectTaskPowt(dzial, model);
 
-                    data = zadania3;
-                    return (<WievTaskPowt data={data} model={model} />);
                 case "4":
-                    let d4 = pliczby.length;
-                    let zadania4 = [];
-                    for (let i = 0; i < d4; i++) {
-                        if (pliczby[i].typ.includes("dlugie")) {
-                            zadania4.push(pliczby[i])
-                        }
-                    }
+                    return selectTaskPowt(dzial, model);
 
-                    data = zadania4;
-                    return (<WievTaskPowt data={data} model={model} />);
                 default: return (<div></div>);
 
 
@@ -194,302 +184,59 @@ const WorksList = ({ model, dzial, typ }) => {
         case "cp8":
             switch (model) {
                 case "1":
-                    let d = pciagi.length;
-                    let zadania = [];
-                    for (let i = 0; i < d; i++) {
-                        if (pciagi[i].typ.includes("powtorka")) {
-                            zadania.push(pciagi[i])
-                        }
-                    }
+                    return selectTaskPowt(dzial, model);
 
-                    data = zadania;
-                    return (<WievTaskPowt data={data} model={model} />);
                 case "2":
-                    let d2 = pciagi.length;
-                    let zadania2 = [];
-                    for (let i = 0; i < d2; i++) {
-                        if (pciagi[i].typ.includes("zamkniete")) {
-                            zadania2.push(pciagi[i])
-                        }
-                    }
+                    return selectTaskPowt(dzial, model);
 
-                    data = zadania2;
-                    return (<WievTaskPowt data={data} model={model} />);
                 case "3":
-                    let d3 = pciagi.length;
-                    let zadania3 = [];
-                    for (let i = 0; i < d3; i++) {
-                        if (pciagi[i].typ.includes("krotkie")) {
-                            zadania3.push(pciagi[i])
-                        }
-                    }
+                    return selectTaskPowt(dzial, model);
 
-                    data = zadania3;
-                    return (<WievTaskPowt data={data} model={model} />);
                 case "4":
-                    let d4 = pciagi.length;
-                    let zadania4 = [];
-                    for (let i = 0; i < d4; i++) {
-                        if (pciagi[i].typ.includes("dlugie")) {
-                            zadania4.push(pciagi[i])
-                        }
-                    }
+                    return selectTaskPowt(dzial, model);
 
-                    data = zadania4;
-                    return (<WievTaskPowt data={data} model={model} />);
+                  
                 default: return (<div></div>);
             };
         case "cp2":
             switch (model) {
                 case "1":
-                    let d = pfunkcjeILiniowa.length;
-                    let zadania = [];
-                    for (let i = 0; i < d; i++) {
-                        if (pfunkcjeILiniowa[i].typ.includes("powtorka")) {
-                            zadania.push(pfunkcjeILiniowa[i])
-                        }
-                    }
+                    return selectTaskPowt(dzial, model);
 
-                    data = zadania;
-                    return (<WievTaskPowt data={data} model={model} />);
                 case "2":
-                    let d2 = pfunkcjeILiniowa.length;
-                    let zadania2 = [];
-                    for (let i = 0; i < d2; i++) {
-                        if (pfunkcjeILiniowa[i].typ.includes("zamkniete")) {
-                            zadania2.push(pfunkcjeILiniowa[i])
-                        }
-                    }
+                    return selectTaskPowt(dzial, model);
 
-                    data = zadania2;
-                    return (<WievTaskPowt data={data} model={model} />);
                 case "3":
-                    let d3 = pfunkcjeILiniowa.length;
-                    let zadania3 = [];
-                    for (let i = 0; i < d3; i++) {
-                        if (pfunkcjeILiniowa[i].typ.includes("krotkie")) {
-                            zadania3.push(pfunkcjeILiniowa[i])
-                        }
-                    }
+                    return selectTaskPowt(dzial, model);
 
-                    data = zadania3;
-                    return (<WievTaskPowt data={data} model={model} />);
                 case "4":
-                    let d4 = pfunkcjeILiniowa.length;
-                    let zadania4 = [];
-                    for (let i = 0; i < d4; i++) {
-                        if (pciagi[i].typ.includes("dlugie")) {
-                            zadania4.push(pfunkcjeILiniowa[i])
-                        }
-                    }
+                    return selectTaskPowt(dzial, model);
 
-                    data = zadania4;
-                    return (<WievTaskPowt data={data} model={model} />);
                 default: return (<div></div>);
             };
         case "cpkk1":
             switch (typ) {
-                case "1": {
-                    let d = kielbasa.length;
-                    let zadania = [];
-                    for (let i = 0; i < d; i++) {
-                        if (kielbasa[i].dzial.includes("Wyrażenia algebraiczne."))
-                            zadania.push(kielbasa[i])
-                    };
+                case "1": return selectTaskKielbasa(typ, model);
+                case "2": return selectTaskKielbasa(typ, model);
+                case "3": return selectTaskKielbasa(typ, model);
+                case "4": return selectTaskKielbasa(typ, model);
+                case "5": return selectTaskKielbasa(typ, model);
+                case "6": return selectTaskKielbasa(typ, model);
+                case "7": return selectTaskKielbasa(typ, model);
+                case "8": return selectTaskKielbasa(typ, model);
+                case "9": return selectTaskKielbasa(typ, model);
+                case "10": return selectTaskKielbasa(typ, model);
+                case "11": return selectTaskKielbasa(typ, model);
+                case "12": return selectTaskKielbasa(typ, model);
+                case "13": return selectTaskKielbasa(typ, model);
+                case "14": return selectTaskKielbasa(typ, model);
+                case "15": return selectTaskKielbasa(typ, model);
 
 
-                    data = zadania;
-                    return (<WievTaskKsiazki data={data} model={model} />);
-        
-                };
-                case "2": {
-                    let d = kielbasa.length;
-                    let zadania = [];
-                    for (let i = 0; i < d; i++) {
-                        if (kielbasa[i].dzial.includes("Liczby"))
-                            zadania.push(kielbasa[i])
-                    };
-
-
-                    data = zadania;
-                    return (<WievTaskKsiazki data={data} model={model} />);
-        
-                };
-                case "3": {
-                    let d = kielbasa.length;
-                    let zadania = [];
-                    for (let i = 0; i < d; i++) {
-                        if (kielbasa[i].dzial.includes("Funkcje."))
-                            zadania.push(kielbasa[i])
-                    };
-
-
-                    data = zadania;
-                    return (<WievTaskKsiazki data={data} model={model} />);
-        
-                };
-                case "4": {
-                    let d = kielbasa.length;
-                    let zadania = [];
-                    for (let i = 0; i < d; i++) {
-                        if (kielbasa[i].dzial.includes("Funkcja liniowa"))
-                            zadania.push(kielbasa[i])
-                    };
-
-
-                    data = zadania;
-                    return (<WievTaskKsiazki data={data} model={model} />);
-        
-                };
-                case "5": {
-                    let d = kielbasa.length;
-                    let zadania = [];
-                    for (let i = 0; i < d; i++) {
-                        if (kielbasa[i].dzial.includes("Funkcja kwadratowa"))
-                            zadania.push(kielbasa[i])
-                    };
-
-
-                    data = zadania;
-                    return (<WievTaskKsiazki data={data} model={model} />);
-        
-                };
-                case "6": {
-                    let d = kielbasa.length;
-                    let zadania = [];
-                    for (let i = 0; i < d; i++) {
-                        if (kielbasa[i].dzial.includes("Wielomiany"))
-                            zadania.push(kielbasa[i])
-                    };
-
-
-                    data = zadania;
-                    return (<WievTaskKsiazki data={data} model={model} />);
-        
-                };
-                case "7": {
-                    let d = kielbasa.length;
-                    let zadania = [];
-                    for (let i = 0; i < d; i++) {
-                        if (kielbasa[i].dzial.includes("Funkcje wymierne"))
-                            zadania.push(kielbasa[i])
-                    };
-
-
-                    data = zadania;
-                    return (<WievTaskKsiazki data={data} model={model} />);
-        
-                };
-                case "8": {
-                    let d = kielbasa.length;
-                    let zadania = [];
-                    for (let i = 0; i < d; i++) {
-                        if (kielbasa[i].dzial.includes("Funkcja wykładnicza"))
-                            zadania.push(kielbasa[i])
-                    };
-
-
-                    data = zadania;
-                    return (<WievTaskKsiazki data={data} model={model} />);
-        
-                };
-                case "9": {
-                    let d = kielbasa.length;
-                    let zadania = [];
-                    for (let i = 0; i < d; i++) {
-                        if (kielbasa[i].dzial.includes("Funkcja logarytmiczna"))
-                            zadania.push(kielbasa[i])
-                    };
-
-
-                    data = zadania;
-                    return (<WievTaskKsiazki data={data} model={model} />);
-        
-                };
-                case "10": {
-                    let d = kielbasa.length;
-                    let zadania = [];
-                    for (let i = 0; i < d; i++) {
-                        if (kielbasa[i].dzial.includes("Trygonometria"))
-                            zadania.push(kielbasa[i])
-                    };
-
-
-                    data = zadania;
-                    return (<WievTaskKsiazki data={data} model={model} />);
-        
-                };
-                case "11": {
-                    let d = kielbasa.length;
-                    let zadania = [];
-                    for (let i = 0; i < d; i++) {
-                        if (kielbasa[i].dzial.includes("Ciągi"))
-                            zadania.push(kielbasa[i])
-                    };
-
-
-                    data = zadania;
-                    return (<WievTaskKsiazki data={data} model={model} />);
-        
-                };
-                case "12": {
-                    let d = kielbasa.length;
-                    let zadania = [];
-                    for (let i = 0; i < d; i++) {
-                        if (kielbasa[i].dzial.includes("Planimetria"))
-                            zadania.push(kielbasa[i])
-                    };
-
-
-                    data = zadania;
-                    return (<WievTaskKsiazki data={data} model={model} />);
-        
-                };
-                case "13": {
-                    let d = kielbasa.length;
-                    let zadania = [];
-                    for (let i = 0; i < d; i++) {
-                        if (kielbasa[i].dzial.includes("Geometria"))
-                            zadania.push(kielbasa[i])
-                    };
-
-
-                    data = zadania;
-                    return (<WievTaskKsiazki data={data} model={model} />);
-        
-                };
-                case "14": {
-                    let d = kielbasa.length;
-                    let zadania = [];
-                    for (let i = 0; i < d; i++) {
-                        if (kielbasa[i].dzial.includes("Stereometria"))
-                            zadania.push(kielbasa[i])
-                    };
-
-
-                    data = zadania;
-                    return (<WievTaskKsiazki data={data} model={model} />);
-        
-                };
-                case "15": {
-                    let d = kielbasa.length;
-                    let zadania = [];
-                    for (let i = 0; i < d; i++) {
-                        if (kielbasa[i].dzial.includes("Pochodna"))
-                            zadania.push(kielbasa[i])
-                    };
-
-
-                    data = zadania;
-                    return (<WievTaskKsiazki data={data} model={model} />);
-        
-                };
-                    
-                    
                 default: return (<div></div>);
             }
         default: return (<div></div>);
 
     }
 }
-    export default WorksList;
+export default WorksList;

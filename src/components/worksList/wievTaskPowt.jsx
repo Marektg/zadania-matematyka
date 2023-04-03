@@ -18,19 +18,19 @@ const WievTaskPowt = ({ data, model }) => {
     for (let i = 1; i <= numberOfPage; i++) {
         pages.push({ id: `${i}`, val: `${i * numberOfTask}` });
     };
-    // const podmenu = document.querySelector('[data-poddzialy]')
+    const podmenu = document.querySelector('[data-poddzialy]')
     // // console.log(podmenu.childNodes[0].id);
-    // for (let i = 0; i < podmenu.childNodes.length; i++) {
-    //     if (Number(model) === Number(podmenu.childNodes[i].id)) {
-    //         podmenu.childNodes[i].style.backgroundColor = "green";
+    for (let i = 0; i < podmenu.childNodes.length; i++) {
+        if (Number(model) === Number(podmenu.childNodes[i].id)) {
+            podmenu.childNodes[i].style.backgroundColor = "green";
 
-    //     } else {
-    //         if (i % 2 === 1) {
-    //             podmenu.childNodes[i].style.backgroundColor = '#f0e68c';
-    //         } else { podmenu.childNodes[i].style.backgroundColor = '#ffa07a'; }
+        } else {
+            if (i % 2 === 1) {
+                podmenu.childNodes[i].style.backgroundColor = '#f0e68c';
+            } else { podmenu.childNodes[i].style.backgroundColor = '#ffa07a'; }
 
-    //     }
-    // }
+        }
+    }
 
     useEffect(() => { settasks([]); }, [model]);
 

@@ -3,7 +3,7 @@ import { nanoid } from "@reduxjs/toolkit"
 const kielbasa = [
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.1",
         "tresc": "Sprowadź do najprostszej postaci wyrażenie:",
         "podpunkty": ["\\(3x^2+2x^2\\)", "\\((3x)^2+(2x)^2\\)", "\\(x^4+3x^3+x^2-x-(x^3-2x^2-x)\\)", "\\((x+2)(x+3)-5(x-2)\\)", "\\((x^2+3x+2)(x^2-3x+2)\\)"],
@@ -29,7 +29,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.3",
         "tresc": "Sporwdź do najprostszej postaci wyrażenie:",
         "podpunkty": ["\\((a+3b)^2-(a-3b)^2\\)", "\\((\\sqrt{7}a+\\sqrt{2}b)(\\sqrt{7}a-\\sqrt{2}b)\\)", "\\(2n(n-5)-(n-k)(n+k)-5n(\\frac{2}{5}k-2)\\)", "\\((y-\\sqrt{5})(y^2+5)(y+\\sqrt{5})\\)", "\\((x+1)^3-(x-1)^3\\)", "\\((x+3)(x^2-3x+9)\\)"],
@@ -42,7 +42,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.4",
         "tresc": "Rozłóż na czynniki wyrażenie",
         "podpunkty": ["\\(x^2-25\\)", "\\(x^2-3\\)", "\\(4x^2-1\\)", "\\(9-2x^2\\)", "\\(x^2+6x+9\\)", "\\(25x^2-20x+4\\)", "\\((3x+4)^2-4\\)", "\\((x^2+x-4)^2-(x+5)^2\\)", "\\(a^4-b^4\\)", "\\(a^2+b^2-c^2-2ab\\)", "\\(\\bigstar\\) \\(x^3-8\\)", "\\(\\bigstar\\) \\(a^3+1\\)", "\\(\\bigstar\\) \\((x+1)^3-(x-1)^3\\)", "\\(\\bigstar\\) \\(a^4+b^4\\)"],
@@ -55,7 +55,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.5",
         "tresc": "Rozłóż na czynniki wyrażenie",
         "podpunkty": ["\\(x^2+4x\\)", "\\(x ^ 2 + 6x\\)", "\\(x^3-9x\\)", "\\(x^4+4x^3+4x^2\\)", "\\(x^2(x-3)+9(x-3)\\)", "\\((x^2-2)(x+2)-2(x+2)\\)"],
@@ -68,7 +68,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.6",
         "tresc": "\\(\\bigstar\\) Rozłóż na czynniki wielomian",
         "podpunkty": ["\\(x^3-2x^2+x-2\\)", "\\(x^3+7x^2-2x-14\\)", "\\(x^3+x^2+4x+64\\)"],
@@ -81,7 +81,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.7",
         "tresc": "\\(\\bigstar\\) Wielomian \\(W(x)\\) jest podzielny przez dwumian \\(P(x)\\). Znajdź wynik dzielenia wielomianu \\(W(x)\\) przez \\(P(x)\\), jeśli",
         "podpunkty": ["\\(W(x)=x^3-10x^2+2x+7, P(x)=x-1\\)", "\\(W(x)=2x^3+x^2-x+10, P(x)=x+2\\)", "\\(W(x)=x^4+3x^3-4x^2-5x+1, P(x)=x+1\\)", "\\(W(x)=x^3-6x+4, P(x)=x-2\\)"],
@@ -94,7 +94,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.8",
         "tresc": "\\(\\bigstar\\) Rozłóż na czynniki wielomian \\(W(x)\\) wiedząc, że liczba \\(p\\) jest pierwiastkiem wielomianu \\(W(x)\\).",
         "podpunkty": ["\\(W(x)=x^3+4x^2+x-6, p=1\\)", "\\(W(x)=x^3+x^2-7x-3, p=-3\\)", "\\(W(x)=4x^3+4x^2+3x-3, p=0,5\\)", "\\(W(x)=9x^4-12x^3-11x^2-2x, p=2\\)"],
@@ -107,7 +107,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.9",
         "tresc": "\\(\\bigstar\\) Rozłóż na czynniki wielomian \\(W(x)\\)",
         "podpunkty": ["\\(W(x)=x^3+2x^2-7x+4\\)", "\\(W(x)=3x^3+13x^2+7x+1\\)"],
@@ -120,7 +120,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.10",
         "tresc": "Zapisz (o ile to możliwe) za pomocą przedziału lub sumy dwóch przedziałów zbiór liczb \\(x\\) spełniających podane warunki",
         "podpunkty": ["\\(x>3\\)", "\\(x\\leq2\\)", "\\(x>0,1 \\ i\\  x<5\\)", "\\(x<-2\\  lub\\  x\\geq4\\)", "\\(x\\leq3\\  lub\\  x<6\\)", "\\(x\\leq3\\  i\\  x<6\\)", "\\(x\\geq3\\  lub\\  x<6\\)", "\\(x<3\\  i\\  x\\geq6\\)"],
@@ -133,7 +133,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.11",
         "tresc": "Wyznacz wszystkie liczby rzeczywiste \\(m\\) takie, że",
         "podpunkty": ["\\(5m-2\\in (-\\infty,2>\\)", "\\(5m-2\\in (-1,1)\\)", "\\(5m-2\\in <1,13>\\)"],
@@ -146,7 +146,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.12",
         "tresc": "\\(\\bigstar\\) Wyznacz sumę zbiorów \\(A\\) i \\(B\\), jeśli",
         "podpunkty": ["\\(A=\\{1,2,3,4,5\\},\\ B=\\{0,2,4,6\\}\\)", "\\(A=(1,5),\\ B=<2,6>\\)", "\\(A=(-\\infty,2),\\ B=<2,\\infty)\\)", "\\(A=\\{x: x=2n\\ i\\ n\\in Z\\},\\ B=\\{x: x=2n+1\\ i\\ n\\in Z\\}\\)"],
@@ -159,7 +159,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.13",
         "tresc": "\\(\\bigstar\\) Wyznacz część wspólną (iloczyn) zbiorów \\(A\\) i \\(B\\), jeśli",
         "podpunkty": ["\\(A=\\{1,2,3,4,5\\},\\ B=\\{0,2,4,6\\}\\)", "\\(A=(1,5),\\ B=<2,6>\\)", "\\(A=(-\\infty,2>,\\ B=<2,\\infty)\\)", "\\(A=(-\\infty,-1) \\cup (1,\\infty),\\ B=<-2,2>\\)", "\\(A=\\{x\\in R: x\\geq 2\\},\\ B=\\{x\\in R:x>3\\}\\)"],
@@ -172,7 +172,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.14",
         "tresc": "\\(\\bigstar\\) Wyznacz zbiory \\(A-B\\) i \\(B-A\\), jeśli",
         "podpunkty": ["\\(A=\\{1,2,3,4,5\\},\\ B=\\{0,2,4,6\\}\\)", "\\(A=(1,5),\\ B=<2,6>\\)", "\\(A=(-\\infty,2>,\\ B=<2,\\infty)\\)", "\\(A=(-\\infty,4>,\\ B=(1,4)\\)"],
@@ -185,7 +185,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.15",
         "tresc": "Rozwiąż równanie",
         "podpunkty": ["\\((x+3)^2=(x-1)^2\\)", "\\(x-\\frac{x-3}{2}=2x-9\\)", "\\(\\frac{y-5}{4}-\\frac{2y+1}{3}=2\\frac{1}{2}-y\\)", "\\(x\\sqrt{3}+\\sqrt{3}=x+3\\)", "\\(6x+4=5(x-2)+x+12\\)", "\\(4(x+1)=x(x+4)-(x-2)(x+2)\\)"],
@@ -198,7 +198,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.16",
         "tresc": "Rozwiąż nierówność",
         "podpunkty": ["\\(\\frac{1}{3}x<x-2\\)", "\\(3(x-5)>4(x-5)\\)", "\\(x(x+3)+3\\leq(x-2)^2+7x\\)", "\\(x\\sqrt{2}+2\\sqrt{3}<2x\\)"],
@@ -211,7 +211,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.17",
         "tresc": "Rozwiąż równanie",
         "podpunkty": ["\\((x-5)(x+6)=6\\)", "\\(x^2-9=0\\)", "\\(m^2=2\\)", "\\(x^2+4=0\\)", "\\(a^2=8a\\)", "\\(x(x-2)=5(x-2)\\)", "\\(12x^2+12x+3=0\\)", "\\(x^2+2x=8\\)", "\\(2k^2-1=k\\)", "\\(x^2=2(x+1)\\)"],
@@ -224,7 +224,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.18",
         "tresc": "Rozwiąż nierówność",
         "podpunkty": ["\\((x-2)(x-4)>0\\)", "\\((x+5)(x-6)\\geq0\\)", "\\(y^2-36<0\\)", "\\(x^2>8\\)", "\\(x^2>0\\)", "\\(m^2+9\\geq0\\)", "\\(x^2\\leq7x\\)", "\\(x^2+5x+4<0\\)", "\\(x^2+4\\geq5x\\)", "\\(6x+1>x^2\\)", "\\(k^2-2k+3>0\\)", "\\(p^2+6p+9\\leq0\\)", "\\(-3x^2+4x-5\\leq0\\)", "\\(0,5x^2-\\sqrt{6}x+3>0\\)"],
@@ -237,7 +237,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.19",
         "tresc": "Rozwiąż równanie",
         "podpunkty": ["\\((x-2)(x-5)(x+3)=0\\)", "\\(x(4-x)(2x+1)=0\\)", "\\((x+6)(x^2-1)=0\\)", "\\((x^2-4x+3)(x^2+x)=0\\)", "\\(x^3-2x^2=0\\)", "\\(x^3-2x=0\\)", "\\(x^3-2x=x^2\\)", "\\(x^3+27=0\\)"],
@@ -250,7 +250,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.20",
         "tresc": "\\(\\bigstar\\) Rozwiąż równanie",
         "podpunkty": ["\\(x^3+5x^2+3x+15=0\\)", "\\(x^4+3x^3+6x+18=0\\)", "\\(x^3-2x^2+2=x\\)"],
@@ -263,7 +263,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.21",
         "tresc": "\\(\\bigstar\\) Rozwiąż równanie",
         "podpunkty": ["\\(x^4-3x^2+2=0\\)", "\\(x^4-x^2-2=0\\)"],
@@ -276,7 +276,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.22",
         "tresc": "\\(\\bigstar\\) Rozwiąż równanie wiedząć, że liczba \\(a\\) jest jednym z jego rozwiązań",
         "podpunkty": ["\\(x^3+7x^2-14x-120=0,\\ a=4\\)", "\\(x^4+9x^3+17x^2=27x+60,\\ a=-5\\)", "\\(4x^3-49x^2+60x-12=0,\\ a=0,25\\)"],
@@ -289,7 +289,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.23",
         "tresc": "\\(\\bigstar\\) Rozwiąż równanie",
         "podpunkty": ["\\(x^3+6x^2+5x-12=0\\)", "\\(x^3+x^2-8x-6=0\\)", "\\(3x^3+x^2+4x-4=0\\)"],
@@ -302,7 +302,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.24",
         "tresc": "\\(\\bigstar\\) Znajdź pierwiastki wielomianu \\(W(x)\\) i określ ich krotność",
         "podpunkty": ["\\(W(x)=(x+2)(x-4)^2(x-5)^3\\)", "\\(W(x)=x^4+6x^3+9x^2\\)", "\\(W(x)=(x+1)^5+(x+1)^4\\)"],
@@ -315,7 +315,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.25",
         "tresc": "\\(\\bigstar\\) Rozwiąż nierówność",
         "podpunkty": ["\\(5x(x+3)(2-x)>0\\)", "\\((x+2)(x-1)^2(x-3)^5<0\\)", "\\((x^2-5x+6)(x^2-1)\\leq0\\)", "\\(x^3\\leq9x\\)", "\\(a^4\\geqa^2\\)", "\\(9x^3+12x^2+4x\\geq0\\)", "\\(k^3+3k^2+2k+6<0\\)", "\\(x^4+5x^3-x^2-5x<0\\)", "\\(-x^3+x^2+x-1\\geq0\\)", "\\(x^4-5x^2+4>0\\)", "\\(x^3+6x^2+11x+6>0\\)"],
@@ -328,7 +328,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.26",
         "tresc": "\\(\\bigstar\\) Określ dziedzinę wyrażenia",
         "podpunkty": ["\\(\\frac{2}{x-6}\\)", "\\(\\frac{x-6}{x}\\)", "\\(\\frac{2x}{x+5}+\\frac{1}{x-2}\\)", "\\(\\frac{1}{x^2}\\)", "\\(\\frac{x+1}{(x-1)(x+7)}\\)", "\\(\\frac{x^2-9}{x^2-25}\\)", "\\(\\frac{x-5}{(x+5)^2}\\)", "\\(\\frac{x}{x^2+25}\\)", "\\(\\frac{x-4}{x^2-4x}\\)", "\\(\\frac{1}{x^2-4x+3}\\)", "\\(\\frac{1}{x^2-3x+4}\\)", "\\(\\frac{x-2}{x^3-x^2-4x+4}\\)"],
@@ -341,7 +341,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.27",
         "tresc": "\\(\\bigstar\\) Sprowadź do najprostszej postaci wyrażenie",
         "podpunkty": ["\\(\\frac{8x}{x^2-8x}\\)", "\\(\\frac{x^3+3x^2-2x-6}{x^2-2}\\)", "\\(\\frac{k-1}{k^2+k}\\cdot \\frac{2k}{k^2-1}\\)", "\\(\\frac{2x}{x+5}+\\frac{10}{x+5}\\)", "\\(\\frac{8-3x}{x+2}+3\\)", "\\(\\frac{1}{x+2}+\\frac{1}{x-2}\\)", "\\(\\frac{1}{x-4}-\\frac{1}{x+4}\\)", "\\(\\frac{x+8}{x}-\\frac{x+5}{x-3}\\)", "\\(\\frac{a}{a-b}+\\frac{b}{b-a}\\)", "\\(\\frac{x}{x^-9}-\\frac{1}{x+3}\\)"],
@@ -354,7 +354,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.28",
         "tresc": "Rozwiąż równanie",
         "podpunkty": ["\\(\\frac{1}{x-6}=0\\)", "\\(\\frac{k-3}{k-6}=0\\)", "\\(\\frac{x^2-3x+2}{x-1}=0\\)", "\\(\\frac{2x+5}{x+3}=\\frac{x+2}{x+3}\\)", "\\(\\frac{5}{p}=1\\)", "\\(\\frac{m}{m-2}=2\\)", "\\(\\frac{x+3}{x-2}=2x\\)", "\\(\\frac{k^2-4}{k^2-2}=2\\)", "\\(\\frac{6}{x-5}=\\frac{5}{x+4}\\)", "\\(\\frac{x}{x+1}=\\frac{2}{x+3}\\)", "\\(\\frac{x-3}{x-7}=\\frac{4x}{x+3}\\)", "\\(\\frac{3}{x^2-1}+\\frac{x}{x-1}=\\frac{11-x}{x+1}\\)"],
@@ -367,7 +367,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1.29",
         "tresc": "\\(\\bigstar\\) Rozwiąż nierówność",
         "podpunkty": ["\\(\\frac{3}{x}>0\\)", "\\(\\frac{k-3}{k-6}>0\\)", "\\(\\frac{x+2}{x-1}\\leq0\\)", "\\(\\frac{3a+5}{a-2}\\leq \\frac{2a-1}{a-2}\\)", "\\(\\frac{5}{p}>1\\)", "\\(\\frac{m}{m-2}\\geq 2\\)", "\\(\\frac{1}{x^2}>1\\)", "\\(\\frac{2x-5}{x^2-4}<\\frac{5}{x^2+4x+4}\\)"],
@@ -380,7 +380,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "1",
         "tresc": "Sprawdź, czy liczba spełniająca równanie \\(\\frac{2a+1}{14}-\\frac{3a+4}{7}=\\frac{a-1}{2}\\) należy dz zbioru rozwiązań nierówności \\(-1<4x-3\\leq 9\\).",
         "podpunkty": [],
@@ -393,7 +393,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "2",
         "tresc": "Rozwiąż nierówność \\(3x-x^2\\geq 0\\).",
         "podpunkty": [],
@@ -406,7 +406,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "3",
         "tresc": "Rozwiąż nierówność \\((2x-3)(3-x)\\geq 0\\).",
         "podpunkty": [],
@@ -419,7 +419,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "4",
         "tresc": "Rozwiąż nierówność \\((x-2)(x-5)\\leq 4\\).",
         "podpunkty": [],
@@ -432,7 +432,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "5",
         "tresc": "Rozwiąż nierówność \\(-2x^2+2x+24\\geq 0\\).",
         "podpunkty": [],
@@ -445,7 +445,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "6",
         "tresc": "Rozwiąż równanie \\(2x^3+5x^2=3x\\).",
         "podpunkty": [],
@@ -458,7 +458,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "7",
         "tresc": "Rozłóż na czynniki wyrażenie \\((x^2+x-2)^2-(x+4)^2\\), a następnie rozwiąż równanie \\((x^2+x-2)^2-(x+4)^2=0\\)",
         "podpunkty": [],
@@ -471,7 +471,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "8",
         "tresc": "\\(\\bigstar\\) Rozwiąż równanie \\(x^3-6x^2-9x+54=0\\).",
         "podpunkty": [],
@@ -484,7 +484,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "9",
         "tresc": "\\(\\bigstar\\) Rozwiąż nierówność \\(x^4+x^2\\geq2x\\).",
         "podpunkty": [],
@@ -497,7 +497,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "10",
         "tresc": "\\(\\bigstar\\) Wykonaj działania i przedstaw wynik w najprostszej postaci \\(\\frac{(\\frac{1}{2}x-\\frac{3}{4})^2-(x-1\\frac{1}{2})(x+1\\frac{1}{2})-\\frac{1}{4}(x^2-\\frac{19}{4}-3x)}{x+2}\\).",
         "podpunkty": [],
@@ -510,7 +510,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "11",
         "tresc": "\\(\\bigstar\\) Wyrażenie \\((\\frac{3a}{1-3a}+\\frac{2a}{1+3a}):\\frac{6a^2+10a}{1-6a+9a^2}\\), dla \\(a\\neq -\\frac{5}{3},\\ a\\neq -\\frac{1}{3},\\ a\\neq 0,\\ a\\neq\\frac{1}{3}\\), doprowadź do najprostszej postaci.",
         "podpunkty": [],
@@ -523,7 +523,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "12",
         "tresc": "\\(\\bigstar\\) Doprowadź wyrażenie \\(\\left(\\frac{a^2}{a+b}-\\frac{a^3}{(a+b)^2}\\right):\\left(\\frac{a}{ab}-\\frac{a^2}{a^2-b^2}\\right)\\) do najprostszej postaci",
         "podpunkty": [],
@@ -536,7 +536,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "13",
         "tresc": "Rozwiąż równanie \\(3x-10=\\frac{7x^2}{x-2}\\) dla \\(x\\neq 2\\).",
         "podpunkty": [],
@@ -549,7 +549,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "14",
         "tresc": "Rozwiąż równanie \\(\\frac{x+10}{x-2}=\\frac{2(x+5)}{x+2}\\).",
         "podpunkty": [],
@@ -562,7 +562,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "15",
         "tresc": "\\(\\bigstar\\) Rozwiąż równanie \\(1+\\frac{x}{x+2}=\\frac{2x^2}{x^2-4}\\).",
         "podpunkty": [],
@@ -575,7 +575,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+        "dzial": "1",
         "numer": "16",
         "tresc": "\\(\\bigstar\\) Rozwiąż nierówność \\(\\frac{2x}{2-3x}\\geq\\frac{x+6}{x-10}\\).",
         "podpunkty": [],
@@ -588,7 +588,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "2.1",
         "tresc": "Symbolem \\(*\\) zastąpiono cyfrę jedności czterocyfrowej liczby \\(174*\\). Znajdź cyfrę jedności tej liczby, jeśli wiadomo, że liczba ta jest podzielna przez \\(2\\) i przez \\(3\\), a nie jest podzeilna przez \\(5\\)",
         "podpunkty": [],
@@ -601,7 +601,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "2.2",
         "tresc": "Wyznacz resztę z dzielenia liczby \\(a\\) przez liczbę \\(b\\), jeżeli",
         "podpunkty": ["\\(a=17,\\ b=5\\)", "\\(a=69,\\ b=7\\)", "\\(a=51, \\ b=3\\)"],
@@ -614,7 +614,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "2.3",
         "tresc": "Oblicz",
         "podpunkty": ["\\(\\frac{1}{8}+\\frac{2}{18}+\\frac{3}{24}\\)", "\\(\\frac{1}{2}-\\frac{1}{3}-\\frac{1}{4}\\)", "\\(\\frac{1}{2}-(\\frac{1}{3}-\\frac{1}{4})\\)", "\\(\\frac{1}{2}-\\frac{1}{3}\\cdot \\frac{1}{4}\\)", "\\((\\frac{1}{2}:\\frac{2}{3}):\\frac{3}{4}\\)", "\\(\\frac{1}{2}:(\\frac{2}{3}:\\frac{3}{4})\\)"],
@@ -627,7 +627,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "2.4",
         "tresc": "Ułamek dziesiętny zamień na nieskracalny ułamek zwykły",
         "podpunkty": ["\\(0,4\\)", "\\(0,45\\)", "\\(0,08\\)", "\\(0,375\\)"],
@@ -640,7 +640,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "2.5",
         "tresc": "Zamień ułamek zwyły na ułamek dziesiętny okresowy",
         "podpunkty": ["\\(\\frac{2}{3}\\)", "\\(\\frac{5}{7}\\)", "\\(\\frac{11}{90}\\)"],
@@ -653,7 +653,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "2.6",
         "tresc": "Oblicz",
         "podpunkty": ["\\(\\sqrt{121}\\)", "\\(\\sqrt[3]{-343}\\)", "\\(\\sqrt[4]{81}\\)", "\\(\\sqrt[5]{-243}\\)", "\\(\\sqrt[7]{-128}\\)"],
@@ -666,7 +666,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "2.7",
         "tresc": "Zapisz w prostszej postaci",
         "podpunkty": ["\\(\\sqrt{2}+\\sqrt{8}+\\sqrt{32}\\)", "\\(\\sqrt{12}-\\sqrt{75}\\)", "\\(\\sqrt[3]{5}+\\sqrt[3]{-40}+\\sqrt[3]{135}\\)"],
@@ -679,7 +679,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "2.8",
         "tresc": "Liczbę \\((\\sqrt{2}+\\sqrt{7})^2\\) zapisz w postaci \\(k+\\sqrt{n}\\), gdzie liczby \\(k\\) i \\(n\\) są liczbami całkowitymi.",
         "podpunkty": [],
@@ -692,7 +692,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "2.9",
         "tresc": "Zapisz daną liczbę w taki sposób, by w mianowniku nie było znaku pierwiastka",
         "extra": null,
@@ -706,7 +706,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "2.10",
         "tresc": "Test to jest nowy wpis",
         "podpunkty": [],
@@ -719,7 +719,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -732,7 +732,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -745,7 +745,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -758,7 +758,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -771,7 +771,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -784,7 +784,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -797,7 +797,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -810,7 +810,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -823,7 +823,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -836,7 +836,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -849,7 +849,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -862,7 +862,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -875,7 +875,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -888,7 +888,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -901,7 +901,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -914,7 +914,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -927,7 +927,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -940,7 +940,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -953,7 +953,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -966,7 +966,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -979,7 +979,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -992,7 +992,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -1005,7 +1005,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -1018,7 +1018,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -1031,7 +1031,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -1044,7 +1044,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -1057,7 +1057,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -1070,7 +1070,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -1083,7 +1083,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -1096,7 +1096,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -1109,7 +1109,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -1122,7 +1122,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -1135,7 +1135,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -1148,7 +1148,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -1161,7 +1161,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -1174,7 +1174,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -1187,7 +1187,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -1200,7 +1200,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -1213,7 +1213,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "",
         "tresc": "",
         "podpunkty": [],
@@ -1226,7 +1226,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Liczby rzeczywiste.",
+        "dzial": "2",
         "numer": "17",
         "tresc": "test",
         "podpunkty": [],
@@ -1239,7 +1239,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Funkcje.",
+        "dzial": "3",
         "numer": "3.1",
         "tresc": "test",
         "podpunkty": [],
@@ -1252,7 +1252,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Funkcje.",
+        "dzial": "3",
         "numer": "97",
         "tresc": "test",
         "podpunkty": [],
@@ -1265,7 +1265,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Funkcja liniowa.",
+        "dzial": "4",
         "numer": "4.1",
         "tresc": "test",
         "podpunkty": [],
@@ -1278,7 +1278,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Funkcja liniowa.",
+        "dzial": "4",
         "numer": "139",
         "tresc": "test",
         "podpunkty": [],
@@ -1291,7 +1291,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Funkcja kwadratowa.",
+        "dzial": "5",
         "numer": "5.1",
         "tresc": "test",
         "podpunkty": [],
@@ -1304,7 +1304,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Funkcja kwadratowa.",
+        "dzial": "5",
         "numer": "199",
         "tresc": "test",
         "podpunkty": [],
@@ -1317,7 +1317,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wielomiany.",
+        "dzial": "6",
         "numer": "6.1",
         "tresc": "test",
         "podpunkty": [],
@@ -1330,7 +1330,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wielomiany.",
+        "dzial": "6",
         "numer": "321",
         "tresc": "test",
         "podpunkty": [],
@@ -1343,7 +1343,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Funkcje wymierne.",
+        "dzial": "7",
         "numer": "7.1",
         "tresc": "test",
         "podpunkty": [],
@@ -1356,7 +1356,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Funkcje wymierne.",
+        "dzial": "7",
         "numer": "380",
         "tresc": "test",
         "podpunkty": [],
@@ -1369,7 +1369,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Funkcja wykładnicza.",
+        "dzial": "8",
         "numer": "8.1",
         "tresc": "test",
         "podpunkty": [],
@@ -1382,7 +1382,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Funkcja wykładnicza.",
+        "dzial": "8",
         "numer": "427",
         "tresc": "test",
         "podpunkty": [],
@@ -1395,7 +1395,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Funkcja logarytmiczna.",
+        "dzial": "9",
         "numer": "9.1",
         "tresc": "test",
         "podpunkty": [],
@@ -1408,7 +1408,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Funkcja logarytmiczna.",
+        "dzial": "9",
         "numer": "459",
         "tresc": "test",
         "podpunkty": [],
@@ -1421,7 +1421,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Planimetria.",
+        "dzial": "10",
         "numer": "10.1",
         "tresc": "test",
         "podpunkty": [],
@@ -1434,7 +1434,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Geometria analityczna.",
+        "dzial": "11",
         "numer": "514",
         "tresc": "test",
         "podpunkty": [],
@@ -1447,7 +1447,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Stereometria.",
+        "dzial": "12",
         "numer": "11.1",
         "tresc": "test",
         "podpunkty": [],
@@ -1460,7 +1460,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Pochodna.",
+        "dzial": "13",
         "numer": "610",
         "tresc": "test",
         "podpunkty": [],
@@ -1473,7 +1473,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Optymalizacja.",
+        "dzial": "14",
         "numer": "610",
         "tresc": "test",
         "podpunkty": [],
@@ -1484,20 +1484,7 @@ const kielbasa = [
         "koniec": null,
         "answer": [],
     },
-    {
-        "id": `${nanoid()}`,
-        "dzial": "Pochodna.",
-        "numer": "610",
-        "tresc": "test",
-        "podpunkty": [],
-        "plot": [],
-        "canvas": [],
-        "trescpocanvie": null,
-        "tresc2": null,
-        "koniec": null,
-        "answer": [],
-    },
-
+    
 
 
 ]
@@ -1507,7 +1494,7 @@ export default kielbasa
 
 // {
 //     "id": `${nanoid()}`,
-//     "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne.",
+//     "dzial": "1",
 //     "numer": "",
 //     "tresc": "",
 //     "podpunkty": [],
