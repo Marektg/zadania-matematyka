@@ -10,7 +10,8 @@ const Ksiazkowe = props => {
             <Basic>
                 <LeftNavi model="cp" />
                 <RightSide model="ck" />
-            </Basic>
+                
+                </Basic>
         </MainDiv>
        
     )

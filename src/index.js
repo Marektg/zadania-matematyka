@@ -22,19 +22,19 @@ import PLiczby from './pages/matura/powtorzenie/pliczby';
 import PCiagi from './pages/matura/powtorzenie/pciagi';
 import PFunkcjeIFunkcjaLiniowa from './pages/matura/powtorzenie/pfunkcjeIFunkcjaLiniowa';
 import Ksiazkowe from './pages/matura/ksiazkowe/ksiazkowe';
-import Algebra from './pages/matura/ksiazkowe/kielbasa/algebra';
-import LiczbyRzeczywiste from './pages/matura/ksiazkowe/kielbasa/liczbyRzeczywiste';
-import Funkcje from './pages/matura/ksiazkowe/kielbasa/funkcje';
-import FunkcjaLiniowa from './pages/matura/ksiazkowe/kielbasa/funkcjaLiniowa';
-import FunkcjaKwadratowa from './pages/matura/ksiazkowe/kielbasa/funkcjaKwadratowa';
-import Wielomiany from './pages/matura/ksiazkowe/kielbasa/wielomiany';
-import FunkcjeWymierne from './pages/matura/ksiazkowe/kielbasa/funkcjeWymierne';
-import FunkcjaWykladnicza from './pages/matura/ksiazkowe/kielbasa/funkcjaWykladnicza';
-import FunkcjaLogarytmiczna from './pages/matura/ksiazkowe/kielbasa/funkcjaLogarytmiczna';
-import Trygonometria from './pages/matura/ksiazkowe/kielbasa/trygonometria';
-import Ciagi from './pages/matura/ksiazkowe/kielbasa/ciagi';
-import Planimetria from './pages/matura/ksiazkowe/kielbasa/planimetria';
-import GeometriaAnalityczna from './pages/matura/ksiazkowe/kielbasa/geometriaAnalityczna';
+import Algebra from './pages/matura/ksiazkowe/algebra';
+import LiczbyRzeczywiste from './pages/matura/ksiazkowe/liczbyRzeczywiste'
+import Funkcje from './pages/matura/ksiazkowe/funkcje'
+import FunkcjaLiniowa from './pages/matura/ksiazkowe/funkcjaLiniowa'
+import FunkcjaKwadratowa from './pages/matura/ksiazkowe/funkcjaKwadratowa'
+import Wielomiany from './pages/matura/ksiazkowe/wielomiany'
+import FunkcjeWymierne from './pages/matura/ksiazkowe/funkcjeWymierne'
+import FunkcjaWykladnicza from './pages/matura/ksiazkowe/funkcjaWykladnicza'
+import FunkcjaLogarytmiczna from './pages/matura/ksiazkowe/funkcjaLogarytmiczna'
+import Trygonometria from './pages/matura/ksiazkowe/trygonometria'
+import Ciagi from './pages/matura/ksiazkowe/ciagi'
+import Planimetria from './pages/matura/ksiazkowe/planimetria'
+import GeometriaAnalityczna from './pages/matura/ksiazkowe/geometriaAnalityczna'
 
 
 const config = {
@@ -58,14 +58,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<HomePage />} />
-         {/* <Route path='podstawowka' element={<Podstawowka />} />*/}
+          {/* <Route path='podstawowka' element={<Podstawowka />} />*/}
           <Route path='srednia' element={<Srednia />} />
           <Route path='srednia/lrzeczywiste' element={<Lrzeczywiste />} />
           <Route path='srednia/jezyk' element={<Jezyk />} />
           <Route path='srednia/fkwadratowa' element={<Fkwadratowa />} />
-         
+
           <Route path='matura' element={<Matura />} />
-            <Route path='matura/wymagania' element={<Wymagania />} />
+          <Route path='matura/wymagania' element={<Wymagania />} />
           <Route path='matura/zestawy' element={<Zestawy />} />
           <Route path='matura/zestawy/podstawa' element={<PoziomPodstawowy />} />
           <Route path='matura/zestawy/rozszerzenie' element={<PoziomRozszerzony />} />
@@ -74,23 +74,23 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='matura/powtorzenie/ciagi' element={<PCiagi />} />
           <Route path='matura/powtorzenie/funkcjeIFunkcjaLiniowa' element={<PFunkcjeIFunkcjaLiniowa />} />
           <Route path='matura/ksiazkowe' element={<Ksiazkowe />} />
-          <Route path='matura/ksiazkowe/kielbasa/algebra' element={<Algebra />} />
-          <Route path='matura/ksiazkowe/kielbasa/liczbyRzeczywiste' element={<LiczbyRzeczywiste />} />
-          <Route path='matura/ksiazkowe/kielbasa/funkcje' element={<Funkcje />} />
-          <Route path='matura/ksiazkowe/kielbasa/funkcjaLiniowa' element={<FunkcjaLiniowa />} />
-          <Route path='matura/ksiazkowe/kielbasa/funkcjaKwadratowa' element={<FunkcjaKwadratowa />} />
-          <Route path='matura/ksiazkowe/kielbasa/wielomiany' element={<Wielomiany />} />
-          <Route path='matura/ksiazkowe/kielbasa/funkcjeWymierne' element={<FunkcjeWymierne />} />
-          <Route path='matura/ksiazkowe/kielbasa/funkcjaWykladnicza' element={<FunkcjaWykladnicza />} />
-          <Route path='matura/ksiazkowe/kielbasa/funkcjaLogarytmiczna' element={<FunkcjaLogarytmiczna />} />
-          <Route path='matura/ksiazkowe/kielbasa/trygonometria' element={<Trygonometria />} />
-          <Route path='matura/ksiazkowe/kielbasa/ciagi' element={<Ciagi />} />
-          <Route path='matura/ksiazkowe/kielbasa/planimetria' element={<Planimetria />} />
-          <Route path='matura/ksiazkowe/kielbasa/geometriaAnalityczna' element={<GeometriaAnalityczna />} />
+          <Route path='matura/ksiazkowe/algebra' element={<Algebra />} />
+          <Route path='matura/ksiazkowe/liczbyRzeczywiste' element={<LiczbyRzeczywiste />} />
+          <Route path='matura/ksiazkowe/funkcje' element={<Funkcje />} />
+          <Route path='matura/ksiazkowe/funkcjaLiniowa' element={<FunkcjaLiniowa />} />
+          <Route path='matura/ksiazkowe/funkcjaKwadratowa' element={<FunkcjaKwadratowa />} />
+          <Route path='matura/ksiazkowe/wielomiany' element={<Wielomiany />} />
+          <Route path='matura/ksiazkowe/funkcjeWymierne' element={<FunkcjeWymierne />} />
+          <Route path='matura/ksiazkowe/funkcjaWykladnicza' element={<FunkcjaWykladnicza />} />
+          <Route path='matura/ksiazkowe/funkcjaLogarytmiczna' element={<FunkcjaLogarytmiczna />} />
+          <Route path='matura/ksiazkowe/trygonometria' element={<Trygonometria />} />
+          <Route path='matura/ksiazkowe/ciagi' element={<Ciagi />} />
+          <Route path='matura/ksiazkowe/planimetria' element={<Planimetria />} />
+          <Route path='matura/ksiazkowe/geometriaAnalityczna' element={<GeometriaAnalityczna />} />
 
-         
+
           {/*<Route path='studia' element={<Studia />} />*/}
-
+          <Route path='*' element={<h1>Page not found</h1>} />
         </Routes>
 
       </BrowserRouter>

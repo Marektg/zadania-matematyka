@@ -1,8 +1,8 @@
 import React from 'react'
-import { MainDiv, Basic, TaskList, Tytul } from '../../../srednia/srednia.styled.js';
-import TopNavi from '../../../../components/topNavi/topNavi';
-import LeftNavi from '../../../../components/leftNavi/leftNavi';
-import WorksList from '../../../../components/worksList/worksList';
+import { MainDiv, Basic, TaskList, Tytul } from '../../srednia/srednia.styled.js';
+import TopNavi from '../../../components/topNavi/topNavi';
+import LeftNavi from '../../../components/leftNavi/leftNavi';
+import WorksList from '../../../components/worksList/worksList';
 
 const FunkcjaKwadratowa = () => {
   

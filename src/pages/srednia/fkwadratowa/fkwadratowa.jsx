@@ -48,7 +48,7 @@ const Fkwadratowa = () => {
                         <li id="14" key="14"><button onClick={renderTask}>Wykres funkcji kwadratowej z wartością bezwzględną</button></li>
                         <li id="15" key="15"><button onClick={renderTask}>Równania i nierówności z wartością bezwzględną</button></li>
                         <li id="16" key="16"><button onClick={renderTask}><MathJax inline>{"\\(\\star\\)"}</MathJax> Wzory Viete`a</button></li>
-                        <li id="17" key="17"><button onClick={renderTask}></button>Równania i nierówności kwadratowe z parametrem</li>
+                        <li id="17" key="17"><button onClick={renderTask}>Równania i nierówności kwadratowe z parametrem</button></li>
                     </Podmenu>
                     <TaskList>
                         <Rodzajzad>{title}</Rodzajzad>
