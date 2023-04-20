@@ -35,6 +35,7 @@ import Trygonometria from './pages/matura/ksiazkowe/trygonometria'
 import Ciagi from './pages/matura/ksiazkowe/ciagi'
 import Planimetria from './pages/matura/ksiazkowe/planimetria'
 import GeometriaAnalityczna from './pages/matura/ksiazkowe/geometriaAnalityczna'
+import { Contact } from './components/contact/contact';
 
 
 const config = {
@@ -63,7 +64,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='srednia/lrzeczywiste' element={<Lrzeczywiste />} />
           <Route path='srednia/jezyk' element={<Jezyk />} />
           <Route path='srednia/fkwadratowa' element={<Fkwadratowa />} />
-
+          
           <Route path='matura' element={<Matura />} />
           <Route path='matura/wymagania' element={<Wymagania />} />
           <Route path='matura/zestawy' element={<Zestawy />} />
@@ -87,14 +88,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='matura/ksiazkowe/ciagi' element={<Ciagi />} />
           <Route path='matura/ksiazkowe/planimetria' element={<Planimetria />} />
           <Route path='matura/ksiazkowe/geometriaAnalityczna' element={<GeometriaAnalityczna />} />
-
-
+          
+          
           {/*<Route path='studia' element={<Studia />} />*/}
+          <Route path='contact' element={<Contact />} />
           <Route path='*' element={<h1>Page not found</h1>} />
-        </Routes>
-
-      </BrowserRouter>
-
+          </Routes>
+          
+          </BrowserRouter>
+          
 
 
 

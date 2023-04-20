@@ -11,6 +11,7 @@ const HomePage = props => {
           <StyledLink to="/srednia">Średnia </StyledLink>
           <StyledLink to="/matura">Matura</StyledLink>
           <StyledLink to="/studia">Studia</StyledLink>
+          <StyledLink to="/contact">Kontakt</StyledLink>
       </Main>
   )
 }
