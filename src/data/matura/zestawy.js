@@ -5,6 +5,509 @@ const zestawy = [
         "id": `${nanoid()}`,
         "tytul": "Próbny Egzamin Maturalny z Matematyki",
         "poziom": "poziom podstawowy",
+        "data": "4 marzec 2023",
+        "zadania": [
+            {
+
+                "id": `${nanoid()}`,
+                "tresc": "Wartość wyrażenia \\(9^{21}+9^{21}+9^{21}\\) jest równa",
+                "canvas": [],
+                "podpunkty": ["\\(3^{43}\\)", "\\(3^{63}\\)", "\\(3^{42}\\)", "\\(9^{22}\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 1 (1 pkt)",
+
+
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\(40\\%\\)", "\\(64\\%\\)", "\\(75\\%\\)", "\\(56,25\\%\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 2 (1 pkt)",
+
+                "tresc": "Cenę \\(x\\) pewnego towaru dwukrotnie obniżono o \\(20\\%\\) i otrzymano cenę \\(y\\) . Aby przywrócić cenę \\(x\\) , nową cenę \\(y\\) należy podnieść o "
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\(\\left\\{\\begin{matrix}x+y=9120\\\\x+40=1,25y\\end{matrix}\\right.\\)", "\\(\\left\\{\\begin{matrix}12x+15y=9120\\\\x+40=1,25y\\end{matrix}\\right.\\)", "\\(\\left\\{\\begin{matrix}12x+15y=9120\\\\1,25x=y+40\\end{matrix}\\right.\\)", "\\(\\left\\{\\begin{matrix}x+y=9120\\\\1,25x=y+40\\end{matrix}\\right.\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 3 (1 pkt)",
+
+                "tresc": "Właściciel sklepu kupił w hurtowni \\(12\\) identycznych wiertarek po \\(x\\) zł za sztukę i \\(15\\) identycznych szliﬁerek kątowych po \\(y\\) zł za sztukę. Za zakupy w hurtowni zapłacił \\(9120\\) zł. Po doliczeniu marży w wysokości \\(40\\) zł do każdej wiertarki i \\(25\\%\\) na każdą szliﬁerkę kątową ceny detaliczne wiertarki i szliﬁerki były jednakowe. Cenę wiertarki \\(x\\) i szliﬁerki \\(y\\) , jakie trzeba zapłacić w hurtowni, można obliczyć z układu równań"
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\(81\\)", "\\(\\sqrt[3]{3}\\)", "\\(9\\)", "\\(3\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 4 (1 pkt)",
+
+                "tresc": "Ciąg \\((x,y,z)\\) jest geometryczny. Iloczyn wszystkich wyrazów tego ciągu jest równy \\(27\\). Stąd wynika, że \\(y\\) jest równe "
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\(\\frac{1}{2}+log_4{6}\\)", "\\(\\frac{1}{2}+log_4{3}\\)", "\\(log_4{3}\\)", "\\(log_4{6}\\)", "\\(\\frac{1}{2}-log_4{6}\\)", "\\(\\frac{1}{2}log_4{12}\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 5 (2 pkt)",
+
+                "tresc": "Dokończ zdanie. Wybierz dwie właściwe odpowiedzi spośród podanych. Liczba \\(\\frac{1}{4}+log_4{18}\\) jest równa "
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\((-\\infty,1>\\)", "\\(<1,+\\infty)\\)", "\\(-\\infty,7>\\)", "\\(<7,+\\infty)\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 6 (1 pkt)",
+
+                "tresc": "Zbiorem wszystkich rozwiązań nierówności \\(5-\\frac{2-6x}{4}\\leq 2x+1\\) jest przedział"
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [{ "id": "z120227", "width": "400", "height": "240" }],
+                "podpunkty": ["Liczba \\(f(1)+g(1)\\) jest równa \\(2\\)", "Zbiory wartości funkcji \\(f\\) i \\(g\\) są równe.", "Funkcje \\(f\\) i \\(g\\) mają takie same miejsca zerowe.", "Punkt \\(P = (−1 ,0)\\) należy do wykresów funkcji \\(f\\) i \\(g\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "trescpocanvie": "Funkcja \\(g\\) jest określona wzorem \\(g(x)=f(x-1)\\) dla \\(x\\in<-5,6>\\).Wskaż zdanie prawdziwe.",
+                "ramkapo": null,
+                "numer": "Zadanie 7 (1 pkt)",
+                "koniec": [],
+
+                "tresc": "Na poniższym rysunku przedstawiono wykres funkcji \\(f\\) określonej w zbiorze \\(⟨− 6,5⟩\\)"
+
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["jedno rozwiązanie", "dwa rozwiązania", "trzy rozwiązania", "cztery rozwiązania"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 8 (1 pkt)",
+
+                "tresc": "Równanie \\(\\frac{x^3+9x^2}{81-x^2}=0\\) ma w zbiorze liczb rzeczywistych dokładnie",
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\(m<-\\frac{2}{\\sqrt{2}}\\)", "\\(m<\\sqrt{2}-1\\)", "\\(m>-\\sqrt{2}\\)", "\\(m>-\\frac{\\sqrt{2}}{2}\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 9 (1 pkt)",
+
+                "tresc": "Funkcja \\(f\\) jest określona dla każdej liczby rzeczywistej \\(x\\) wzorem \\(f(x)=m\\sqrt{2}(x-1)+2x\\). Ta funkcja jest rosnąca dla każdej liczby \\(m\\) spełniającej warunek",
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\(-\\frac{2}{3}\\)", "\\(\\frac{3}{2}\\)", "\\(4\\)", "\\(\\frac{1}{2}\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 10 (1 pkt)",
+
+                "tresc": "Funkcja kwadratowa \\(f\\) jest określona wzorem \\(f(x) = − 2(x + a)(x − 2a )\\). Wierzchołek paraboli, która jest wykresem funkcji \\(f\\) , ma współrzędną \\(y\\) równą \\(2\\). Zatem liczba \\(a\\) może być równa"
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\(\\frac{10}{17}\\)", "\\(− 2\\)", "\\(1,7\\)", "\\(1\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 11 (1 pkt)",
+
+                "tresc": "Punkt \\(P\\) jest punktem wspólnym wykresu funkcji \\(y = 2,89^{−x}\\) i prostej \\(2x + 1 = 0\\). Odległość punktu \\(P\\) od osi \\(Ox\\) układu współrzędnych jest równa"
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\(-\\frac{1}{4}\\)", "\\(4\\)", "\\(1\\)", "\\(\\frac{1}{4}\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 12 (1 pkt)",
+
+                "tresc": "Wartość wyrażenia \\((sin150^{\\circ}+\\frac{cos120^{\\circ}}{sin30^{\\circ}})^{-2}\\) jest równa"
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\((a_n)\\)", "\\((b_n )\\)", "\\((c_n)\\)", "\\((d_n)\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 13 (1 pkt)",
+
+                "tresc": "Dane są ciągi \\((a_n), (b_n), (c_n), (d_n )\\), określone dla każdej liczby naturalnej \\(n ≥ 1\\)  wzorami: \\(a_n = (−n )^3 + n\\), \\(b_n = 216^{\\frac{1}{n}}\\), \\(c_n=|n − n^3|\\), \\(d_n =\\frac{n^2−9}{3n+9n^2}\\). Dodatnia liczba całkowita dwucyfrowa jest trzecim wyrazem ciągu"
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\(S = (− 5,12)\\)","\\(S = (5,12) \\)","\\(S = (− 5,− 12)\\)","\\(S = (5,− 12)\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 14 (1 pkt)",
+
+                "tresc": "Dany jest odcinek \\(AB\\), gdzie \\(A = (7,9)\\), \\(B(3,15 )\\). Punkt \\(S\\) jest środkiem odcinka \\(AB\\). Obrazem punktu \\(S\\) w symetrii względem osi \\(Oy\\) jest punkt"
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\(28\\)","\\(29\\)","\\(33\\)","\\(40\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 15 (1 pkt)",
+
+                "tresc": "Ciąg arytmetyczny \\((an)\\) jest określony dla każdej liczby naturalnej \\(n \\geq 1\\). Trzeci i piąty wyraz ciągu spełniają warunek \\(a_3 + a_5 = 56\\). Wtedy czwarty wyraz tego ciągu jest równy"
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\(x = 9\\)", "\\(x = − 3\\)", "\\(x = − 1 ,2\\)","\\(x = 2,4\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 16 (1 pkt)",
+
+                "tresc": "Trójwyrazowy ciąg \\((x,− 6,1 5)\\) jest ciągiem geometrycznym. Wtedy"
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\(\\frac{4}{3}\\)", "\\(8\\)", "\\(4\\)","\\(12\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 17 (1 pkt)",
+
+                "tresc": "Pole pewnego sześciokąta foremnego jest równe  \\(\\frac{8\\sqrt{3}}{3}\\). Obwód tego sześciokąta jest równy"
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [{ "id": "z1202218", "width": "400", "height": "300" }],
+                "podpunkty": ["\\(25^{\\circ}\\)", "\\(40^{\\circ}\\)", "\\(45^{\\circ}\\)","\\(50^{\\circ}\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "trescpocanvie": "Miara kąta \\(ABC\\) jest równa",
+                "ramkapo": null,
+                "numer": "Zadanie 18 (1 pkt)",
+                "koniec": [],
+
+                "tresc": "Dane są okrąg i prosta styczna do tego okręgu w punkcie \\(A\\). Punkty \\(B\\) i \\(C\\)  są położone na okręgu tak, że \\(BC\\) jest jego średnicą. Cięciwa \\(AB\\) tworzy ze styczną kąt o mierze \\(50^{\\circ}\\) (zobacz rysunek)."
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [{ "id": "z1202219", "width": "550", "height": "400" }],
+                "podpunkty": ["\\(20^{\\circ}\\)", "\\(30^{\\circ}\\)", "\\(40^{\\circ}\\)","\\(50^{\\circ}\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "trescpocanvie": "Miara kąta \\(BAC\\) jest równa",
+                "ramkapo": null,
+                "numer": "Zadanie 19 (1 pkt)",
+
+                "tresc": "Punkty \\(D\\) , \\(E\\) i \\(F\\) są punktami styczności okręgu wpisanego w trójkąt \\(ABC\\) z jego bokami i \\(|∡EDF | = 70^{\\circ}\\) (zobacz rysunek)."
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\(122\\)", "\\(106\\)", "\\(94\\)","\\(112\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 20 (1 pkt)",
+
+                "tresc": "Jeśli \\(a− b = 10\\) oraz \\(ab = 6\\) , to \\(a^2 + b^2\\) jest równe"
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\((− 17,− 3)\\)", "\\((15,28)\\)", "\\((− 9,7)\\)","\\((8,21)\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 21 (1 pkt)",
+
+                "tresc": "Punkty \\(A = (− 12,2)\\), \\(B = (1,15)\\) i \\(C\\) leżą na jednej prostej. Punkt \\(C\\) może mieć współrzędne"
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["dziewięciokąt","jedenastokąt","dziesięciokąt","piętnastokąt"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 22 (1 pkt)",
+
+                "tresc": "W każdym \\(n\\)–kącie wypukłym \\((n ≥ 3)\\) liczba przekątnych jest równa \\(\\frac{n(n−-3)}{2}\\). Wielokątem wypukłym, w którym liczba przekątnych jest o \\(33\\) większa od liczby boków, jest"
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\(\\frac{7}{4}\\)", "\\((-\\frac{7}{4})\\)", "\\((-\\frac{4}{7})\\)","\\(\\frac{4}{7}\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 23 (1 pkt)",
+
+                "tresc": "Prosta \\(k\\) ma równanie \\(x = −\\frac{4}{7}y + 24\\). Współczynnik kierunkowy prostej prostopadłej do prostej \\(k\\) jest równy"
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\(6\\)", "\\(6\\sqrt{2}\\)", "\\(12\\)","\\(3\\sqrt{2}\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 24 (1 pkt)",
+
+                "tresc": "Okrąg o środku \\(S = (− 6,− 5)\\) jest styczny do osi \\(Oy\\) układu współrzędnych w punkcie \\(A\\) oraz jest styczny do prostej \\(y = 1\\) w punkcie \\(B\\). Promień okręgu o średnicy \\(AB\\) jest równy"
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\(24\\sqrt{6}\\)", "\\(36\\sqrt{2}\\)", "\\(6\\sqrt{3}\\)","\\(12\\sqrt{6}\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 25 (1 pkt)",
+
+                "tresc": "Przekątna graniastosłupa prawidłowego czworokątnego, w którym wysokość jest \\(2\\) razy dłuższa od krawędzi podstawy, jest równa \\(6\\). Wynika stąd, że objętość tego graniastosłupa jest równa"
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\(3,125\\)", "\\(\\frac{1}{8}\\)", "\\(1,125\\)","\\(\\frac{7}{8}\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": "z1202226",
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 26 (1 pkt)",
+              
+
+                "tresc": "W tabeli podano dane dotyczące wyników z pracy klasowej z matematyki uzyskanych w pewnej klasie.Różnica średniej arytmetycznej ocen i mediany wynosi"
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\(216\\)", "\\(219\\)", "\\(221\\)","\\(246\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 27 (1 pkt)",
+
+                "tresc": "Ile jest liczb naturalnych trzycyfrowych większych od \\(694\\), które mają trzy różne cyfry?"
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": ["\\(0,6\\)", "\\(\\frac{5}{12}\\)", "\\(\\frac{5}{7}\\)","\\(0,4\\)"],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 28 (1 pkt)",
+
+                "tresc": "W pudełku znajdują się płytki z literami. Na każdej płytce jest wydrukowana jedna litera – spółgłoskowa albo samogłoskowa. Płytek z literami spółgłoskowymi jest o \\(40%\\) więcej niż płytek z literami samogłoskowymi. Losujemy jedną płytkę. Prawdopodobieństwo wylosowania płytki z literą samogłoskową jest równe"
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": [],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 29 (2 pkt)",
+
+                "tresc": "Rozwiąż nierówność: \\(2(x+2)^3(x-3)<(x^2-4)(x+2)^2\\). "
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": [],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 30 (2 pkt)",
+
+                "tresc": "Rozwiąż równanie \\(\\frac{x+-12}{x−5} = 3x\\). "
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": [],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 31 (2 pkt)",
+
+                "tresc": "Funkcja liniowa \\(f\\) przyjmuje wartość \\(2\\) dla argumentu \\(− 1\\), a ponadto \\(f (−2 )− f (7) = 3\\). Wyznacz wzór funkcji \\(f\\). "
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": [],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 32 (2 pkt)",
+
+                "tresc": "Wykaż, że jeżeli \\(a\\) jest parzystą liczbą całkowitą dodatnią, to liczba \\(\\frac{a^2}{4} + a\\) nie jest kwadratem liczby całkowitej. "
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [{ "id": "z1202233", "width": "500", "height": "400" }],
+                "podpunkty": [],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "trescpocanvie": "Oblicz pole trójkąta \\(ABS\\) jeżeli pole trójkąta \\(DSE\\) równe \\(36\\).",
+                "ramkapo": null,
+                "numer": "Zadanie 33 (2 pkt)",
+
+                "tresc": "Na bokach \\(AC\\) i \\(BC\\) trójkąta \\(ABC\\) wybrano odpowiednio punkty \\(E\\) i \\(D\\) w ten sposób, że \\(|AE | : |EC | = |DB | : |DC | = 1 : 3\\). Punkt \\(S\\) jest punktem wspólnym odcinków \\(AD\\) i \\(BE\\) (zobacz rysunek). "
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": [],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 34 (2 pkt)",
+
+                "tresc": "Ze zbioru wszystkich liczb naturalnych dwucyfrowych, których cyfra dziesiątek należy do zbioru \\({1 ,3,4,5,6,7,8}\\), a cyfra jedności należy do zbioru \\({0,1,2,3,4 }\\), losujemy jedną liczbę. Oblicz prawdopodobieństwo zdarzenia polegającego na tym, że wylosujemy liczbę dwucyfrową, która jest podzielna przez \\(8\\). "
+            },
+            {
+
+                "id": `${nanoid()}`,
+                "canvas": [],
+                "podpunkty": [],
+                "wskazowka": null,
+                "ramka": null,
+                "extraRamka": null,
+                "tresc2": null,
+                "ramkapo": null,
+                "numer": "Zadanie 35 (5 pkt)",
+
+                "tresc": "Punkty \\(B = (− 8,26 )\\), \\(C = (6,24)\\) i \\(D = (− 16 ,2)\\) są wierzchołkami trapezu równoramiennego \\(ABCD\\) o podstawach \\(AB\\) i \\(CD\\). Wyznacz współrzędne wierzchołka \\(A\\) tego trapezu jeżeli wiadomo, że \\(|AD | = |AB | = |BC |\\). "
+            }
+        ],
+    },
+    {
+        "id": `${nanoid()}`,
+        "tytul": "Próbny Egzamin Maturalny z Matematyki",
+        "poziom": "poziom podstawowy",
         "data": "26 lutego 2022",
         "zadania": [
             {

@@ -1,6 +1,32 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser';
 
+import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
+
+const Link = styled(NavLink)`
+    height: 60px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    border: none;
+    margin-left: 20px;
+    margin-top:20px;
+    text-align: center;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #e6e6fa;
+    text-decoration: none;
+    &:hover {
+        color: blue;
+        box-shadow: 0px 10px 8px 0px rgba(80, 80, 80, 0.75);
+        background-color: burlywood;
+  }`;
+
 export const Contact = () => {
     const form = useRef();
 
@@ -42,6 +68,9 @@ export const Contact = () => {
                 <textarea name="message" />
                 <input type="submit" value="Send" />
             </form>
+
+
+            <Link to="/">Strona główna</Link>
         </div>
     );
 };

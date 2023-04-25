@@ -126,7 +126,7 @@ const WorksList = ({ model, dzial, typ }) => {
                     console.log(d);
                     console.log(zestawy[0].data);
                     for (let i = 0; i < d; i++) {
-                        if (zestawy[i].poziom.includes("podstawowy") && zestawy[i].data.includes("2022")) {
+                        if (zestawy[i].poziom.includes("podstawowy") && zestawy[i].data.includes("2023")) {
                             arkusze.push(zestawy[i])
                         }
                     }
