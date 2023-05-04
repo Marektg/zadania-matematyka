@@ -9,11 +9,13 @@ import HomePage from './pages/homePage/homePage';
 // import Podstawowka from './pages/podstawowka/podstawowka';
 import Srednia from './pages/srednia/srednia';
 import Lrzeczywiste from './pages/srednia/lrzeczywiste/lrzeczywiste';
-import Fkwadratowa from './pages/srednia/fkwadratowa/fkwadratowa.jsx'
+import Wyrazenia from './pages/srednia/wyrazeniaAlgebraiczne/wyrazeniaAlgebraiczne';
+import FunkcjeWlasnosci from './pages/srednia/funkcje/funkcje.jsx';
+import Fkwadratowa from './pages/srednia/fkwadratowa/fkwadratowa.jsx';
 import Matura from './pages/matura/matura';
 import Wymagania from './pages/matura/wymagania/wymagania';
 import { MathJaxContext } from 'better-react-mathjax';
-import Jezyk from './pages/srednia/jezyk/jezyk';
+
 import Zestawy from './pages/matura/zestawy/zestawy';
 import PoziomPodstawowy from './pages/matura/zestawy/poziomPodstawowy';
 import PoziomRozszerzony from './pages/matura/zestawy/poziomRozszerzony';
@@ -62,7 +64,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           {/* <Route path='podstawowka' element={<Podstawowka />} />*/}
           <Route path='srednia' element={<Srednia />} />
           <Route path='srednia/lrzeczywiste' element={<Lrzeczywiste />} />
-          <Route path='srednia/jezyk' element={<Jezyk />} />
+          <Route path='srednia/wyrazeniaAlgebraiczne' element={<Wyrazenia />} />
+          <Route path='srednia/funkcje' element={<FunkcjeWlasnosci />} />
           <Route path='srednia/fkwadratowa' element={<Fkwadratowa />} />
           
           <Route path='matura' element={<Matura />} />

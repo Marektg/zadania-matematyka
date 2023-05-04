@@ -32,34 +32,27 @@ const RightSide = ({ model }) => {
         );
         case "b": return (
             <MainGuz>
-                <Link to="/srednia/lrzeczywiste">Liczby rzeczywiste</Link>
-                <Link to="/srednia/jezyk">Język matematyki</Link>
+                <Link to="/srednia/lrzeczywiste">Zbiory liczbowe. Liczby rzeczywiste</Link>
                 <Link to="/srednia/wyrazeniaAlgebraiczne">Wyrażenia algebraiczne</Link>
-                <Link to="/srednia/uklady">Układy równań</Link>
-                <Link to="/srednia/rownaniaINierownosciZwartbezIParametrem">Równania i nierówności z wartością bezwzględną i z parametrem</Link>
                 <Link to="/srednia/funkcje">Funkcje i ich własności</Link>
-                <Link to="/srednia/wlasnosciFunkcji">Podstawowe własności wybranych funkcji</Link>
-                <Link to="/srednia/przeksztalceniaWykresowFunkcji">Przekształcenia wykresów funkcji</Link>
                 <Link to="/srednia/fliniowa">Funkcja liniowa</Link>
+                <Link to="/srednia/uklady">Układy równań</Link>
+                <Link to="/srednia/planimetria">Planimetria</Link>
+                <Link to="/srednia/trygonometria">Trygonometria</Link>
+                <Link to="/srednia/przeksztalceniaWykresowFunkcji">Przekształcenia wykresów funkcji</Link>
+                <Link to="/srednia/rownaniaINierownosciZwartbezIParametrem">Równania i nierówności z wartością bezwzględną i z parametrem</Link>
                 <Link to="/srednia/fkwadratowa">Funkcja kwadratowa</Link>
-                <Link to="/srednia/geometriaPojeciaWstepneITrojkaty">Pojęcia wstępne i trójkąty</Link>
-                <Link to="/srednia/geometriaKolaIOkregi">Koła i okręgi</Link>
-                <Link to="/srednia/geometriaRozwiazywaniaTrojkatowPoleTrojkataIKola">Rozwiązywanie trójkątów, pole trójkąta, pole koła</Link>
-                <Link to="/srednia/geometriaCzworokaty">Czworokąty</Link>
-                <Link to="/srednia/geometriaPolaCzworokatow">Pola czworokątów</Link>
-                <Link to="/srednia/trygonometriaKatOstrego">Trygonometria kąta ostrego</Link>
+                <Link to="/srednia/ganalityczna">Geometria analityczna</Link>
                 <Link to="/srednia/wieloniany">Wielomiany</Link>
                 <Link to="/srednia/fwymierne">Funkcje wymierne</Link>
-                <Link to="/srednia/ftrygonomertyczne"><MathJax>{"\\(\\star\\)"}</MathJax> Funkcje trygonometryczne</Link>
-                <Link to="/srednia/fwykladnicza">Funkcja wykładnicza i logarytmiczne</Link>
-                <Link to="/srednia/flogarytmiczna">Funkcja logarytmiczna</Link>
                 <Link to="/srednia/ciagi">Ciągi</Link>
-                <Link to="/srednia/kombinatorykaDwumianNewtonaTrojkatPascala">Kombinatoryka. Dwumian Newtona. Trójkąt Pascala</Link>
-                <Link to="/srednia/ganalityczna">Geometria analityczna</Link>
-                <Link to="/srednia/prawdopodobienstwo">Rachunek prawdopodobieństwa</Link>
+                <Link to="/srednia/kombinatoryka">Kombinatoryka</Link>
+                <Link to="/srednia/rachrozniczkowy"><MathJax>{"\\(\\star\\)"} Rachunek różniczkowy</MathJax></Link>
+                <Link to="/srednia/fwykladnicza">Funkcja wykładnicza i logarytmiczne</Link>
                 <Link to="/srednia/statystyka">Statystyka</Link>
+                <Link to="/srednia/prawdopodobienstwo">Rachunek prawdopodobieństwa</Link>
                 <Link to="/srednia/stereometria">Stereometria</Link>
-                <Link to="/srednia/rachrozniczkowy"><MathJax>{"\\(\\star\\)"}</MathJax> Rachunek różniczkowy</Link>
+                
             </MainGuz>
         );
         case "c": return (

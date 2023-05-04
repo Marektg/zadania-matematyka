@@ -47,47 +47,6 @@ export const Tytul = styled.h2`
   margin-bottom: 10px;`
   
   
-  export const Podmenu = styled.ul`
-  text-align: center;
-display: flex;
-flex-direction: column;
-align-items: center;
-color: black;
-border: none;
-font-weight: bold;
-font-size: 1.5em;
-margin-left: 10px;
-margin-right: 10px;
-width: 90%;
-list-style: none;
-
-li {
-  display: block;
-  color: black;
-   border: none;
-   width: 90%;
-    :nth-child(odd) {
-       background-color: lightsalmon;
-    }
-    :nth-child(even) {
-       background-color: khaki;
-    }
-  }
-  button {
-    cursor: pointer;
-    width: 100 %;
-    height: 100 %;
-    background-color: transparent;
-    border: none;
-    font-weight: bold;
-    padding: 10px;
-        :hover {
-      background-color: rgb(122, 238, 147);
-    }
-  }
-  }
-  `
-
 
 export const Rodzajzad = styled.p`
   text-align: center;
@@ -97,3 +56,21 @@ margin-top: 5px;
 background-color: rgb(186, 243, 238);
 `
 
+export const Guz=styled.button`
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    margin: 5px;
+    &:hover {
+        color: bisque;
+    }
+`
+export const MainGuz=styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-top: 15px;`

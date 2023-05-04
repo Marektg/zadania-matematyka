@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { MainDiv, Basic, TaskList, Tytul, Podmenu, Rodzajzad } from '../srednia.styled';
+import { MainDiv, Basic, TaskList, Tytul, MainGuz, Guz, Rodzajzad } from '../srednia.styled';
 import TopNavi from '../../../components/topNavi/topNavi';
 import LeftNavi from '../../../components/leftNavi/leftNavi';
 import WorksList from '../../../components/worksList/worksList';
-import { MathJax } from 'better-react-mathjax';
+// import { MathJax } from 'better-react-mathjax';
 // import { current } from '@reduxjs/toolkit';
 
 const Lrzeczywiste = () => {
@@ -18,7 +18,7 @@ const Lrzeczywiste = () => {
     const renderTask = (event) => {
         setTitle(event.target.innerText);
         // console.log(event.target.parentElement.id)
-        setCurrentTask(event.target.parentElement.id);
+        setCurrentTask(event.target.id);
         
     }
     // console.log(currentTask);
@@ -31,17 +31,16 @@ const Lrzeczywiste = () => {
                 <LeftNavi model="b"/>
                 <TaskList>
                     <Tytul>Liczby rzeczywiste </Tytul>
-                    <Podmenu data-poddzialy>
-                        <li id="1" key="1"><button onClick={renderTask}>Liczby</button></li>
-                        <li id="2" key="2"><button onClick={renderTask}>Pierwiastki</button></li>
-                        <li id="3" key="3"><button onClick={renderTask}>Potęgi</button></li>
-                        <li id="4" key="4"><button onClick={renderTask}><MathJax inline>{"\\(\\star\\)"}</MathJax> Notacja wykładnicza</button></li>
-                        <li id="5" key="5"><button onClick={renderTask}>Logarytm i jego własności</button></li>
-                        <li id="6" key="6"><button onClick={renderTask}>Procenty</button></li>
-                        <li id="7" key="7"><button onClick={renderTask}>Powtórzenie</button></li>
-                        <li id="8" key="8"><button onClick={renderTask}>Zadania testowe</button></li>
-                        <li id="9" key="9"><button onClick={renderTask}>To było na maturze</button></li>
-                    </Podmenu>
+                    <MainGuz data-poddzialy>
+                        <Guz id="1" onClick={renderTask}>Zbiory i działania na zbiorach</Guz>
+                        <Guz id="2" onClick={renderTask}>Liczby rzeczywiste</Guz>
+                        <Guz id="3" onClick={renderTask}>Przedziały</Guz>
+                        <Guz id="4" onClick={renderTask}>Równania i ich rozwiązywanie metodą równań równoważnych</Guz>
+                        <Guz id="5" onClick={renderTask}>Nierówności</Guz>
+                        <Guz id="6" onClick={renderTask}>Procenty i punkty procentowe</Guz>
+                        <Guz id="7" onClick={renderTask}>Przybliżenia i błędy</Guz>
+                        
+                    </MainGuz>
                     <TaskList>
                         <Rodzajzad>{title}</Rodzajzad>
                         <WorksList model={currentTask} dzial="1" />

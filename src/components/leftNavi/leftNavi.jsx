@@ -37,34 +37,27 @@ const LeftNavi = ({ model}) => {
       <Left >
         <h3>Szkoła średnia</h3>
         <NaviListGroup >
-          <li id='l1'><StyledLink to="/srednia/lrzeczywiste">Liczby rzeczywiste</StyledLink></li>
-          <li id='l2'><StyledLink to="/srednia/jezyk">Język matematyki</StyledLink></li>
-          <li id='l3'><StyledLink to="/srednia/wyrazeniaAlgebraiczne">Wyrażenia algebraiczne</StyledLink></li>
-          <li id='l4'><StyledLink to="/srednia/uklady">Układy równań</StyledLink></li>
-          <li id='l5'><StyledLink to="/srednia/rownaniaINierownosciZwartbezIParametrem">Równania i nierówności z wartością bezwzględną i z parametrem</StyledLink></li>
-          <li id='l6'><StyledLink to="/srednia/funkcje">Funkcje i ich własności</StyledLink></li>
-          <li id='l7'><StyledLink to="/srednia/wlasnosciFunkcji">Podstawowe własności wybranych funkcji</StyledLink></li>
+          <li id='l1'><StyledLink to="/srednia/lrzeczywiste">Zbiory liczbowe. Liczby rzeczywiste</StyledLink></li>
+            <li id='l2'><StyledLink to="/srednia/wyrazeniaAlgebraiczne">Wyrażenia algebraiczne</StyledLink></li>
+            <li id='l3'><StyledLink to="/srednia/funkcje">Funkcje i ich własności</StyledLink></li>
+            <li id='l4'><StyledLink to="/srednia/fliniowa">Funkcja liniowa</StyledLink></li>
+            <li id='l5'><StyledLink to="/srednia/uklady">Układy równań</StyledLink></li>
+            <li id='l6'><StyledLink to="/srednia/planimetria">Planimetria</StyledLink></li>
+            <li id='l7'><StyledLink to="/srednia/trygonometria">Trygonometria</StyledLink></li>
           <li id='l8'><StyledLink to="/srednia/przeksztalceniaWykresowFunkcji">Przekształcenia wykresów funkcji</StyledLink></li>
-          <li id='l9'><StyledLink to="/srednia/fliniowa">Funkcja liniowa</StyledLink></li>
+              <li id='l9'><StyledLink to="/srednia/rownaniaINierownosciZwartbezIParametrem">Równania i nierówności z wartością bezwzględną i z parametrem</StyledLink></li>
           <li id='l10'><StyledLink to="/srednia/fkwadratowa">Funkcja kwadratowa</StyledLink></li>
-          <li id='l11'><StyledLink to="/srednia/geometriaPojeciaWstepneITrojkaty">Pojęcia wstępne i trójkąty</StyledLink></li>
-          <li id='l12'><StyledLink to="/srednia/geometriaKolaIOkregi">Koła i okręgi</StyledLink></li>
-          <li id='l13'><StyledLink to="/srednia/geometriaRozwiazywaniaTrojkatowPoleTrojkataIKola">Rozwiązywanie trójkątów, pole trójkąta, pole koła</StyledLink></li>
-          <li id='l14'><StyledLink to="/srednia/geometriaCzworokaty">Czworokąty</StyledLink></li>
-          <li id='l15'><StyledLink to="/srednia/geometriaPolaCzworokatow">Pola czworokątów</StyledLink></li>
-          <li id='l16'><StyledLink to="/srednia/trygonometriaKatOstrego">Trygonometria kąta ostrego</StyledLink></li>
-          <li id='l17'><StyledLink to="/srednia/wieloniany">Wielomiany</StyledLink></li>
-          <li id='l18'><StyledLink to="/srednia/fwymierne">Funkcje wymierne</StyledLink></li>
-            <li id='l19'><StyledLink to="/srednia/ftrygonomertyczne"><MathJax>{"\\(\\star\\)"} Funkcje trygonometryczne</MathJax></StyledLink></li>
-          <li id='l20'><StyledLink to="/srednia/fwykladnicza">Funkcja wykładnicza i logarytmiczne</StyledLink></li>
-          <li id='l21'><StyledLink to="/srednia/flogarytmiczna">Funkcja logarytmiczna</StyledLink></li>
-          <li id='l22'><StyledLink to="/srednia/ciagi">Ciągi</StyledLink></li>
-          <li id='l23'><StyledLink to="/srednia/kombinatorykaDwumianNewtonaTrojkatPascala">Kombinatoryka. Dwumian Newtona. Trójkąt Pascala</StyledLink></li>
-          <li id='l24'><StyledLink to="/srednia/ganalityczna">Geometria analityczna</StyledLink></li>
-          <li id='l25'><StyledLink to="/srednia/prawdopodobienstwo">Rachunek prawdopodobieństwa</StyledLink></li>
-          <li id='l26'><StyledLink to="/srednia/statystyka">Statystyka</StyledLink></li>
-          <li id='l27'><StyledLink to="/srednia/stereometria">Stereometria</StyledLink></li>
-            <li id='l28'><StyledLink to="/srednia/rachrozniczkowy"><MathJax>{"\\(\\star\\)"} Rachunek różniczkowy</MathJax></StyledLink></li>
+            <li id='l11'><StyledLink to="/srednia/ganalityczna">Geometria analityczna</StyledLink></li>
+            <li id='l12'><StyledLink to="/srednia/wieloniany">Wielomiany</StyledLink></li>
+            <li id='l13'><StyledLink to="/srednia/fwymierne">Funkcje wymierne</StyledLink></li>
+            <li id='l14'><StyledLink to="/srednia/ciagi">Ciągi</StyledLink></li>
+            <li id='l15'><StyledLink to="/srednia/kombinatoryka">Kombinatoryka</StyledLink></li>
+            <li id='l16'><StyledLink to="/srednia/rachrozniczkowy"><MathJax>{"\\(\\star\\)"} Rachunek różniczkowy</MathJax></StyledLink></li>
+            <li id='l17'><StyledLink to="/srednia/fwykladnicza">Funkcja wykładnicza i logarytmiczne</StyledLink></li>
+            <li id='l18'><StyledLink to="/srednia/statystyka">Statystyka</StyledLink></li>
+            <li id='l19'><StyledLink to="/srednia/prawdopodobienstwo">Rachunek prawdopodobieństwa</StyledLink></li>
+          <li id='l20'><StyledLink to="/srednia/stereometria">Stereometria</StyledLink></li>
+            
         </NaviListGroup>
       </Left>
     );

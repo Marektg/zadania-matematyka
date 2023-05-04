@@ -6,7 +6,7 @@ import { Navi, StyledLink } from './topNavi.styled';
 
 const TopNavi = ({ model }) => {
 
-    console.log(model);
+    // console.log(model);
     switch (model) {
         case "a": return (
             <Navi>

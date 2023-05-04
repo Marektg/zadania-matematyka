@@ -34,7 +34,7 @@ font - size: 20px;
 
 export const NaviListGroup=styled.ul `
     background-color: white;
-text-align: center;
+   text-align: center;
 margin: 0;
 list-style: none;
 padding-top: 5px;
