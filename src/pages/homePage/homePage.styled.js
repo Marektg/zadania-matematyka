@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const Main = styled.div`
-background-color: #ff8c00;
+background-color: #69B937;
   font-family: serif;
   color: #000000;
   height: 100vh;

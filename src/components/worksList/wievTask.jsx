@@ -18,18 +18,22 @@ const WievTask = ({ data, model }) => {
     for (let i = 1; i <= numberOfPage; i++) {
         pages.push({ id: `${i}`, val: `${i * numberOfTask}` });
     };
-    const podmenu = document.querySelector('[data-poddzialy]')
-    // console.log(podmenu.childNodes[0].id);
-    for (let i = 0; i < podmenu.childNodes.length; i++) {
-        if (Number(model) === Number(podmenu.childNodes[i].id)) {
-            podmenu.childNodes[i].style.backgroundColor = "green";
+    // const podmenu = document.querySelector('[data-poddzialy]')
+    
+    // console.log(podmenu);
+    // for (let i = 0; i < podmenu.childNodes.length; i++) {
+        // if ( === Number(podmenu.childNodes[i].id)) {
+        //     podmenu.childNodes[i].style.backgroundColor = "green";
          
-        } else { if (i%2 === 1) {
-            podmenu.childNodes[i].style.backgroundColor = '#f0e68c';
-        } else { podmenu.childNodes[i].style.backgroundColor = '#ffa07a'; }
+        // }
+    // } 
+    // else {
+    // if (i % 2 === 1) {
+    //         podmenu.childNodes[i].style.backgroundColor = '#f0e68c';
+    //     } else { podmenu.childNodes[i].style.backgroundColor = '#ffa07a'; }
            
-        }
-    }
+    //     }
+    // }
 
     useEffect(() => { settasks([]); }, [model]);
 
@@ -64,12 +68,12 @@ const WievTask = ({ data, model }) => {
         // console.log(newTask);
         settasks(newTask);
         // console.log(newTask[0].canvas);
-        for (let i = 0; i < newTask.length; i++) {
-            if (newTask[i].canvas.length !== 0) {
-                // console.log(newTask[i].canvas.length)
+        // for (let i = 0; i < newTask.length; i++) {
+        //     if (newTask[i].canvas.length !== 0) {
+        //         // console.log(newTask[i].canvas.length)
 
-            }
-        }
+        //     }
+        // }
     }
 
 

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const MainDiv = styled.div`
-    background-color: #ff8c00;
+    background-color: #69B937;
 font - family: serif;
 color: #000000;
 height: 100 %;
@@ -58,13 +58,15 @@ background-color: rgb(186, 243, 238);
 
 export const Guz=styled.button`
     cursor: pointer;
-    font-size: 1.2em;
-    padding: 10px;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 15px;
     border-radius: 30px;
     border: none;
     margin: 5px;
     &:hover {
-        color: bisque;
+        background-color: blue;
+        color: white;
     }
 `
 export const MainGuz=styled.div`

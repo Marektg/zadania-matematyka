@@ -10,25 +10,30 @@ const Lrzeczywiste = () => {
     const [title, setTitle] = useState(null);
     const [currentTask, setCurrentTask] = useState(null);
 
-    
+
 
 
 
 
     const renderTask = (event) => {
         setTitle(event.target.innerText);
-        // console.log(event.target.parentElement.id)
+        let targets = event.target.parentElement.childNodes
+        for (let i = 0; i < targets.length; i++) {
+            if (event.target.id === targets[i].id) {
+                targets[i].style.backgroundColor = "green";
+            } else { targets[i].style.backgroundColor = "#e9e9ed" }
+        }
         setCurrentTask(event.target.id);
-        
+
     }
     // console.log(currentTask);
-    
-    
+
+
     return (
         <MainDiv>
             <TopNavi model="b" /> {/* a - podstawówka, b- średnia, c- matura, d- studia*/}
             <Basic>
-                <LeftNavi model="b"/>
+                <LeftNavi model="b" />
                 <TaskList>
                     <Tytul>Liczby rzeczywiste </Tytul>
                     <MainGuz data-poddzialy>
@@ -39,7 +44,7 @@ const Lrzeczywiste = () => {
                         <Guz id="5" onClick={renderTask}>Nierówności</Guz>
                         <Guz id="6" onClick={renderTask}>Procenty i punkty procentowe</Guz>
                         <Guz id="7" onClick={renderTask}>Przybliżenia i błędy</Guz>
-                        
+
                     </MainGuz>
                     <TaskList>
                         <Rodzajzad>{title}</Rodzajzad>

@@ -24,7 +24,7 @@ const WorksList = ({ model, dzial, typ }) => {
             }
         }
         data = zadania;
-        return (<WievTask data={data} model={model} />);
+              return (<WievTask data={data} model={model} />);
     };
     let dp = powtorka.length
 

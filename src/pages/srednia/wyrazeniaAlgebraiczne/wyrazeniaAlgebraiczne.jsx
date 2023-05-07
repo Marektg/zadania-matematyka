@@ -19,6 +19,12 @@ const Wyrazenia = () => {
         setTitle(event.target.innerText);
         // console.log(event.target.id)
         setCurrentTask(event.target.id);
+        let targets = event.target.parentElement.childNodes
+        for (let i = 0; i < targets.length; i++) {
+            if (event.target.id === targets[i].id) {
+                targets[i].style.backgroundColor = "green";
+            } else { targets[i].style.backgroundColor = "#e9e9ed" }
+        }
         
     }
     // console.log(currentTask);
@@ -30,7 +36,7 @@ const Wyrazenia = () => {
             <Basic>
                 <LeftNavi model="b"/>
                 <TaskList>
-                    <Tytul>Wyrażenia algebraiczne </Tytul>
+                    <Tytul>Wyrażenia algebraiczne</Tytul>
                     <MainGuz data-poddzialy>
                         <Guz id="1" onClick={renderTask}>Potęgi</Guz>
                         <Guz id="2" onClick={renderTask}>Pierwiastki arytmetyczne</Guz>
