@@ -62,6 +62,10 @@ const WorksList = ({ model, dzial, typ }) => {
                     return selectTask(dzial, model);
                 case "5":
                     return selectTask(dzial, model);
+                case "6":
+                    return selectTask(dzial, model);
+                case "7":
+                    return selectTask(dzial, model);
 
 
 
@@ -72,12 +76,80 @@ const WorksList = ({ model, dzial, typ }) => {
             switch (model) {
                 case "1":
                     return selectTask(dzial, model);
+                case "2":
+                    return selectTask(dzial, model);
+                case "3":
+                    return selectTask(dzial, model);
+                case "4":
+                    return selectTask(dzial, model);
+                case "5":
+                    return selectTask(dzial, model);
+                case "6":
+                    return selectTask(dzial, model);
+                case "7":
+                    return selectTask(dzial, model);
+                case "8":
+                    return selectTask(dzial, model);
+                case "9":
+                    return selectTask(dzial, model);
 
 
                 default: return (<div></div>);
 
             };
-        case "10":
+        case "3":
+            switch (model) {
+                case "1":
+                    return selectTask(dzial, model);
+                case "2":
+                    return selectTask(dzial, model);
+                case "3":
+                    return selectTask(dzial, model);
+                case "4":
+                    return selectTask(dzial, model);
+                case "5":
+                    return selectTask(dzial, model);
+                case "6":
+                    return selectTask(dzial, model);
+                case "7":
+                    return selectTask(dzial, model);
+                case "8":
+                    return selectTask(dzial, model);
+                
+
+
+                default: return (<div></div>);
+
+            };
+        case "4":
+            switch (model) {
+                case "1":
+                    return selectTask(dzial, model);
+                case "2":
+                    return selectTask(dzial, model);
+                case "3":
+                    return selectTask(dzial, model);
+                case "4":
+                    return selectTask(dzial, model);
+                
+
+
+                default: return (<div></div>);
+
+            };
+        case "5":
+            switch (model) {
+                case "1":
+                    return selectTask(dzial, model);
+                case "2":
+                    return selectTask(dzial, model);
+                case "3":
+                    return selectTask(dzial, model);
+                
+                default: return (<div></div>);
+
+            };
+        case "6":
             switch (model) {
                 case "1":
                     return selectTask(dzial, model);
@@ -112,6 +184,429 @@ const WorksList = ({ model, dzial, typ }) => {
                 case "16":
                     return selectTask(dzial, model);
                 case "17":
+                    return selectTask(dzial, model);
+                case "18":
+                    return selectTask(dzial, model);
+                case "19":
+                    return selectTask(dzial, model);
+                case "20":
+                    return selectTask(dzial, model);
+                case "21":
+                    return selectTask(dzial, model);
+                case "22":
+                    return selectTask(dzial, model);
+                case "23":
+                    return selectTask(dzial, model);
+                case "24":
+                    return selectTask(dzial, model);
+                case "25":
+                    return selectTask(dzial, model);
+                case "26":
+                    return selectTask(dzial, model);
+                case "27":
+                    return selectTask(dzial, model);
+                case "28":
+                    return selectTask(dzial, model);
+                case "29":
+                    return selectTask(dzial, model);
+                case "30":
+                    return selectTask(dzial, model);
+                case "31":
+                    return selectTask(dzial, model);
+                case "32":
+                    return selectTask(dzial, model);
+
+
+                default: return (<div></div>);
+
+            };
+        case "7":
+            switch (model) {
+                case "1":
+                    return selectTask(dzial, model);
+                case "2":
+                    return selectTask(dzial, model);
+                case "3":
+                    return selectTask(dzial, model);
+                case "4":
+                    return selectTask(dzial, model);
+                case "5":
+                    return selectTask(dzial, model);
+                case "6":
+                    return selectTask(dzial, model);
+                case "7":
+                    return selectTask(dzial, model);
+                case "8":
+                    return selectTask(dzial, model);
+                case "9":
+                    return selectTask(dzial, model);
+                case "10":
+                    return selectTask(dzial, model);
+                case "11":
+                    return selectTask(dzial, model);
+                case "12":
+                    return selectTask(dzial, model);
+                case "13":
+                    return selectTask(dzial, model);
+                case "14":
+                    return selectTask(dzial, model);
+                case "15":
+                    return selectTask(dzial, model);
+                case "16":
+                    return selectTask(dzial, model);
+
+
+                default: return (<div></div>);
+
+            };
+        case "8":
+            switch (model) {
+                case "1":
+                    return selectTask(dzial, model);
+                case "2":
+                    return selectTask(dzial, model);
+                case "3":
+                    return selectTask(dzial, model);
+                case "4":
+                    return selectTask(dzial, model);
+                case "5":
+                    return selectTask(dzial, model);
+                case "6":
+                    return selectTask(dzial, model);
+                case "7":
+                    return selectTask(dzial, model);
+                case "8":
+                    return selectTask(dzial, model);
+                
+
+
+                default: return (<div></div>);
+
+            };
+        case "9":
+            switch (model) {
+                case "1":
+                    return selectTask(dzial, model);
+                case "2":
+                    return selectTask(dzial, model);
+                case "3":
+                    return selectTask(dzial, model);
+                case "4":
+                    return selectTask(dzial, model);
+                case "5":
+                    return selectTask(dzial, model);
+                case "6":
+                    return selectTask(dzial, model);
+                case "7":
+                    return selectTask(dzial, model);
+                case "8":
+                    return selectTask(dzial, model);
+                
+
+                default: return (<div></div>);
+
+            };
+        case "10":
+            switch (model) {
+                case "1":
+                    return selectTask(dzial, model);
+                case "2":
+                    return selectTask(dzial, model);
+                case "3":
+                    return selectTask(dzial, model);
+                case "4":
+                    return selectTask(dzial, model);
+                case "5":
+                    return selectTask(dzial, model);
+                case "6":
+                    return selectTask(dzial, model);
+                case "7":
+                    return selectTask(dzial, model);
+                case "8":
+                    return selectTask(dzial, model);
+                case "9":
+                    return selectTask(dzial, model);
+                case "10":
+                    return selectTask(dzial, model);
+                case "11":
+                    return selectTask(dzial, model);
+                case "12":
+                    return selectTask(dzial, model);
+                case "13":
+                    return selectTask(dzial, model);
+                
+
+
+                default: return (<div></div>);
+
+            };
+        case "11":
+            switch (model) {
+                case "1":
+                    return selectTask(dzial, model);
+                case "2":
+                    return selectTask(dzial, model);
+                case "3":
+                    return selectTask(dzial, model);
+                case "4":
+                    return selectTask(dzial, model);
+                case "5":
+                    return selectTask(dzial, model);
+                case "6":
+                    return selectTask(dzial, model);
+                case "7":
+                    return selectTask(dzial, model);
+                case "8":
+                    return selectTask(dzial, model);
+                case "9":
+                    return selectTask(dzial, model);
+                case "10":
+                    return selectTask(dzial, model);
+                case "11":
+                    return selectTask(dzial, model);
+                case "12":
+                    return selectTask(dzial, model);
+                case "13":
+                    return selectTask(dzial, model);
+                case "14":
+                    return selectTask(dzial, model);
+                case "15":
+                    return selectTask(dzial, model);
+
+                default: return (<div></div>);
+
+            };
+        case "12":
+            switch (model) {
+                case "1":
+                    return selectTask(dzial, model);
+                case "2":
+                    return selectTask(dzial, model);
+                case "3":
+                    return selectTask(dzial, model);
+                case "4":
+                    return selectTask(dzial, model);
+                case "5":
+                    return selectTask(dzial, model);
+                case "6":
+                    return selectTask(dzial, model);
+                case "7":
+                    return selectTask(dzial, model);
+                case "8":
+                    return selectTask(dzial, model);
+                case "9":
+                    return selectTask(dzial, model);
+                case "10":
+                    return selectTask(dzial, model);
+                case "11":
+                    return selectTask(dzial, model);
+                case "12":
+                    return selectTask(dzial, model);
+                case "13":
+                    return selectTask(dzial, model);
+                case "14":
+                    return selectTask(dzial, model);
+                case "15":
+                    return selectTask(dzial, model);
+
+                default: return (<div></div>);
+
+            };
+        case "13":
+            switch (model) {
+                case "1":
+                    return selectTask(dzial, model);
+                case "2":
+                    return selectTask(dzial, model);
+                case "3":
+                    return selectTask(dzial, model);
+                case "4":
+                    return selectTask(dzial, model);
+                case "5":
+                    return selectTask(dzial, model);
+                case "6":
+                    return selectTask(dzial, model);
+                
+                default: return (<div></div>);
+
+            };
+        case "14":
+            switch (model) {
+                case "1":
+                    return selectTask(dzial, model);
+                case "2":
+                    return selectTask(dzial, model);
+                case "3":
+                    return selectTask(dzial, model);
+                case "4":
+                    return selectTask(dzial, model);
+                case "5":
+                    return selectTask(dzial, model);
+                case "6":
+                    return selectTask(dzial, model);
+                case "7":
+                    return selectTask(dzial, model);
+                case "8":
+                    return selectTask(dzial, model);
+                case "9":
+                    return selectTask(dzial, model);
+                case "10":
+                    return selectTask(dzial, model);
+
+
+                default: return (<div></div>);
+
+            };
+        case "15":
+            switch (model) {
+                case "1":
+                    return selectTask(dzial, model);
+                case "2":
+                    return selectTask(dzial, model);
+                case "3":
+                    return selectTask(dzial, model);
+                case "4":
+                    return selectTask(dzial, model);
+                case "5":
+                    return selectTask(dzial, model);
+                case "6":
+                    return selectTask(dzial, model);
+                
+
+
+                default: return (<div></div>);
+
+            };
+        case "16":
+            switch (model) {
+                case "1":
+                    return selectTask(dzial, model);
+                case "2":
+                    return selectTask(dzial, model);
+                case "3":
+                    return selectTask(dzial, model);
+                case "4":
+                    return selectTask(dzial, model);
+                case "5":
+                    return selectTask(dzial, model);
+                case "6":
+                    return selectTask(dzial, model);
+                case "7":
+                    return selectTask(dzial, model);
+                case "8":
+                    return selectTask(dzial, model);
+                case "9":
+                    return selectTask(dzial, model);
+                case "10":
+                    return selectTask(dzial, model);
+                case "11":
+                    return selectTask(dzial, model);
+                case "12":
+                    return selectTask(dzial, model);
+                case "13":
+                    return selectTask(dzial, model);
+
+                default: return (<div></div>);
+
+            };
+        case "17":
+            switch (model) {
+                case "1":
+                    return selectTask(dzial, model);
+                case "2":
+                    return selectTask(dzial, model);
+                case "3":
+                    return selectTask(dzial, model);
+                case "4":
+                    return selectTask(dzial, model);
+                case "5":
+                    return selectTask(dzial, model);
+                case "6":
+                    return selectTask(dzial, model);
+                case "7":
+                    return selectTask(dzial, model);
+                case "8":
+                    return selectTask(dzial, model);
+                case "9":
+                    return selectTask(dzial, model);
+
+
+                default: return (<div></div>);
+
+            };
+        case "18":
+            switch (model) {
+                case "1":
+                    return selectTask(dzial, model);
+                case "2":
+                    return selectTask(dzial, model);
+                case "3":
+                    return selectTask(dzial, model);
+                case "4":
+                    return selectTask(dzial, model);
+                
+
+                default: return (<div></div>);
+
+            };
+        case "19":
+            switch (model) {
+                case "1":
+                    return selectTask(dzial, model);
+                case "2":
+                    return selectTask(dzial, model);
+                case "3":
+                    return selectTask(dzial, model);
+                case "4":
+                    return selectTask(dzial, model);
+                case "5":
+                    return selectTask(dzial, model);
+                case "6":
+                    return selectTask(dzial, model);
+                case "7":
+                    return selectTask(dzial, model);
+                case "8":
+                    return selectTask(dzial, model);
+                case "9":
+                    return selectTask(dzial, model);
+
+
+                default: return (<div></div>);
+
+            };
+        case "20":
+            switch (model) {
+                case "1":
+                    return selectTask(dzial, model);
+                case "2":
+                    return selectTask(dzial, model);
+                case "3":
+                    return selectTask(dzial, model);
+                case "4":
+                    return selectTask(dzial, model);
+                case "5":
+                    return selectTask(dzial, model);
+                case "6":
+                    return selectTask(dzial, model);
+                case "7":
+                    return selectTask(dzial, model);
+                case "8":
+                    return selectTask(dzial, model);
+                case "9":
+                    return selectTask(dzial, model);
+                case "10":
+                    return selectTask(dzial, model);
+                case "11":
+                    return selectTask(dzial, model);
+                case "12":
+                    return selectTask(dzial, model);
+                case "13":
+                    return selectTask(dzial, model);
+                case "14":
+                    return selectTask(dzial, model);
+                case "15":
+                    return selectTask(dzial, model);
+                case "16":
                     return selectTask(dzial, model);
 
 

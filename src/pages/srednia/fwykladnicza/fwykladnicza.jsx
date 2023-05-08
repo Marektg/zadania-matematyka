@@ -47,7 +47,7 @@ const FWykladnicza = () => {
                         <Guz id="6" onClick={renderTask}>Przeksztalcenia wykresów funkcji logarytmicznych</Guz>
                         <Guz id="7" onClick={renderTask}>Równania logarytmiczne</Guz>
                         <Guz id="8" onClick={renderTask}><MathJax inline>{"\\(\\star\\)"}</MathJax> Nierówności logarytmiczne</Guz>
-                        <Guz id="9" onClick={renderTask}>FUnkcje wykładnicza i logarytmiczna w zadaniach</Guz>
+                        <Guz id="9" onClick={renderTask}>Funkcje wykładnicza i logarytmiczna w zadaniach</Guz>
                        
 
 
