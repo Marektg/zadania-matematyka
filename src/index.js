@@ -54,6 +54,9 @@ import CiagiS from './pages/srednia/ciagi/ciagi';
 import Kombinatoryka from './pages/srednia/kombinatoryka/kombinatoryka';
 import AnalizaMatematyczna from './pages/srednia/rachrozniczkowy/rachrozniczkowy';
 import FWykladnicza from './pages/srednia/fwykladnicza/fwykladnicza';
+import Statystyka from './pages/srednia/statystyka/statystyka';
+import Prawdopodobienstwo from './pages/srednia/prawdopodobienstwo/prawdopodobienstwo';
+import Stereometria from './pages/srednia/stereometria/stereometria';
 
 
 const config = {
@@ -96,6 +99,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='srednia/kombinatoryka' element={<Kombinatoryka />} />
           <Route path='srednia/rachrozniczkowy' element={<AnalizaMatematyczna />} />
           <Route path='srednia/fwykladnicza' element={<FWykladnicza />} />
+          <Route path='srednia/statystyka' element={<Statystyka />} />
+          <Route path='srednia/prawdopodobienstwo' element={<Prawdopodobienstwo />} />
+          <Route path='srednia/stereometria' element={<Stereometria />} />
           
           <Route path='matura' element={<Matura />} />
           <Route path='matura/wymagania' element={<Wymagania />} />

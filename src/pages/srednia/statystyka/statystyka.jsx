@@ -7,7 +7,7 @@ import WorksList from '../../../components/worksList/worksList';
 import { MathJax } from 'better-react-mathjax';
 
 
-const FWykladnicza = () => {
+const Statystyka = () => {
     const [title, setTitle] = useState(null);
     const [currentTask, setCurrentTask] = useState(null);
 
@@ -37,25 +37,18 @@ const FWykladnicza = () => {
             <Basic>
                 <LeftNavi model="b" />
                 <TaskList>
-                    <Tytul>  Funkcja wykładnicza i logarytmiczna</Tytul>
+                    <Tytul>Statystyka</Tytul>
                     <MainGuz data-poddzialy>
-                        <Guz id="1" onClick={renderTask}>Funkcja wykładnicza i jej własności</Guz>
-                        <Guz id="2" onClick={renderTask}>Przekształcenia wykresów funkcji wykładniczej</Guz>
-                        <Guz id="3" onClick={renderTask}>Równania wykładnicze</Guz>
-                        <Guz id="4" onClick={renderTask}>Nierówności wykładnicze</Guz>
-                        <Guz id="5" onClick={renderTask}>Funkcja logarytmiczna i jej własności</Guz>
-                        <Guz id="6" onClick={renderTask}>Przeksztalcenia wykresów funkcji logarytmicznych</Guz>
-                        <Guz id="7" onClick={renderTask}>Równania logarytmiczne</Guz>
-                        <Guz id="8" onClick={renderTask}><MathJax inline>{"\\(\\star\\)"}</MathJax> Nierówności logarytmiczne</Guz>
-                        <Guz id="9" onClick={renderTask}>FUnkcje wykładnicza i logarytmiczna w zadaniach</Guz>
-                       
-
-
+                        <Guz id="1" onClick={renderTask}>Sposoby prezentacji danych</Guz>
+                        <Guz id="2" onClick={renderTask}>Średnia z próby</Guz>
+                        <Guz id="3" onClick={renderTask}>Mediana, moda, skala centylowa</Guz>
+                        <Guz id="4" onClick={renderTask}>Wariacja i odchylenie standardowe</Guz>
+                        
                     </MainGuz>
 
                     <TaskList>
                         <Rodzajzad>{title}</Rodzajzad>
-                        <WorksList model={currentTask} dzial="17" />
+                        <WorksList model={currentTask} dzial="18" />
                     </TaskList>
                 </TaskList>
 
@@ -65,4 +58,4 @@ const FWykladnicza = () => {
     )
 }
 
-export default FWykladnicza
+export default Statystyka
