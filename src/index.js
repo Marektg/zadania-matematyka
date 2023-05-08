@@ -11,6 +11,9 @@ import Srednia from './pages/srednia/srednia';
 import Lrzeczywiste from './pages/srednia/lrzeczywiste/lrzeczywiste';
 import Wyrazenia from './pages/srednia/wyrazeniaAlgebraiczne/wyrazeniaAlgebraiczne';
 import FunkcjeWlasnosci from './pages/srednia/funkcje/funkcje.jsx';
+import FunkcjaLiniowaS from './pages/srednia/funkcjaLiniowa/funkcjaLiniowa.jsx';
+import Uklady from './pages/srednia/uklady/uklady.jsx';
+import PlanimetriaS from './pages/srednia/planimetria/planimetria';
 import Fkwadratowa from './pages/srednia/fkwadratowa/fkwadratowa.jsx';
 import Matura from './pages/matura/matura';
 import Wymagania from './pages/matura/wymagania/wymagania';
@@ -38,6 +41,8 @@ import Ciagi from './pages/matura/ksiazkowe/ciagi'
 import Planimetria from './pages/matura/ksiazkowe/planimetria'
 import GeometriaAnalityczna from './pages/matura/ksiazkowe/geometriaAnalityczna'
 import { Contact } from './components/contact/contact';
+import TrygonometriaS from './pages/srednia/trygonometria/trygonometria';
+import Przeksztalcenia from './pages/srednia/przeksztalceniaWykresowFunkcji/przeksztalceniaWykresowFunkcji';
 
 
 const config = {
@@ -66,6 +71,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='srednia/lrzeczywiste' element={<Lrzeczywiste />} />
           <Route path='srednia/wyrazeniaAlgebraiczne' element={<Wyrazenia />} />
           <Route path='srednia/funkcje' element={<FunkcjeWlasnosci />} />
+          <Route path='srednia/fLiniowa' element={<FunkcjaLiniowaS />} />
+          <Route path='srednia/uklady' element={<Uklady />} />
+          <Route path='srednia/planimetria' element={<PlanimetriaS />} />
+          <Route path='srednia/trygonometria' element={<TrygonometriaS />} />
+          <Route path='srednia/przeksztalceniaWykresowFunkcji' element={<Przeksztalcenia />} />
+          
           <Route path='srednia/fkwadratowa' element={<Fkwadratowa />} />
           
           <Route path='matura' element={<Matura />} />

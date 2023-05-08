@@ -65,8 +65,8 @@ export const Guz=styled.button`
     border: none;
     margin: 5px;
     &:hover {
-        background-color: blue;
-        color: white;
+        color: black;
+        border: solid 5px grey;
     }
 `
 export const MainGuz=styled.div`
