@@ -48,7 +48,7 @@ const LeftNavi = ({ model}) => {
               <li id='l9'><StyledLink to="/srednia/rownaniaINierownosciZwartbezIParametrem">Równania i nierówności z wartością bezwzględną i z parametrem</StyledLink></li>
           <li id='l10'><StyledLink to="/srednia/fkwadratowa">Funkcja kwadratowa</StyledLink></li>
             <li id='l11'><StyledLink to="/srednia/ganalityczna">Geometria analityczna</StyledLink></li>
-            <li id='l12'><StyledLink to="/srednia/wieloniany">Wielomiany</StyledLink></li>
+            <li id='l12'><StyledLink to="/srednia/wielomiany">Wielomiany</StyledLink></li>
             <li id='l13'><StyledLink to="/srednia/fwymierne">Funkcje wymierne</StyledLink></li>
             <li id='l14'><StyledLink to="/srednia/ciagi">Ciągi</StyledLink></li>
             <li id='l15'><StyledLink to="/srednia/kombinatoryka">Kombinatoryka</StyledLink></li>

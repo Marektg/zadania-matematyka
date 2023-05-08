@@ -15,6 +15,15 @@ import FunkcjaLiniowaS from './pages/srednia/funkcjaLiniowa/funkcjaLiniowa.jsx';
 import Uklady from './pages/srednia/uklady/uklady.jsx';
 import PlanimetriaS from './pages/srednia/planimetria/planimetria';
 import Fkwadratowa from './pages/srednia/fkwadratowa/fkwadratowa.jsx';
+import TrygonometriaS from './pages/srednia/trygonometria/trygonometria';
+import Przeksztalcenia from './pages/srednia/przeksztalceniaWykresowFunkcji/przeksztalceniaWykresowFunkcji';
+import Rownania from './pages/srednia/rownania/rownania';
+import Analityczna from './pages/srednia/ganalityczna/ganalityczna';
+import WielomianyS from './pages/srednia/wielomiany/wielomiany';
+import FWymierna from './pages/srednia/fwymierna/fwymierna';
+
+
+
 import Matura from './pages/matura/matura';
 import Wymagania from './pages/matura/wymagania/wymagania';
 import { MathJaxContext } from 'better-react-mathjax';
@@ -41,9 +50,10 @@ import Ciagi from './pages/matura/ksiazkowe/ciagi'
 import Planimetria from './pages/matura/ksiazkowe/planimetria'
 import GeometriaAnalityczna from './pages/matura/ksiazkowe/geometriaAnalityczna'
 import { Contact } from './components/contact/contact';
-import TrygonometriaS from './pages/srednia/trygonometria/trygonometria';
-import Przeksztalcenia from './pages/srednia/przeksztalceniaWykresowFunkcji/przeksztalceniaWykresowFunkcji';
-import Rownania from './pages/srednia/rownania/rownania';
+import CiagiS from './pages/srednia/ciagi/ciagi';
+import Kombinatoryka from './pages/srednia/kombinatoryka/kombinatoryka';
+import AnalizaMatematyczna from './pages/srednia/rachrozniczkowy/rachrozniczkowy';
+import FWykladnicza from './pages/srednia/fwykladnicza/fwykladnicza';
 
 
 const config = {
@@ -78,8 +88,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='srednia/trygonometria' element={<TrygonometriaS />} />
           <Route path='srednia/przeksztalceniaWykresowFunkcji' element={<Przeksztalcenia />} />
           <Route path='srednia/rownaniaINierownosciZwartbezIParametrem' element={<Rownania />} />
-          
           <Route path='srednia/fkwadratowa' element={<Fkwadratowa />} />
+          <Route path='srednia/ganalityczna' element={<Analityczna />} />
+          <Route path='srednia/wielomiany' element={<WielomianyS />} />
+          <Route path='srednia/fwymierne' element={<FWymierna />} />
+          <Route path='srednia/ciagi' element={<CiagiS />} />
+          <Route path='srednia/kombinatoryka' element={<Kombinatoryka />} />
+          <Route path='srednia/rachrozniczkowy' element={<AnalizaMatematyczna />} />
+          <Route path='srednia/fwykladnicza' element={<FWykladnicza />} />
           
           <Route path='matura' element={<Matura />} />
           <Route path='matura/wymagania' element={<Wymagania />} />

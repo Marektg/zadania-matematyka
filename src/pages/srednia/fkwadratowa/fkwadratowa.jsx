@@ -17,8 +17,14 @@ const Fkwadratowa = () => {
 
     const renderTask = (event) => {
         setTitle(event.target.innerText);
-        // console.log(event.target.parentElement.id)
-        setCurrentTask(event.target.parentElement.id);
+
+        setCurrentTask(event.target.id);
+        let targets = event.target.parentElement.childNodes
+        for (let i = 0; i < targets.length; i++) {
+            if (event.target.id === targets[i].id) {
+                targets[i].style.backgroundColor = "green";
+            } else { targets[i].style.backgroundColor = "#e9e9ed" }
+        }
 
     }
     // console.log(currentTask);
@@ -45,7 +51,7 @@ const Fkwadratowa = () => {
                         <Guz id="11" onClick={renderTask}><MathJax inline>{"\\(\\star\\)"}</MathJax> Wykres funkcji kwadratowej z wartością bezwzględną</Guz>
                         <Guz id="12" onClick={renderTask}><MathJax inline>{"\\(\\star\\)"}</MathJax> Wzory Viete`a</Guz>
                        
-                        <Guz id="13" onClick={renderTask}>Równania i nierówności kwadratowe z parametrem</Guz>
+                        <Guz id="13" onClick={renderTask}><MathJax inline>{"\\(\\star\\)"}</MathJax>Równania i nierówności kwadratowe z parametrem</Guz>
                     </MainGuz>
                     <TaskList>
                         <Rodzajzad>{title}</Rodzajzad>
