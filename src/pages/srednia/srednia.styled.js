@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const MainDiv = styled.div`
-    background-color: #ff8c00;
+    background-color: #69B937;
 font - family: serif;
 color: #000000;
 height: 100 %;
@@ -47,47 +47,6 @@ export const Tytul = styled.h2`
   margin-bottom: 10px;`
   
   
-  export const Podmenu = styled.ul`
-  text-align: center;
-display: flex;
-flex-direction: column;
-align-items: center;
-color: black;
-border: none;
-font-weight: bold;
-font-size: 1.5em;
-margin-left: 10px;
-margin-right: 10px;
-width: 90%;
-list-style: none;
-
-li {
-  display: block;
-  color: black;
-   border: none;
-   width: 90%;
-    :nth-child(odd) {
-       background-color: lightsalmon;
-    }
-    :nth-child(even) {
-       background-color: khaki;
-    }
-  }
-  button {
-    cursor: pointer;
-    width: 100 %;
-    height: 100 %;
-    background-color: transparent;
-    border: none;
-    font-weight: bold;
-    padding: 10px;
-        :hover {
-      background-color: rgb(122, 238, 147);
-    }
-  }
-  }
-  `
-
 
 export const Rodzajzad = styled.p`
   text-align: center;
@@ -97,3 +56,23 @@ margin-top: 5px;
 background-color: rgb(186, 243, 238);
 `
 
+export const Guz=styled.button`
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    margin: 5px;
+    &:hover {
+        color: black;
+        border: solid 5px grey;
+    }
+`
+export const MainGuz=styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-top: 15px;`

@@ -1,6 +1,6 @@
 import React from 'react'
 import WievTask from './wievTask';
-import srednia from '../../data/srednia/srednia';
+import srednia2 from '../../data/srednia/srednia2';
 import zestawy from '../../data/matura/zestawy';
 import WievArkusz from './wievArkusz';
 import WievTaskPowt from './wievTaskPowt';
@@ -13,7 +13,7 @@ import powtorka from '../../data/matura/powtorka';
 
 const WorksList = ({ model, dzial, typ }) => {
     // console.log(model);
-    let data = srednia;
+    let data = srednia2;
     let d = data.length;
     let zadania = [];
 
@@ -24,7 +24,7 @@ const WorksList = ({ model, dzial, typ }) => {
             }
         }
         data = zadania;
-        return (<WievTask data={data} model={model} />);
+              return (<WievTask data={data} model={model} />);
     };
     let dp = powtorka.length
 

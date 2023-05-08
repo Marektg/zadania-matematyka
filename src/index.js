@@ -9,11 +9,25 @@ import HomePage from './pages/homePage/homePage';
 // import Podstawowka from './pages/podstawowka/podstawowka';
 import Srednia from './pages/srednia/srednia';
 import Lrzeczywiste from './pages/srednia/lrzeczywiste/lrzeczywiste';
-import Fkwadratowa from './pages/srednia/fkwadratowa/fkwadratowa.jsx'
+import Wyrazenia from './pages/srednia/wyrazeniaAlgebraiczne/wyrazeniaAlgebraiczne';
+import FunkcjeWlasnosci from './pages/srednia/funkcje/funkcje.jsx';
+import FunkcjaLiniowaS from './pages/srednia/funkcjaLiniowa/funkcjaLiniowa.jsx';
+import Uklady from './pages/srednia/uklady/uklady.jsx';
+import PlanimetriaS from './pages/srednia/planimetria/planimetria';
+import Fkwadratowa from './pages/srednia/fkwadratowa/fkwadratowa.jsx';
+import TrygonometriaS from './pages/srednia/trygonometria/trygonometria';
+import Przeksztalcenia from './pages/srednia/przeksztalceniaWykresowFunkcji/przeksztalceniaWykresowFunkcji';
+import Rownania from './pages/srednia/rownania/rownania';
+import Analityczna from './pages/srednia/ganalityczna/ganalityczna';
+import WielomianyS from './pages/srednia/wielomiany/wielomiany';
+import FWymierna from './pages/srednia/fwymierna/fwymierna';
+
+
+
 import Matura from './pages/matura/matura';
 import Wymagania from './pages/matura/wymagania/wymagania';
 import { MathJaxContext } from 'better-react-mathjax';
-import Jezyk from './pages/srednia/jezyk/jezyk';
+
 import Zestawy from './pages/matura/zestawy/zestawy';
 import PoziomPodstawowy from './pages/matura/zestawy/poziomPodstawowy';
 import PoziomRozszerzony from './pages/matura/zestawy/poziomRozszerzony';
@@ -36,6 +50,13 @@ import Ciagi from './pages/matura/ksiazkowe/ciagi'
 import Planimetria from './pages/matura/ksiazkowe/planimetria'
 import GeometriaAnalityczna from './pages/matura/ksiazkowe/geometriaAnalityczna'
 import { Contact } from './components/contact/contact';
+import CiagiS from './pages/srednia/ciagi/ciagi';
+import Kombinatoryka from './pages/srednia/kombinatoryka/kombinatoryka';
+import AnalizaMatematyczna from './pages/srednia/rachrozniczkowy/rachrozniczkowy';
+import FWykladnicza from './pages/srednia/fwykladnicza/fwykladnicza';
+import Statystyka from './pages/srednia/statystyka/statystyka';
+import Prawdopodobienstwo from './pages/srednia/prawdopodobienstwo/prawdopodobienstwo';
+import Stereometria from './pages/srednia/stereometria/stereometria';
 
 
 const config = {
@@ -62,8 +83,25 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           {/* <Route path='podstawowka' element={<Podstawowka />} />*/}
           <Route path='srednia' element={<Srednia />} />
           <Route path='srednia/lrzeczywiste' element={<Lrzeczywiste />} />
-          <Route path='srednia/jezyk' element={<Jezyk />} />
+          <Route path='srednia/wyrazeniaAlgebraiczne' element={<Wyrazenia />} />
+          <Route path='srednia/funkcje' element={<FunkcjeWlasnosci />} />
+          <Route path='srednia/fLiniowa' element={<FunkcjaLiniowaS />} />
+          <Route path='srednia/uklady' element={<Uklady />} />
+          <Route path='srednia/planimetria' element={<PlanimetriaS />} />
+          <Route path='srednia/trygonometria' element={<TrygonometriaS />} />
+          <Route path='srednia/przeksztalceniaWykresowFunkcji' element={<Przeksztalcenia />} />
+          <Route path='srednia/rownaniaINierownosciZwartbezIParametrem' element={<Rownania />} />
           <Route path='srednia/fkwadratowa' element={<Fkwadratowa />} />
+          <Route path='srednia/ganalityczna' element={<Analityczna />} />
+          <Route path='srednia/wielomiany' element={<WielomianyS />} />
+          <Route path='srednia/fwymierne' element={<FWymierna />} />
+          <Route path='srednia/ciagi' element={<CiagiS />} />
+          <Route path='srednia/kombinatoryka' element={<Kombinatoryka />} />
+          <Route path='srednia/rachrozniczkowy' element={<AnalizaMatematyczna />} />
+          <Route path='srednia/fwykladnicza' element={<FWykladnicza />} />
+          <Route path='srednia/statystyka' element={<Statystyka />} />
+          <Route path='srednia/prawdopodobienstwo' element={<Prawdopodobienstwo />} />
+          <Route path='srednia/stereometria' element={<Stereometria />} />
           
           <Route path='matura' element={<Matura />} />
           <Route path='matura/wymagania' element={<Wymagania />} />
