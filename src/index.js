@@ -43,6 +43,7 @@ import GeometriaAnalityczna from './pages/matura/ksiazkowe/geometriaAnalityczna'
 import { Contact } from './components/contact/contact';
 import TrygonometriaS from './pages/srednia/trygonometria/trygonometria';
 import Przeksztalcenia from './pages/srednia/przeksztalceniaWykresowFunkcji/przeksztalceniaWykresowFunkcji';
+import Rownania from './pages/srednia/rownania/rownania';
 
 
 const config = {
@@ -76,6 +77,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='srednia/planimetria' element={<PlanimetriaS />} />
           <Route path='srednia/trygonometria' element={<TrygonometriaS />} />
           <Route path='srednia/przeksztalceniaWykresowFunkcji' element={<Przeksztalcenia />} />
+          <Route path='srednia/rownaniaINierownosciZwartbezIParametrem' element={<Rownania />} />
           
           <Route path='srednia/fkwadratowa' element={<Fkwadratowa />} />
           
