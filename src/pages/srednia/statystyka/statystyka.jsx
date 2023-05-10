@@ -4,7 +4,7 @@ import TopNavi from '../../../components/topNavi/topNavi';
 import LeftNavi from '../../../components/leftNavi/leftNavi';
 import WorksList from '../../../components/worksList/worksList';
 // import { current } from '@reduxjs/toolkit';
-import { MathJax } from 'better-react-mathjax';
+// import { MathJax } from 'better-react-mathjax';
 
 
 const Statystyka = () => {
