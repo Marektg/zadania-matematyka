@@ -1,13 +1,14 @@
 import React from 'react'
 import { MainDiv, Basic, TaskList, Tytul } from '../../srednia/srednia.styled.js';
-import TopNavi from '../../../components/topNavi/topNavi';
-import LeftNavi from '../../../components/leftNavi/leftNavi';
-import WorksList from '../../../components/worksList/worksList';
+import TopNavi from '../../../components/topNavi/topNavi.jsx';
+import LeftNavi from '../../../components/leftNavi/leftNavi.jsx';
+import WorksList from '../../../components/worksList/worksList.jsx';
 
-const FunkcjeWymierne = () => {
+const LiczbyRzeczywiste = () => {
    
 
-  
+ 
+
 
 
 
@@ -20,11 +21,11 @@ const FunkcjeWymierne = () => {
             <Basic>
                 <LeftNavi model="cp" />
                 <TaskList>
-                    <Tytul>Powtórki maturalne - Funkcje wymierne.</Tytul>
+                    <Tytul>Powtórki maturalne - Liczby rzeczywiste.</Tytul>
 
                     <TaskList>
-                       
-                        <WorksList  dzial="cpkk1" typ="7" />
+                      
+                        <WorksList  dzial="cpkk1" typ="2" />
                     </TaskList>
 
                 </TaskList>
@@ -35,4 +36,4 @@ const FunkcjeWymierne = () => {
     )
 }
 
-export default FunkcjeWymierne
+export default LiczbyRzeczywiste

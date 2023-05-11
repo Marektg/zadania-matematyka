@@ -1,19 +1,13 @@
 import React from 'react'
 import { MainDiv, Basic, TaskList, Tytul } from '../../srednia/srednia.styled.js';
-import TopNavi from '../../../components/topNavi/topNavi';
-import LeftNavi from '../../../components/leftNavi/leftNavi';
-import WorksList from '../../../components/worksList/worksList';
+import TopNavi from '../../../components/topNavi/topNavi.jsx';
+import LeftNavi from '../../../components/leftNavi/leftNavi.jsx';
+import WorksList from '../../../components/worksList/worksList.jsx';
 
-const Ciagi = () => {
-   
+const FunkcjaLiniowa = () => {
+    
 
- 
-
-
-
-
-
-
+    
 
     return (
         <MainDiv>
@@ -21,11 +15,10 @@ const Ciagi = () => {
             <Basic>
                 <LeftNavi model="cp" />
                 <TaskList>
-                    <Tytul>Powtórki maturalne - Ciągi.</Tytul>
+                    <Tytul>Powtórki maturalne - Funkcja liniowa.</Tytul>
 
                     <TaskList>
-                        
-                        <WorksList  dzial="cpkk1" typ="11" />
+                        <WorksList  dzial="cpkk1" typ="4" />
                     </TaskList>
 
                 </TaskList>
@@ -36,4 +29,4 @@ const Ciagi = () => {
     )
 }
 
-export default Ciagi
+export default FunkcjaLiniowa

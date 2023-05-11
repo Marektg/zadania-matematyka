@@ -1,21 +1,22 @@
 import React from 'react'
-import styles from '../matura.module.scss'
+import { MainDiv, Basic } from '../../srednia/srednia.styled';
 import TopNavi from '../../../components/topNavi/topNavi'
 import LeftNavi from '../../../components/leftNavi/leftNavi'
 import RightSide from '../../../components/rightSide/rightSide'
-const Powtorzenie = props => {
-    const { mainDiv, basic } = styles
+const TerazMaturaRoz = props => {
     return (
-        <div className={mainDiv}>
+        <MainDiv>
             <TopNavi model="c" /> {/* a - podstawówka, b- średnia, c- matura, d- studia*/}
-            <div className={basic} >
+            <Basic>
                 <LeftNavi model="c" />
-                <RightSide model="ck" />
-            </div>
-        </div>
+                <RightSide model="cktmr" />
+
+            </Basic>
+        </MainDiv>
+
     )
 }
 
-Powtorzenie.propTypes = {}
+TerazMaturaRoz.propTypes = {}
 
-export default Powtorzenie
+export default TerazMaturaRoz

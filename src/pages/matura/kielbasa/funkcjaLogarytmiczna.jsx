@@ -1,13 +1,13 @@
 import React from 'react'
 import { MainDiv, Basic, TaskList, Tytul } from '../../srednia/srednia.styled.js';
-import TopNavi from '../../../components/topNavi/topNavi';
-import LeftNavi from '../../../components/leftNavi/leftNavi';
-import WorksList from '../../../components/worksList/worksList';
+import TopNavi from '../../../components/topNavi/topNavi.jsx';
+import LeftNavi from '../../../components/leftNavi/leftNavi.jsx';
+import WorksList from '../../../components/worksList/worksList.jsx';
 
-const FunkcjaWykladnicza = () => {
+const FunkcjaLogarytmiczna = () => {
    
 
-   
+
 
 
 
@@ -21,11 +21,10 @@ const FunkcjaWykladnicza = () => {
             <Basic>
                 <LeftNavi model="cp" />
                 <TaskList>
-                    <Tytul>Powtórki maturalne - Funkcja wykładnicza.</Tytul>
+                    <Tytul>Powtórki maturalne - Funkcja logarytmiczna.</Tytul>
 
                     <TaskList>
-                       
-                        <WorksList  dzial="cpkk1" typ="8" />
+                        <WorksList  dzial="cpkk1" typ="9" />
                     </TaskList>
 
                 </TaskList>
@@ -36,4 +35,4 @@ const FunkcjaWykladnicza = () => {
     )
 }
 
-export default FunkcjaWykladnicza
+export default FunkcjaLogarytmiczna

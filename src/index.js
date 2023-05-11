@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom/client';
 // import App from 'components/App/App';
 import './index.scss';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { MathJaxContext } from 'better-react-mathjax';
 // import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 // import Layout from 'components/layout/layout';
 import HomePage from './pages/homePage/homePage';
 // import Podstawowka from './pages/podstawowka/podstawowka';
+
+
 import Srednia from './pages/srednia/srednia';
 import Lrzeczywiste from './pages/srednia/lrzeczywiste/lrzeczywiste';
 import Wyrazenia from './pages/srednia/wyrazeniaAlgebraiczne/wyrazeniaAlgebraiczne';
@@ -21,35 +24,6 @@ import Rownania from './pages/srednia/rownania/rownania';
 import Analityczna from './pages/srednia/ganalityczna/ganalityczna';
 import WielomianyS from './pages/srednia/wielomiany/wielomiany';
 import FWymierna from './pages/srednia/fwymierna/fwymierna';
-
-
-
-import Matura from './pages/matura/matura';
-import Wymagania from './pages/matura/wymagania/wymagania';
-import { MathJaxContext } from 'better-react-mathjax';
-
-import Zestawy from './pages/matura/zestawy/zestawy';
-import PoziomPodstawowy from './pages/matura/zestawy/poziomPodstawowy';
-import PoziomRozszerzony from './pages/matura/zestawy/poziomRozszerzony';
-import Powtorzenie from './pages/matura/powtorzenie/powtorzenie';
-import PLiczby from './pages/matura/powtorzenie/pliczby';
-import PCiagi from './pages/matura/powtorzenie/pciagi';
-import PFunkcjeIFunkcjaLiniowa from './pages/matura/powtorzenie/pfunkcjeIFunkcjaLiniowa';
-import Ksiazkowe from './pages/matura/ksiazkowe/ksiazkowe';
-import Algebra from './pages/matura/ksiazkowe/algebra';
-import LiczbyRzeczywiste from './pages/matura/ksiazkowe/liczbyRzeczywiste'
-import Funkcje from './pages/matura/ksiazkowe/funkcje'
-import FunkcjaLiniowa from './pages/matura/ksiazkowe/funkcjaLiniowa'
-import FunkcjaKwadratowa from './pages/matura/ksiazkowe/funkcjaKwadratowa'
-import Wielomiany from './pages/matura/ksiazkowe/wielomiany'
-import FunkcjeWymierne from './pages/matura/ksiazkowe/funkcjeWymierne'
-import FunkcjaWykladnicza from './pages/matura/ksiazkowe/funkcjaWykladnicza'
-import FunkcjaLogarytmiczna from './pages/matura/ksiazkowe/funkcjaLogarytmiczna'
-import Trygonometria from './pages/matura/ksiazkowe/trygonometria'
-import Ciagi from './pages/matura/ksiazkowe/ciagi'
-import Planimetria from './pages/matura/ksiazkowe/planimetria'
-import GeometriaAnalityczna from './pages/matura/ksiazkowe/geometriaAnalityczna'
-import { Contact } from './components/contact/contact';
 import CiagiS from './pages/srednia/ciagi/ciagi';
 import Kombinatoryka from './pages/srednia/kombinatoryka/kombinatoryka';
 import AnalizaMatematyczna from './pages/srednia/rachrozniczkowy/rachrozniczkowy';
@@ -57,6 +31,41 @@ import FWykladnicza from './pages/srednia/fwykladnicza/fwykladnicza';
 import Statystyka from './pages/srednia/statystyka/statystyka';
 import Prawdopodobienstwo from './pages/srednia/prawdopodobienstwo/prawdopodobienstwo';
 import Stereometria from './pages/srednia/stereometria/stereometria';
+
+
+
+import Matura from './pages/matura/matura';
+
+import Wymagania from './pages/matura/wymagania/wymagania';
+
+import Zestawy from './pages/matura/zestawy/zestawy';
+import PoziomPodstawowy from './pages/matura/zestawy/poziomPodstawowy';
+import PoziomRozszerzony from './pages/matura/zestawy/poziomRozszerzony';
+
+import Powtorzenie from './pages/matura/powtorzenie/powtorzenie';
+// import PLiczby from './pages/matura/powtorzenie/pliczby';
+// import PCiagi from './pages/matura/powtorzenie/pciagi';
+// import PFunkcjeIFunkcjaLiniowa from './pages/matura/powtorzenie/pfunkcjeIFunkcjaLiniowa';
+// import Ksiazkowe from './pages/matura/ksiazkowe';
+
+import Kielbasa from './pages/matura/kielbasa/kielbasa';
+import Algebra from './pages/matura/kielbasa/algebra';
+import LiczbyRzeczywiste from './pages/matura/kielbasa/liczbyRzeczywiste'
+import Funkcje from './pages/matura/kielbasa/funkcje'
+import FunkcjaLiniowa from './pages/matura/kielbasa/funkcjaLiniowa'
+import FunkcjaKwadratowa from './pages/matura/kielbasa/funkcjaKwadratowa'
+import Wielomiany from './pages/matura/kielbasa/wielomiany'
+import FunkcjeWymierne from './pages/matura/kielbasa/funkcjeWymierne'
+import FunkcjaWykladnicza from './pages/matura/kielbasa/funkcjaWykladnicza'
+import FunkcjaLogarytmiczna from './pages/matura/kielbasa/funkcjaLogarytmiczna'
+import Trygonometria from './pages/matura/kielbasa/trygonometria'
+import Ciagi from './pages/matura/kielbasa/ciagi'
+import Planimetria from './pages/matura/kielbasa/planimetria'
+import GeometriaAnalityczna from './pages/matura/kielbasa/geometriaAnalityczna'
+
+import TerazMaturaRoz from './pages/matura/terazMaturaRoz/terazMaturaRoz';
+
+import { Contact } from './components/contact/contact';
 
 
 const config = {
@@ -102,39 +111,39 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='srednia/statystyka' element={<Statystyka />} />
           <Route path='srednia/prawdopodobienstwo' element={<Prawdopodobienstwo />} />
           <Route path='srednia/stereometria' element={<Stereometria />} />
-          
+
           <Route path='matura' element={<Matura />} />
           <Route path='matura/wymagania' element={<Wymagania />} />
           <Route path='matura/zestawy' element={<Zestawy />} />
           <Route path='matura/zestawy/podstawa' element={<PoziomPodstawowy />} />
           <Route path='matura/zestawy/rozszerzenie' element={<PoziomRozszerzony />} />
           <Route path='matura/powtorzenie' element={<Powtorzenie />} />
-          <Route path='matura/powtorzenie/liczby' element={<PLiczby />} />
-          <Route path='matura/powtorzenie/ciagi' element={<PCiagi />} />
-          <Route path='matura/powtorzenie/funkcjeIFunkcjaLiniowa' element={<PFunkcjeIFunkcjaLiniowa />} />
-          <Route path='matura/ksiazkowe' element={<Ksiazkowe />} />
-          <Route path='matura/ksiazkowe/algebra' element={<Algebra />} />
-          <Route path='matura/ksiazkowe/liczbyRzeczywiste' element={<LiczbyRzeczywiste />} />
-          <Route path='matura/ksiazkowe/funkcje' element={<Funkcje />} />
-          <Route path='matura/ksiazkowe/funkcjaLiniowa' element={<FunkcjaLiniowa />} />
-          <Route path='matura/ksiazkowe/funkcjaKwadratowa' element={<FunkcjaKwadratowa />} />
-          <Route path='matura/ksiazkowe/wielomiany' element={<Wielomiany />} />
-          <Route path='matura/ksiazkowe/funkcjeWymierne' element={<FunkcjeWymierne />} />
-          <Route path='matura/ksiazkowe/funkcjaWykladnicza' element={<FunkcjaWykladnicza />} />
-          <Route path='matura/ksiazkowe/funkcjaLogarytmiczna' element={<FunkcjaLogarytmiczna />} />
-          <Route path='matura/ksiazkowe/trygonometria' element={<Trygonometria />} />
-          <Route path='matura/ksiazkowe/ciagi' element={<Ciagi />} />
-          <Route path='matura/ksiazkowe/planimetria' element={<Planimetria />} />
-          <Route path='matura/ksiazkowe/geometriaAnalityczna' element={<GeometriaAnalityczna />} />
           
           
+          <Route path='matura/kielbasa' element={<Kielbasa />} />
+          <Route path='matura/kielbasa/algebra' element={<Algebra />} />
+          <Route path='matura/kielbasa/liczbyRzeczywiste' element={<LiczbyRzeczywiste />} />
+          <Route path='matura/kielbasa/funkcje' element={<Funkcje />} />
+          <Route path='matura/kielbasa/funkcjaLiniowa' element={<FunkcjaLiniowa />} />
+          <Route path='matura/kielbasa/funkcjaKwadratowa' element={<FunkcjaKwadratowa />} />
+          <Route path='matura/kielbasa/wielomiany' element={<Wielomiany />} />
+          <Route path='matura/kielbasa/funkcjeWymierne' element={<FunkcjeWymierne />} />
+          <Route path='matura/kielbasa/funkcjaWykladnicza' element={<FunkcjaWykladnicza />} />
+          <Route path='matura/kielbasa/funkcjaLogarytmiczna' element={<FunkcjaLogarytmiczna />} />
+          <Route path='matura/kielbasa/trygonometria' element={<Trygonometria />} />
+          <Route path='matura/kielbasa/ciagi' element={<Ciagi />} />
+          <Route path='matura/kielbasa/planimetria' element={<Planimetria />} />
+          <Route path='matura/kielbasa/geometriaAnalityczna' element={<GeometriaAnalityczna />} />
+          
+          <Route path='matura/terazMaturaRoz' element={<TerazMaturaRoz />} />
+
           {/*<Route path='studia' element={<Studia />} />*/}
           <Route path='contact' element={<Contact />} />
           <Route path='*' element={<h1>Page not found</h1>} />
-          </Routes>
-          
-          </BrowserRouter>
-          
+        </Routes>
+
+      </BrowserRouter>
+
 
 
 

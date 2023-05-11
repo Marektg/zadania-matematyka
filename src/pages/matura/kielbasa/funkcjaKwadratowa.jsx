@@ -1,12 +1,18 @@
 import React from 'react'
 import { MainDiv, Basic, TaskList, Tytul } from '../../srednia/srednia.styled.js';
-import TopNavi from '../../../components/topNavi/topNavi';
-import LeftNavi from '../../../components/leftNavi/leftNavi';
-import WorksList from '../../../components/worksList/worksList';
+import TopNavi from '../../../components/topNavi/topNavi.jsx';
+import LeftNavi from '../../../components/leftNavi/leftNavi.jsx';
+import WorksList from '../../../components/worksList/worksList.jsx';
 
-const Stereometria = () => {
-   
- 
+const FunkcjaKwadratowa = () => {
+  
+
+  
+
+
+
+
+
 
     return (
         <MainDiv>
@@ -14,11 +20,11 @@ const Stereometria = () => {
             <Basic>
                 <LeftNavi model="cp" />
                 <TaskList>
-                    <Tytul>Powtórki maturalne - Stereometria.</Tytul>
+                    <Tytul>Powtórki maturalne - Funkcja Kwadratowa.</Tytul>
 
                     <TaskList>
-                        
-                        <WorksList  dzial="cpkk1" typ="14" />
+                       
+                        <WorksList  dzial="cpkk1" typ="5" />
                     </TaskList>
 
                 </TaskList>
@@ -29,4 +35,4 @@ const Stereometria = () => {
     )
 }
 
-export default Stereometria
+export default FunkcjaKwadratowa

@@ -1,13 +1,19 @@
 import React from 'react'
 import { MainDiv, Basic, TaskList, Tytul } from '../../srednia/srednia.styled.js';
-import TopNavi from '../../../components/topNavi/topNavi';
-import LeftNavi from '../../../components/leftNavi/leftNavi';
-import WorksList from '../../../components/worksList/worksList';
+import TopNavi from '../../../components/topNavi/topNavi.jsx';
+import LeftNavi from '../../../components/leftNavi/leftNavi.jsx';
+import WorksList from '../../../components/worksList/worksList.jsx';
 
-const FunkcjaLiniowa = () => {
-    
+const Trygonometria = () => {
+   
+ 
+   
 
-    
+
+
+
+
+
 
     return (
         <MainDiv>
@@ -15,10 +21,11 @@ const FunkcjaLiniowa = () => {
             <Basic>
                 <LeftNavi model="cp" />
                 <TaskList>
-                    <Tytul>Powtórki maturalne - Funkcja liniowa.</Tytul>
+                    <Tytul>Powtórki maturalne - Trygonometria.</Tytul>
 
                     <TaskList>
-                        <WorksList  dzial="cpkk1" typ="4" />
+                       
+                        <WorksList  dzial="cpkk1" typ="10" />
                     </TaskList>
 
                 </TaskList>
@@ -29,4 +36,4 @@ const FunkcjaLiniowa = () => {
     )
 }
 
-export default FunkcjaLiniowa
+export default Trygonometria

@@ -87,25 +87,48 @@ const RightSide = ({ model }) => {
         );
         case "ck": return (
             <MainGuz>
-                <Link to="/matura/ksiazkowe/algebra">Wyrażenia algebraiczne. Równania i nierówności algebraiczne.</Link>
-                <Link to="/matura/ksiazkowe/liczbyRzeczywiste">Liczby rzeczywiste.</Link>
-                <Link to="/matura/ksiazkowe/funkcje">Funkcje.</Link>
-                <Link to="/matura/ksiazkowe/funkcjaLiniowa">Funkcja liniowa.</Link>
-                <Link to="/matura/ksiazkowe/funkcjaKwadratowa">Funkcja kwadratowa.</Link>
-                <Link to="/matura/ksiazkowe/wielomiany">Wielomiany.</Link>
-                <Link to="/matura/ksiazkowe/funkcjeWymierne">Funkcje wymierne.</Link>
-                <Link to="/matura/ksiazkowe/funkcjaWykladnicza">Funkcja wykładnicza.</Link>
-                <Link to="/matura/ksiazkowe/funkcjaLogarytmiczna">Funkcja logarytmiczna.</Link>
-                <Link to="/matura/ksiazkowe/trygonometria">Trygonometria.</Link>
-                <Link to="/matura/ksiazkowe/ciagi">Ciągi.</Link>
-                <Link to="/matura/ksiazkowe/planimetria">Planimetria.</Link>
-                <Link to="/matura/ksiazkowe/geometriaAnalityczna">Geometria analityczna.</Link>
-                <Link to="/matura/ksiazkowe/stereometria">Stereometria.</Link>
-                <Link to="/matura/ksiazkowe/pochodna"><MathJax>{"\\(\\star\\)"}</MathJax> Pochodna. <MathJax>{"\\(\\star\\)"}</MathJax></Link>
-                <Link to="/matura/ksiazkowe/zadaniaOptymalizacyjne">Zadania optymalizacyjne.</Link>
-                <Link to="/matura/ksiazkowe/rachunekPrawdopodobienstwa">Rachunek prawdopodobieństwa.</Link>
-                <Link to="/matura/ksiazkowe/statystyka">Statystyka.</Link>
-                <Link to="/matura/ksiazkowe/zadaniaZamkniete">Zadania zamknięte.</Link>
+                <Link to="/matura/kielbasa">Matura od...</Link>
+                <Link to="/matura/terazMaturaRoz">Teraz Matura Rozszerzenie</Link>
+            </MainGuz>
+        )
+        case "ckk": return (
+            <MainGuz>
+                <Link to="/matura/kielbasa/algebra">Wyrażenia algebraiczne. Równania i nierówności algebraiczne.</Link>
+                <Link to="/matura/kielbasa/liczbyRzeczywiste">Liczby rzeczywiste.</Link>
+                <Link to="/matura/kielbasa/funkcje">Funkcje.</Link>
+                <Link to="/matura/kielbasa/funkcjaLiniowa">Funkcja liniowa.</Link>
+                <Link to="/matura/kielbasa/funkcjaKwadratowa">Funkcja kwadratowa.</Link>
+                <Link to="/matura/kielbasa/wielomiany">Wielomiany.</Link>
+                <Link to="/matura/kielbasa/funkcjeWymierne">Funkcje wymierne.</Link>
+                <Link to="/matura/kielbasa/funkcjaWykladnicza">Funkcja wykładnicza.</Link>
+                <Link to="/matura/kielbasa/funkcjaLogarytmiczna">Funkcja logarytmiczna.</Link>
+                <Link to="/matura/kielbasa/trygonometria">Trygonometria.</Link>
+                <Link to="/matura/kielbasa/ciagi">Ciągi.</Link>
+                <Link to="/matura/kielbasa/planimetria">Planimetria.</Link>
+                <Link to="/matura/kielbasa/geometriaAnalityczna">Geometria analityczna.</Link>
+                <Link to="/matura/kielbasa/stereometria">Stereometria.</Link>
+                <Link to="/matura/kielbasa/pochodna"><MathJax>{"\\(\\star\\)"}</MathJax> Pochodna. <MathJax>{"\\(\\star\\)"}</MathJax></Link>
+                <Link to="/matura/kielbasa/zadaniaOptymalizacyjne">Zadania optymalizacyjne.</Link>
+                <Link to="/matura/kielbasa/rachunekPrawdopodobienstwa">Rachunek prawdopodobieństwa.</Link>
+                <Link to="/matura/kielbasa/statystyka">Statystyka.</Link>
+                <Link to="/matura/kielbasa/zadaniaZamkniete">Zadania zamknięte.</Link>
+            </MainGuz>
+        );
+        case "cktmr": return (
+            <MainGuz>
+                <Link to="/matura/terazMaturaRoz/liczby">Liczby rzeczywiste i wyrażenia algebraiczne</Link>
+                <Link to="/matura/terazMaturaRoz/funkcjaLiniowa">Funkcje i funkcja liniowa</Link>
+                <Link to="/matura/terazMaturaRoz/funkcjaKwadratowa">Funkcja kwadratowa</Link>
+                <Link to="/matura/terazMaturaRoz/wielomianyIWymierne">Wielomiany i wyrażenia wymierne</Link>
+                <Link to="/matura/terazMaturaRoz/funkcjaWykladniczaILogarytmiczna">Funkcja wykładnicza i funkcja logarytmiczna</Link>
+                <Link to="/matura/terazMaturaRoz/trygonometria">Trygonometria</Link>
+                <Link to="/matura/terazMaturaRoz/ciagi">Ciągi</Link>
+                <Link to="/matura/terazMaturaRoz/planimetria">Planimetria</Link>
+                <Link to="/matura/terazMaturaRoz/geometriaAnalityczna">Geometria analityczna</Link>
+                <Link to="/matura/terazMaturaRoz/stereometria">Stereometria</Link>
+                <Link to="/matura/terazMaturaRoz/pochodna">Rachunek różniczkowy</Link>
+                <Link to="/matura/terazMaturaRoz/rachunekPrawdopodobienstwaIStatystyka">Rachunek prawdopodobieństwa i statystyka</Link>
+
             </MainGuz>
         );
         case "d": return (

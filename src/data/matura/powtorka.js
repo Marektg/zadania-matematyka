@@ -1,6 +1,19 @@
 import { nanoid } from "@reduxjs/toolkit"
 
-
+// {
+//     "id": `${nanoid()}`,
+//         "tresc": "",
+//             "canvas": [],
+//                 "podpunkty": [],
+//                     "wskazowka": null,
+//                         "ramka": null,
+//                             "extraRamka": null,
+//                                 "tresc2": null,
+//                                     "ramkapo": null,
+//                                         "typ": "powtorka",
+//                                             "dzial": "",
+//                                                 "poddzial": "",
+//     },
 const powtorka = [
     {
         "tresc": "Dana jest liczba sześciocyfrowa  \\(65432x\\), gdzie  \\(x\\)  oznacza cyfrę jedności. Wyznacz tę liczbę, jeśli jest ona podzielna przez:",
@@ -1479,7 +1492,7 @@ const powtorka = [
         "id": `${nanoid()}`,
         "tresc": "Oblicz. Wynik przedstaw w postaci ułamka nieskraclnego",
         "canvas": [],
-        "podpunkty": ["\\(\\frac{5^6+20\\cdot 5^4}{2\\cdot 5^6-100\\CDOT 5^3}\\)",
+        "podpunkty": ["\\(\\frac{5^6+20\\cdot 5^4}{2\\cdot 5^6-100\\cdot 5^3}\\)",
             "\\(\\frac{6\\cdot 4^2-8\\cdot 4^3}{2\\cdot 8^2-5\\cdot 2^6}\\)",
             "\\(\\frac{2\\cdot (\\frac{2}{5})^{-1}+3,5}{4^{-1}\\cdot [(\\frac{1}{3})^{-2}-(\\frac{17}{19})^0]}\\)",
             "\\(\\frac{1,75+0,5\\cdot (\\frac{2}{3})^{-1}}{3\\frac{1}{12}-3\\cdot (\\frac{2}{3})^2}\\)",
@@ -1495,20 +1508,7 @@ const powtorka = [
         "dzial": "cp1",
         "poddzial": "1",
     },
-    {
-        "id": `${nanoid()}`,
-        "tresc": "",
-        "canvas": [],
-        "podpunkty": [],
-        "wskazowka": null,
-        "ramka": null,
-        "extraRamka": null,
-        "tresc2": null,
-        "ramkapo": null,
-        "typ": "powtorka",
-        "dzial": "",
-        "poddzial": "",
-    },
+
 
     {
         "id": `${nanoid()}`,
@@ -1537,6 +1537,20 @@ const powtorka = [
         "ramkapo": null,
         "typ": "powtorka",
         "dzial": "cp8",
+        "poddzial": "1",
+    },
+    {
+        "id": `${nanoid()}`,
+        "tresc": "\\(\\bigstar\\) Oblicz",
+        "canvas": [],
+        "podpunkty": ["\\(\\left(\\sqrt{4-\\sqrt{15}}-\\sqrt{4+\\sqrt{15}}\\right)^2\\)", ],
+        "wskazowka": null,
+        "ramka": null,
+        "extraRamka": null,
+        "tresc2": null,
+        "ramkapo": null,
+        "typ": "powtorka",
+        "dzial": "cp1",
         "poddzial": "1",
     },
 ]

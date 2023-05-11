@@ -1,11 +1,18 @@
 import React from 'react'
 import { MainDiv, Basic, TaskList, Tytul } from '../../srednia/srednia.styled.js';
-import TopNavi from '../../../components/topNavi/topNavi';
-import LeftNavi from '../../../components/leftNavi/leftNavi';
-import WorksList from '../../../components/worksList/worksList';
+import TopNavi from '../../../components/topNavi/topNavi.jsx';
+import LeftNavi from '../../../components/leftNavi/leftNavi.jsx';
+import WorksList from '../../../components/worksList/worksList.jsx';
 
-const GeometriaAnalityczna = () => {
-    
+const FunkcjaWykladnicza = () => {
+   
+
+   
+
+
+
+
+
 
 
     return (
@@ -14,11 +21,11 @@ const GeometriaAnalityczna = () => {
             <Basic>
                 <LeftNavi model="cp" />
                 <TaskList>
-                    <Tytul>Powtórki maturalne - GeometriaAnalityczna.</Tytul>
+                    <Tytul>Powtórki maturalne - Funkcja wykładnicza.</Tytul>
 
                     <TaskList>
-                      
-                        <WorksList dzial="cpkk1" typ="13" />
+                       
+                        <WorksList  dzial="cpkk1" typ="8" />
                     </TaskList>
 
                 </TaskList>
@@ -29,4 +36,4 @@ const GeometriaAnalityczna = () => {
     )
 }
 
-export default GeometriaAnalityczna
+export default FunkcjaWykladnicza

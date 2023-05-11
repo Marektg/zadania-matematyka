@@ -1,17 +1,11 @@
 import React from 'react'
 import { MainDiv, Basic, TaskList, Tytul } from '../../srednia/srednia.styled.js';
-import TopNavi from '../../../components/topNavi/topNavi';
-import LeftNavi from '../../../components/leftNavi/leftNavi';
-import WorksList from '../../../components/worksList/worksList';
+import TopNavi from '../../../components/topNavi/topNavi.jsx';
+import LeftNavi from '../../../components/leftNavi/leftNavi.jsx';
+import WorksList from '../../../components/worksList/worksList.jsx';
 
-const FunkcjaKwadratowa = () => {
+const Planimetria = () => {
   
-
-  
-
-
-
-
 
 
     return (
@@ -20,11 +14,11 @@ const FunkcjaKwadratowa = () => {
             <Basic>
                 <LeftNavi model="cp" />
                 <TaskList>
-                    <Tytul>Powtórki maturalne - Funkcja Kwadratowa.</Tytul>
+                    <Tytul>Powtórki maturalne - Planimetria.</Tytul>
 
                     <TaskList>
-                       
-                        <WorksList  dzial="cpkk1" typ="5" />
+                        
+                        <WorksList  dzial="cpkk1" typ="12" />
                     </TaskList>
 
                 </TaskList>
@@ -35,4 +29,4 @@ const FunkcjaKwadratowa = () => {
     )
 }
 
-export default FunkcjaKwadratowa
+export default Planimetria
