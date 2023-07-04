@@ -77,7 +77,7 @@ const WievTaskKsiazki = ({ data, model }) => {
 
     const showAnswer = (e) => {
         console.log(e.target);
-        let showDiv = e.target.previousElementSibling;
+        let showDiv = e.target.parentElement.previousElementSibling;
         console.log(showDiv);
         showDiv.style.display = "block";
         e.target.style.display = "none";
@@ -86,7 +86,7 @@ const WievTaskKsiazki = ({ data, model }) => {
     }
     const hideAnswer = (e) => {
         console.log(e.target);
-        let showDiv = e.target.previousElementSibling.previousElementSibling;
+        let showDiv = e.target.parentElement.previousElementSibling;
         console.log(showDiv);
         showDiv.style.display = "none";
         e.target.previousElementSibling.style.display = "block";
@@ -149,7 +149,10 @@ const WievTaskKsiazki = ({ data, model }) => {
                         {work.answer.length > 0 ? (work.answer.map(punkty => (<p><MathJax inline>{punkty}</MathJax></p>))) : (<p>Rozwiązanie w przygotowaniu</p>)}
                     </div>
                     
-                        <div><button onClick={showAnswer}>Odpowiedź</button><button className={hidden} onClick={hideAnswer}>Ukryj rozwiązanie</button></div>
+                    <div>
+                        <button onClick={showAnswer}>Odpowiedź</button>
+                        <button className={hidden} onClick={hideAnswer}>Ukryj rozwiązanie</button>
+                    </div>
                     
                 </li>
             ))}
