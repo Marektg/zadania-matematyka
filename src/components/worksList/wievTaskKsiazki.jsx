@@ -7,7 +7,7 @@ import Extra from '../../data/extra';
 
 const WievTaskKsiazki = ({ data, model }) => {
     const [tasks, settasks] = useState([]);
-    const [login, setlogin] = useState(null);
+    // const [login, setlogin] = useState(null);
     const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, buttonWrapper, hidden, } = styles;
     const numberOfTask = 25;
 
@@ -149,7 +149,7 @@ const WievTaskKsiazki = ({ data, model }) => {
                         {work.answer.length > 0 ? (work.answer.map(punkty => (<p><MathJax inline>{punkty}</MathJax></p>))) : (<p>Rozwiązanie w przygotowaniu</p>)}
                     </div>
                     
-                        {login !== null && (<div><button onClick={showAnswer}>Odpowiedź</button><button className={hidden} onClick={hideAnswer}>Ukryj rozwiązanie</button></div>)}
+                        <div><button onClick={showAnswer}>Odpowiedź</button><button className={hidden} onClick={hideAnswer}>Ukryj rozwiązanie</button></div>
                     
                 </li>
             ))}
