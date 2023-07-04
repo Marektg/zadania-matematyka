@@ -10,6 +10,7 @@ import WievTaskPowt from './wievTaskPowt';
 import kielbasa from '../../data/matura/kielbasa';
 import WievTaskKsiazki from './wievTaskKsiazki';
 import powtorka from '../../data/matura/powtorka';
+import gcsedata from '../../data/matura/gcse';
 
 const WorksList = ({ model, dzial, typ }) => {
     // console.log(model);
@@ -40,14 +41,23 @@ const WorksList = ({ model, dzial, typ }) => {
 
     let dk = kielbasa.length;
     const selectTaskKielbasa = (typ, model) => {
-    for (let i = 0; i < dk; i++) {
-        if (kielbasa[i].dzial=== typ)
-            zadania.push(kielbasa[i])
+        for (let i = 0; i < dk; i++) {
+            if (kielbasa[i].dzial === typ)
+                zadania.push(kielbasa[i])
+        };
+        data = zadania;
+        return (<WievTaskKsiazki data={data} model={model} />);
     };
 
-
-    data = zadania;
-    return (<WievTaskKsiazki data={data} model={model} />);
+    let gc = gcsedata.length;
+    const selectTaskGCSE = (typ, model) => {
+        for (let i = 0; i < gc; i++) {
+            if (gcsedata[i].dzial === typ)
+                zadania.push(gcsedata[i])
+        };
+        data = zadania;
+        return (<WievTaskKsiazki data={data} model={model} />);
+    
     }
     switch (dzial) {
         case "1":
@@ -726,6 +736,48 @@ const WorksList = ({ model, dzial, typ }) => {
                 case "13": return selectTaskKielbasa(typ, model);
                 case "14": return selectTaskKielbasa(typ, model);
                 case "15": return selectTaskKielbasa(typ, model);
+
+
+                default: return (<div></div>);
+            }
+        case "cgcse":
+            switch (typ) {
+                case "1": return selectTaskGCSE(typ, model);
+                case "2": return selectTaskGCSE(typ, model);
+                case "3": return selectTaskGCSE(typ, model);
+                case "4": return selectTaskGCSE(typ, model);
+                case "5": return selectTaskGCSE(typ, model);
+                case "6": return selectTaskGCSE(typ, model);
+                case "7": return selectTaskGCSE(typ, model);
+                case "8": return selectTaskGCSE(typ, model);
+                case "9": return selectTaskGCSE(typ, model);
+                case "10": return selectTaskGCSE(typ, model);
+                case "11": return selectTaskGCSE(typ, model);
+                case "12": return selectTaskGCSE(typ, model);
+                case "13": return selectTaskGCSE(typ, model);
+                case "14": return selectTaskGCSE(typ, model);
+                case "15": return selectTaskGCSE(typ, model);
+                case "16": return selectTaskGCSE(typ, model);
+                case "17": return selectTaskGCSE(typ, model);
+                case "18": return selectTaskGCSE(typ, model);
+                case "19": return selectTaskGCSE(typ, model);
+                case "20": return selectTaskGCSE(typ, model);
+                case "21": return selectTaskGCSE(typ, model);
+                case "22": return selectTaskGCSE(typ, model);
+                case "23": return selectTaskGCSE(typ, model);
+                case "24": return selectTaskGCSE(typ, model);
+                case "25": return selectTaskGCSE(typ, model);
+                case "26": return selectTaskGCSE(typ, model);
+                case "27": return selectTaskGCSE(typ, model);
+                case "28": return selectTaskGCSE(typ, model);
+                case "29": return selectTaskGCSE(typ, model);
+                case "30": return selectTaskGCSE(typ, model);
+                case "31": return selectTaskGCSE(typ, model);
+                case "32": return selectTaskGCSE(typ, model);
+                case "33": return selectTaskGCSE(typ, model);
+                case "34": return selectTaskGCSE(typ, model);
+                case "35": return selectTaskGCSE(typ, model);
+                case "36": return selectTaskGCSE(typ, model);
 
 
                 default: return (<div></div>);

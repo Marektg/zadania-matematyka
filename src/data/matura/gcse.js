@@ -1,0 +1,73 @@
+import { nanoid } from "@reduxjs/toolkit"
+
+const gcsedata = [
+    {
+        "id": `${nanoid()}`,
+        "dzial": "5",
+        "numer": "1.1",
+        "tresc": "A chess club has \\(25\\) members. \\(12\\) of these members are female. Express the number of female members of the club as a percentage.",
+        "podpunkty": [],
+        "plot": [],
+        "canvas": [],
+        "trescpocanvie": null,
+        "tresc2": null,
+        "koniec": null,
+        "answer": [],
+    },
+    {
+        "id": `${nanoid()}`,
+        "dzial": "5",
+        "numer": "",
+        "tresc": "Tariq gets an electricity bill. The cost of the electricity used before the VAT is added is \\(£493.80\\). VAT is charged at \\(5\\%\\) on domestic fuel bills. What is the cost of the electricity bill, including VAT?",
+        "podpunkty": [],
+        "plot": [],
+        "canvas": [],
+        "trescpocanvie": null,
+        "tresc2": null,
+        "koniec": null,
+        "answer": [],
+    },
+    {
+        "id": `${nanoid()}`,
+        "dzial": "5",
+        "numer": "1.1",
+        "tresc": "Monica booked a trip to Disneyland for herself  and her family. The total cost of the trip was \\(£5800\\) plus VAT at \\(20\\%\\). Monica paid \\(£1300\\) of the total cost when she booked her holiday. She paid the rest of the total cost in \\(6\\) equal monthly payments. Work out the amount of each monthly payment.",
+        "podpunkty": [],
+        "plot": [],
+        "canvas": [],
+        "trescpocanvie": null,
+        "tresc2": null,
+        "koniec": null,
+        "answer": [],
+    },
+    {
+        "id": `${nanoid()}`,
+        "dzial": "5",
+        "numer": "1.1",
+        "tresc": "A train ticket normally costs \\(£182\\). George gets a \\(30\\%\\) discount. How much does George pay for the train ticket?",
+        "podpunkty": [],
+        "plot": [],
+        "canvas": [],
+        "trescpocanvie": null,
+        "tresc2": null,
+        "koniec": null,
+        "answer": [],
+    },
+]
+
+export default gcsedata
+
+
+// {
+//     "id": `${nanoid()}`,
+//     "dzial": "1",
+//     "numer": "",
+//     "tresc": "",
+//     "podpunkty": [],
+//     "plot": [{ "id": "plot1", "minX": "0", "maxX": "10", "scaleX": "1", "expression": "x+sqrt(x)" }, { "id": "plot2", "minX": "-10", "maxX": "10", "scaleX": "1", "expression": "x^2+2x-9" }],
+//     "canvas": [{"id":"zil1_5a", "width":"200", "height":"200"},{ "id": "zil1_5b", "width": "200", "height": "200" }, { "id": "zil1_5c", "width": "200", "height": "200" },],
+//     "trescpocanvie": null,
+//     "tresc2": null,
+//     "koniec": null,
+//     "answer": [],
+//     },

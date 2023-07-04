@@ -16,7 +16,7 @@ const kielbasa = [
     },
     {
         "id": `${nanoid()}`,
-        "dzial": "Wyrażenia algebraiczne. Równania i nierówności algebraiczne:",
+        "dzial": "1",
         "numer": "1.2",
         "tresc": "Wykonaj potęgowanie",
         "podpunkty": ["\\((2x+3y)^2\\)", "\\((5a-2b)^2\\)", "\\((-7x-4y)^2\\)", "\\((\\sqrt{6}p+\\sqrt{15}q)^2\\)", "\\(\\bigstar\\) \\((m+1)^3\\)", "\\((a+b+1)^2\\)"],
@@ -31,7 +31,7 @@ const kielbasa = [
         "id": `${nanoid()}`,
         "dzial": "1",
         "numer": "1.3",
-        "tresc": "Sporwdź do najprostszej postaci wyrażenie:",
+        "tresc": "Sprowadź do najprostszej postaci wyrażenie:",
         "podpunkty": ["\\((a+3b)^2-(a-3b)^2\\)", "\\((\\sqrt{7}a+\\sqrt{2}b)(\\sqrt{7}a-\\sqrt{2}b)\\)", "\\(2n(n-5)-(n-k)(n+k)-5n(\\frac{2}{5}k-2)\\)", "\\((y-\\sqrt{5})(y^2+5)(y+\\sqrt{5})\\)", "\\((x+1)^3-(x-1)^3\\)", "\\((x+3)(x^2-3x+9)\\)"],
         "plot": [],
         "canvas": [],
@@ -759,9 +759,9 @@ const kielbasa = [
     {
         "id": `${nanoid()}`,
         "dzial": "2",
-        "numer": "",
-        "tresc": "",
-        "podpunkty": [],
+        "numer": "2.14",
+        "tresc": "\\(\\bigstar\\) Sprowadź dane wyrażenie do najprostszej postaci wiedząc, że \\(x\\in (1,3)\\)",
+        "podpunkty": ["\\(|x|\\)", "\\(|x-8|\\)", "\\(|3-x|+|x-1|-2|x-4|\\)", "\\(|x^2-4x+3|-|x^2-9|\\)", "\\(\\sqrt{x^2-10x+25}\\)"],
         "plot": [],
         "canvas": [],
         "trescpocanvie": null,
@@ -772,7 +772,7 @@ const kielbasa = [
     {
         "id": `${nanoid()}`,
         "dzial": "2",
-        "numer": "",
+        "numer": "2.15",
         "tresc": "",
         "podpunkty": [],
         "plot": [],
@@ -1444,7 +1444,7 @@ const kielbasa = [
         "tresc2": null,
         "koniec": null,
         "answer": [],
-    },{
+    }, {
         "id": `${nanoid()}`,
         "dzial": "6",
         "numer": "6.11",
@@ -1456,7 +1456,7 @@ const kielbasa = [
         "tresc2": null,
         "koniec": null,
         "answer": [],
-    },{
+    }, {
         "id": `${nanoid()}`,
         "dzial": "6",
         "numer": "6.12",
@@ -1468,7 +1468,7 @@ const kielbasa = [
         "tresc2": null,
         "koniec": null,
         "answer": [],
-    },{
+    }, {
         "id": `${nanoid()}`,
         "dzial": "6",
         "numer": "6.13",
@@ -1480,7 +1480,7 @@ const kielbasa = [
         "tresc2": null,
         "koniec": null,
         "answer": [],
-    },{
+    }, {
         "id": `${nanoid()}`,
         "dzial": "6",
         "numer": "6.14",
@@ -1492,7 +1492,7 @@ const kielbasa = [
         "tresc2": null,
         "koniec": null,
         "answer": [],
-    },{
+    }, {
         "id": `${nanoid()}`,
         "dzial": "6",
         "numer": "6.15",
@@ -1504,7 +1504,7 @@ const kielbasa = [
         "tresc2": null,
         "koniec": null,
         "answer": [],
-    },{
+    }, {
         "id": `${nanoid()}`,
         "dzial": "6",
         "numer": "6.16",
@@ -1673,7 +1673,7 @@ const kielbasa = [
         "koniec": null,
         "answer": [],
     },
-    
+
 
 
 ]

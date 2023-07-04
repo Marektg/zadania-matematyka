@@ -68,6 +68,7 @@ const LeftNavi = ({ model}) => {
           <li id='l1'><StyledLink to="/matura/wymagania">Wymagania 2023</StyledLink></li>
           <li id='l2'><StyledLink to="/matura/powtorzenie">Powtórzenie</StyledLink></li>
           <li id='l3'><StyledLink to="/matura/zestawy">Zestawy</StyledLink></li>
+          <li id='l4'><StyledLink to="/matura/gcse">GCSE</StyledLink></li>
         </NaviListGroup>
       </Left>
     );
@@ -78,7 +79,8 @@ const LeftNavi = ({ model}) => {
           <li id='l1'><StyledLink to="/matura/wymagania">Wymagania 2023</StyledLink></li>
           <li id='l2'><StyledLink to="/matura/powtorzenie">Powtórzenie</StyledLink></li>
           <li id='l3'><StyledLink to="/matura/zestawy">Zestawy</StyledLink></li>
-          <li id='l4'><StyledLink to="/matura/ksiazkowe">Ksiązkowe</StyledLink></li>
+          <li id='l4'><StyledLink to="/matura/gcse">GCSE</StyledLink></li>
+         
         </NaviListGroup>
       </Left>
     );

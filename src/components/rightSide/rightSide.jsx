@@ -60,12 +60,53 @@ const RightSide = ({ model }) => {
                 <Link to="/matura/wymagania">Wymagania 2023</Link>
                 <Link to="/matura/powtorzenie">Powtórzenie</Link>
                 <Link to="/matura/zestawy">Zestawy</Link>
+                <Link to="/matura/gcse">GCSE</Link>
             </MainGuz>
         );
         case "cz": return (
             <MainGuz>
                 <Link to="/matura/zestawy/podstawa">Poziom podstawowy</Link>
                 <Link to="/matura/zestawy/rozszerzenie">Poziom rozszerzony</Link>
+            </MainGuz>
+        );
+        case "cgcse": return (
+            <MainGuz>
+            <Link to="/matura/gcse/section1">Arithmetic, Multiples and Factors</Link>
+            <Link to="/matura/gcse/section2">Approximations</Link>
+            <Link to="/matura/gcse/section3">Fractions</Link>
+            <Link to="/matura/gcse/section4">Ratio and Proportion</Link>
+            <Link to="/matura/gcse/section5">Percentages</Link>
+            <Link to="/matura/gcse/section6">Expressions</Link>
+            <Link to="/matura/gcse/section7">Powers and Roots</Link>
+            <Link to="/matura/gcse/section8">Formulas</Link>
+            <Link to="/matura/gcse/section9">Equations</Link>
+            <Link to="/matura/gcse/section10">Direct and Invert Proportion</Link>
+            <Link to="/matura/gcse/section11">Quadratic Equations</Link>
+            <Link to="/matura/gcse/section12">Simultaneous Equations</Link>
+            <Link to="/matura/gcse/section13">Inequalities</Link>
+            <Link to="/matura/gcse/section14">Sequences</Link>
+            <Link to="/matura/gcse/section15">Straight-Line Graphs</Link>
+            <Link to="/matura/gcse/section16">Other Types of Graph</Link>
+            <Link to="/matura/gcse/section17">Using Graphs</Link>
+            <Link to="/matura/gcse/section18">Functions</Link>
+            <Link to="/matura/gcse/section19">Differentiation</Link>
+            <Link to="/matura/gcse/section20">Matrices</Link>
+            <Link to="/matura/gcse/section21">Sets</Link>
+            <Link to="/matura/gcse/section22">Angles and 2D Shapes</Link>
+            <Link to="/matura/gcse/section23">Circle Geometry</Link>
+            <Link to="/matura/gcse/section24">Units, Measuring and Estimating</Link>
+            <Link to="/matura/gcse/section25">Compound Measures</Link>
+            <Link to="/matura/gcse/section26">Constructions</Link>
+            <Link to="/matura/gcse/section27">Pythagoras and Trigonometry</Link>
+            <Link to="/matura/gcse/section28">Vectors</Link>
+            <Link to="/matura/gcse/section29">Perimeter and Area</Link>
+            <Link to="/matura/gcse/section30">3D Shapes</Link>
+            <Link to="/matura/gcse/section31">Transformations</Link>
+            <Link to="/matura/gcse/section32">Congruence and Similarity</Link>
+            <Link to="/matura/gcse/section33">Collecting Data</Link>
+            <Link to="/matura/gcse/section34">Averages and Range</Link>
+            <Link to="/matura/gcse/section35">Displaying Data</Link>
+            <Link to="/matura/gcse/section36">Probability</Link>
             </MainGuz>
         );
         case "cp": return (

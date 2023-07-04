@@ -7,9 +7,10 @@ import Extra from '../../data/extra';
 
 const WievTaskKsiazki = ({ data, model }) => {
     const [tasks, settasks] = useState([]);
-
+    const [login, setlogin] = useState(null);
     const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, buttonWrapper, hidden, } = styles;
     const numberOfTask = 25;
+
     console.log(data.length);
     console.log(model);
     let numberOfPage = Math.ceil(data.length / numberOfTask);
@@ -66,13 +67,14 @@ const WievTaskKsiazki = ({ data, model }) => {
         // console.log(newTask);
         settasks(newTask);
         // console.log(newTask[0].canvas);
-        for (let i = 0; i < newTask.length; i++) {
-            if (newTask[i].canvas.length !== 0) {
-                // console.log(newTask[i].canvas.length)
+        // for (let i = 0; i < newTask.length; i++) {
+        //     if (newTask[i].canvas.length !== 0) {
+        //         // console.log(newTask[i].canvas.length)
 
-            }
-        }
+        //     }
+        // }
     }
+
     const showAnswer = (e) => {
         console.log(e.target);
         let showDiv = e.target.previousElementSibling;
@@ -146,7 +148,9 @@ const WievTaskKsiazki = ({ data, model }) => {
                     <div className={hidden}>
                         {work.answer.length > 0 ? (work.answer.map(punkty => (<p><MathJax inline>{punkty}</MathJax></p>))) : (<p>Rozwiązanie w przygotowaniu</p>)}
                     </div>
-                    <button onClick={showAnswer}>Odpowiedź</button><button className={hidden} onClick={hideAnswer}>Ukryj rozwiązanie</button>
+                    
+                        {login !== null && (<div><button onClick={showAnswer}>Odpowiedź</button><button className={hidden} onClick={hideAnswer}>Ukryj rozwiązanie</button></div>)}
+                    
                 </li>
             ))}
         </ol>

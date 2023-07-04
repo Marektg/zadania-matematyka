@@ -66,7 +66,43 @@ import GeometriaAnalityczna from './pages/matura/kielbasa/geometriaAnalityczna'
 import TerazMaturaRoz from './pages/matura/terazMaturaRoz/terazMaturaRoz';
 
 import { Contact } from './components/contact/contact';
-
+import Gcse from './pages/matura/gcse/gcse';
+import Section1 from './pages/matura/gcse/section1';
+import Section2 from './pages/matura/gcse/section2';
+import Section3 from './pages/matura/gcse/section3';
+import Section4 from './pages/matura/gcse/section4';
+import Section5 from './pages/matura/gcse/section5';
+import Section6 from './pages/matura/gcse/section6';
+import Section7 from './pages/matura/gcse/section7';
+import Section8 from './pages/matura/gcse/section8';
+import Section9 from './pages/matura/gcse/section9';
+import Section10 from './pages/matura/gcse/section10';
+import Section11 from './pages/matura/gcse/section11';
+import Section12 from './pages/matura/gcse/section12';
+import Section13 from './pages/matura/gcse/section13';
+import Section14 from './pages/matura/gcse/section14';
+import Section15 from './pages/matura/gcse/section15';
+import Section16 from './pages/matura/gcse/section16';
+import Section17 from './pages/matura/gcse/section17';
+import Section18 from './pages/matura/gcse/section18';
+import Section19 from './pages/matura/gcse/section19';
+import Section20 from './pages/matura/gcse/section20';
+import Section21 from './pages/matura/gcse/section21';
+import Section22 from './pages/matura/gcse/section22';
+import Section23 from './pages/matura/gcse/section23';
+import Section24 from './pages/matura/gcse/section24';
+import Section25 from './pages/matura/gcse/section25';
+import Section26 from './pages/matura/gcse/section26';
+import Section27 from './pages/matura/gcse/section27';
+import Section28 from './pages/matura/gcse/section28';
+import Section29 from './pages/matura/gcse/section29';
+import Section30 from './pages/matura/gcse/section30';
+import Section31 from './pages/matura/gcse/section31';
+import Section32 from './pages/matura/gcse/section32';
+import Section33 from './pages/matura/gcse/section33';
+import Section34 from './pages/matura/gcse/section34';
+import Section35 from './pages/matura/gcse/section35';
+import Section36 from './pages/matura/gcse/section36';
 
 const config = {
   loader: { load: ["[tex]/html"] },
@@ -118,8 +154,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='matura/zestawy/podstawa' element={<PoziomPodstawowy />} />
           <Route path='matura/zestawy/rozszerzenie' element={<PoziomRozszerzony />} />
           <Route path='matura/powtorzenie' element={<Powtorzenie />} />
-          
-          
+
+
           <Route path='matura/kielbasa' element={<Kielbasa />} />
           <Route path='matura/kielbasa/algebra' element={<Algebra />} />
           <Route path='matura/kielbasa/liczbyRzeczywiste' element={<LiczbyRzeczywiste />} />
@@ -134,8 +170,47 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='matura/kielbasa/ciagi' element={<Ciagi />} />
           <Route path='matura/kielbasa/planimetria' element={<Planimetria />} />
           <Route path='matura/kielbasa/geometriaAnalityczna' element={<GeometriaAnalityczna />} />
-          
+
           <Route path='matura/terazMaturaRoz' element={<TerazMaturaRoz />} />
+
+          <Route path='matura/gcse' element={<Gcse />} />
+          <Route path='matura/gcse/section1' element={<Section1 />} />
+          <Route path='matura/gcse/section2' element={<Section2 />} />
+          <Route path='matura/gcse/section3' element={<Section3 />} />
+          <Route path='matura/gcse/section4' element={<Section4 />} />
+          <Route path='matura/gcse/section5' element={<Section5 />} />
+          <Route path='matura/gcse/section6' element={<Section6 />} />
+          <Route path='matura/gcse/section7' element={<Section7 />} />
+          <Route path='matura/gcse/section8' element={<Section8 />} />
+          <Route path='matura/gcse/section9' element={<Section9 />} />
+          <Route path='matura/gcse/section10' element={<Section10 />} />
+          <Route path='matura/gcse/section11' element={<Section11 />} />
+          <Route path='matura/gcse/section12' element={<Section12 />} />
+          <Route path='matura/gcse/section13' element={<Section13 />} />
+          <Route path='matura/gcse/section14' element={<Section14 />} />
+          <Route path='matura/gcse/section15' element={<Section15 />} />
+          <Route path='matura/gcse/section16' element={<Section16 />} />
+          <Route path='matura/gcse/section17' element={<Section17 />} />
+          <Route path='matura/gcse/section18' element={<Section18 />} />
+          <Route path='matura/gcse/section19' element={<Section19 />} />
+          <Route path='matura/gcse/section20' element={<Section20 />} />
+          <Route path='matura/gcse/section21' element={<Section21 />} />
+          <Route path='matura/gcse/section22' element={<Section22 />} />
+          <Route path='matura/gcse/section23' element={<Section23 />} />
+          <Route path='matura/gcse/section24' element={<Section24 />} />
+          <Route path='matura/gcse/section25' element={<Section25 />} />
+          <Route path='matura/gcse/section26' element={<Section26 />} />
+          <Route path='matura/gcse/section27' element={<Section27 />} />
+          <Route path='matura/gcse/section28' element={<Section28 />} />
+          <Route path='matura/gcse/section29' element={<Section29 />} />
+          <Route path='matura/gcse/section30' element={<Section30 />} />
+          <Route path='matura/gcse/section31' element={<Section31 />} />
+          <Route path='matura/gcse/section32' element={<Section32 />} />
+          <Route path='matura/gcse/section33' element={<Section33 />} />
+          <Route path='matura/gcse/section34' element={<Section34 />} />
+          <Route path='matura/gcse/section35' element={<Section35 />} />
+          <Route path='matura/gcse/section36' element={<Section36 />} />
+
 
           {/*<Route path='studia' element={<Studia />} />*/}
           <Route path='contact' element={<Contact />} />
