@@ -8,7 +8,7 @@ import Extra from '../../data/extra';
 const WievTaskKsiazki = ({ data, model }) => {
     const [tasks, settasks] = useState([]);
     // const [login, setlogin] = useState(null);
-    const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, buttonWrapper, hidden, } = styles;
+    const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, buttonWrapper, hidden, twierdzenie, } = styles;
     const numberOfTask = 25;
 
     console.log(data.length);
@@ -102,7 +102,9 @@ const WievTaskKsiazki = ({ data, model }) => {
         </div>
         <ol className={powt}>
             {tasks.map(work => (
-                <li key={work.id}><MathJax inline>{
+                <li key={work.id}>
+                    {work.twierdzenie && (<MathJax inline><p className={twierdzenie}>{work.twierdzenie}</p></MathJax>)}
+                    <MathJax inline>{
                     <p className={tresc}><a href='#top'>⇑</a>{work.tresc}</p>}</MathJax>
                     {work.ramka && (<div className={well}><MathJax inline>{work.ramka}</MathJax></div>)}
                     {work.extra && (<MathJax inline><Extra id={work.extra} /></MathJax>)}
