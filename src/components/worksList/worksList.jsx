@@ -11,6 +11,7 @@ import kielbasa from '../../data/matura/kielbasa';
 import WievTaskKsiazki from './wievTaskKsiazki';
 import powtorka from '../../data/matura/powtorka';
 import gcsedata from '../../data/matura/gcse';
+import terazMaturaRoz from '../../data/matura/terazMaturaRoz'
 
 const WorksList = ({ model, dzial, typ }) => {
     // console.log(model);
@@ -48,7 +49,15 @@ const WorksList = ({ model, dzial, typ }) => {
         data = zadania;
         return (<WievTaskKsiazki data={data} model={model} />);
     };
-
+    let dtmr = terazMaturaRoz.length;
+    const selectTaskTMR = (typ, model) => {
+        for (let i = 0; i < dtmr; i++) {
+            if (terazMaturaRoz[i].dzial === typ)
+                zadania.push(terazMaturaRoz[i])
+        };
+        data = zadania;
+        return (<WievTaskKsiazki data={data} model={model} />);
+    };
     let gc = gcsedata.length;
     const selectTaskGCSE = (typ, model) => {
         for (let i = 0; i < gc; i++) {
@@ -739,7 +748,26 @@ const WorksList = ({ model, dzial, typ }) => {
 
 
                 default: return (<div></div>);
-            }
+            };
+        
+        case "cktmr":
+            switch (typ) {
+                case "1": return selectTaskTMR(typ, model);
+                case "2": return selectTaskTMR(typ, model);
+                case "3": return selectTaskTMR(typ, model);
+                case "4": return selectTaskTMR(typ, model);
+                case "5": return selectTaskTMR(typ, model);
+                case "6": return selectTaskTMR(typ, model);
+                case "7": return selectTaskTMR(typ, model);
+                case "8": return selectTaskTMR(typ, model);
+                case "9": return selectTaskTMR(typ, model);
+                case "10": return selectTaskTMR(typ, model);
+                case "11": return selectTaskTMR(typ, model);
+                case "12": return selectTaskTMR(typ, model);
+                
+                default: return (<div></div>)
+            };
+
         case "cgcse":
             switch (typ) {
                 case "1": return selectTaskGCSE(typ, model);

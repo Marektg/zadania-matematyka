@@ -64,6 +64,7 @@ import Planimetria from './pages/matura/kielbasa/planimetria'
 import GeometriaAnalityczna from './pages/matura/kielbasa/geometriaAnalityczna'
 
 import TerazMaturaRoz from './pages/matura/terazMaturaRoz/terazMaturaRoz';
+import LiczbyTMR from './pages/matura/terazMaturaRoz/liczby';
 
 import { Contact } from './components/contact/contact';
 import Gcse from './pages/matura/gcse/gcse';
@@ -172,6 +173,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='matura/kielbasa/geometriaAnalityczna' element={<GeometriaAnalityczna />} />
 
           <Route path='matura/terazMaturaRoz' element={<TerazMaturaRoz />} />
+          <Route path='matura/terazMaturaRoz/liczby' element={<LiczbyTMR />} />
 
           <Route path='matura/gcse' element={<Gcse />} />
           <Route path='matura/gcse/section1' element={<Section1 />} />
