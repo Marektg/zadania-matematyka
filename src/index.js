@@ -7,7 +7,7 @@ import { MathJaxContext } from 'better-react-mathjax';
 // import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 // import Layout from 'components/layout/layout';
 import HomePage from './pages/homePage/homePage';
-// import Podstawowka from './pages/podstawowka/podstawowka';
+import Podstawowka from './pages/podstawowka/podstawowka';
 
 
 import Srednia from './pages/srednia/srednia';
@@ -126,7 +126,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<HomePage />} />
-          {/* <Route path='podstawowka' element={<Podstawowka />} />*/}
+          <Route path='podstawowka' element={<Podstawowka />} />
           <Route path='srednia' element={<Srednia />} />
           <Route path='srednia/lrzeczywiste' element={<Lrzeczywiste />} />
           <Route path='srednia/wyrazeniaAlgebraiczne' element={<Wyrazenia />} />
