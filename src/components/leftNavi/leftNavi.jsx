@@ -12,9 +12,9 @@ const LeftNavi = ({ model}) => {
         <h3>Szkoła podstawowa</h3>
         <NaviListGroup>
           <li id='l1'><StyledLink to="/podstawowka/lnaturalne">Liczby naturalne</StyledLink></li>
-          <li id='l2'><StyledLink to="/podstawowka/lcalkowite">Liczby całkowite</StyledLink></li>
-          <li id='l3'><StyledLink to="/podstawowka/NaviListGroupamki">Ułamki zwykłe i dziesiętne</StyledLink></li>
-          <li id='l4'><StyledLink to="/podstawowka/lniewymierne">Liczby niewymierne</StyledLink></li>
+          <li id='l2'><StyledLink to="/podstawowka/ulamkidziesietne">Ułamki dziesiętne</StyledLink></li>
+          <li id='l3'><StyledLink to="/podstawowka/podzielnosc">Podzielność liczb</StyledLink></li>
+          <li id='l4'><StyledLink to="/podstawowka/ulamkizwykle">Ułamki zwykłe</StyledLink></li>
           <li id='l5'><StyledLink to="/podstawowka/lrzeczywiste">Liczby rzeczywiste</StyledLink></li>
           <li id='l6'><StyledLink to="/podstawowka/procenty">Procenty</StyledLink></li>
           <li id='l7'><StyledLink to="/podstawowka/potegi">Potęgi</StyledLink></li>

@@ -11,7 +11,9 @@ import kielbasa from '../../data/matura/kielbasa';
 import WievTaskKsiazki from './wievTaskKsiazki';
 import powtorka from '../../data/matura/powtorka';
 import gcsedata from '../../data/matura/gcse';
-import terazMaturaRoz from '../../data/matura/terazMaturaRoz'
+import terazMaturaRoz from '../../data/matura/terazMaturaRoz';
+import spdata from '../../data/podstawowa/podstawowa';
+import WievTaskSP from './wievTaskSP';
 
 const WorksList = ({ model, dzial, typ }) => {
     // console.log(model);
@@ -67,8 +69,88 @@ const WorksList = ({ model, dzial, typ }) => {
         data = zadania;
         return (<WievTaskKsiazki data={data} model={model} />);
     
-    }
+    };
+    
+    let dsp = spdata.length;
+    console.log(dsp);
+    const selectTaskSP = (dzial, model) => {
+        for (let i = 0; i < dsp; i++) {
+            if (spdata[i].dzial === dzial && spdata[i].poddzial === model) {
+                zadania.push(spdata[i])
+            }
+        }
+        data = zadania;
+        return (<WievTaskSP data={data} model={model} />);
+    };
     switch (dzial) {
+        case "sp1":
+            switch (model) {
+                case "1":
+                    return selectTaskSP(dzial, model);
+                case "2":
+                    return selectTaskSP(dzial, model);
+                case "3":
+                    return selectTaskSP(dzial, model);
+                case "4":
+                    return selectTaskSP(dzial, model);
+                case "5":
+                    return selectTaskSP(dzial, model);
+                case "6":
+                    return selectTaskSP(dzial, model);
+                case "7":
+                    return selectTaskSP(dzial, model);
+                case "8":
+                    return selectTaskSP(dzial, model);
+                case "9":
+                    return selectTaskSP(dzial, model);
+                case "10":
+                    return selectTaskSP(dzial, model);
+                case "11":
+                    return selectTaskSP(dzial, model);
+                case "12":
+                    return selectTaskSP(dzial, model);
+                case "13":
+                    return selectTaskSP(dzial, model);
+                case "14":
+                    return selectTaskSP(dzial, model);
+                case "15":
+                    return selectTaskSP(dzial, model);
+
+
+
+                default: return (<div></div>);
+
+            };
+        case "sp2":
+            switch (model) {
+                case "1":
+                    return selectTaskSP(dzial, model);
+                case "2":
+                    return selectTaskSP(dzial, model);
+                case "3":
+                    return selectTaskSP(dzial, model);
+                case "4":
+                    return selectTaskSP(dzial, model);
+                case "5":
+                    return selectTaskSP(dzial, model);
+                case "6":
+                    return selectTaskSP(dzial, model);
+                case "7":
+                    return selectTaskSP(dzial, model);
+                default: return (<div></div>);
+
+            };
+        case "sp3":
+            switch (model) {
+                case "1":
+                    return selectTaskSP(dzial, model);
+                case "2":
+                    return selectTaskSP(dzial, model);
+                case "3":
+                    return selectTaskSP(dzial, model);
+                default: return (<div></div>);
+
+            };
         case "1":
             switch (model) {
                 case "1":
@@ -110,6 +192,18 @@ const WorksList = ({ model, dzial, typ }) => {
                 case "8":
                     return selectTask(dzial, model);
                 case "9":
+                    return selectTask(dzial, model);
+                case "10":
+                    return selectTask(dzial, model);
+                case "11":
+                    return selectTask(dzial, model);
+                case "12":
+                    return selectTask(dzial, model);
+                case "13":
+                    return selectTask(dzial, model);
+                case "14":
+                    return selectTask(dzial, model);
+                case "15":
                     return selectTask(dzial, model);
 
 

@@ -12,9 +12,9 @@ const RightSide = ({ model }) => {
         case "a": return (
             <MainGuz>
                 <Link to="/podstawowka/lnaturalne">Liczby naturalne</Link>
-                <Link to="/podstawowka/lcalkowite">Liczby całkowite</Link>
-                <Link to="/podstawowka/ulamki">Ułamki zwykłe i dziesiętne</Link>
-                <Link to="/podstawowka/lniewymierne">Liczby niewymierne</Link>
+                <Link to="/podstawowka/ulamkidziesietne">Ułamki dziesiętne</Link>
+                <Link to="/podstawowka/podzielnosc">Podzielność liczb</Link>
+                <Link to="/podstawowka/ulamkizwykle">Ułamki zwykłe</Link>
                 <Link to="/podstawowka/lrzeczywiste">Liczby rzeczywiste</Link>
                 <Link to="/podstawowka/procenty">Procenty</Link>
                 <Link to="/podstawowka/potegi">Potęgi</Link>

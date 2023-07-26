@@ -11,8 +11,8 @@ const WievTaskKsiazki = ({ data, model }) => {
     const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, buttonWrapper, hidden, twierdzenie, } = styles;
     const numberOfTask = 25;
 
-    console.log(data.length);
-    console.log(model);
+    // console.log(data.length);
+    // console.log(model);
     let numberOfPage = Math.ceil(data.length / numberOfTask);
     // console.log(numberOfPage);
     let pages = [];

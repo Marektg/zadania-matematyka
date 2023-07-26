@@ -8,7 +8,8 @@ import { MathJaxContext } from 'better-react-mathjax';
 // import Layout from 'components/layout/layout';
 import HomePage from './pages/homePage/homePage';
 import Podstawowka from './pages/podstawowka/podstawowka';
-
+import LnaturalneSP from './pages/podstawowka/lnaturalne/lnaturalne';
+import UlamkiDziesietne from './pages/podstawowka/ulamkidziesietne/ulamkidziesietne';
 
 import Srednia from './pages/srednia/srednia';
 import Lrzeczywiste from './pages/srednia/lrzeczywiste/lrzeczywiste';
@@ -104,6 +105,8 @@ import Section33 from './pages/matura/gcse/section33';
 import Section34 from './pages/matura/gcse/section34';
 import Section35 from './pages/matura/gcse/section35';
 import Section36 from './pages/matura/gcse/section36';
+import Podzielnosc from './pages/podstawowka/podzielnosc/podzielnosc';
+import UlamkiZwykle from './pages/podstawowka/ulamkizwykle/ulamkizwykle';
 
 const config = {
   loader: { load: ["[tex]/html"] },
@@ -127,6 +130,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='podstawowka' element={<Podstawowka />} />
+          <Route path='podstawowka/lnaturalne' element={<LnaturalneSP />} />
+          <Route path='podstawowka/ulamkidziesietne' element={<UlamkiDziesietne />} />
+          <Route path='podstawowka/podzielnosc' element={<Podzielnosc />} />
+          <Route path='podstawowka/ulamkizwykle' element={<UlamkiZwykle />} />
+          
+
+
           <Route path='srednia' element={<Srednia />} />
           <Route path='srednia/lrzeczywiste' element={<Lrzeczywiste />} />
           <Route path='srednia/wyrazeniaAlgebraiczne' element={<Wyrazenia />} />
