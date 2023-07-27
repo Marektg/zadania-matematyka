@@ -11,19 +11,15 @@ const RightSide = ({ model }) => {
     switch (model) {
         case "a": return (
             <MainGuz>
-                <Link to="/podstawowka/lnaturalne">Liczby naturalne</Link>
-                <Link to="/podstawowka/lcalkowite">Liczby całkowite</Link>
+                <Link to="/podstawowka/lnaturalne">Liczby naturalne  w dziesiątkowym układzie pozycyjnym</Link>
+                <Link to="/podstawowka/dzialanianalnaturalnych">Działania na liczbach naturalnych</Link>
+                <Link to="/podstawowka/liczbycalkowite">Liczby całkowite</Link>
                 <Link to="/podstawowka/ulamki">Ułamki zwykłe i dziesiętne</Link>
-                <Link to="/podstawowka/lniewymierne">Liczby niewymierne</Link>
-                <Link to="/podstawowka/lrzeczywiste">Liczby rzeczywiste</Link>
-                <Link to="/podstawowka/procenty">Procenty</Link>
-                <Link to="/podstawowka/potegi">Potęgi</Link>
-                <Link to="/podstawowka/wyrazenia">Wyrażenia algebraiczne</Link>
-                <Link to="/podstawowka/rownania">Równania i nierówności</Link>
-                <Link to="/podstawowka/uklady">Układy równań</Link>
-                <Link to="/podstawowka/proste">Proste i odcinki</Link>
+                <Link to="/podstawowka/dzialanianaulamkach">Działania na ułamkach zwykłych i dziesiętnych</Link>
+                <Link to="/podstawowka/algebra">Algebra</Link>
+                <Link to="/podstawowka/prosteiodcinki">Proste i odcinki</Link>
                 <Link to="/podstawowka/katy">Kąty</Link>
-                <Link to="/podstawowka/wielokaty">Wielokąty, koła i okręgi</Link>
+                <Link to="/podstawowka/wielokaty">Wielokąty</Link>
                 <Link to="/podstawowka/uklwspol">Układ współrzędnych</Link>
                 <Link to="/podstawowka/bryly">Bryły</Link>
                 <Link to="/podstawowka/kombinatoryka">Kombinatoryka i rachunek prawdopodobieństwa</Link>
@@ -173,7 +169,7 @@ const RightSide = ({ model }) => {
             </MainGuz>
         );
         case "d": return (
-            <div>tresde</div>
+            <div>Page is under construct</div>
         );
         default: return (
             <div> Page is under construct</div>

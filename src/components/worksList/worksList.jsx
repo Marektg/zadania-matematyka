@@ -11,6 +11,9 @@ import kielbasa from '../../data/matura/kielbasa';
 import WievTaskKsiazki from './wievTaskKsiazki';
 import powtorka from '../../data/matura/powtorka';
 import gcsedata from '../../data/matura/gcse';
+import terazMaturaRoz from '../../data/matura/terazMaturaRoz';
+import spdata from '../../data/podstawowa/podstawowa';
+import WievTaskSP from './wievTaskSP';
 
 const WorksList = ({ model, dzial, typ }) => {
     // console.log(model);
@@ -48,7 +51,15 @@ const WorksList = ({ model, dzial, typ }) => {
         data = zadania;
         return (<WievTaskKsiazki data={data} model={model} />);
     };
-
+    let dtmr = terazMaturaRoz.length;
+    const selectTaskTMR = (typ, model) => {
+        for (let i = 0; i < dtmr; i++) {
+            if (terazMaturaRoz[i].dzial === typ)
+                zadania.push(terazMaturaRoz[i])
+        };
+        data = zadania;
+        return (<WievTaskKsiazki data={data} model={model} />);
+    };
     let gc = gcsedata.length;
     const selectTaskGCSE = (typ, model) => {
         for (let i = 0; i < gc; i++) {
@@ -58,8 +69,150 @@ const WorksList = ({ model, dzial, typ }) => {
         data = zadania;
         return (<WievTaskKsiazki data={data} model={model} />);
     
-    }
+    };
+    
+    let dsp = spdata.length;
+    console.log(dsp);
+    const selectTaskSP = (dzial, model) => {
+        for (let i = 0; i < dsp; i++) {
+            if (spdata[i].dzial === dzial && spdata[i].poddzial === model) {
+                zadania.push(spdata[i])
+            }
+        }
+        data = zadania;
+        return (<WievTaskSP data={data} model={model} />);
+    };
     switch (dzial) {
+        case "sp1":
+            switch (model) {
+                case "1":
+                    return selectTaskSP(dzial, model);
+                case "2":
+                    return selectTaskSP(dzial, model);
+                case "3":
+                    return selectTaskSP(dzial, model);
+                case "4":
+                    return selectTaskSP(dzial, model);
+               default: return (<div></div>);
+
+            };
+        case "sp2":
+            switch (model) {
+                case "1":
+                    return selectTaskSP(dzial, model);
+                case "2":
+                    return selectTaskSP(dzial, model);
+                case "3":
+                    return selectTaskSP(dzial, model);
+                case "4":
+                    return selectTaskSP(dzial, model);
+                case "5":
+                    return selectTaskSP(dzial, model);
+                case "6":
+                    return selectTaskSP(dzial, model);
+                case "7":
+                    return selectTaskSP(dzial, model);
+                case "8":
+                    return selectTaskSP(dzial, model);
+                case "9":
+                    return selectTaskSP(dzial, model);
+                case "10":
+                    return selectTaskSP(dzial, model);
+                default: return (<div></div>);
+
+            };
+        case "sp3":
+            switch (model) {
+                case "1":
+                    return selectTaskSP(dzial, model);
+                case "2":
+                    return selectTaskSP(dzial, model);
+                case "3":
+                    return selectTaskSP(dzial, model);
+                default: return (<div></div>);
+
+            };
+        case "sp4":
+            switch (model) {
+                case "1":
+                    return selectTaskSP(dzial, model);
+                case "2":
+                    return selectTaskSP(dzial, model);
+                case "3":
+                    return selectTaskSP(dzial, model);
+                case "4":
+                    return selectTaskSP(dzial, model);
+                case "5":
+                    return selectTaskSP(dzial, model);
+                default: return (<div></div>);
+
+            };
+        case "sp5":
+            switch (model) {
+                case "1":
+                    return selectTaskSP(dzial, model);
+                case "2":
+                    return selectTaskSP(dzial, model);
+                case "3":
+                    return selectTaskSP(dzial, model);
+                case "4":
+                    return selectTaskSP(dzial, model);
+                case "5":
+                    return selectTaskSP(dzial, model);
+                case "6":
+                    return selectTaskSP(dzial, model);
+                case "7":
+                    return selectTaskSP(dzial, model);
+                case "8":
+                    return selectTaskSP(dzial, model);
+                case "9":
+                    return selectTaskSP(dzial, model);
+                default: return (<div></div>);
+
+            };
+        case "sp6":
+            switch (model) {
+                case "1":
+                    return selectTaskSP(dzial, model);
+                case "2":
+                    return selectTaskSP(dzial, model);
+                case "3":
+                    return selectTaskSP(dzial, model);
+                case "4":
+                    return selectTaskSP(dzial, model);
+                case "5":
+                    return selectTaskSP(dzial, model);
+                case "6":
+                    return selectTaskSP(dzial, model);
+                case "7":
+                    return selectTaskSP(dzial, model);
+                default: return (<div></div>);
+
+            };
+        case "sp7":
+            switch (model) {
+                case "1":
+                    return selectTaskSP(dzial, model);
+                case "2":
+                    return selectTaskSP(dzial, model);
+                case "3":
+                    return selectTaskSP(dzial, model);
+                case "4":
+                    return selectTaskSP(dzial, model);
+                default: return (<div></div>);
+                        
+                    };
+        case "sp8":
+            switch (model) {
+                case "1":
+                    return selectTaskSP(dzial, model);
+                case "2":
+                    return selectTaskSP(dzial, model);
+                case "3":
+                    return selectTaskSP(dzial, model);
+                default: return (<div></div>);
+
+            };
         case "1":
             switch (model) {
                 case "1":
@@ -101,6 +254,18 @@ const WorksList = ({ model, dzial, typ }) => {
                 case "8":
                     return selectTask(dzial, model);
                 case "9":
+                    return selectTask(dzial, model);
+                case "10":
+                    return selectTask(dzial, model);
+                case "11":
+                    return selectTask(dzial, model);
+                case "12":
+                    return selectTask(dzial, model);
+                case "13":
+                    return selectTask(dzial, model);
+                case "14":
+                    return selectTask(dzial, model);
+                case "15":
                     return selectTask(dzial, model);
 
 
@@ -739,7 +904,26 @@ const WorksList = ({ model, dzial, typ }) => {
 
 
                 default: return (<div></div>);
-            }
+            };
+        
+        case "cktmr":
+            switch (typ) {
+                case "1": return selectTaskTMR(typ, model);
+                case "2": return selectTaskTMR(typ, model);
+                case "3": return selectTaskTMR(typ, model);
+                case "4": return selectTaskTMR(typ, model);
+                case "5": return selectTaskTMR(typ, model);
+                case "6": return selectTaskTMR(typ, model);
+                case "7": return selectTaskTMR(typ, model);
+                case "8": return selectTaskTMR(typ, model);
+                case "9": return selectTaskTMR(typ, model);
+                case "10": return selectTaskTMR(typ, model);
+                case "11": return selectTaskTMR(typ, model);
+                case "12": return selectTaskTMR(typ, model);
+                
+                default: return (<div></div>)
+            };
+
         case "cgcse":
             switch (typ) {
                 case "1": return selectTaskGCSE(typ, model);

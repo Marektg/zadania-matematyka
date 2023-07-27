@@ -7,8 +7,13 @@ import { MathJaxContext } from 'better-react-mathjax';
 // import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 // import Layout from 'components/layout/layout';
 import HomePage from './pages/homePage/homePage';
-// import Podstawowka from './pages/podstawowka/podstawowka';
-
+import Podstawowka from './pages/podstawowka/podstawowka';
+import LnaturalneSP from './pages/podstawowka/lnaturalne/lnaturalne';
+import Dzialania from './pages/podstawowka/dzialanianalnaturalnych/dzialanianalnaturalnych';
+import Lcalkowite from './pages/podstawowka/liczbycalkowite/liczbycalkowite';
+import Ulamki from './pages/podstawowka/ulamki/ulamki';
+import DzialaniaNaUlamkach from './pages/podstawowka/dzialanianaulamkach/dzialanianaulamkach';
+import AlgebraSP from './pages/podstawowka/algebra/algebra';
 
 import Srednia from './pages/srednia/srednia';
 import Lrzeczywiste from './pages/srednia/lrzeczywiste/lrzeczywiste';
@@ -64,6 +69,7 @@ import Planimetria from './pages/matura/kielbasa/planimetria'
 import GeometriaAnalityczna from './pages/matura/kielbasa/geometriaAnalityczna'
 
 import TerazMaturaRoz from './pages/matura/terazMaturaRoz/terazMaturaRoz';
+import LiczbyTMR from './pages/matura/terazMaturaRoz/liczby';
 
 import { Contact } from './components/contact/contact';
 import Gcse from './pages/matura/gcse/gcse';
@@ -103,6 +109,14 @@ import Section33 from './pages/matura/gcse/section33';
 import Section34 from './pages/matura/gcse/section34';
 import Section35 from './pages/matura/gcse/section35';
 import Section36 from './pages/matura/gcse/section36';
+import ProsteIOdcinki from './pages/podstawowka/prosteiodcinki/prosteiodcinki';
+import KatySP from './pages/podstawowka/katy/katy';
+import WielokatySP from './pages/podstawowka/wielokaty/wielokaty';
+import UkladSP from './pages/podstawowka/uklwspol/uklwspol';
+import BryłySP from './pages/podstawowka/bryly/bryly';
+import KombinatorykaSP from './pages/podstawowka/kombinatoryka/kombinatoryka';
+import StatystykaSP from './pages/podstawowka/statystyka/statystyka';
+import Studia from './pages/studia/studia';
 
 const config = {
   loader: { load: ["[tex]/html"] },
@@ -125,7 +139,23 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<HomePage />} />
-          {/* <Route path='podstawowka' element={<Podstawowka />} />*/}
+          <Route path='podstawowka' element={<Podstawowka />} />
+          <Route path='podstawowka/lnaturalne' element={<LnaturalneSP />} />
+          <Route path='podstawowka/dzialanianalnaturalnych' element={<Dzialania />} />
+          <Route path='podstawowka/liczbycalkowite' element={<Lcalkowite />} />
+          <Route path='podstawowka/ulamki' element={<Ulamki />} />
+          <Route path='podstawowka/dzialanianaulamkach' element={<DzialaniaNaUlamkach />} />
+          <Route path='podstawowka/algebra' element={<AlgebraSP />} />
+          <Route path='podstawowka/prosteiodcinki' element={<ProsteIOdcinki />} />
+          <Route path='podstawowka/katy' element={<KatySP />} />
+          <Route path='podstawowka/wielokaty' element={<WielokatySP />} />
+          <Route path='podstawowka/uklwspol' element={<UkladSP/>} />
+          <Route path='podstawowka/bryly' element={<BryłySP/>} />
+          <Route path='podstawowka/kombinatoryka' element={<KombinatorykaSP/>} />
+          <Route path='podstawowka/statystyka' element={<StatystykaSP/>} />
+          
+
+
           <Route path='srednia' element={<Srednia />} />
           <Route path='srednia/lrzeczywiste' element={<Lrzeczywiste />} />
           <Route path='srednia/wyrazeniaAlgebraiczne' element={<Wyrazenia />} />
@@ -172,6 +202,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='matura/kielbasa/geometriaAnalityczna' element={<GeometriaAnalityczna />} />
 
           <Route path='matura/terazMaturaRoz' element={<TerazMaturaRoz />} />
+          <Route path='matura/terazMaturaRoz/liczby' element={<LiczbyTMR />} />
 
           <Route path='matura/gcse' element={<Gcse />} />
           <Route path='matura/gcse/section1' element={<Section1 />} />
@@ -212,7 +243,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='matura/gcse/section36' element={<Section36 />} />
 
 
-          {/*<Route path='studia' element={<Studia />} />*/}
+          <Route path='studia' element={<Studia />} />
           <Route path='contact' element={<Contact />} />
           <Route path='*' element={<h1>Page not found</h1>} />
         </Routes>

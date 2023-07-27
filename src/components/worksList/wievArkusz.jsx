@@ -9,8 +9,8 @@ const WievArkusz = ({ data, model }) => {
     const [atytul, setTytul] = useState(null);
     const { title, powto, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, buttonWrapper, numerZad } = styles;
     const numberOfTask = 1;
-    console.log(data.length);
-    console.log(model);
+    // console.log(data.length);
+    // console.log(model);
     let numberOfPage = Math.ceil(data.length / numberOfTask);
     // console.log(numberOfPage);
     let pages = [];

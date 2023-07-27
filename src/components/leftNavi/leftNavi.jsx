@@ -11,23 +11,19 @@ const LeftNavi = ({ model}) => {
       <Left>
         <h3>Szkoła podstawowa</h3>
         <NaviListGroup>
-          <li id='l1'><StyledLink to="/podstawowka/lnaturalne">Liczby naturalne</StyledLink></li>
-          <li id='l2'><StyledLink to="/podstawowka/lcalkowite">Liczby całkowite</StyledLink></li>
-          <li id='l3'><StyledLink to="/podstawowka/NaviListGroupamki">Ułamki zwykłe i dziesiętne</StyledLink></li>
-          <li id='l4'><StyledLink to="/podstawowka/lniewymierne">Liczby niewymierne</StyledLink></li>
-          <li id='l5'><StyledLink to="/podstawowka/lrzeczywiste">Liczby rzeczywiste</StyledLink></li>
-          <li id='l6'><StyledLink to="/podstawowka/procenty">Procenty</StyledLink></li>
-          <li id='l7'><StyledLink to="/podstawowka/potegi">Potęgi</StyledLink></li>
-          <li id='l8'><StyledLink to="/podstawowka/wyrazenia">Wyrażenia algebraiczne</StyledLink></li>
-          <li id='l9'><StyledLink to="/podstawowka/rownania">Równania i nierówności</StyledLink></li>
-          <li id='l10'><StyledLink to="/podstawowka/uklady">Układy równań</StyledLink></li>
-          <li id='l11'><StyledLink to="/podstawowka/proste">Proste i odcinki</StyledLink></li>
-          <li id='l12'><StyledLink to="/podstawowka/katy">Kąty</StyledLink></li>
-          <li id='l13'><StyledLink to="/podstawowka/wielokaty">Wielokąty, koła i okręgi</StyledLink></li>
-          <li id='l14'><StyledLink to="/podstawowka/uklwspol">Układ współrzędnych</StyledLink></li>
-          <li id='l15'><StyledLink to="/podstawowka/bryly">Bryły</StyledLink></li>
-          <li id='l16'><StyledLink to="/podstawowka/kombinatoryka">Kombinatoryka i rachunek prawdopodobieństwa</StyledLink></li>
-          <li id='l17'><StyledLink to="/podstawowka/statystyka">Statystyka opisowa</StyledLink></li>
+          <li id='l1'><StyledLink to="/podstawowka/lnaturalne">Liczby naturalne w dziesiątkowym układzie pozycyjnym</StyledLink></li>
+          <li id='l2'><StyledLink to="/podstawowka/dzialanianalnaturalnych">Działania na liczbach naturalnych</StyledLink></li>
+          <li id='l3'><StyledLink to="/podstawowka/liczbycalkowite">Liczby całkowite</StyledLink></li>
+          <li id='l4'><StyledLink to="/podstawowka/ulamki">Ułamki zwykłe i dziesiętne</StyledLink></li>
+          <li id='l5'><StyledLink to="/podstawowka/dzialanianaulamkach">Działania na ułamkach zwykłych i dziesiętnych</StyledLink></li>
+          <li id='l6'><StyledLink to="/podstawowka/algebra">Algebra</StyledLink></li>
+          <li id='l7'><StyledLink to="/podstawowka/prosteiodcinki">Proste i odcinki</StyledLink></li>
+          <li id='l8'><StyledLink to="/podstawowka/katy">Kąty</StyledLink></li>
+          <li id='l9'><StyledLink to="/podstawowka/wielokaty">Wielokąty</StyledLink></li>
+          <li id='l10'><StyledLink to="/podstawowka/uklwspol">Układ współrzędnych</StyledLink></li>
+          <li id='l11'><StyledLink to="/podstawowka/bryly">Bryły</StyledLink></li>
+          <li id='l12'><StyledLink to="/podstawowka/kombinatoryka">Kombinatoryka i rachunek prawdopodobieństwa</StyledLink></li>
+          <li id='l13'><StyledLink to="/podstawowka/statystyka">Statystyka opisowa</StyledLink></li>
         </NaviListGroup>
       </Left>
     );
@@ -87,10 +83,7 @@ const LeftNavi = ({ model}) => {
     case "d": return (
       <Left>
         <h3>Studia</h3>
-        <NaviListGroup >
-          <li id='l1'><StyledLink to="/studia/analizaMatematyczna">Analiza matematyczna</StyledLink></li>
-          <li id='l2'><StyledLink to="/studia/ciagiIGranice">Ciągi i ich granice</StyledLink></li>
-        </NaviListGroup>
+       
       </Left>
     );
     default: return (
