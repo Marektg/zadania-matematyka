@@ -3,10 +3,10 @@ import { MainDiv, Basic, TaskList, Tytul, MainGuz, Guz, Rodzajzad } from '../../
 import TopNavi from '../../../components/topNavi/topNavi.jsx';
 import LeftNavi from '../../../components/leftNavi/leftNavi.jsx';
 import WorksList from '../../../components/worksList/worksList.jsx';
-// import { MathJax } from 'better-react-mathjax';
+import { MathJax } from 'better-react-mathjax';
 
 
-const UlamkiZwykle = () => {
+const DzialaniaNaUlamkach = () => {
     const [title, setTitle] = useState(null);
     const [currentTask, setCurrentTask] = useState(null);
 
@@ -38,24 +38,23 @@ const UlamkiZwykle = () => {
             <Basic>
                 <LeftNavi model="a" />
                 <TaskList>
-                    <Tytul>Ułamki zwykłe </Tytul>
+                    <Tytul>Działania na ułamkach zwykłych i dziesiętnych</Tytul>
                     <MainGuz data-poddzialy>
-                        <Guz id="1" onClick={renderTask}>Dodawanie liczb naturalnych</Guz>
-                        <Guz id="2" onClick={renderTask}>Odejmowanie liczb naturalnych</Guz>
-                        <Guz id="3" onClick={renderTask}>Dodawanie i odejmowanie liczb naturalnych</Guz>
-                        <Guz id="4" onClick={renderTask}>Mnożenie  liczb naturalnych</Guz>
-                        <Guz id="5" onClick={renderTask}>Dzielenie liczb naturalnych</Guz>
-                        <Guz id="6" onClick={renderTask}>Mnożenie i dzielenie liczb naturalnych</Guz>
-                        <Guz id="7" onClick={renderTask}>Obliczanie wartości wyrażeń arytmetycznych</Guz>
-                        <Guz id="8" onClick={renderTask}>Zapisywanie liczb naturalnych w dziesiątkowym systemie pozycyjnym</Guz>
-                        <Guz id="9" onClick={renderTask}>Pisanie liczb słowami. Czytanie liczb</Guz>
-                        <Guz id="10" onClick={renderTask}>Liczby naturalne na osi liczbowej</Guz>
+                        <Guz id="1" onClick={renderTask}>Działania na ułamnach zwykłych</Guz>
+                        <Guz id="2" onClick={renderTask}>Działania na ułamnach dziesiętnych</Guz>
+                        <Guz id="3" onClick={renderTask}>Ułamki dziesiętne o mianowniku <MathJax inline> {"\\(100\\)"}</MathJax> - procenty</Guz>
+                        <Guz id="4" onClick={renderTask}>Działania na ułamnach zwykłych i dziesiętnych</Guz>
+                        <Guz id="5" onClick={renderTask}>Liczby wymierne dodatnie i ujemne</Guz>
+                        <Guz id="6" onClick={renderTask}>Prędkość - droga - czas</Guz>
+                        <Guz id="7" onClick={renderTask}>Kolejność działań</Guz>
+                        <Guz id="8" onClick={renderTask}>Cztery działania na liczbach wymiernych</Guz>
+                        <Guz id="9" onClick={renderTask}>Ułamki okresowe</Guz>
 
 
                     </MainGuz>
                     <TaskList>
                         <Rodzajzad>{title}</Rodzajzad>
-                        <WorksList model={currentTask} dzial="sp4" />
+                        <WorksList model={currentTask} dzial="sp5" />
                     </TaskList>
                 </TaskList>
 
@@ -66,4 +65,4 @@ const UlamkiZwykle = () => {
     )
 }
 
-export default UlamkiZwykle
+export default DzialaniaNaUlamkach

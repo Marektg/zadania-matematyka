@@ -6,7 +6,7 @@ import WorksList from '../../../components/worksList/worksList.jsx';
 import { MathJax } from 'better-react-mathjax';
 
 
-const UlamkiDziesietne = () => {
+const Dzialania = () => {
     const [title, setTitle] = useState(null);
     const [currentTask, setCurrentTask] = useState(null);
 
@@ -38,16 +38,19 @@ const UlamkiDziesietne = () => {
             <Basic>
                 <LeftNavi model="a" />
                 <TaskList>
-                    <Tytul>Ułamki dziesiętne</Tytul>
+                    <Tytul>Działnia na liczbach naturalnych </Tytul>
                     <MainGuz data-poddzialy>
-                        <Guz id="1" onClick={renderTask}>Przedstawianie wyrażeń dwumianowanych za pomocą ułamków dziesiętnych</Guz>
-                        <Guz id="2" onClick={renderTask}>Przedstawianie ułamków dziesiętnych na osi liczbowej</Guz>
-                        <Guz id="3" onClick={renderTask}>Porównywanie ułamków dziesiętnych</Guz>
-                        <Guz id="4" onClick={renderTask}>Dodawanie ułamków dziesiętnych</Guz>
-                        <Guz id="5" onClick={renderTask}>Odejmowanie ułamków dziesiętnych</Guz>
-                        <Guz id="6" onClick={renderTask}>Dodawanie i odejmowanie ułamków dziesiętnych</Guz>
-                        <Guz id="7" onClick={renderTask}>Mnożenie i dzielenie ułamków dziesiętnych przez<MathJax inline> {"\\(10,\\ 100,\\ 1000\\)"}</MathJax></Guz>
-                        
+                        <Guz id="1" onClick={renderTask}>Obliczenia pamięciowe na liczbach naturalnych</Guz>
+                        <Guz id="2" onClick={renderTask}>Porównywanie różnicowe i ilorazowe</Guz>
+                        <Guz id="3" onClick={renderTask}>Potęga liczby naturalnej</Guz>
+                        <Guz id="4" onClick={renderTask}>Kolejność wykonywania działań</Guz>
+                        <Guz id="5" onClick={renderTask}>Szacowanie wyników</Guz>
+                        <Guz id="6" onClick={renderTask}>Podzielność liczb naturalnych przez <MathJax inline> {"\\(2,\\ 3,\\ 4,\\ 5,\\ 9,\\ 10,\\ 100\\)"}</MathJax></Guz>
+                        <Guz id="7" onClick={renderTask}>Miary czasu</Guz>
+                        <Guz id="8" onClick={renderTask}>Prędkość - droga - czas</Guz>
+                        <Guz id="9" onClick={renderTask}>Działania pisemne na liczbach naturalnych</Guz>
+                        <Guz id="10" onClick={renderTask}>Zaokrąglanie liczb</Guz>
+
 
                     </MainGuz>
                     <TaskList>
@@ -63,4 +66,4 @@ const UlamkiDziesietne = () => {
     )
 }
 
-export default UlamkiDziesietne
+export default Dzialania

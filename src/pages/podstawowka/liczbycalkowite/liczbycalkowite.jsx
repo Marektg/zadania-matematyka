@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
-import { MainDiv, Basic, TaskList, Tytul, MainGuz, Guz, Rodzajzad } from './../../srednia/srednia.styled';
+import { MainDiv, Basic, TaskList, Tytul, MainGuz, Guz, Rodzajzad } from '../../srednia/srednia.styled';
 import TopNavi from '../../../components/topNavi/topNavi.jsx';
 import LeftNavi from '../../../components/leftNavi/leftNavi.jsx';
 import WorksList from '../../../components/worksList/worksList.jsx';
+// import { MathJax } from 'better-react-mathjax';
 
-const LnaturalneSP = () => {
+
+const Lcalkowite = () => {
     const [title, setTitle] = useState(null);
     const [currentTask, setCurrentTask] = useState(null);
 
@@ -36,18 +38,17 @@ const LnaturalneSP = () => {
             <Basic>
                 <LeftNavi model="a" />
                 <TaskList>
-                    <Tytul>Liczby naturalne w dziesiątkowym układzie pozycyjnym</Tytul>
+                    <Tytul>Liczby całkowite </Tytul>
                     <MainGuz data-poddzialy>
-                    <Guz id="1" onClick={renderTask}>Pisanie liczb słowami. Czytanie liczb</Guz>
-                    <Guz id="2" onClick={renderTask}>Oś liczbowa</Guz>
-                    <Guz id="3" onClick={renderTask}>Porównywanie liczb naturalnych</Guz>
-                    <Guz id="4" onClick={renderTask}>Liczby rzymskie</Guz>
-                   
+                        <Guz id="1" onClick={renderTask}>Liczby ujemne</Guz>
+                        <Guz id="2" onClick={renderTask}>Dodawanie i odejmowanie liczb całkowitych</Guz>
+                        <Guz id="3" onClick={renderTask}>Liczby całkowite</Guz>
+                       
 
                     </MainGuz>
                     <TaskList>
                         <Rodzajzad>{title}</Rodzajzad>
-                        <WorksList model={currentTask} dzial="sp1" />
+                        <WorksList model={currentTask} dzial="sp3" />
                     </TaskList>
                 </TaskList>
 
@@ -58,4 +59,4 @@ const LnaturalneSP = () => {
     )
 }
 
-export default LnaturalneSP
+export default Lcalkowite

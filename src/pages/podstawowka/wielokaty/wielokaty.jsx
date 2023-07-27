@@ -6,7 +6,7 @@ import WorksList from '../../../components/worksList/worksList.jsx';
 // import { MathJax } from 'better-react-mathjax';
 
 
-const Podzielnosc = () => {
+const WielokatySP = () => {
     const [title, setTitle] = useState(null);
     const [currentTask, setCurrentTask] = useState(null);
 
@@ -38,17 +38,28 @@ const Podzielnosc = () => {
             <Basic>
                 <LeftNavi model="a" />
                 <TaskList>
-                    <Tytul>Podzielność liczb </Tytul>
+                    <Tytul>Wielokąty, koła i okręgi</Tytul>
                     <MainGuz data-poddzialy>
-                        <Guz id="1" onClick={renderTask}>Dzielniki i wielokrotności liczby naturalnej</Guz>
-                        <Guz id="2" onClick={renderTask}>Cechy podzielności liczb naturalnych</Guz>
-                        <Guz id="3" onClick={renderTask}>Liczby pierwsze i złożone. Rozkład na czynniki liczby naturalnej</Guz>
-                       
+                        <Guz id="1" onClick={renderTask}>Trójkąty</Guz>
+                        <Guz id="2" onClick={renderTask}>Czworokąty</Guz>
+                        <Guz id="3" onClick={renderTask}>Rysowanie figur w skali</Guz>
+                        <Guz id="4" onClick={renderTask}>Koło i okrąg</Guz>
+                        <Guz id="5" onClick={renderTask}>Wielokąty i ich własności</Guz>
+                        <Guz id="6" onClick={renderTask}>Obwód wielokąta</Guz>
+                        <Guz id="7" onClick={renderTask}>Symetrie</Guz>
+                        <Guz id="8" onClick={renderTask}>Pola wielokątów</Guz>
+                        <Guz id="9" onClick={renderTask}>Twierdzenie Pitagorasa</Guz>
+                        <Guz id="10" onClick={renderTask}>Wielokąty foremne</Guz>
+                        <Guz id="11" onClick={renderTask}>Przekątna kwadratu. Wysokość i pole trójkąta równobocznego</Guz>
+                        <Guz id="12" onClick={renderTask}>Pole pierścienia</Guz>
+
+
+
 
                     </MainGuz>
                     <TaskList>
                         <Rodzajzad>{title}</Rodzajzad>
-                        <WorksList model={currentTask} dzial="sp3" />
+                        <WorksList model={currentTask} dzial="sp9" />
                     </TaskList>
                 </TaskList>
 
@@ -59,4 +70,4 @@ const Podzielnosc = () => {
     )
 }
 
-export default Podzielnosc
+export default WielokatySP

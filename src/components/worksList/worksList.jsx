@@ -93,32 +93,7 @@ const WorksList = ({ model, dzial, typ }) => {
                     return selectTaskSP(dzial, model);
                 case "4":
                     return selectTaskSP(dzial, model);
-                case "5":
-                    return selectTaskSP(dzial, model);
-                case "6":
-                    return selectTaskSP(dzial, model);
-                case "7":
-                    return selectTaskSP(dzial, model);
-                case "8":
-                    return selectTaskSP(dzial, model);
-                case "9":
-                    return selectTaskSP(dzial, model);
-                case "10":
-                    return selectTaskSP(dzial, model);
-                case "11":
-                    return selectTaskSP(dzial, model);
-                case "12":
-                    return selectTaskSP(dzial, model);
-                case "13":
-                    return selectTaskSP(dzial, model);
-                case "14":
-                    return selectTaskSP(dzial, model);
-                case "15":
-                    return selectTaskSP(dzial, model);
-
-
-
-                default: return (<div></div>);
+               default: return (<div></div>);
 
             };
         case "sp2":
@@ -137,10 +112,97 @@ const WorksList = ({ model, dzial, typ }) => {
                     return selectTaskSP(dzial, model);
                 case "7":
                     return selectTaskSP(dzial, model);
+                case "8":
+                    return selectTaskSP(dzial, model);
+                case "9":
+                    return selectTaskSP(dzial, model);
+                case "10":
+                    return selectTaskSP(dzial, model);
                 default: return (<div></div>);
 
             };
         case "sp3":
+            switch (model) {
+                case "1":
+                    return selectTaskSP(dzial, model);
+                case "2":
+                    return selectTaskSP(dzial, model);
+                case "3":
+                    return selectTaskSP(dzial, model);
+                default: return (<div></div>);
+
+            };
+        case "sp4":
+            switch (model) {
+                case "1":
+                    return selectTaskSP(dzial, model);
+                case "2":
+                    return selectTaskSP(dzial, model);
+                case "3":
+                    return selectTaskSP(dzial, model);
+                case "4":
+                    return selectTaskSP(dzial, model);
+                case "5":
+                    return selectTaskSP(dzial, model);
+                default: return (<div></div>);
+
+            };
+        case "sp5":
+            switch (model) {
+                case "1":
+                    return selectTaskSP(dzial, model);
+                case "2":
+                    return selectTaskSP(dzial, model);
+                case "3":
+                    return selectTaskSP(dzial, model);
+                case "4":
+                    return selectTaskSP(dzial, model);
+                case "5":
+                    return selectTaskSP(dzial, model);
+                case "6":
+                    return selectTaskSP(dzial, model);
+                case "7":
+                    return selectTaskSP(dzial, model);
+                case "8":
+                    return selectTaskSP(dzial, model);
+                case "9":
+                    return selectTaskSP(dzial, model);
+                default: return (<div></div>);
+
+            };
+        case "sp6":
+            switch (model) {
+                case "1":
+                    return selectTaskSP(dzial, model);
+                case "2":
+                    return selectTaskSP(dzial, model);
+                case "3":
+                    return selectTaskSP(dzial, model);
+                case "4":
+                    return selectTaskSP(dzial, model);
+                case "5":
+                    return selectTaskSP(dzial, model);
+                case "6":
+                    return selectTaskSP(dzial, model);
+                case "7":
+                    return selectTaskSP(dzial, model);
+                default: return (<div></div>);
+
+            };
+        case "sp7":
+            switch (model) {
+                case "1":
+                    return selectTaskSP(dzial, model);
+                case "2":
+                    return selectTaskSP(dzial, model);
+                case "3":
+                    return selectTaskSP(dzial, model);
+                case "4":
+                    return selectTaskSP(dzial, model);
+                default: return (<div></div>);
+                        
+                    };
+        case "sp8":
             switch (model) {
                 case "1":
                     return selectTaskSP(dzial, model);
