@@ -1,6 +1,6 @@
 import React from 'react'
 import { MathJax } from 'better-react-mathjax';
-import { Link,MainGuz } from './rightSide.styled';
+import { Link,MainGuz, Lacze } from './rightSide.styled';
 
 
 
@@ -126,6 +126,7 @@ const RightSide = ({ model }) => {
             <MainGuz>
                 <Link to="/matura/kielbasa">Matura od...</Link>
                 <Link to="/matura/terazMaturaRoz">Teraz Matura Rozszerzenie</Link>
+                <Lacze href ="https://tydzien-po-tygodniu.netlify.app/">Tydzień po tygodniu</Lacze>
             </MainGuz>
         )
         case "ckk": return (

@@ -7,7 +7,7 @@ import {MainDiv, Basic} from './studia.styled';
 const Studia = () => {
     return (
         <MainDiv>
-            <TopNavi model="b" /> {/* a - podstawówka, b- średnia, c- matura, d- studia*/}
+            <TopNavi model="d" /> {/* a - podstawówka, b- średnia, c- matura, d- studia*/}
             <Basic>
                 <LeftNavi model="d" />
                 <RightSide model= "d" />

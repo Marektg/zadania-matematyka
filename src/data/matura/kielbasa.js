@@ -1257,7 +1257,7 @@ const kielbasa = [
         "dzial": "2",
         "numer": "19",
         "twierdzenie": null,
-        "tresc": "Znalezienie wszystkich par liczb całkowitych \\((a,b)\\), takich, że \\((a-2)(b+3)=5\\), sprowadza się do rozwiązania następujących przypadków: \\(\\begin{cases}a-2=1\\\\ b+3=5\\end{cases}\\) lub \\(\\begin{cases}a-2=5\\\\ b+3=1\\end{cases}\\) lub \\(\\begin{cases}a-2=-1\\\\ b+3=-5\\end{cases}\\) lub \\(\\begin{cases}a-2=-5\\\\ b+3=-1\\end{cases}\\).",
+        "tresc": "Znalezienie wszystkich par liczb całkowitych \\((a,b)\\), takich, że \\((a-2)(b+3)=5\\), sprowadza się do rozwiązania następujących przypadków:  lub \\(\\begin{cases}a-2=5\\\\ b+3=1\\end{cases}\\) lub \\(\\begin{cases}a-2=-1\\\\ b+3=-5\\end{cases}\\) lub \\(\\begin{cases}a-2=-5\\\\ b+3=-1\\end{cases}\\).",
         "podpunkty": ["wszystkie pary liczb całkowitych \\((x,y)\\) spełniające równanie \\((x-2)(2x+y+1)=2\\)", "wszystkie pary liczb naturalnych \\((x,y)\\) spełniające równanie \\((x-4)(y-5)=9\\)", "\\(\\bigstar\\) wszystkie pary liczb całkowitych \\((x,y)\\) spełniające równanie \\(xy+5x+2y+3=0\\)"],
         "plot": [],
         "canvas": [],
