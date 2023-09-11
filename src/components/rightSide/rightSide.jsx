@@ -56,7 +56,7 @@ const RightSide = ({ model }) => {
                 <Link to="/matura/wymagania">Wymagania 2023</Link>
                 <Link to="/matura/powtorzenie">Powtórzenie</Link>
                 <Link to="/matura/zestawy">Zestawy</Link>
-                <Link to="/matura/gcse">GCSE</Link>
+                {/*<Link to="/matura/gcse">GCSE</Link>*/}
             </MainGuz>
         );
         case "cz": return (
