@@ -82,7 +82,7 @@ const zestawy = [
 
                 "id": `${nanoid()}`,
                 "canvas": [],
-                "podpunkty": ["\\((-\\infty,1>\\)", "\\(<1,+\\infty)\\)", "\\(-\\infty,7>\\)", "\\(<7,+\\infty)\\)"],
+                "podpunkty": ["\\(2\\)", "\\(3\\)", "\\(6\\)", "\\(-2\\)"],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
@@ -90,22 +90,22 @@ const zestawy = [
                 "ramkapo": null,
                 "numer": "Zadanie 6 (1 pkt)",
 
-                "tresc": "Zbiorem wszystkich rozwiązań nierówności \\(5-\\frac{2-6x}{4}\\leq 2x+1\\) jest przedział"
+                "tresc": "Dany jest wielomian \\(W(x)=2x^3+kx^2-12x-7k+12\\) gdzie \\(k\\)  jest pewną liczbą rzeczywistą. Wiadomo, że liczba \\((−3 )\\) jest pierwiastkiem tego wielomianu. Liczba \\(k\\) jest równa"
             },
             {
 
                 "id": `${nanoid()}`,
-                "canvas": [{ "id": "z120227", "width": "400", "height": "240" }],
-                "podpunkty": ["Liczba \\(f(1)+g(1)\\) jest równa \\(2\\)", "Zbiory wartości funkcji \\(f\\) i \\(g\\) są równe.", "Funkcje \\(f\\) i \\(g\\) mają takie same miejsca zerowe.", "Punkt \\(P = (−1 ,0)\\) należy do wykresów funkcji \\(f\\) i \\(g\\)"],
+                "canvas": [],
+                "podpunkty": ["\\(\\frac{-2x+1}{x-1}\\)", "\\(\\frac{-2x+7}{x-1}\\)", "\\(\\frac{-2x+3}{x-1}\\)","\\(\\frac{-2x-3}{x-1}\\)"],
                 "wskazowka": null,
                 "ramka": null,
                 "extraRamka": null,
-                "trescpocanvie": "Funkcja \\(g\\) jest określona wzorem \\(g(x)=f(x-1)\\) dla \\(x\\in<-5,6>\\).Wskaż zdanie prawdziwe.",
+                "trescpocanvie": null,
                 "ramkapo": null,
                 "numer": "Zadanie 7 (1 pkt)",
                 "koniec": [],
 
-                "tresc": "Na poniższym rysunku przedstawiono wykres funkcji \\(f\\) określonej w zbiorze \\(⟨− 6,5⟩\\)"
+                "tresc": "Dla każdej liczby rzeczywistej \\(x \\not 1\\) wyrażenie \\(\\frac{5}{x-1}-2\\) jest równe "
 
             },
             {

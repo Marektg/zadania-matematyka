@@ -64,7 +64,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": ["\\(x^2+6x=x(x+6)\\)",],
+        "answer": ["\\(x^2+4x=x(x+4)\\)", "\\(x^2+6x=x(x+6)\\)", "\\(x^3-9x=x(x^2-9)=x(x-3)(x+3)\\)",],
     },
     {
         "id": `${nanoid()}`,
