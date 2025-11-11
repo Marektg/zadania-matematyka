@@ -1,6 +1,6 @@
 Project is an online source of math problems broken down by school and department.
 
-=> [Project page](https://mk-react-hw-07-phonebook.netlify.app/)
+=> [Project page](https://zadania-matematyka.netlify.app/)
 
 Technologies used:
 
