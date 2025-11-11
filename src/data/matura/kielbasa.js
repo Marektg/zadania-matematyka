@@ -1651,7 +1651,7 @@ const kielbasa = [
         "id": `${nanoid()}`,
         "dzial": "5",
         "numer": "5.1",
-        "tresc": "test",
+        "tresc": "test kwadratowa",
         "podpunkty": [],
         "plot": [],
         "canvas": [],
