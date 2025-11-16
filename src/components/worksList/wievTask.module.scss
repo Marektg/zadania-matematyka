@@ -17,8 +17,9 @@
 
   & li {
     list-style: wisible;
+    //list-style: none;
     list-style-position: inside;
-    list-style-type: decimal;
+   list-style-type: decimal;
     padding-bottom: 10px;
     padding-left: 15px;
     & button {
@@ -35,6 +36,7 @@
   }
 }
   .powto {
+    list-style: none;
     display: flex;
     width: 98%;
     flex-direction: column;
@@ -195,7 +197,10 @@
 .show {
   display: block;
 }
-
+.zadmat {
+  font-size: 24px;
+  color: black;
+}
 // .js-plotly-plot{
 //   width: 50%;
 // }

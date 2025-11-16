@@ -5,10 +5,11 @@ import Canvas from '../../data/funkcjeCanvas';
 import Extra from '../../data/extra';
 
 
+
 const WievTaskKsiazki = ({ data, model }) => {
     const [tasks, settasks] = useState([]);
     // const [login, setlogin] = useState(null);
-    const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, buttonWrapper, hidden, twierdzenie, } = styles;
+    const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, buttonWrapper, hidden, twierdzenie } = styles;
     const numberOfTask = 25;
 
     // console.log(data.length);
@@ -103,15 +104,18 @@ const WievTaskKsiazki = ({ data, model }) => {
         <ol className={powt}>
             {tasks.map(work => (
                 <li key={work.id}>
+
                     {work.twierdzenie && (<MathJax inline><p className={twierdzenie}>{work.twierdzenie}</p></MathJax>)}
                     <MathJax inline>{
-                    <p className={tresc}><a href='#top'>⇑</a>{work.tresc}</p>}</MathJax>
+                        <p className={tresc}>{work.numer} <a href='#top'>⇑ </a> {work.tresc}</p>}</MathJax>
                     {work.ramka && (<div className={well}><MathJax inline>{work.ramka}</MathJax></div>)}
                     {work.extra && (<MathJax inline><Extra id={work.extra} /></MathJax>)}
                     {work.extraRamka && (<div className={well}><MathJax inline><Extra id={work.extraRamka} /></MathJax></div>)}
 
-                    {work.tresc2 !== 0 && (<MathJax inline><p className={tresc}>{work.tresc2}</p></MathJax>)}
+                    {work.tresc2 !== 0 || (work.tresc2.length !== 0 && (work.tresc2.map(tresc2 => (<div><MathJax inline><p className={tresc}>{tresc2}</p></MathJax></div>))))}
                     {work.tresc4 !== 0 && (<MathJax inline><p className={tresc}>{work.tresc4}</p></MathJax>)}
+                    {work.tresc5 !== 0 && (<MathJax inline><p className={tresc}>{work.tresc3}</p></MathJax>)}
+                    {work.tresc6 !== 0 && (<MathJax inline><p className={tresc}>{work.tresc3}</p></MathJax>)}
                     <div className={odp}>
                         {work.podpunkty.length !== 0 && !work.koniec && (work.podpunkty.map(podpunkt => (
 
@@ -148,14 +152,15 @@ const WievTaskKsiazki = ({ data, model }) => {
                     {work.wskazowka && (<div className={podpowiedz}>Wskazówka: <MathJax inline>{work.wskazowka}</MathJax></div>)}
                     {work.tresc3 !== 0 && (<MathJax inline><p className={trescpo}>{work.tresc3}</p></MathJax>)}
                     <div className={hidden}>
-                        {work.answer.length > 0 ? (work.answer.map(punkty => (<p><MathJax inline>{punkty}</MathJax></p>))) : (<p>Rozwiązanie w przygotowaniu</p>)}
+                        {work.answer.length > 0 ? (work.answer.map(punkty => (<img src={require(`../../data/answers/${punkty}`)} alt='odpowiedź' width='95%'></img>))) : (<p>Rozwiązanie w przygotowaniu</p>)}
+
                     </div>
-                    
+
                     <div>
                         <button onClick={showAnswer}>Odpowiedź</button>
                         <button className={hidden} onClick={hideAnswer}>Ukryj rozwiązanie</button>
                     </div>
-                    
+
                 </li>
             ))}
         </ol>
