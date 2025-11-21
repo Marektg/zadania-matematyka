@@ -54,7 +54,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": [],
+        "answer": ["matura/kielbasa/1_4.png"],
         //"\\(x^2-25=(x-5)(x+5)\\)", "\\(x^2-3=(x-\\sqrt{3})(x+\\sqrt{3})\\)", "\\(4x^2-1=(2x-1)(2x+1)\\)", "\\(9-2x^2=(3-x\\sqrt{2})(3+x\\sqrt{2})\\)", "\\(x^2+6x+9=(x+3)^2\\)", "\\(25x^2-20x+4=(5x-2)^2\\)", "\\((3x+4)^2-4=(3x+4-2)(3x+4+2)=(3x+2)(3x+6)\\)", "\\((x^2+x-4)^2-(x+5)^2=(x^2+x-4-x-5)(x^2+x-4+x+5)=(x^2-9)(x^2+2x+1)=(x-3)(x+3)(x+1)^2\\)", "\\(a^4-b^4=(a^2-b^2)(a^2+b^2)=(a-b)(a+b)(a^2+b^2)\\)", "\\(a^2+b^2-c^2-2ab=(a-b)^2-c^2=(a-b-c)(a-b+c)\\)", "\\(\\bigstar\\) \\(x^3-8=(x-2)(x^2+2x+4)\\)", "\\(\\bigstar\\) \\(a^3+1=(a+1)(a^2-a+1)\\)", "\\(\\bigstar\\) \\((x+1)^3-(x-1)^3=(x+1-x+1)(x^2+2x+1+x^2-1+x^2-2x+1)=2(3x^2+1)\\)", "\\(\\bigstar\\) \\(a^4+b^4=(a^2+^2)^2-2a^2b^2=(a^2+b^2-ab\\sqrt{2})(a^2+b^2+ab\\sqrt{2})\\)"
     },
     {
@@ -68,7 +68,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": [],
+        "answer": ["matura/kielbasa/1_5.png"],
         //"\\(x^2+4x=x(x+4)\\)", "\\(x^2+6x=x(x+6)\\)", "\\(x^3-9x=x(x^2-9)=x(x-3)(x+3)\\)",
     },
     {
@@ -82,7 +82,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": [],
+        "answer": ["matura/kielbasa/1_6.png"],
     },
     {
         "id": `${nanoid()}`,
@@ -95,7 +95,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": [],
+        "answer": ["matura/kielbasa/1_7.png"],
     },
     {
         "id": `${nanoid()}`,
@@ -108,7 +108,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": [],
+        "answer": ["matura/kielbasa/1_8.png"],
     },
     {
         "id": `${nanoid()}`,
@@ -121,7 +121,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": [],
+        "answer": ["matura/kielbasa/1_9.png"],
     },
     {
         "id": `${nanoid()}`,
@@ -134,7 +134,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": [],
+        "answer": ["matura/kielbasa/1_10.png"],
     },
     {
         "id": `${nanoid()}`,
@@ -147,7 +147,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": [],
+        "answer": ["matura/kielbasa/1_11.png"],
     },
     {
         "id": `${nanoid()}`,
@@ -160,7 +160,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": [],
+        "answer": ["matura/kielbasa/1_12.png"],
     },
     {
         "id": `${nanoid()}`,
@@ -173,7 +173,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": [],
+        "answer": ["matura/kielbasa/1_13.png"],
     },
     {
         "id": `${nanoid()}`,
@@ -186,7 +186,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": [],
+        "answer": ["matura/kielbasa/1_14.png"],
     },
     {
         "id": `${nanoid()}`,
@@ -199,7 +199,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": [],
+        "answer": ["matura/kielbasa/1_15.png"],
     },
     {
         "id": `${nanoid()}`,
@@ -212,7 +212,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": [],
+        "answer": ["matura/kielbasa/1_16.png"],
     },
     {
         "id": `${nanoid()}`,
@@ -225,7 +225,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": [],
+        "answer": ["matura/kielbasa/1_17.png"],
     },
     {
         "id": `${nanoid()}`,
@@ -238,7 +238,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": [],
+        "answer": ["matura/kielbasa/1_18.png"],
     },
     {
         "id": `${nanoid()}`,
@@ -251,7 +251,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": [],
+        "answer": ["matura/kielbasa/1_19.png"],
     },
     {
         "id": `${nanoid()}`,
@@ -264,7 +264,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": [],
+        "answer": ["matura/kielbasa/1_20.png"],
     },
     {
         "id": `${nanoid()}`,
@@ -277,7 +277,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": [],
+        "answer": ["matura/kielbasa/1_21.png"],
     },
     {
         "id": `${nanoid()}`,
@@ -290,7 +290,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": [],
+        "answer": ["matura/kielbasa/1_22a.png", "matura/kielbasa/1_22b.png", "matura/kielbasa/1_22c.png"],
     },
     {
         "id": `${nanoid()}`,
@@ -303,7 +303,7 @@ const kielbasa = [
         "trescpocanvie": null,
         "tresc2": null,
         "koniec": null,
-        "answer": [],
+        "answer": ["matura/kielbasa/1_23a.png", "matura/kielbasa/1_23b.png", "matura/kielbasa/1_23c.png"],
     },
     {
         "id": `${nanoid()}`,

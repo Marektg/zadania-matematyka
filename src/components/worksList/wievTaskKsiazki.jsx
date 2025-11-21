@@ -9,7 +9,7 @@ import Extra from '../../data/extra';
 const WievTaskKsiazki = ({ data, model }) => {
     const [tasks, settasks] = useState([]);
     // const [login, setlogin] = useState(null);
-    const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, buttonWrapper, hidden, twierdzenie } = styles;
+    const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, buttonWrapper, hidden, twierdzenie, odpowiedz } = styles;
     const numberOfTask = 25;
 
     // console.log(data.length);
@@ -152,7 +152,7 @@ const WievTaskKsiazki = ({ data, model }) => {
                     {work.wskazowka && (<div className={podpowiedz}>Wskazówka: <MathJax inline>{work.wskazowka}</MathJax></div>)}
                     {work.tresc3 !== 0 && (<MathJax inline><p className={trescpo}>{work.tresc3}</p></MathJax>)}
                     <div className={hidden}>
-                        {work.answer.length > 0 ? (work.answer.map(punkty => (<img src={require(`../../data/answers/${punkty}`)} alt='odpowiedź' width='95%'></img>))) : (<p>Rozwiązanie w przygotowaniu</p>)}
+                        {work.answer.length > 0 ? (work.answer.map(punkty => (<img className={odpowiedz} src={require(`../../data/answers/${punkty}`)} alt='odpowiedź' width='auto'></img>))) : (<p>Rozwiązanie w przygotowaniu</p>)}
 
                     </div>
 
