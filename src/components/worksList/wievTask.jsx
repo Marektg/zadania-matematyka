@@ -7,7 +7,7 @@ import Extra from '../../data/extra';
 const WievTask = ({ data, model }) => {
     const [tasks, settasks] = useState([]);
 
-    const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, buttonWrapper } = styles;
+    const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, buttonWrapper, hidden, twierdzenie, odpowiedz } = styles;
     const numberOfTask = 25;
     // console.log(data);
     // console.log(model);
@@ -67,7 +67,7 @@ const WievTask = ({ data, model }) => {
         };
         // console.log(newTask);
         settasks(newTask);
-        // console.log(newTask[0].canvas);
+        //console.log(newTask[0].answer);
         // for (let i = 0; i < newTask.length; i++) {
         //     if (newTask[i].canvas.length !== 0) {
         //         // console.log(newTask[i].canvas.length)
@@ -75,7 +75,24 @@ const WievTask = ({ data, model }) => {
         //     }
         // }
     }
-
+    const showAnswer = (e) => {
+        console.log(e.target);
+        let showDiv = e.target.parentElement.previousElementSibling;
+        console.log(showDiv);
+        showDiv.style.display = "block";
+        e.target.style.display = "none";
+        e.target.nextSibling.style.display = "block";
+        console.log(e.target);
+    }
+    const hideAnswer = (e) => {
+        console.log(e.target);
+        let showDiv = e.target.parentElement.previousElementSibling;
+        console.log(showDiv);
+        showDiv.style.display = "none";
+        e.target.previousElementSibling.style.display = "block";
+        e.target.style.display = "none";
+        console.log(e.target);
+    }
 
     // console.log(tasks[0].canvas);
 
@@ -127,6 +144,15 @@ const WievTask = ({ data, model }) => {
                     {work.ramkapo && (<div className={wellpo} ><MathJax inline>{work.ramkapo}</MathJax></div>)}
                     {work.wskazowka && (<div className={podpowiedz}>Wskazówka: <MathJax inline>{work.wskazowka}</MathJax></div>)}
                     {work.tresc3 !== 0 && (<MathJax inline><p className={trescpo}>{work.tresc3}</p></MathJax>)}
+                    <div className={hidden}>
+                        {work.answer.length > 0 ? (work.answer.map(punkty => (<img className={odpowiedz} src={require(`../../data/answers/${punkty}`)} alt='odpowiedź' width='auto'></img>))) : (<p>Rozwiązanie w przygotowaniu</p>)}
+
+                    </div>
+
+                    <div>
+                        <button onClick={showAnswer}>Odpowiedź</button>
+                        <button className={hidden} onClick={hideAnswer}>Ukryj rozwiązanie</button>
+                    </div>
                    
                 </li>
             ))}
@@ -139,3 +165,10 @@ const WievTask = ({ data, model }) => {
 
 
 export default WievTask
+/* <div className={hidden}>
+                       {work.answer.length > 0 ? (work.answer.map(punkty => (<img className={odpowiedz} src={require(`../../data/answers/${punkty}`)} alt='odpowiedź' width='auto'></img>))) : (<p>Rozwiązanie w przygotowaniu</p>)}
+                   </div >
+                   <div>
+                       <button onClick={showAnswer}>Odpowiedź</button>
+                       <button className={hidden} onClick={hideAnswer}>Ukryj rozwiązanie</button>
+                   </div> */

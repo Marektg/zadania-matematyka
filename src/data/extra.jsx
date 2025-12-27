@@ -214,6 +214,16 @@ export const Extra = ({ id }) => {
                 </MathJax>
             </div>
         ); break;
+        case "kielbasad2z46": (
+            content = <div className={wrapFlex2}>
+                <MathJax>
+                <p> {"\\(\\bullet\\)"} Oznaczamy {"\\(a=0,454545_{\\cdots}\\)"} . Zatem {"\\(100a=45,454545_{\\cdots}\\)"}.</p>
+                <p> {"\\(\\bullet\\)"} Odejmując stronami otrzymujemy: {"\\(100a-a=45,454545_{\\cdots}-0,454545_{\\cdots}\\)"}.</p>
+                <p> {"\\(\\bullet\\)"} Stąd {"\\(99a=45\\)"}, czyli {"\\(a=\\frac{45}{99}\\)"}.</p>
+                <p> Ostatecznie, szukany ułamek jest równy {"\\(\\frac{5}{11}\\)"}.</p>
+                </MathJax>
+            </div>
+        ); break;
 
         default: break;
 

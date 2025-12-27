@@ -2271,7 +2271,122 @@ const Canvas = ({ id, width, height }) => {
             }
 
         ); break;
-        default: break;
+        case "kielbasad2z75": (
+            draw = ctx => {
+                const s= width;
+                const h =height;
+                ctx.beginPath();
+                ctx.moveTo(50, 0);
+                ctx.lineTo(50, h-60);
+                ctx.lineTo(s-10, h-60);
+                ctx.stroke();
+                ctx.closePath();
+                ctx.beginPath();
+                ctx.moveTo(50,0);
+                ctx.lineTo(45,10);
+                ctx.lineTo(55,10);
+                ctx.lineTo(50,0);
+                ctx.stroke();
+                ctx.fill();
+                 ctx.closePath();
+                ctx.beginPath();
+                ctx.moveTo(s-10, h-60);
+                ctx.lineTo(s-20,h-55);
+                ctx.lineTo(s-20,h-65);
+                ctx.lineTo(s-10,h-60);
+                ctx.fill();
+                ctx.closePath();
+                ctx.font = "20px Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+                ctx.fillText("Liczba uczniów", s/2, h-15);
+                ctx.save();
+                ctx.translate(15,h/2-50);
+                ctx.rotate(-0.5*Math.PI);
+                ctx.font = "20px Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+                ctx.fillText("Ocena", 0,0);
+                ctx.restore();
+                ctx.font = "15px Tahoma";
+                ctx.textAlign = "center";
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = "black";
+
+                ctx.fillText("1", 30, h-75);
+                ctx.fillText("2", 30, (h-75)*5/6);
+                ctx.fillText("3", 30, (h-75)*2/3);
+                ctx.fillText("4", 30, (h-75)/2);
+                ctx.fillText("5", 30, (h-75)/3);
+                ctx.fillText("6", 30, (h-75)/6);
+
+                ctx.fillText("10", s-50, h-40);
+                ctx.fillText("8", (s-50)*4/5, h-40);
+                ctx.fillText("5", (s-50)/2, h-40);
+                ctx.fillText("3", (s-50)*3/10, h-40);
+                ctx.fillText("1", 30+(s-50)/10, h-40);
+
+                ctx.strokeStyle = "red";
+                ctx.fillStyle = "red";
+                ctx.beginPath();
+                ctx.moveTo(50, (h-75)/6-15);
+                ctx.lineTo(30+(s-50)/10, (h-75)/6-15);
+                ctx.lineTo(30+(s-50)/10, (h-75)/6);
+                ctx.lineTo(50, (h-75)/6);
+
+                ctx.moveTo(50, (h-75)/3-15);
+                ctx.lineTo((s-50)*3/10, (h-75)/3-15);
+                ctx.lineTo((s-50)*3/10, (h-75)/3);
+                ctx.lineTo(50, (h-75)/3);
+
+                ctx.moveTo(50, (h-75)/2-15);
+                ctx.lineTo((s-50)*4/5,(h-75)/2-15);
+                ctx.lineTo((s-50)*4/5,(h-75)/2);
+                ctx.lineTo(50,(h-75)/2);
+
+                ctx.moveTo(50, (h-75)*2/3-15);
+                ctx.lineTo(s-50,(h-75)*2/3-15);
+                ctx.lineTo(s-50,(h-75)*2/3);
+                ctx.lineTo(50,(h-75)*2/3);
+
+                ctx.moveTo(50,(h-75)*5/6-15);
+                ctx.lineTo((s-50)/2,(h-75)*5/6-15);
+                ctx.lineTo((s-50)/2, (h-75)*5/6);
+                ctx.lineTo(50, (h-75)*5/6);
+
+                 ctx.moveTo(50, h-75-15);
+                ctx.lineTo((s-50)*3/10, h-75-15);
+                ctx.lineTo((s-50)*3/10, h-75);
+                ctx.lineTo(50, h-75);
+                ctx.stroke();
+                ctx.fill();
+                ctx.closePath();
+
+                ctx.strokeStyle = "grey";
+                ctx.fillStyle = "grey";
+                ctx.setLineDash([2,6]);
+                ctx.beginPath();
+                ctx.moveTo(30+(s-50)/10, (h-75)/6);
+                ctx.lineTo(30+(s-50)/10, h-40);
+                ctx.moveTo((s-50)*3/10, (h-75)/3);
+                ctx.lineTo((s-50)*3/10, h-40);
+                ctx.moveTo((s-50)*4/5,(h-75)/2);
+                ctx.lineTo((s-50)*4/5,h-40);
+                ctx.moveTo(s-50,(h-75)*2/3);
+                ctx.lineTo(s-50,h-40);
+                ctx.moveTo((s-50)/2, (h-75)*5/6);
+                ctx.lineTo((s-50)/2, h-40);
+                ctx.stroke();
+                ctx.setLineDash([]);
+                ctx.closePath();
+
+
+            }
+
+        ); break;
+                default: break;
 
 
     }

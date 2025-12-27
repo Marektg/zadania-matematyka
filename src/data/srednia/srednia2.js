@@ -2,496 +2,534 @@ import { nanoid } from "@reduxjs/toolkit";
 
 const srednia2 = [
 
-{
+    {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Dany jest zbiór opisany słownie. Zapisz ten zbiór poprzez wypisanie jego elenentów:",
-         "canvas": [],
-        "podpunkty": ["A - zbiór naturalnych dzielników liczby \\(20\\)","B - zbiór liczb przeciwnych do liczb podanych w zbiorze \\(\\{4,5,0,-1,-3,-7\\}\\)","C - zbiór liczb mających postać \\(k\\sqrt{5}\\), jeśli \\(k\\in \\{-2,-1,0,17,100\\}\\)","D - zbiór wszystkich kwadratów liczb całkowitych jednocyfrowych","E - zbiór liczb mających postać \\(\\frac{4}{n}\\), gdzie \\(n\\) jest liczbą        należączą do zbioru \\(\\{1,2,3,4,_{\\cdots},100\\}\\)","F - zbiór liczb mających postać \\(-3^n\\), gdzie \\(n\\) jest liczbą należącą do        zbioru \\(\\{0,2,4,6,-{\\dots}\\}\\)"],
+        "canvas": [],
+        "podpunkty": ["A - zbiór naturalnych dzielników liczby \\(20\\)", "B - zbiór liczb przeciwnych do liczb podanych w zbiorze \\(\\{4,5,0,-1,-3,-7\\}\\)", "C - zbiór liczb mających postać \\(k\\sqrt{5}\\), jeśli \\(k\\in \\{-2,-1,0,17,100\\}\\)", "D - zbiór wszystkich kwadratów liczb całkowitych jednocyfrowych", "E - zbiór liczb mających postać \\(\\frac{4}{n}\\), gdzie \\(n\\) jest liczbą        należączą do zbioru \\(\\{1,2,3,4,_{\\cdots},100\\}\\)", "F - zbiór liczb mających postać \\(-3^n\\), gdzie \\(n\\) jest liczbą należącą do        zbioru \\(\\{0,2,4,6,-{\\dots}\\}\\)"],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Opisz słowami następujące zbiory:",
-         "canvas": [],
-        "podpunkty": ["\\(A=\\{10,20,30,40,_{\\dots},90\\}\\)", "\\(B=\\{1,2,3,4,5,6,10,12,15,20,30,60\\}\\)","\\(C=\\{1,2,4,7,14,28\\}\\)","\\(D=\\{12,16,20,24,_{\\dots},96\\}\\)","\\(E=\\{1,8,27,64,_{\\dots},1000\\}\\)","\\(F=\\{1,\\sqrt{2},\\sqrt{3},2,\\sqrt{5},_{\\dots},3\\}\\)"],
+        "canvas": [],
+        "podpunkty": ["\\(A=\\{10,20,30,40,_{\\dots},90\\}\\)", "\\(B=\\{1,2,3,4,5,6,10,12,15,20,30,60\\}\\)", "\\(C=\\{1,2,4,7,14,28\\}\\)", "\\(D=\\{12,16,20,24,_{\\dots},96\\}\\)", "\\(E=\\{1,8,27,64,_{\\dots},1000\\}\\)", "\\(F=\\{1,\\sqrt{2},\\sqrt{3},2,\\sqrt{5},_{\\dots},3\\}\\)"],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Dany jest zbiór \\(A\\), gdzie    \\(A=\\{1,2,3,4\\}\\).",
-         "canvas": [],
-        "podpunkty": ["Wypisz wszystkie podzbiory jednoelementowe, dwuelementowe i trzyelementowe        zbioru \\(A\\)","Podaj podzbiór czteroelementowy zbioru \\(A\\)","Ile jest wszystkich podzbiorów zbioru \\(A\\)"],
+        "canvas": [],
+        "podpunkty": ["Wypisz wszystkie podzbiory jednoelementowe, dwuelementowe i trzyelementowe        zbioru \\(A\\)", "Podaj podzbiór czteroelementowy zbioru \\(A\\)", "Ile jest wszystkich podzbiorów zbioru \\(A\\)"],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Wyznacz zbiory \\(A\\cup B, A\\cap B, A-B,    B-A\\), jeśli:",
-         "canvas": [],
-        "podpunkty": ["\\(A=\\{-2,-1,0,1,5\\}\\), \\(B=\\{1,3,8\\}\\)","\\(A=\\{5,7,9,11\\}\\), \\(B=\\{7,9\\}\\)","\\(A=\\{1,2,3,4\\}\\), \\(B=\\{2,3,4,5,6\\}\\)","\\(A=\\{3,4,5\\}\\), \\(B=\\{3,4,5,6,7\\}\\)","\\(A=\\{-1,-2,-3\\}\\), \\(B=\\{1,2,3\\}\\)","\\(A=\\{5,4,3,2,1\\}\\), \\(B=\\{1,2,3,4,5\\}\\)"],
+        "canvas": [],
+        "podpunkty": ["\\(A=\\{-2,-1,0,1,5\\}\\), \\(B=\\{1,3,8\\}\\)", "\\(A=\\{5,7,9,11\\}\\), \\(B=\\{7,9\\}\\)", "\\(A=\\{1,2,3,4\\}\\), \\(B=\\{2,3,4,5,6\\}\\)", "\\(A=\\{3,4,5\\}\\), \\(B=\\{3,4,5,6,7\\}\\)", "\\(A=\\{-1,-2,-3\\}\\), \\(B=\\{1,2,3\\}\\)", "\\(A=\\{5,4,3,2,1\\}\\), \\(B=\\{1,2,3,4,5\\}\\)"],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Na rysunku przedstawione są figury    geometryczne i relacje zachodzące między nimi, gdzie \\(A\\) - kwadrat, \\(B\\) - trójkąt,    \\(C\\) - koło, \\(D\\) - okrąg. Na osobnych rysunkach w zeszycie przedstaw zbiory zapisane    nad rysunkiem.",
-         "canvas": [{"id":"zil1_5a", "width":"200", "height":"200"},
-          {"id":"zil1_5b", "width":"200", "height":"200"},
-        {"id":"zil1_5c", "width":"200", "height":"200"},],
-        "podpunkty": ["\\(A\\cup B,\\ A-B,\\ B-A\\)","\\(B\\cap C,\\ B-C,\\ C-B\\)","\\((A\\cap B)\\cup D,\\ (D\\cup A)-B\\)",],
+        "canvas": [{ "id": "zil1_5a", "width": "200", "height": "200" },
+        { "id": "zil1_5b", "width": "200", "height": "200" },
+        { "id": "zil1_5c", "width": "200", "height": "200" },],
+        "podpunkty": ["\\(A\\cup B,\\ A-B,\\ B-A\\)", "\\(B\\cap C,\\ B-C,\\ C-B\\)", "\\((A\\cap B)\\cup D,\\ (D\\cup A)-B\\)",],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": " Podaj przykład dwóch niepustych    zbiorów \\(A\\) i \\(B\\), dla których",
-         "canvas": [],
-        "podpunkty": ["\\(B\\subset (A\\cap B)\\)","\\(A\\cup B=B\\)"],
+        "canvas": [],
+        "podpunkty": ["\\(B\\subset (A\\cap B)\\)", "\\(A\\cup B=B\\)"],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Podaj przykład dwóch takich zbiorów    \\(X\\) i \\(Y\\), że zbiór \\(X\\) ma \\(5\\) elementów, zbiór \\(Y\\) ma \\(7\\) elementów, a    zbiór \\(X\\cap Y\\) ma \\(2\\) elementy. Narysuj diagram ilustrujący takie zbiory. Ile    elementów należy do zbioru \\(X\\cup Y\\)?",
-         "canvas": [],
+        "canvas": [],
         "podpunkty": [],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Podaj przykład dwóch takich zbiorów    \\(X\\) i \\(Y\\), że zbiór \\(X\\) ma \\(4\\) elementy, zbiór \\(Y\\) ma \\(5\\) elementów, a    zbiór \\(X\\cup Y\\) ma \\(6\\) elementów. Narysuj diagram ilustrujący takie zbiory. Ile    elementów należy do zbioru \\(X\\cap Y\\)?",
-         "canvas": [],
+        "canvas": [],
         "podpunkty": [],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "W ramach SKS na siatkówkę chodzi dwa    razy więcej uczniów niż na koszykówkę, łącznie \\(35\\) osób. Wiedząc, że tylko \\(7\\) osób    uczęszcza na zajęcia obydwu dyscyplin sportowych, oblicz, ilu uczniów chodzi na zajęcia    koszykówki.",
-         "canvas": [],
+        "canvas": [],
         "podpunkty": [],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Parking ma \\(20\\) miejsc, na których    stoją tylko samochody białe lub czeskie samochody i wszystkie miejsca są zajęte.    Wiedząc, że stoi tam \\(8\\) czeskich samodzodów białych i \\(7\\) czeskich samochodów w    innym kolorze, oblicz, ile białych samochodów stoi na parkingu.",
-         "canvas": [],
+        "canvas": [],
         "podpunkty": [],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Do pewnego czteroletniego liceum    uczęszcza \\(480\\) uczniów, każdy z nich uczy się co najmniej jednego z języków:    hiszpańskiego i niemieckiego, przy czym \\(360\\) uczniów danej szkoły uczy się języka    niemieckiego oraz \\(240\\) uczniów uczy się języka hiszpańskiego. Wiedząc, że tylko    wszyscy uczniowie klas językowych uczą się obu języków, oblicz:",
-         "canvas": [],
-        "podpunkty": ["ilu uczniów tej szkoły uczęszcza do klas językowych","ile klas tego liceum przypada na jeden rocznik, jeżeli nabór do tej szkoły jest        co roku taki sam, na każdy rocznik przypada tylko jedna klasa językowa i wszystkie        klasy mają jednakową liczbę uczniów."],
+        "canvas": [],
+        "podpunkty": ["ilu uczniów tej szkoły uczęszcza do klas językowych", "ile klas tego liceum przypada na jeden rocznik, jeżeli nabór do tej szkoły jest        co roku taki sam, na każdy rocznik przypada tylko jedna klasa językowa i wszystkie        klasy mają jednakową liczbę uczniów."],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Dane są zbiory \\(A\\) i \\(B\\) zawarte w    przestrzeni \\(U\\). Wyznacz zbiory \\(A',B',A'\\cup B, B'\\cap A, A'-B'\\), jeśli:",
-         "canvas": [],
-        "podpunkty": ["\\(U=\\{0,1,2,3,4,5,6,7,10,15,20\\}, A=\\{1,2,3,4,5,6\\}, B=\\{0,5,10,15,20\\}\\)","\\(U=\\{1,2,3,4,5,9,16,25\\}, A=\\{1,4,9,16,25\\}, B=\\{1,9,25\\}\\)"],
+        "canvas": [],
+        "podpunkty": ["\\(U=\\{0,1,2,3,4,5,6,7,10,15,20\\}, A=\\{1,2,3,4,5,6\\}, B=\\{0,5,10,15,20\\}\\)", "\\(U=\\{1,2,3,4,5,9,16,25\\}, A=\\{1,4,9,16,25\\}, B=\\{1,9,25\\}\\)"],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Dana jest przestrzeń    \\(U=\\{0,1,2,3,4,5,6,7,8,9\\}\\), w której zawierają się zbiory \\(A\\) i \\(B\\). Wyznacz    zbiory \\(A', B', A'\\cup B', (A\\cap B)', A'\\cap B', (A\\cup B)'\\). Które z wyznaczonych    zbiorów są równe?",
-         "canvas": [],
-        "podpunkty": ["\\(A=\\{0,3,6,9\\}, B=\\{1,3,5,7,9\\}\\)","\\(A\\) - zbiór naturalnych dzielników liczby \\(8\\), \\(B\\) - zbiór liczb        jednocyfrowych podzielnych przez \\(4\\)"],
+        "canvas": [],
+        "podpunkty": ["\\(A=\\{0,3,6,9\\}, B=\\{1,3,5,7,9\\}\\)", "\\(A\\) - zbiór naturalnych dzielników liczby \\(8\\), \\(B\\) - zbiór liczb        jednocyfrowych podzielnych przez \\(4\\)"],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Na rysunku poniżej dane są niepuste    zbiory \\(A\\) i \\(B\\), zawarte w przestrzeni \\(U\\).",
-         "canvas": [{"id":"zil1_14_0", "width":"200", "height":"200"}],
-         "trescpocanvie": "Wykonaj odpowiednie rysunki i uzasadnij, że prawdziwe są równości:",
-        "podpunkty": ["\\((A\\cup B)'=A'\\cap B'\\)","\\((A\\cap B)'=A'\\cup B'\\)"],
+        "canvas": [{ "id": "zil1_14_0", "width": "200", "height": "200" }],
+        "trescpocanvie": "Wykonaj odpowiednie rysunki i uzasadnij, że prawdziwe są równości:",
+        "podpunkty": ["\\((A\\cup B)'=A'\\cap B'\\)", "\\((A\\cap B)'=A'\\cup B'\\)"],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
         "koniec": "tak",
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Wypisz elementy zbioru:",
-         "canvas": [],
-        "podpunkty": ["A - zbiór naturalnych dzielników liczby \\(10\\)","B - zbiór kwadratów liczb: \\(0,1,-3,\\sqrt{13},8,-11\\)","C - zbiór liczb przeciwnych do liczb należących do zbioru        \\(\\{-5,\\sqrt{2},0,1,\\pi\\}\\)","D - zbiór odwrotności liczb należących do zbioru        \\(\\{-1,-\\frac{1}{2},1\\frac{2}{3},\\sqrt{7},\\frac{4}{13}\\}\\) "],
+        "canvas": [],
+        "podpunkty": ["A - zbiór naturalnych dzielników liczby \\(10\\)", "B - zbiór kwadratów liczb: \\(0,1,-3,\\sqrt{13},8,-11\\)", "C - zbiór liczb przeciwnych do liczb należących do zbioru        \\(\\{-5,\\sqrt{2},0,1,\\pi\\}\\)", "D - zbiór odwrotności liczb należących do zbioru        \\(\\{-1,-\\frac{1}{2},1\\frac{2}{3},\\sqrt{7},\\frac{4}{13}\\}\\) "],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Wypisz elementy zbioru opisanego w    następujący sposób:",
-         "canvas": [],
-        "podpunkty": ["A - zbiór liczb mających postać \\(3n\\), gdzie \\(n \\in \\{0,1,2,4\\}\\)","B - zbiór liczb mających postać \\(5k\\), gdzie \\(k \\in \\{_{\\dots}-2,-1,0,1\\}\\)","C - zbiór liczb mających postać \\(a\\sqrt{8}+\\sqrt{2}\\), gdzie \\(a \\in        \\{-4,-1,\\frac{-1}{2},\\sqrt{2},7\\}\\)","D - -zbiór liczb mających postać \\(k\\pi-\\pi^2\\), gdzie \\(k \\in        \\{0,\\pi,2\\pi,3\\pi,_{\\dots}\\}\\)"],
+        "canvas": [],
+        "podpunkty": ["A - zbiór liczb mających postać \\(3n\\), gdzie \\(n \\in \\{0,1,2,4\\}\\)", "B - zbiór liczb mających postać \\(5k\\), gdzie \\(k \\in \\{_{\\dots}-2,-1,0,1\\}\\)", "C - zbiór liczb mających postać \\(a\\sqrt{8}+\\sqrt{2}\\), gdzie \\(a \\in        \\{-4,-1,\\frac{-1}{2},\\sqrt{2},7\\}\\)", "D - -zbiór liczb mających postać \\(k\\pi-\\pi^2\\), gdzie \\(k \\in        \\{0,\\pi,2\\pi,3\\pi,_{\\dots}\\}\\)"],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Zapisz symbolicznie zbiory opisane w    następujący sposób:",
-         "canvas": [],
-        "podpunkty": ["A - zbiór naturalnych wielokrotności liczby \\(3\\)","B - zbiór liczb, których kwadrat wynosi \\(16\\)","C - zbiór odwrotności naturalnych wielokrotności liczby \\(5\\)","D - zbiór liczb rzeczywistych, których trzecia potęga zmniejszona o \\(5\\) jest        większa od \\(22\\)","E - zbiór potęg liczby \\(7\\) o wykładniku naturalnym","F - zbiór liczb rzeczywistych, których odwrotność jest nie mniejsza niż        \\(\\sqrt{2}\\)","G - zbiór liczb rzeczywistych spełniających następujący warunek: suma każdej liczby        i jej kwadratu jest nie większa od \\(4\\)"],
+        "canvas": [],
+        "podpunkty": ["A - zbiór naturalnych wielokrotności liczby \\(3\\)", "B - zbiór liczb, których kwadrat wynosi \\(16\\)", "C - zbiór odwrotności naturalnych wielokrotności liczby \\(5\\)", "D - zbiór liczb rzeczywistych, których trzecia potęga zmniejszona o \\(5\\) jest        większa od \\(22\\)", "E - zbiór potęg liczby \\(7\\) o wykładniku naturalnym", "F - zbiór liczb rzeczywistych, których odwrotność jest nie mniejsza niż        \\(\\sqrt{2}\\)", "G - zbiór liczb rzeczywistych spełniających następujący warunek: suma każdej liczby        i jej kwadratu jest nie większa od \\(4\\)"],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Wypisz wszystkie podzbiory zbioru:",
-         "canvas": [],
-        "podpunkty": ["\\(A=\\{a\\}\\)","\\(B=\\{a,b\\}\\)","\\(C=\\{a,b,c\\}\\)"],
+        "canvas": [],
+        "podpunkty": ["\\(A=\\{a\\}\\)", "\\(B=\\{a,b\\}\\)", "\\(C=\\{a,b,c\\}\\)"],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Wyznacz sumę zbiorów \\(A\\) i \\(B\\), a    następnie część wspólną zbiorów \\(A\\) i \\(B\\), jeśli:",
-         "canvas": [],
-        "podpunkty": ["\\(A=\\{1,2,3,5,8\\},B=\\{3,4,5,6,7\\}\\)","\\(A=\\{4,5\\}, B=\\{5,4,3,2,1\\}\\)","\\(A=\\{0,3,6,9,_{\\dots},30\\}, B=\\{0,6,12,_{\\dots},30\\}\\)","\\(A=\\{2,4,6,_{\\dots},20\\}, B=\\{1,3,5,_{\\dots},19\\}\\)"],
+        "canvas": [],
+        "podpunkty": ["\\(A=\\{1,2,3,5,8\\},B=\\{3,4,5,6,7\\}\\)", "\\(A=\\{4,5\\}, B=\\{5,4,3,2,1\\}\\)", "\\(A=\\{0,3,6,9,_{\\dots},30\\}, B=\\{0,6,12,_{\\dots},30\\}\\)", "\\(A=\\{2,4,6,_{\\dots},20\\}, B=\\{1,3,5,_{\\dots},19\\}\\)"],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Wyznacz różnicę zbiorów \\(A-B\\), a    następnie \\(B-A\\), jeśli:",
-         "canvas": [],
-        "podpunkty": ["\\(A=\\{1,2,3,4\\}, B=\\{2,4,6,8,10\\}\\)","\\(A=\\{0,5,10\\}, B=\\{0,2,3,5,7\\}\\)","\\(A=\\{0,6,12,18\\}, B=\\{0,3,6,_{\\dots},21\\}\\)","\\(A=\\{0,2,4,6,_{\\dots}\\}, B=\\{0,4,8,12,_{\\dots}\\}\\)"],
+        "canvas": [],
+        "podpunkty": ["\\(A=\\{1,2,3,4\\}, B=\\{2,4,6,8,10\\}\\)", "\\(A=\\{0,5,10\\}, B=\\{0,2,3,5,7\\}\\)", "\\(A=\\{0,6,12,18\\}, B=\\{0,3,6,_{\\dots},21\\}\\)", "\\(A=\\{0,2,4,6,_{\\dots}\\}, B=\\{0,4,8,12,_{\\dots}\\}\\)"],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Wyznacz zbiory \\(A\\cup B, A\\cap B, A-B,    B-A\\), jeśli:",
-         "canvas": [],
-        "podpunkty": ["\\(A=\\{6,5,4,3,1\\}, B=\\{1,2,3\\}\\)","\\(A=\\{10,20,30,_{\\dots},90\\}, B=\\{5,10,15,_{\\dots},95\\}\\)","\\(A=\\{1,3,5,_{\\dots},99\\}, B=\\{2,4,_{\\dots},100\\}\\)","\\(A\\)- zbiór cyfr, \\(B=\\{0,5,10,15\\}\\)"],
+        "canvas": [],
+        "podpunkty": ["\\(A=\\{6,5,4,3,1\\}, B=\\{1,2,3\\}\\)", "\\(A=\\{10,20,30,_{\\dots},90\\}, B=\\{5,10,15,_{\\dots},95\\}\\)", "\\(A=\\{1,3,5,_{\\dots},99\\}, B=\\{2,4,_{\\dots},100\\}\\)", "\\(A\\)- zbiór cyfr, \\(B=\\{0,5,10,15\\}\\)"],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Dane są zbiory \\(A=\\{x:x=2n \\ i\\    n\\in\\{1,2,3,4,5,6\\}\\}\\), \\(B=\\{x:x=3m\\ i\\ m\\in\\{1,2,3,4\\}\\}\\). Wyznacz zbiory \\(A\\cup B,    A\\cap B, A-B, B-A\\).",
-         "canvas": [],
+        "canvas": [],
         "podpunkty": [],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Dane są zbiory \\(A=\\{x:x=2k+1 \\ i\\    k\\in\\{-2,-1,0,1,2,3,4\\}\\}\\), \\(B=\\{x:x=3n-2\\ i\\ n\\in\\{0,1,2,3,4\\}\\}\\). Wyznacz zbiory    \\(A\\cup B,    A\\cap B, A-B, B-A\\).",
-         "canvas": [],
+        "canvas": [],
         "podpunkty": [],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Przyjmijmy następujące oznaczenia:",
-         "canvas": [],
-        "podpunkty": ["\\(R\\cup B=R\\)","\\(B\\cap P = \\oslash\\)","\\(R\\cap P\\neq \\oslash\\)","\\(T\\cap P=P\\)","\\(R\\subset B\\)","\\(R\\cap B=B\\)"],
+        "canvas": [],
+        "podpunkty": ["\\(R\\cup B=R\\)", "\\(B\\cap P = \\oslash\\)", "\\(R\\cap P\\neq \\oslash\\)", "\\(T\\cap P=P\\)", "\\(R\\subset B\\)", "\\(R\\cap B=B\\)"],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": "\\(T\\) - zbiór wszystkich trójkątów, \\(R\\) - zbiór trójkątów równoramiennych, \\(B\\) - zbiór trójkątów równobocznych, \\(P\\) - zbiór trójkątów prostokątnych.  Które z poniższych zdań są prawdziwe?",
         "ramkapo": null,
-        "koniec": "tak"
+        "koniec": "tak",
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Przyjmijmy następujące oznaczenia: ",
-         "canvas": [],
-        "podpunkty": ["\\(K\\cap T=K\\)","\\(K\\cup P=P\\)","\\(P-R=P\\)","\\(R-T=\\oslash\\)","\\(K\\subset R\\)","\\(T\\subset P\\)"],
+        "canvas": [],
+        "podpunkty": ["\\(K\\cap T=K\\)", "\\(K\\cup P=P\\)", "\\(P-R=P\\)", "\\(R-T=\\oslash\\)", "\\(K\\subset R\\)", "\\(T\\subset P\\)"],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": "\\(T\\) - zbiór trapezów, \\(R\\) - zbiór równoległoboków, \\(P\\) - zbiór    prostokątów, \\(K\\) - zbiór kwadratów. Które z    poniższych zdań są fałszywe?",
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
-        "tresc": "Na poniższych rysunkach przedstawione    są figury geometryczne i relacje zachodzące między nimi, gdzie \\(A\\) - koło, \\(B\\) -    okrąg, \\(C\\) - prosta, \\(D\\) - trójkąt. Na osobnych rysunkach przedstaw zbiory zapisane    pod rysunkami.",        
+        "tresc": "Na poniższych rysunkach przedstawione    są figury geometryczne i relacje zachodzące między nimi, gdzie \\(A\\) - koło, \\(B\\) -    okrąg, \\(C\\) - prosta, \\(D\\) - trójkąt. Na osobnych rysunkach przedstaw zbiory zapisane    pod rysunkami.",
         "canvas": [{ "id": "zil1_zr12_1", "width": "200", "height": "200" },
         { "id": "zil1_zr12_2", "width": "200", "height": "200" },
         { "id": "zil1_zr12_3", "width": "200", "height": "200" },
-            { "id": "zil1_zr12_4", "width": "200", "height": "200" }],
-    "podpunkty": ["\\(A\\cup C, A\\cap C, A-C, C-A\\)", "\\(B\\cup C, B\\cap C, B-C, C-B\\)", "\\(A\\cup B, A\\cap B, A-B, B-A\\)","\\(A\\cup D, A\\cap D, A-D, D-A\\)"],
+        { "id": "zil1_zr12_4", "width": "200", "height": "200" }],
+        "podpunkty": ["\\(A\\cup C, A\\cap C, A-C, C-A\\)", "\\(B\\cup C, B\\cap C, B-C, C-B\\)", "\\(A\\cup B, A\\cap B, A-B, B-A\\)", "\\(A\\cup D, A\\cap D, A-D, D-A\\)"],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
         "koniec": "tak",
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Na Zbiorach \\(A\\), \\(B\\) oraz \\(C\\)    (\\(A,B,C\\)-koła) wykonano pewne działania i otrzymano zacieniowany zbiór. Używając    symboli: \\(\\cup , \\cap , -\\), - oraz \\(A,B,C\\), zapisz te działania.",
-                 
+
         "canvas": [{ "id": "zil1_zr13_1", "width": "300", "height": "300" }, {
             "id": "zil1_zr13_2", "width": "300", "height": "300"
         }, {
-                "id": "zil1_zr13_3", "width": "300", "height": "300"
-            }, {
-                "id": "zil1_zr13_4", "width": "300", "height": "300"
-            }, {
-                "id": "zil1_zr13_5", "width": "300", "height": "300"
-            }, {
-            "id":"zil1_zr13_6", "width":"300", "height":"300"}],
+            "id": "zil1_zr13_3", "width": "300", "height": "300"
+        }, {
+            "id": "zil1_zr13_4", "width": "300", "height": "300"
+        }, {
+            "id": "zil1_zr13_5", "width": "300", "height": "300"
+        }, {
+            "id": "zil1_zr13_6", "width": "300", "height": "300"
+        }],
         "podpunkty": [],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Niech zbiór    \\(U=\\{0,1,2,3,4,5,6,7,8,9\\}\\) będzie przestrzenią. Wyznacz zbiory: \\(A',B',A'\\cup    B',(A\\cup B)', A'\\cap B', (A\\cap B)'\\), jeśli \\(A\\subset U, B\\subset U\\) oraz:",
-         "canvas": [],
-        "podpunkty": ["\\(A\\) - zbiór naturalnych dzielników liczby \\(8\\), \\(B\\) - zbiór naturalnych        dzielników liczby \\(6\\)","\\(A\\) - zbiór liczb mniejszych od \\(5\\), \\(B\\) - zbiór liczb nie większych niż        \\(7\\)","\\(A\\) - zbiór kwadratów takich liczb z przestrzeni \\(U\\), które są nie większe        od \\(3\\), \\(B\\) - zbiór liczb pierwszych"],
+        "canvas": [],
+        "podpunkty": ["\\(A\\) - zbiór naturalnych dzielników liczby \\(8\\), \\(B\\) - zbiór naturalnych        dzielników liczby \\(6\\)", "\\(A\\) - zbiór liczb mniejszych od \\(5\\), \\(B\\) - zbiór liczb nie większych niż        \\(7\\)", "\\(A\\) - zbiór kwadratów takich liczb z przestrzeni \\(U\\), które są nie większe        od \\(3\\), \\(B\\) - zbiór liczb pierwszych"],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Dana jest przestrzeń \\(U\\) oraz zbiory    \\(A\\) i \\(B\\) (\\(A,B\\) - koła) zawarte w tej przestrzeni, jak na rysunku.",
-        
-    "canvas": [{
-        "id":"zil1_zr15_0", "width":"200", "height":"200"}],
-        "podpunkty": ["\\((A\\cup B)'\\)","\\(A'\\cap B\\)","\\(B'\\cup (A\\cap B)\\)","\\(A'\\cup B'\\)"],
+
+        "canvas": [{
+            "id": "zil1_zr15_0", "width": "200", "height": "200"
+        }],
+        "podpunkty": ["\\((A\\cup B)'\\)", "\\(A'\\cap B\\)", "\\(B'\\cup (A\\cap B)\\)", "\\(A'\\cup B'\\)"],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-    "koniec": "tak",
-    "trescpocanvie": "Na osobnych rysunkach zaznacz zbiory.",
+        "koniec": "tak",
+        "trescpocanvie": "Na osobnych rysunkach zaznacz zbiory.",
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Zbiór \\(A\\) ma \\(11\\) elementów, zbiór    \\(B\\) ma \\(10\\) elementów, zaś suma \\(A\\cup B\\) jest zbiorem \\(14\\)- elementowym. Ile    elementów ma zbiór \\(A\\cap B\\)?",
-         "canvas": [],
+        "canvas": [],
         "podpunkty": [],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Do sumy zbiorów \\(A\\) i \\(B\\) należy    \\(9\\) elementów, do części wspólnej \\(A\\) i \\(B\\) należą \\(4\\) elementy, natomiast zbiór    \\(B-A\\) ma \\(3\\) elementy. Po ile elementów mają zbiory \\(A\\) i \\(B\\)?",
-         "canvas": [],
+        "canvas": [],
         "podpunkty": [],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "Na parkingu mającym \\(35\\) miejsc    wszystkie miejsca są zajęte przez ople lub przez niebieskie samochody. Wiedząc, że jest    tam \\(15\\) opli i \\(27\\) samochodów niebieskich, oblicz, ile niebieskich opli stoi na    tym parkingu.",
-         "canvas": [],
+        "canvas": [],
         "podpunkty": [],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "W klasie \\(Ia\\) jest \\(36\\) uczniów,    wśród których: \\(26\\) zna język angielski, \\(23\\) zna język francuski i \\(24\\) zna język    rosyjski. Czy w klasie \\(Ia\\) jest uczeń, który zna wszystkie trzy języki?",
-         "canvas": [],
+        "canvas": [],
         "podpunkty": [],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "W klasie \\(Ib\\) jest \\(34\\) uczniów,    wśród których: \\(24\\) umie jeździć na rowerze, \\(16\\) umie pływać, \\(10\\) umie jeździć    na nartach; w tej liczbie \\(12\\) umie pływać i jeździć na rowerze, \\(5\\) umie jeździć na    rowerze i na nartach, \\(3\\) umie pływać i jeździć na nartach. Dwie osoby w \\(Ib\\)    uprawiają wszystkie wymienione dyscypliny sportowe.",
-         "canvas": [],
+        "canvas": [],
         "podpunkty": ["Ile osób w klasie \\(Ib\\) nie uprawia żadnej dyscypliny sportowej?", "Ile osób umie tylko jeździć na rowerze?", "Ile osób umie tylko pływać i jeździć na nartach?"],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "\\(\\star\\) Mama dostała od taty bukiet złożony z    \\(15\\) kwiatów. Alek obliczył, że jest w nim \\(7\\) kwiatów czerwonych, a Karolina    stwierdziła, że w bukiecie jest \\(9\\) róż. Jaka może buć najmniejsza, a jaka największa    liczba czerwonych róz w tym bukiecie?",
-         "canvas": [],
+        "canvas": [],
         "podpunkty": [],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
         "dzial": "1",
         "poddzial": "1",
         "tresc": "\\(\\star\\) Do kina mającego po \\(20\\) miejsc w    każdym rzędzie wybrali się uczniowie z dwóch klas: \\(Ia\\) i \\(Ib\\). Zajęli oni miejsca w    trzech kolejnych rzędach. Wiadomo, że w ostatnim z tych rzędów usiadło \\(14\\) uczniów z    klasy \\(Ia\\) i \\(11\\) dziewcząt. Jaka może być największa, a jaka najmniejsza liczba    chłopców z klasy \\(Ia\\) zajmujących miejsca w ostatnim rzędzie?",
-         "canvas": [],
+        "canvas": [],
         "podpunkty": [],
         "wskazowka": null,
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -505,6 +543,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -518,6 +557,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -531,6 +571,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -542,7 +583,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -554,7 +595,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -568,6 +609,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc3": "różnych liczb pierwszych",
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -579,7 +621,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -591,7 +633,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -603,7 +645,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -615,7 +657,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -627,7 +669,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -639,7 +681,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -651,7 +693,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -663,7 +705,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -675,7 +717,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -687,7 +729,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -699,7 +741,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -713,6 +755,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -726,6 +769,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -739,6 +783,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -752,6 +797,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -765,6 +811,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -778,6 +825,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -791,6 +839,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -804,6 +853,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -817,6 +867,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -828,7 +879,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -840,7 +891,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -852,7 +903,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -864,7 +915,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -876,7 +927,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -890,6 +941,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -903,6 +955,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -916,6 +969,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -927,7 +981,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -939,7 +993,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -951,7 +1005,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -963,7 +1017,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -975,7 +1029,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -987,7 +1041,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -999,7 +1053,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1011,7 +1065,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1023,7 +1077,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1035,7 +1089,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1047,7 +1101,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1059,7 +1113,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1071,7 +1125,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1083,7 +1137,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1095,7 +1149,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1107,7 +1161,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1119,7 +1173,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1131,7 +1185,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1143,7 +1197,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1168,7 +1222,8 @@ const srednia2 = [
             },
 
         ],
-        "podpunkty": []
+        "podpunkty": [],
+        "answer": [],
     },
 
 
@@ -1179,6 +1234,7 @@ const srednia2 = [
         "tresc": "Oblicz.",
         "canvas": [],
         "podpunkty": ["\\(3\\frac{2}{5}+2\\frac{1}{3}-4\\frac{1}{2} \\)", "\\(5-4\\frac{5}{6}+2\\frac{1}{8} \\)", "\\(7\\frac{3}{4}-2,2-(3\\frac{1}{2}-1,8+5\\frac{1}{4}) \\)", "\\(1\\frac{5}{12}-(3\\frac{7}{15}-2\\frac{3}{10}) \\)", "\\(2\\frac{1}{4}-(4\\frac{1}{12}+3\\frac{2}{9}-3\\frac{1}{18}) \\)", "\\(2\\frac{3}{20}-(\\frac{17}{10}-2\\frac{1}{15})-3\\frac{5}{6} \\)"],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1187,6 +1243,7 @@ const srednia2 = [
         "tresc": "Porównaj liczby, nie korzystając z kalkulatora.",
         "canvas": [],
         "podpunkty": ["\\(\\frac{32}{451} \\ i \\ \\frac{34}{451} \\)", "\\(\\frac{13}{121} \\ i \\ \\frac{13}{122} \\)", "\\(\\frac{5}{6} \\ i \\ \\frac{6}{7} \\)", "\\(\\frac{5}{6} \\ i \\ \\frac{8}{9} \\)", "\\(\\frac{5}{7} \\ i \\ \\frac{120}{168} \\)", "\\(0,125 \\ i \\ \\frac{1}{8} \\)", "\\(0,34 \\ i \\ \\frac{34}{99} \\)", "\\(-\\frac{5}{6} \\ i \\ -\\frac{6}{7} \\)"],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1195,6 +1252,7 @@ const srednia2 = [
         "tresc": "Oblicz.",
         "canvas": [],
         "podpunkty": ["\\(\\frac{2}{7}+\\frac{5}{9} \\)", "\\(\\frac{1}{5}-1\\frac{1}{4} \\)", "\\(\\frac{3}{7} \\cdot 2\\frac{9}{20} \\)", "\\(2\\frac{3}{4}:\\frac{11}{10} \\)"],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1203,6 +1261,7 @@ const srednia2 = [
         "tresc": "Przedstaw podaną liczbę w postaci \\(\\frac{m}{n} \\), gdzie \\(m \\) i \\(n \\) są względnie pierwsze.",
         "canvas": [],
         "podpunkty": ["\\(-8 \\)", "\\(4\\frac{1}{7} \\)", "\\(-15,6 \\)", "\\(\\frac{140}{21} \\)", "\\(\\frac{244}{168} \\)"],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1211,6 +1270,7 @@ const srednia2 = [
         "tresc": "Oblicz.",
         "canvas": [],
         "podpunkty": ["\\((1-\\frac{1}{10})(1-\\frac{1}{11})(1-\\frac{1}{12})(1-\\frac{1}{13})\\cdot _{\\cdots} \\cdot (1-\\frac{1}{17})(1-\\frac{1}{18}) \\)"],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1220,6 +1280,7 @@ const srednia2 = [
         "canvas": [],
         "podpunkty": ["\\(x=\\frac{48}{151}+\\frac{251}{800}+\\frac{110}{333} \\)", "\\(y=\\frac{301}{900}+\\frac{222}{665}+\\frac{134}{400} \\)", "\\(z=\\frac{81}{245}+\\frac{317}{960}+\\frac{199}{600} \\)"],
         "wskazowka": "\\(\\frac{48}{151}<\\frac{1}{3} \\)",
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1228,6 +1289,7 @@ const srednia2 = [
         "tresc": "Wyznacz liczbę, która na osi liczbowej leży w równej odległości od liczb:",
         "canvas": [],
         "podpunkty": ["\\(\\frac{1}{2}\\ i\\ \\frac{3}{4} \\)", "\\(\\frac{5}{7}\\ i\\ \\frac{7}{6} \\)", "\\(\\frac{155}{348}\\ i\\ \\frac{103}{232} \\)"],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1236,6 +1298,7 @@ const srednia2 = [
         "tresc": "Skróć ułamki. Wśród podanych liczb wskaż największą liczbę całkowitą.",
         "canvas": [],
         "podpunkty": ["\\(\\frac{780}{39}, -\\frac{210}{105}, \\frac{669}{63}, \\frac{672}{64} \\)", "\\(-\\frac{540}{45}, \\frac{84}{98}, \\frac{528}{24}, -\\frac{624}{48}, \\frac{588}{126} \\)"],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1244,6 +1307,7 @@ const srednia2 = [
         "tresc": "Podaj trzy liczby wymierne leżące między liczbami:",
         "canvas": [],
         "podpunkty": ["\\(\\frac{4}{9} \\ i \\ \\frac{5}{9} \\)", "\\(2\\frac{1}{7}\\ i\\ 2\\frac{1}{6} \\)", "\\(-3\\frac{3}{10}\\ i\\ -3\\frac{3}{11} \\)"],
+        "answer": [],
     },
 
     {
@@ -1257,6 +1321,7 @@ const srednia2 = [
             "height": "100"
         },],
         "podpunkty": [],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1265,6 +1330,7 @@ const srednia2 = [
         "tresc": "Oblicz.",
         "canvas": [],
         "podpunkty": ["\\((1\\frac{1}{2}+2\\frac{1}{5})\\cdot 10 \\)", "\\((1\\frac{1}{5}+\\frac{5}{6})\\cdot 1\\frac{7}{8} \\)", "\\((\\frac{14}{5}-\\frac{21}{20})\\cdot \\frac{4}{7} \\)", "\\((7\\frac{1}{4}-2\\frac{1}{6}):2\\frac{13}{24} \\)", "\\((2\\frac{4}{15}-1\\frac{1}{10})\\cdot (\\frac{2}{15}+\\frac{2}{21}) \\)", "\\((1\\frac{1}{16}-\\frac{23}{24})\\cdot (8+1\\frac{3}{5}) \\)"],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1273,6 +1339,7 @@ const srednia2 = [
         "tresc": "Oblicz.",
         "canvas": [],
         "podpunkty": ["\\(\\frac{(3\\frac{2}{5}-2\\frac{1}{4})\\cdot 3\\frac{3}{7}}{(2\\frac{3}{5}-1):2\\frac{1}{3}} \\)", "\\(\\frac{\\frac{3}{4}:1\\frac{1}{2}+4}{(6\\frac{1}{2}-5\\frac{3}{5}):\\frac{9}{5}}-2 \\)", "\\(1,8\\cdot \\frac{3,3-4\\frac{1}{2}:3\\frac{3}{4}}{5,6:2\\frac{1}{3}+2,5} \\)", "\\(0,75+\\frac{(0,75\\cdot \\frac{4}{3}):1\\frac{1}{4}}{0,72-\\frac{1}{5}:1\\frac{2}{3}} \\)", "\\(\\frac{2\\frac{1}{12}+1\\frac{1}{8}}{(2\\frac{1}{3}+1\\frac{2}{5})\\cdot 1,5-7}:3\\frac{3}{4} \\)", "\\(2,125-\\frac{\\frac{4}{21}:\\frac{2}{35}-3\\frac{1}{9}\\cdot \\frac{3}{7}}{\\frac{4}{9}\\cdot 0,4} \\)"],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1280,7 +1347,8 @@ const srednia2 = [
         "poddzial": "2",
         "tresc": "Zapisz liczbę odwrotną do podanej.",
         "canvas": [],
-        "podpunkty": ["\\(\\frac{12}{35} \\cdot \\frac{7}{18} \\)", "\\(-2\\frac{3}{4} \\cdot \\frac{4}{3} \\)", "\\(\\frac{7}{15}:\\frac{14}{5} \\)", "\\((-\\frac{5}{14}:3):\\frac{10}{21} \\)", "\\(\\frac{1}{6}-\\frac{1}{2} \\)", "\\(\\frac{5}{12}+\\frac{5}{18} \\)"]
+        "podpunkty": ["\\(\\frac{12}{35} \\cdot \\frac{7}{18} \\)", "\\(-2\\frac{3}{4} \\cdot \\frac{4}{3} \\)", "\\(\\frac{7}{15}:\\frac{14}{5} \\)", "\\((-\\frac{5}{14}:3):\\frac{10}{21} \\)", "\\(\\frac{1}{6}-\\frac{1}{2} \\)", "\\(\\frac{5}{12}+\\frac{5}{18} \\)"],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1288,7 +1356,8 @@ const srednia2 = [
         "poddzial": "2",
         "tresc": "Podaj przykład liczby wymiernej \\(p \\), która spełnia podany warunek.",
         "canvas": [],
-        "podpunkty": ["\\(\\frac{4}{7} < p < \\frac{5}{7} \\)", "\\(-\\frac{1}{3} < p < -\\frac{1}{4} \\)", "\\(-\\frac{7}{11} < p < -\\frac{6}{11} \\)", "\\(\\frac{2}{3} < p < 0,75 \\)", "\\(2,01 < p < 2,02 \\)", "\\(-3,1 < p < -2,99 \\)"]
+        "podpunkty": ["\\(\\frac{4}{7} < p < \\frac{5}{7} \\)", "\\(-\\frac{1}{3} < p < -\\frac{1}{4} \\)", "\\(-\\frac{7}{11} < p < -\\frac{6}{11} \\)", "\\(\\frac{2}{3} < p < 0,75 \\)", "\\(2,01 < p < 2,02 \\)", "\\(-3,1 < p < -2,99 \\)"],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1296,7 +1365,8 @@ const srednia2 = [
         "poddzial": "2",
         "tresc": "Wyznacz wszystkie ułamki o mianowniku \\(13 \\) większe od \\(\\frac{5}{9} \\) i mniejsze od \\(\\frac{7}{9} \\).",
         "canvas": [],
-        "podpunkty": []
+        "podpunkty": [],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1304,7 +1374,8 @@ const srednia2 = [
         "poddzial": "2",
         "tresc": "Ile liczb całkowitych znajduje się na osi liczbowej między liczbami",
         "canvas": [],
-        "podpunkty": ["\\(\\frac{22222}{411} \\ i \\ \\frac{2222}{41} \\)", "\\(\\frac{1432}{65} \\ i \\ \\frac{82912}{773} \\)", "\\(-\\frac{1353}{7} \\ i \\ \\frac{9256}{13} \\)"]
+        "podpunkty": ["\\(\\frac{22222}{411} \\ i \\ \\frac{2222}{41} \\)", "\\(\\frac{1432}{65} \\ i \\ \\frac{82912}{773} \\)", "\\(-\\frac{1353}{7} \\ i \\ \\frac{9256}{13} \\)"],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1312,7 +1383,8 @@ const srednia2 = [
         "poddzial": "2",
         "tresc": "Znajdź liczbę przeciwną i liczbę odwrotną do liczby \\(a=\\frac{-\\frac{2}{3}(5-6\\cdot 2\\frac{1}{3})}{3\\frac{2}{5}-2,2:\\frac{2}{5}} \\).",
         "canvas": [],
-        "podpunkty": []
+        "podpunkty": [],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1320,7 +1392,8 @@ const srednia2 = [
         "poddzial": "2",
         "tresc": "",
         "canvas": [],
-        "podpunkty": ["Znajdź dwie liczby, których suma jest równa \\(1530 \\), wiedząc, że pierwsza liczba stanowi \\(\\frac{13}{17} \\) drugiej liczby.", "Znajdź trzy liczby, których suma jest równa \\(134 \\), wiedząc, że pierwsza liczba stanowi \\(\\frac{15}{16} \\) drugiej, a druga \\(\\frac{4}{9} \\) trzeciej."]
+        "podpunkty": ["Znajdź dwie liczby, których suma jest równa \\(1530 \\), wiedząc, że pierwsza liczba stanowi \\(\\frac{13}{17} \\) drugiej liczby.", "Znajdź trzy liczby, których suma jest równa \\(134 \\), wiedząc, że pierwsza liczba stanowi \\(\\frac{15}{16} \\) drugiej, a druga \\(\\frac{4}{9} \\) trzeciej."],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1328,7 +1401,8 @@ const srednia2 = [
         "poddzial": "2",
         "tresc": "W ciągu 5 dni 40 pracowników, pracując 8 godzin dziennie, wykonało połowę pewnej pracy. Ile godzin dziennie musieliby pracować, aby dokończyć pracę w ciągu 4 dni?",
         "canvas": [],
-        "podpunkty": []
+        "podpunkty": [],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1336,7 +1410,8 @@ const srednia2 = [
         "poddzial": "2",
         "tresc": "Drut o długości \\(63 \\ cm \\) pocięto na cztery części, których stosunek długości jest równy \\(1:3:5:9 \\). Ile jest równa suma długości dwóch najkrótszych kawałków tego drutu?",
         "canvas": [],
-        "podpunkty": []
+        "podpunkty": [],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1344,7 +1419,8 @@ const srednia2 = [
         "poddzial": "2",
         "tresc": "\\(ⅅ\\) Udowodnij, że:",
         "canvas": [],
-        "podpunkty": ["suma dwóch liczb wymiernych jest liczbą wymierną", "różnica dwóch liczb wymiernych jest liczbą wymierną", "iloczyn dwóch liczb wymiernych jest liczbą wymierną", "iloraz liczby wymiernej przez liczbę wymierną różną od zera jest liczbą wymierną"]
+        "podpunkty": ["suma dwóch liczb wymiernych jest liczbą wymierną", "różnica dwóch liczb wymiernych jest liczbą wymierną", "iloczyn dwóch liczb wymiernych jest liczbą wymierną", "iloraz liczby wymiernej przez liczbę wymierną różną od zera jest liczbą wymierną"],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1359,6 +1435,7 @@ const srednia2 = [
         },],
         "podpunkty": ["O ile suma pól czterech pierwszych prostokątów otrzymanych w ten sposób różni się od pola kwadratu o boku \\(1 \\)?", "O ile liczba \\(\\frac{ 1 } { 2 } +\\frac{ 1 } { 4 } +\\frac{ 1 } { 8 } +\\frac{ 1 } { 16 } +\\frac{ 1 } { 32 } +\\frac{ 1 } { 64 } +\\frac{ 1 } { 128 } +\\frac{ 1 } { 256 } +\\frac{ 1 } { 215 }\\) różni się od \\(1 \\)?"],
         "koniec": "1",
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1366,7 +1443,8 @@ const srednia2 = [
         "poddzial": "2",
         "tresc": "Uporządkuj rosnąco liczby:",
         "canvas": [],
-        "podpunkty": ["\\(\\frac{a}{b}, \\frac{b}{a} \\) i \\(1 \\), jeśli \\(0 < a < b \\)", "\\(\\frac{a+b}{2} \\) i \\(b \\), jeśli \\(a > b \\)", "\\(a, b \\) i \\(c \\), jeśli \\(a, b, c > 0, \\frac{c}{a+b}=2, \\frac{c}{b-a}=3 \\)", "\\(a \\) i \\(b \\), jeśli \\((a+2)(b-2)> ab \\)"]
+        "podpunkty": ["\\(\\frac{a}{b}, \\frac{b}{a} \\) i \\(1 \\), jeśli \\(0 < a < b \\)", "\\(\\frac{a+b}{2} \\) i \\(b \\), jeśli \\(a > b \\)", "\\(a, b \\) i \\(c \\), jeśli \\(a, b, c > 0, \\frac{c}{a+b}=2, \\frac{c}{b-a}=3 \\)", "\\(a \\) i \\(b \\), jeśli \\((a+2)(b-2)> ab \\)"],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1374,7 +1452,8 @@ const srednia2 = [
         "poddzial": "2",
         "tresc": "Dla jakich całkowitych wartości \\(k \\) wartość wyrażenia jest liczbą całkowitą?",
         "canvas": [],
-        "podpunkty": ["\\(\\frac{2}{k} \\)", "\\(\\frac{5}{2k} \\)", "\\(\\frac{9}{k-6} \\)", "\\(\\frac{15}{k+2} \\)", "\\(\\frac{10}{7k-3} \\)"]
+        "podpunkty": ["\\(\\frac{2}{k} \\)", "\\(\\frac{5}{2k} \\)", "\\(\\frac{9}{k-6} \\)", "\\(\\frac{15}{k+2} \\)", "\\(\\frac{10}{7k-3} \\)"],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1382,7 +1461,8 @@ const srednia2 = [
         "poddzial": "2",
         "tresc": "Wyznacz liczby całkowite \\(k \\) i \\(l \\), które spełniają podany warunek:",
         "canvas": [],
-        "podpunkty": ["\\(k \\cdot l=1 \\)", "\\((k+2)(l-1)=3 \\)", "\\(k=1+\\frac{4}{l+2} \\)", "\\(kl-k=l \\)", "\\(k+l=0 \\)", "\\(k \\cdot l =0 \\)"]
+        "podpunkty": ["\\(k \\cdot l=1 \\)", "\\((k+2)(l-1)=3 \\)", "\\(k=1+\\frac{4}{l+2} \\)", "\\(kl-k=l \\)", "\\(k+l=0 \\)", "\\(k \\cdot l =0 \\)"],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1390,7 +1470,8 @@ const srednia2 = [
         "poddzial": "2",
         "tresc": "Porówna liczby \\(\\frac{4}{5} \\) i \\(\\frac{4+n}{5+n} \\), gdzie \\(n \\) jest dowolną liczbą naturalną.",
         "canvas": [],
-        "podpunkty": []
+        "podpunkty": [],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1398,7 +1479,8 @@ const srednia2 = [
         "poddzial": "2",
         "tresc": "Wyznacz wszystkie liczby całkowite \\(x, y \\) spełniające podany warunek.",
         "canvas": [],
-        "podpunkty": ["\\(4x+12y=7 \\)", "\\(3x+6y=12 \\)", "\\((x-3)(y+5)=1 \\)"]
+        "podpunkty": ["\\(4x+12y=7 \\)", "\\(3x+6y=12 \\)", "\\((x-3)(y+5)=1 \\)"],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1406,7 +1488,8 @@ const srednia2 = [
         "poddzial": "2",
         "tresc": "Wyznacz wszystkie naturalne wartości \\(n \\), dla których wartość wyrażenia jest liczbą naturalną.",
         "canvas": [],
-        "podpunkty": ["\\(\\frac{5}{n}-1 \\)", "\\(\\frac{12}{n}-n \\)", "\\(\\frac{2n+3}{n} \\)", "\\(\\frac{5n-8}{n} \\)", "\\(\\frac{n+5}{n+1} \\)"]
+        "podpunkty": ["\\(\\frac{5}{n}-1 \\)", "\\(\\frac{12}{n}-n \\)", "\\(\\frac{2n+3}{n} \\)", "\\(\\frac{5n-8}{n} \\)", "\\(\\frac{n+5}{n+1} \\)"],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1416,7 +1499,8 @@ const srednia2 = [
         "ramka": "\\(\\frac{2k+10}{k+2}=\\frac{2k+4+6}{k+2}=\\frac{2(k+2)+6}{k+2}=2+\\frac{6}{k+2} \\)",
         "tresc2": "Dla jakich całkowitych wartości \\(k \\) wartość wyrażenia jest również liczbą całkowitą ? ",
         "canvas": [],
-        "podpunkty": ["\\(\\frac{k+8}{k+5} \\)", "\\(\\frac{k+9}{k+5} \\)", "\\(\\frac{2k+10}{k+2} \\)", "\\(\\frac{2k+6}{k-1} \\)"]
+        "podpunkty": ["\\(\\frac{k+8}{k+5} \\)", "\\(\\frac{k+9}{k+5} \\)", "\\(\\frac{2k+10}{k+2} \\)", "\\(\\frac{2k+6}{k-1} \\)"],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1424,7 +1508,8 @@ const srednia2 = [
         "poddzial": "2",
         "tresc": "Cyfry \\(a, b, c \\) są różne i żadna nie jest zerem. Jaką największą wartość ma wyrażenie \\(\\frac{1}{a+\\frac{1}{b+\\frac{1}{c}}} \\)?",
         "canvas": [],
-        "podpunkty": []
+        "podpunkty": [],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1432,7 +1517,8 @@ const srednia2 = [
         "poddzial": "2",
         "tresc": "\\(ⅅ\\) Wykaż, nie korzystając z kalkulatora, że \\(\\frac{777772}{777773}> \\frac{999993}{999995} \\)",
         "canvas": [],
-        "podpunkty": []
+        "podpunkty": [],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1442,6 +1528,7 @@ const srednia2 = [
         "canvas": [],
         "podpunkty": ["\\(\\frac{1}{10^2}+\\frac{1}{11^2}+\\frac{1}{12^2}+_{\\cdots}+\\frac{1}{999^2}>\\frac{99}{1000} \\)"],
         "ramkapo": "\\(\\frac{1}{n(n+1)}=\\frac{1}{n}-\\frac{1}{n+1} \\)",
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1449,7 +1536,8 @@ const srednia2 = [
         "poddzial": "2",
         "tresc": "Dla jakich całkowitych wartości \\(k\\neq5 \\) ułamek \\(\\frac{k+5}{3k+4} \\) jest skracalny?",
         "canvas": [],
-        "podpunkty": []
+        "podpunkty": [],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1457,7 +1545,8 @@ const srednia2 = [
         "poddzial": "2",
         "tresc": "\\(ⅅ\\) Udowodnij, że jeśli \\(a, b, c \\) są liczbami całkowitymi, to co najmniej jedna z liczb: \\(\\frac{a+b}{2}, \\frac{b+c}{2}, \\frac{a+c}{2} \\) jest całkowita.",
         "canvas": [],
-        "podpunkty": []
+        "podpunkty": [],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1465,7 +1554,8 @@ const srednia2 = [
         "poddzial": "2",
         "tresc": "Zapisano cztery kolejne liczby naturalne. Różnica między odwrotnościami najmniejszej i największej z nich jest równa \\(0,075 \\). Ile jest równa różnica między odwrotnościami dwóch pozostałych liczb?",
         "canvas": [],
-        "podpunkty": []
+        "podpunkty": [],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1477,6 +1567,7 @@ const srednia2 = [
         "tresc3": "\\(-\\frac{ 1}{ 3}; 2, 12; \\sqrt{ 3}; 0; \\sqrt[3]{ 2}; -12; \\sqrt[3]{ 1\\frac{ 11}{ 16}}; \\frac{ \\pi }{ 2}; \\sqrt{ 6\\frac{ 1}{ 4}}; \\frac{ \\sqrt{ 27}}{ \\sqrt{ 3}} \\)",
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1488,6 +1579,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1499,6 +1591,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1510,6 +1603,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1521,6 +1615,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1532,6 +1627,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1543,6 +1639,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1554,6 +1651,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1565,6 +1663,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1576,6 +1675,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1587,6 +1687,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1599,6 +1700,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1610,6 +1712,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1622,6 +1725,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1633,6 +1737,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1649,6 +1754,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1660,6 +1766,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1671,6 +1778,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1682,6 +1790,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": ["Symbolem \\([x] \\) oznaczamy cechę liczby \\(x \\), czyli największą liczbę całkowitą nie większa niż \\(x \\)"],
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1693,6 +1802,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1704,6 +1814,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1715,6 +1826,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1726,6 +1838,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1737,6 +1850,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1748,6 +1862,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1759,6 +1874,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1770,6 +1886,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1781,6 +1898,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": ["Liczba wymierna \\(\\frac{m+2n}{m+n} \\), gdzie \\(m, n \\)- liczby całkowite, jest lepszym przybliżeniem liczby \\(\\sqrt{2} \\) niż liczba wymierna \\(\\frac{m}{n} \\)."],
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1792,6 +1910,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1803,6 +1922,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1814,6 +1934,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1827,6 +1948,7 @@ const srednia2 = [
         "extraRamka": "liczNW2",
         "tresc2": "Udowodnij, że podana liczba jest niewymierna",
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1838,6 +1960,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1849,6 +1972,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1860,6 +1984,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1871,6 +1996,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1882,6 +2008,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1893,6 +2020,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1904,6 +2032,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1915,6 +2044,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1926,6 +2056,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1937,6 +2068,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1948,6 +2080,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1959,6 +2092,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1970,6 +2104,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1981,6 +2116,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -1992,6 +2128,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2003,6 +2140,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2016,6 +2154,7 @@ const srednia2 = [
         "extraRamka": "rozdziere1",
         "ramkapo": null,
         "tresc2": "Przedstaw liczbę w postaci ułamka zwykłego.",
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2027,6 +2166,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2038,7 +2178,8 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
-        "extra": "rozdzie1"
+        "extra": "rozdzie1",
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2050,6 +2191,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2061,6 +2203,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2072,6 +2215,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2085,6 +2229,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2096,6 +2241,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2107,6 +2253,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2118,6 +2265,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2129,6 +2277,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2140,6 +2289,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2151,6 +2301,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2162,6 +2313,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2173,6 +2325,7 @@ const srednia2 = [
         "wskazowka": null,
         "ramka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2186,6 +2339,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
 
     },
     {
@@ -2200,7 +2354,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2214,7 +2368,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2228,7 +2382,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2242,7 +2396,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2256,7 +2410,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2269,8 +2423,8 @@ const srednia2 = [
         "ramka": null,
         "extraRamka": null,
         "tresc2": null,
-        "ramkapo": null,
-
+        "ramkapo":  null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2284,7 +2438,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2298,7 +2452,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2312,7 +2466,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2326,7 +2480,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2340,7 +2494,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2354,7 +2508,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2368,7 +2522,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2382,7 +2536,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2396,7 +2550,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2410,7 +2564,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2424,7 +2578,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2438,7 +2592,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2452,7 +2606,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2466,7 +2620,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2480,7 +2634,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2495,7 +2649,7 @@ const srednia2 = [
         "tresc2": "\\(2,5\\sqrt{2}\\ \\ \\  -\\sqrt{2}\\ \\ \\  -\\frac{\\sqrt{2}}{2}\\ \\ \\  \\frac{1}{4}\\sqrt{2}\\ \\ \\  \\frac{3\\sqrt{2}}{2}\\ \\ \\  -\\frac{5}{4}\\sqrt{2}\\)",
         "ramkapo": null,
         "trescpocanvie": "\\(2\\pi\\ \\ \\ \\frac{\\pi}{2}\\ \\ \\ -\\frac{\\pi}{3}\\ \\ \\ -\\frac{3}{2}\\pi\\ \\ \\ \\frac{5\\pi}{6}\\ \\ \\ -\\frac{11}{6}\\pi\\ \\ \\ \\frac{4\\pi}{3}\\)",
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2509,7 +2663,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2523,7 +2677,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2537,7 +2691,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2551,7 +2705,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2565,7 +2719,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2579,7 +2733,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2593,7 +2747,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2607,7 +2761,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2621,7 +2775,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2635,7 +2789,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2649,7 +2803,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2663,7 +2817,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2677,7 +2831,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2691,7 +2845,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2705,7 +2859,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2719,7 +2873,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2733,7 +2887,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2747,7 +2901,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2761,7 +2915,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2775,7 +2929,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2789,7 +2943,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2803,7 +2957,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2817,7 +2971,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2831,7 +2985,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2845,7 +2999,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2859,7 +3013,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2873,7 +3027,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2887,7 +3041,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2901,7 +3055,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2915,7 +3069,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2929,7 +3083,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2943,7 +3097,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2957,6 +3111,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2970,6 +3125,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2983,6 +3139,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -2996,6 +3153,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3009,6 +3167,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3022,6 +3181,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3035,6 +3195,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3048,6 +3209,7 @@ const srednia2 = [
         "ramka": null,
         "extraRamka": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3061,6 +3223,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3074,6 +3237,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3087,6 +3251,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3100,6 +3265,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3113,6 +3279,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3126,6 +3293,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3139,6 +3307,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3152,6 +3321,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3165,6 +3335,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3178,6 +3349,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3191,6 +3363,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3204,6 +3377,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3217,6 +3391,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3230,6 +3405,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3243,6 +3419,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3256,6 +3433,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3269,6 +3447,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3282,6 +3461,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3295,6 +3475,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3308,6 +3489,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3321,6 +3503,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3334,6 +3517,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3347,6 +3531,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3360,6 +3545,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3373,6 +3559,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3386,6 +3573,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3399,6 +3587,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3412,6 +3601,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3425,6 +3615,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3438,6 +3629,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3451,6 +3643,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3464,6 +3657,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": "\\(\\sqrt[3]{27} \\), \\(\\frac{7}{2}\\sqrt[3]{\\frac{2}{7}} \\), \\(7\\sqrt[3]{2} \\), \\(\\sqrt[3]{0,027} \\), \\(\\sqrt[3]{\\frac{27}{100}} \\), \\(2\\sqrt[3]{7} \\)",
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3477,6 +3671,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3490,6 +3685,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3503,6 +3699,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3516,6 +3713,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3529,6 +3727,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3542,6 +3741,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3555,6 +3755,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3568,6 +3769,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3593,6 +3795,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3606,6 +3809,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3619,6 +3823,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3632,6 +3837,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3645,6 +3851,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3658,6 +3865,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3671,6 +3879,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": "\\(\\frac{(\\sqrt[4]{5,0625}+\\sqrt[5]{5,0625})-(\\sqrt[5]{5,0625}+\\sqrt[6]{5,0625})+(\\sqrt[6]{5,0625}+\\sqrt[4]{5,0625})}{2} \\)",
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3684,6 +3893,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3697,6 +3907,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3710,6 +3921,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3723,6 +3935,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3736,6 +3949,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3749,6 +3963,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3762,6 +3977,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3775,6 +3991,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3788,6 +4005,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": "\\(\\sqrt{100}+\\sqrt[3]{100}+\\sqrt[4]{100}+\\sqrt[5]{100}+\\sqrt[6]{100}+\\sqrt[7]{100}+\\sqrt[8]{100}+\\sqrt[9]{100}+\\sqrt[10]{100}<33 \\)",
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3801,6 +4019,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3814,6 +4033,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3827,6 +4047,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3840,6 +4061,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3853,6 +4075,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3866,6 +4089,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3879,6 +4103,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3892,6 +4117,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3905,6 +4131,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3918,6 +4145,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3931,6 +4159,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3944,6 +4173,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3957,6 +4187,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3970,6 +4201,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": "\\( \\frac{-a^6\\cdot x^{-3}\\cdot  (-a)^5\\cdot (-x)^6}{(-a)^6\\cdot (-x^{-3})\\cdot (-a^5)\\cdot (-x^6)}\\)",
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3983,6 +4215,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": "\\(  \\frac{4^5+4^5+4^5+4^5}{3^{-13}+3^{-13}+3^{-13}}=6^{12}\\)",
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -3996,6 +4229,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4009,6 +4243,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4022,6 +4257,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4035,6 +4271,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": "\\((\\frac{1}{2}^{10}\\cdot  10^k>1\\)",
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4048,6 +4285,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4061,6 +4299,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4074,6 +4313,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4087,6 +4327,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4100,6 +4341,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4113,6 +4355,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4126,6 +4369,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4139,6 +4383,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": "\\(x=(\\frac{1}{10})^{-10}\\cdot  (\\frac{1}{9})^{-9}\\cdot (\\frac{1}{8})^{-8}\\cdot _{\\cdots}\\cdot  (\\frac{1}{2})^{-2}\\cdot (\\frac{1}{1})^{-1}\\), \\(y = (-1) ^ {- 1}\\cdot(-2) ^ {- 2}\\cdot(-3) ^ {- 3}\\cdot _{ \\cdots } \\cdot(-10) ^ {- 10}\\)",
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4152,6 +4397,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4165,6 +4411,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4178,6 +4425,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4191,6 +4439,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4204,6 +4453,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4217,6 +4467,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4230,6 +4481,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     }
     ,
     {
@@ -4244,6 +4496,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4257,6 +4510,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4270,6 +4524,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4283,6 +4538,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4296,6 +4552,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4309,6 +4566,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4322,6 +4580,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4335,6 +4594,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4348,6 +4608,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4361,6 +4622,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4374,6 +4636,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4387,6 +4650,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4400,6 +4664,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4413,6 +4678,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4426,6 +4692,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4439,6 +4706,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4452,6 +4720,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4465,6 +4734,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4478,6 +4748,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4491,6 +4762,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4504,6 +4776,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4517,6 +4790,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4530,6 +4804,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4543,6 +4818,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4556,6 +4832,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4569,6 +4846,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4582,6 +4860,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4595,6 +4874,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4608,6 +4888,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4621,6 +4902,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4634,6 +4916,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4647,6 +4930,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4660,6 +4944,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4673,6 +4958,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4686,6 +4972,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4699,6 +4986,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4712,6 +5000,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
 
     {
@@ -4726,6 +5015,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4739,6 +5029,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4752,6 +5043,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4765,6 +5057,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4778,6 +5071,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4791,6 +5085,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4804,6 +5099,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4817,6 +5113,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4830,6 +5127,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4843,6 +5141,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4856,6 +5155,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4869,6 +5169,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4882,6 +5183,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4895,6 +5197,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4908,6 +5211,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4921,6 +5225,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": "\\(A=(8,1\\cdot 10^{11})x+7,84\\cdot 10^{10}\\)  , \\(B=8\\cdot 10^{10}-(5,44\\cdot 10^{12})x\\)",
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4934,6 +5239,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4947,7 +5253,8 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
-        "tresc3": "przyjmij, że \\(1\\ dm^3\\) suchego powietrza w temperaturze \\(20^{\\circ} C\\) i przy ciśnieniu \\(1013\\) hPa ma masę około \\(1,2\\ g\\), a \\(1\\ dm^3\\) suchego piasku - około \\(1,6\\ kg\\)."
+        "tresc3": "przyjmij, że \\(1\\ dm^3\\) suchego powietrza w temperaturze \\(20^{\\circ} C\\) i przy ciśnieniu \\(1013\\) hPa ma masę około \\(1,2\\ g\\), a \\(1\\ dm^3\\) suchego piasku - około \\(1,6\\ kg\\).",
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4961,6 +5268,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4974,6 +5282,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -4987,6 +5296,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -5000,6 +5310,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -5013,6 +5324,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
 
     {
@@ -5027,6 +5339,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -5040,6 +5353,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -5053,6 +5367,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -5066,6 +5381,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -5079,6 +5395,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": "\\(log_{\\sqrt{5}}(25\\sqrt{5}),log_5625,log_{0,5}\\frac{1}{2},log_{0,5}1,log_{\\frac{1}{2}}0,125\\) ",
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -5092,6 +5409,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -5105,6 +5423,7 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
     {
         "id": `${nanoid()}`,
@@ -5118,7 +5437,8 @@ const srednia2 = [
         "extraRamka": null,
         "tresc2": null,
         "ramkapo": null,
+        "answer": [],
     },
 ]
 
- export default srednia2;
+export default srednia2;

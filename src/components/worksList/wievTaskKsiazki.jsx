@@ -112,9 +112,9 @@ const WievTaskKsiazki = ({ data, model }) => {
                     {work.extra && (<MathJax inline><Extra id={work.extra} /></MathJax>)}
                     {work.extraRamka && (<div className={well}><MathJax inline><Extra id={work.extraRamka} /></MathJax></div>)}
 
-                    {work.tresc2 !== 0 || (work.tresc2.length !== 0 && (work.tresc2.map(tresc2 => (<div><MathJax inline><p className={tresc}>{tresc2}</p></MathJax></div>))))}
+                    {work.tresc2 !== 0 || (work.tresc2.length !== 0 && (work.tresc2.map(tresc2 => (<div><MathJax inline>{tresc2}</MathJax></div>))))}
                     {work.tresc4 !== 0 && (<MathJax inline><p className={tresc}>{work.tresc4}</p></MathJax>)}
-                    {work.tresc5 !== 0 && (<MathJax inline><p className={tresc}>{work.tresc3}</p></MathJax>)}
+                    {work.tresc5 !== 0 && (<MathJax inline><p className={tresc}>{work.tresc5}</p></MathJax>)}
                     {work.tresc6 !== 0 && (<MathJax inline><p className={tresc}>{work.tresc3}</p></MathJax>)}
                     <div className={odp}>
                         {work.podpunkty.length !== 0 && !work.koniec && (work.podpunkty.map(podpunkt => (
