@@ -224,6 +224,44 @@ export const Extra = ({ id }) => {
                 </MathJax>
             </div>
         ); break;
+        case "kielbasad2z78": (
+            content = <div className={wrapFlex}>
+                <MathJax> <table className={tab1}>
+                    <tr>
+                        <th></th>
+                        <th>Lokata HIT</th>
+                        <th>Lokata GOLD</th>
+                        <th>Lokata SUPER</th>
+                    </tr>
+                    <tr>
+                        <td>Rodzaj oprocentowania</td>
+                        <td>stałe</td>
+                        <td>stałe</td>
+                        <td>zmienne</td>
+                    </tr>
+                    <tr>
+                        <td>Wysokość oprocentowania</td>
+                        <td>{"\\(6,2\\% \\)"}</td>
+                        <td>{"\\(6,0 \\% \\)"}</td>
+                        <td>{"\\(6,6 \\% \\)"}{"\\(^*\\)"}</td>
+                    </tr>
+                    <tr>
+                        <td>Kapitalizacja odsetek</td>
+                        <td>roczna</td>
+                        <td>półroczna</td>
+                        <td>roczna</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>{"\\(^*\\)" } Oprocentowanie w dniu założenia lokaty</td>
+                    </tr>
+                    
+
+                </table></MathJax>
+            </div>
+        ); break;
 
         default: break;
 

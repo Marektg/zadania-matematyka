@@ -7,7 +7,7 @@ import Extra from '../../data/extra';
 const WievTask = ({ data, model }) => {
     const [tasks, settasks] = useState([]);
 
-    const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, buttonWrapper, hidden, twierdzenie, odpowiedz } = styles;
+    const { powt, tresc, odp, well, podpowiedz, canvasWrapper, wellpo, trescpo, buttonWrapper, hidden,  odpowiedz } = styles;
     const numberOfTask = 25;
     // console.log(data);
     // console.log(model);
